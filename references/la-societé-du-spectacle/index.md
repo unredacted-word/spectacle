@@ -6,7 +6,7 @@ Guy Debord
 
 > « Et sans doute notre temps... préfère l'image à la chose, la copie à l'original, la représentation à la réalité, l'apparence à l'être... Ce qui est sacré pour lui, ce n'est que l'illusion, mais ce qui est profane, c'est la vérité. Mieux, le sacré grandit à ses yeux à mesure que décroît la vérité et que l'illusion croît, si bien que le comble de l'illusion est aussi pour lui le comble du sacré. »
 >
-> Feuerbach (Préface à la deuxième édition de L'Essence du christianisme)
+> <cite>Feuerbach (Préface à la deuxième édition de L'Essence du christianisme)</cite>
 
 ### 1
 
@@ -148,7 +148,7 @@ Le spectacle est le capital à un tel degré d'accumulation qu'il devient image.
 
 > «Car ce n'est que comme catégorie universelle de l'être social total que la marchandise peut être comprise dans son essence authentique. Ce n'est que dans ce contexte que la réification surgie du rapport marchand acquiert une signification décisive, tant pour l'évolution objective de la société que pour l'attitude des hommes à son égard, pour la soumission de leur conscience aux formes dans lesquelles cette réification s'exprime... Cette soumission s'accroît encore du fait que plus la rationalisation et la mécanisation du processus de travail augmentent, plus l'activité du travailleur perd son caractère d'activité pour devenir une attitude contemplative.»
 >
-> Lukàcs (Histoire et conscience de classe)
+> <cite>Lukàcs (Histoire et conscience de classe)</cite>
 
 ### 35
 
@@ -230,7 +230,7 @@ La conscience du désir et le désir de la conscience sont identiquement ce proj
 
 > «Une nouvelle polémique animée se déroule dans le pays, sur le front de la philosophie, à propos des concepts "un se divise en deux" et "deux fusionnent en un". Ce débat est une lutte entre ceux qui sont pour et ceux qui contre la dialectique matérialiste, une lutte entre deux conceptions du monde : la conception prolétarienne et la conception bourgeoise. Ceux qui soutiennent que "un se divise en deux est la loi fondamentale des choses se tiennent du côté de la dialectique matérialiste : ceux qui soutiennent que la loi fondamentale des chose est que "deux fusionnent en un" sont contre la dialectique matérialiste. Les deux côtés ont tiré une nette ligne de démarcation entre eux et leurs arguments sont diamétralement opposés. Cette polémique reflète sur le plan idéologique la lutte de classe aiguë et complexe qui se déroule en Chine et dans le monde.»
 >
-> Le Drapeau rouge de Pékin, 21 Septembre 1964.
+> <cite>Le Drapeau rouge de Pékin, 21 Septembre 1964.</cite>
 
 ### 54
 
@@ -312,7 +312,7 @@ L'unité irréelle que proclame le spectacle est le masque de la division de cla
 
 > « Le droit égal de tous aux biens et aux jouissances de ce monde, la destruction de toute autorité, la négation de tout frein moral, voilà, si l'on descend au fond des choses, la raison d'être de l'insurrection du 18 mars et la charte de la redoutable association qui lui a fourni une armée. »
 >
-> Enquête parlementaire sur l'insurrection du 18 mars.
+> <cite>Enquête parlementaire sur l'insurrection du 18 mars.</cite>
 
 ### 73
 
@@ -526,7 +526,7 @@ La théorie révolutionnaire est maintenant ennemie de toute idéologie révolut
 
 > « O gentilshommes, la vie est courte... Si nous vivons, nous vivons pour marcher sur la tête des rois. »
 >
-> Shakespeare (Henry IV).
+> <cite>Shakespeare (Henry IV).</cite>
 
 ### 125
 
@@ -620,7 +620,7 @@ Le temps irréversible de la production est d'abord la mesure des marchandises. 
 
 > «Nous n'avons rien à nous que le temps, dont jouissent ceux-mêmes qui n'ont point de demeure.»
 >
-> Balthasar Gracian (L'homme de cour).
+> <cite>Balthasar Gracian (L'homme de cour).</cite>
 
 ### 147
 
@@ -698,7 +698,7 @@ Le monde possède déjà le rêve d'un temps dont il doit maintenant posséder l
 
 > « Et qui devient Seigneur d'une cité accoutumée à vivre libre et ne la détruit point, qu'il s'attende d'être détruit par elle, parce qu'elle a toujours pour refuge en ses rébellions le nom de la liberté et ses vieilles coutumes, lesquelles ni par la longueur du temps ni pour aucun bienfait ne s'oublieront jamais. Et pour chose qu'on y fasse ou qu'on y pourvoie, si ce n'est d'en chasser ou d'en disperser les habitants, ils n'oublieront point ce nom ni ces coutumes... »
 >
-> Machiavel (Le Prince).
+> <cite>Machiavel (Le Prince).</cite>
 
 ### 165
 
@@ -764,7 +764,7 @@ La plus grande idée révolutionnaire à propos de l'urbanisation n'est pas elle
 
 > « Nous vivrons assez pour voir une révolution politique? nous, les contemporains de ces Allemands? Mon ami, vous croyez ce que vous désirez... Lorsque je juge l'Allemagne d'après son histoire présente, vous ne m'objecterez pas que toute son histoire est falsifiée et que toute sa vie publique actuelle ne représente pas l'état réel du peuple. Lisez les journaux que vous voudrez, convainquez-vous que l'on ne cesse pas - et vous me concéderez que la censure n'empêche personne de cesser - de célébrer la liberté et le bonheur national que nous possédons... »
 >
-> Ruge (Lettre à Marx, mars 1843).
+> <cite>Ruge (Lettre à Marx, mars 1843).</cite>
 
 ### 180
 
@@ -898,7 +898,7 @@ Dans le langage de la contradiction, la critique de la culture se présente unif
 
 > « La conscience de soi est en soi et pour soi quand et parce qu'elle est en soi et pour soi pour une autre conscience de soi ; c'est-à-dire qu'elle n'est qu'en tant qu'être reconnu. »
 >
-> Hegel (Phénoménologie de l'Esprit).
+> <cite>Hegel (Phénoménologie de l'Esprit).</cite>
 
 ### 212
 
@@ -939,3 +939,7 @@ Si la logique de la fausse conscience ne peut se connaître elle-même véridiqu
 ### 221
 
 S'émanciper des bases matérielles de la vérité inversée, voilà en quoi consiste l'auto-émancipation de notre époque. Cette «mission historique d'instaurer la vérité dans le monde», ni l'individu isolé, ni la foule atomisée soumis aux manipulations ne peuvent l'accomplir, mais encore et toujours la classe qui est capable d'être la dissolution de toutes les classes en ramenant tout le pouvoir à la forme désaliénante de la démocratie réalisée, le Conseil dans lequel la théorie pratique se contrôle elle-même et voit son action. Là seulement où les individus sont «directement liés à l'histoire universelle» ; là seulement où le dialogue s'est armé pour faire vaincre ses propres conditions.
+
+<cite>
+Debord, G. (1992). La Société du spectacle. Paris: Gallimard. ISBN 9782070394432.
+</cite>
