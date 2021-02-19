@@ -11,7 +11,7 @@ to produce the book in multiple formats for distribution.
 
 - NodeJS
 - Yarn / npm
-- pandoc 
+- pandoc
 
 on macOS:
 
@@ -38,6 +38,8 @@ To live preview markdown in a browser:
 yarn pen <filename>
 ```
 
+# Generating Books
+
 ```
-bin/build.sh  # builds a PDF of the book
+pandoc -d config/pdf.yaml
 ```
