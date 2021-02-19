@@ -1,0 +1,34 @@
+# docs https://pandoc.org/MANUAL.html#default-files
+input-files:
+- chapters/cover.md
+- chapters/half-title.md
+- chapters/title.md
+- chapters/colophon.md
+- chapters/contents.md
+- chapters/preface.md
+- chapters/01.md
+- chapters/02.md
+- chapters/03.md
+- chapters/04.md
+- chapters/05.md
+- chapters/06.md
+- chapters/07.md
+- chapters/08.md
+- chapters/09.md
+- chapters/glossary.md
+- chapters/bibliography.md
+- chapters/actual-index.md
+- chapters/authors.md
+output-file: "dist/book.html"
+metadata-files:
+- "chapters/metadata.yaml"
+from: markdown
+file-scope: false # Parse each file individually before combining for multifile documents. This will allow footnotes in different files with the same identifiers to work as expected. If this option is set, footnotes and links will not work across files.
+to: html
+standalone: true
+data-dir: # A reference.odt, reference.docx, epub.css, templates, slidy, slideous, or s5 directory placed in this directory will override pandoc’s normal defaults.
+abbreviations: # Specifies a custom abbreviations file, with abbreviations one to a line.
+top-level-division: chapter # default | section | chapter | part
+# log
+verbosity: WARNING # ERROR, WARNING, or INFO
+#log-file: log.json
