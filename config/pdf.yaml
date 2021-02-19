@@ -19,8 +19,7 @@ input-files:
 - chapters/bibliography.md
 - chapters/actual-index.md
 - chapters/authors.md
-output-file: "book.pdf"
-resource-path: ["../chapters"]
+output-file: "dist/book.pdf"
 metadata-files:
 - "chapters/metadata.yaml"
 from: markdown
