@@ -2,7 +2,7 @@
 
 - metadata
 - Cover
-- Half Title
+- [Half Title](half-title.md)
 - [Title](title.md)
 - [Colophon](colophon.md)
 - Preface
