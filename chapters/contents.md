@@ -1,12 +1,8 @@
-## Index
+# Contents
 
-- [metadata](metadata.yaml)
-- [Cover](cover.md)
-- [Half Title](half-title.md)
-- [Title](title.md)
-- [Colophon](colophon.md)
-- [Contents](contents.md)
-- [Preface](preface.md)
+TODO
+
+vi. Preface
 
 1. [Separation Perfected](01.md)
 1. [The Commodity as Spectacle](02.md)
@@ -18,7 +14,7 @@
 1. [Negation and Consumption in the Cultural Sphere](08.md)
 1. [Ideology Materialized](09.md)
 
-- [Glossary](glossary.md)
-- [Bibliography](bibliography.md)
-- [Index](actual-index.md)
-- [Authors](authors.md)
+- Glossary
+- Bibliography
+- Index
+- Authors

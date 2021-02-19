@@ -1,0 +1,27 @@
+---
+# METADATA
+lang: en-US # like en, en-UK, en-US, fr, it, it-IT, ...
+title: "The Society of the Spectacle"
+author: "Guy Debord"
+creator:
+- role: Translator
+  text: Ron. Adams
+date: 19-02-2021
+keywords: "Philosophy, Critical Theory, Marxism, Anarchism, Proletariat, Social Classes"
+publisher: Unredacted Word, LLC
+rights: © 2021 Unredacted Word, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+identifier:
+- scheme: ISBN-10
+  text: 1234567890
+
+# Formatting
+toc-title: "Contents"
+toc: true
+toc_depth: 2
+lof: false # List of figures
+lot: false # List of tables
+
+documentclass: book # See https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes
+#classoption: [notitlepage, onecolumn, openany]
+geometry: [a5paper, bindingoffset=0mm, inner=20mm, outer=20mm, top=20mm, bottom=20mm] # See https://ctan.org/pkg/geometry
+---

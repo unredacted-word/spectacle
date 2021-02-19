@@ -11,6 +11,15 @@ to produce the book in multiple formats for distribution.
 
 - NodeJS
 - Yarn / npm
+- pandoc 
+
+on macOS:
+
+```bash
+brew install pandoc
+brew install --cask basictex
+# brew install --cask --no-quarantine prince
+```
 
 ## Development
 
@@ -27,4 +36,8 @@ To live preview markdown in a browser:
 
 ```bash
 yarn pen <filename>
+```
+
+```
+bin/build.sh  # builds a PDF of the book
 ```
