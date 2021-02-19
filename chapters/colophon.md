@@ -2,12 +2,11 @@ Originally published in Paris, France as _La Société du Spectacle_ by
 Buchet-Chastel in 1967 and was reissued by Editions Champ Libre in 1971 and
 Editions Gallimard 1992.
 
-This annotated translation by Ron. Adams.<br />
-First published 2021 █ Unredacted Word, LLC.
+This annotated translation by Ron. Adams.<br /> First published 2021 █
+Unredacted Word, LLC.
 
-_First Hardcover Edition 2021_<br />
-_First Printing 2021_<br />
-10 9 8 7 6 5 4 3 2 1
+_First Hardcover Edition 2021_<br /> _First Printing 2021_<br /> 10 9 8 7 6 5 4
+3 2 1
 
 This work is licensed under a Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to
@@ -16,12 +15,9 @@ remix, transform, and build upon the material. The licensor cannot revoke these
 freedoms as long as you follow the license terms. Find the complete license
 online at https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-ISBN TODO (hardcover: alk. paper)<br />
-Library of Congress Control Number: X
+ISBN TODO (hardcover: alk. paper)<br /> Library of Congress Control Number: X
 
-_This book was set in FONT TODO_<br />
-_Book and cover design: TODO_<br />
+_This book was set in FONT TODO_<br /> _Book and cover design: TODO_<br />
 _Printed in TODO by TODO_
 
-█ Unredacted Word<br />
-https://unredacted-word.pub
+█ Unredacted Word<br /> https://unredacted-word.pub
