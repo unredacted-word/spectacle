@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+FILES=$(git diff --cached --name-only --diff-filter=ACMR "*.md" | sed 's| |\\ |g')
+if [ -n "$FILES" ]; then
+  yarn --silent
+
+  # Prettify all modified files
+  echo "$FILES" | xargs yarn prettier --write
+
+  # Add back the modified/prettified files to staging
+  echo "$FILES" | xargs git add
+fi
