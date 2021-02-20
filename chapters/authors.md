@@ -11,4 +11,5 @@ important radical book of the twentieth century.
 ![Ron. Adams (left)](images/translator.jpg) _Ron. Adams (left)_
 
 Ron. Adams is a writer and software engineer living in Somerville Massachusetts,
-his writing is online at: https://0xadada.pub
+his writing covers the intersection of media, technology, and power. It is
+online at: https://0xadada.pub
