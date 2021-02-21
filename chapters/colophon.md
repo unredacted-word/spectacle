@@ -1,9 +1,8 @@
 Originally published in Paris, France as _La Société du Spectacle_ by
-Buchet-Chastel in 1967 and was reissued by Editions Champ Libre in 1971 and
+Buchet-Chastel in 1967. It was reissued by Editions Champ Libre in 1971 and
 Editions Gallimard 1992.
 
-This annotated edition by Ron. Adams.<br /> First published 2021 █
-Unredacted Word, LLC.
+This annotated edition by Ron. Adams.
 
 _First Hardcover Edition 2021_<br /> _First Printing 2021_<br /> 10 9 8 7 6 5 4
 3 2 1

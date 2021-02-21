@@ -1,7 +1,6 @@
 # docs https://pandoc.org/MANUAL.html#default-files
 input-files:
 - chapters/cover.md
-- chapters/half-title.md
 - chapters/title.md
 - chapters/colophon.md
 - chapters/preface.md
@@ -21,7 +20,7 @@ input-files:
 output-file: "dist/book.html"
 metadata-files:
 - "chapters/metadata.yaml"
-from: markdown+footnotes
+from: markdown+footnotes+smart
 file-scope: false
 to: html5
 template: "default.html"

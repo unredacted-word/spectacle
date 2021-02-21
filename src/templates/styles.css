@@ -42,33 +42,17 @@ h6 {
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1;
+  page-break-after: avoid;
 }
-
-q,
-blockquote p {
-  font-style: italic;
+h1 {
+  page-break-before: always;
+}
+h2 {
+  text-align: center;
 }
 
 blockquote {
   text-align: left;
-  position: relative;
-  padding: 1em 0;
-  border-left: 2rem solid rgba(61, 70, 77, 0.1);
-}
-blockquote::before {
-  content: "\201C";
-  font-family: serif;
-  font-size: 15em;
-  position: absolute;
-  color: rgba(0, 0, 0, 0.125);
-  left: -2px;
-  top: -87px;
-  display: block;
-  z-index: -1;
-}
-
-blockquote p {
-  margin: 1.25rem 2.5rem;
 }
 
 blockquote,
@@ -87,17 +71,17 @@ figure {
 }
 
 figure,
-blockquote {
-  margin: 0 -2rem 0 -2rem;
+blockquote,
+.footnotes ol li p {
+  margin: 0;
   font-size: 0.75rem;
+  page-break-inside: avoid;
 }
 
 figure figcaption,
 blockquote figcaption {
-  color: darkgray;
-  margin: 0 3rem;
-  font-size: 0.7em;
   font-style: italic;
+  padding: 0.25rem 4rem;
 }
 
 img {
@@ -105,4 +89,58 @@ img {
 }
 figure img {
   max-height: 100vh;
+  max-width: 40rem;
+  margin: 0 -3rem;
+}
+
+.hanging-indent {
+  display: block;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.footnotes ol {
+  margin-left: -2.5rem;
+}
+.footnote-back {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+#title-block-header .title {
+  margin: 40vh 0 2rem -2rem;
+}
+
+.author {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0 -3rem;
+}
+h1.title {
+  page-break-before: avoid;
+}
+
+.page-break-before {
+  page-break-before: always;
+}
+#title-block-header,
+.page-break-after {
+  page-break-after: always;
+}
+@media only screen {
+  h1,
+  .page-break-before {
+    margin-top: 100vh;
+  }
+  #title-block-header,
+  .page-break-after {
+    margin-bottom: 100vh;
+  }
 }
