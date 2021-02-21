@@ -27,10 +27,8 @@ file-scope: false # Parse each file individually before combining for multifile 
 to: pdf
 css: https://private-expensive-caution.glitch.me/style.css
 standalone: true
-pdf-engine: prince
-data-dir: # A reference.odt, reference.docx, epub.css, templates, slidy, slideous, or s5 directory placed in this directory will override pandoc’s normal defaults.
-abbreviations: # Specifies a custom abbreviations file, with abbreviations one to a line.
+pdf-engine: xelatex
+data-dir: "src"
+reference-location: block
 top-level-division: chapter # default | section | chapter | part
-# log
 verbosity: WARNING # ERROR, WARNING, or INFO
-#log-file: log.json

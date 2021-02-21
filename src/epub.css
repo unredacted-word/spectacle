@@ -1,0 +1,112 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+
+  /* Normalize font stack. */
+  font-family: "Big Caslon", Georgia, system-ui, -apple-system,
+    "BlinkMacSystemFont", "HiraginoSans", "Hiragino Sans", "Roboto", "Noto Sans",
+    "Noto Sans CJK JP", "Oxygen-Sans", "Ubuntu", "Cantarell", "Segoe UI",
+    "Meiryo", "Arial", sans-serif, "Apple Color Emoji", "Noto Color Emoji",
+    "Symbola", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 1.5em;
+}
+
+a {
+  color: #292929;
+}
+a:hover {
+  color: #0000cc;
+}
+
+hr {
+  border: none;
+  border-top: 2pt solid black;
+  border-bottom: 1pt solid black;
+  height: 4pt;
+  margin: 5rem 10rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+q,
+blockquote p {
+  font-family: "Big Caslon", Georgia, Times, Times New Roman, serif;
+  font-style: italic;
+}
+
+blockquote {
+  text-align: left;
+  position: relative;
+  padding: 1em 0;
+  border-left: 2rem solid rgba(61, 70, 77, 0.1);
+}
+blockquote::before {
+  content: "\201C";
+  font-family: serif;
+  font-size: 15em;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.125);
+  left: -2px;
+  top: -87px;
+  display: block;
+  z-index: -1;
+}
+
+blockquote p {
+  margin: 1.25rem 2.5rem;
+}
+
+p {
+  hyphens: auto;
+}
+
+cite {
+  font-style: normal;
+}
+
+figure {
+  text-align: center;
+}
+
+figure,
+blockquote {
+  margin: 0 -2rem 0 -2rem;
+}
+
+figure figcaption,
+blockquote figcaption {
+  color: darkgray;
+  margin: 0 3rem;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+figure img {
+  max-height: 100vh;
+}

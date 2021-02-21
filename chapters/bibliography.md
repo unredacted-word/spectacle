@@ -365,5 +365,5 @@ Zuboff, S. & Maxmin, J. (2002). _The support economy: why corporations are
 failing individuals and the next episode of capitalism_. New York:
 Viking. 0670887366.
 
-Zuboff, S. (2019). _The age of surveillance capitalism: the fight for a human 
+Zuboff, S. (2019). _The age of surveillance capitalism: the fight for a human
 future at the new frontier of power_. New York: PublicAffairs. 9781610395694.

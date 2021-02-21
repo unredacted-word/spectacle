@@ -1,18 +1,20 @@
 # Glossary
 
+Glossary
+
 Debord writes in a provocative style of classical French, often overloading
 terms with meanings defined in other Situationist texts. This makes reading the
 text impenetrable until his use of the terminology becomes apparent to the
 reader through its consistent use.
 
-## absolute lie
+## absolute lie (_mensonge absolu_)
 
 The original French "mensonge absolu" or outright lying, or “the absolute lie”
 is an idea Debord developed and often refers to, encompassing an ideology of
 balanced contradictions that obscure the true nature of all social
 relations—ones based on falsehoods.
 
-## the autonomous economy
+## the autonomous economy (_l’économie autonome_)
 
 In the spectacle, the product (i.e. the commodity) exists for its own sake,
 external to any human desire, or even society itself, organizing economic
@@ -29,7 +31,7 @@ the rights of citizenship and political rights that rural peasants did not have,
 as they were legally tied to the lands. Bourgeoisie is the class, Bourgeois is
 the individual.
 
-## chronicle
+## chronicle (_La chronique_)
 
 A story or narrative explaining the events of the _ruling classes_ leading up to
 the present moment. The narrative is based upon a foundation of mythical
@@ -57,7 +59,7 @@ nature and conditions of their own exploitation under capitalism. When this
 occurs, most Marxist thinkers would agree that the conditions are ripe for the
 working class to take control of the organization of society.
 
-## cyclical time
+## cyclical time (_le temps cyclique_)
 
 The time of agrarian societies, one in which nature recurs with time, the coming
 and returning of the seasons and celestial bodies. Evidenced by nomadic peoples
@@ -85,7 +87,7 @@ dissatisfaction with an endless cycle of promises to satiate these desires and
 then failing to do so; and yet offers another promise, an endless series of
 unsatisfying consumer promises.
 
-## historical time
+## historical time (_temps historique_)
 
 A conception of time whereby the ruling class records their personal histories
 with the narratives of personal events (see also, chronicle), conquests, wars,
@@ -106,7 +108,7 @@ commodities tradeable in terms of their exchange value (not necessarily even use
 value), this in turn colonizes all aspects of life and reduces life to
 representation, or as he calls it “non-life”.
 
-## irreversible time
+## irreversible time (_temps irréversible_)
 
 As opposed to cyclical time, irreversible time is the perception of time as a
 series of linear developments of progress in terms of the economy, technology,
@@ -117,13 +119,13 @@ irreversible time is irreversible in that it assumes the accumulation of
 knowledge can only develop with a forward trajectory. For more on this subject,
 see Braudel, F., 1982.
 
-## lived time
+## lived time (_temps vécu_)
 
-Debord's concept of lived time, originally written as “temps vécu” and also
-translated as “lived experience” is a concept where an individual can directly
-experience, participate, and contribute to the historical events and environment
-that defines the era in which they live. Thus, lived time is opposed to
-commodity fetishism.
+Debord's concept of lived time, originally “temps vécu” and also translated as
+“lived experience” is a concept where an individual can directly experience,
+participate, and contribute to the historical events and environment that
+defines the era in which they live. Thus, lived time is opposed to commodity
+fetishism.
 
 ## petty-bourgeois
 
@@ -133,7 +135,7 @@ class bourgeoisie. Their political and economic positions tend to imitate the
 positions of the bourgeoisie class above them, although this position may not be
 in their own best interests.
 
-## pseudo-cyclical time
+## pseudo-cyclical time (_temps pseudo-cyclique _)
 
 Also called “consumable time” and “free time”, this is time created outside the
 time spent working (see time of production), largely weekends, holidays,
@@ -151,7 +153,7 @@ proletarius "producing offspring"), is the class of wage-earners in an economic
 society whose only possession of significant material value is their
 labor-power. A member of such a class is a proletarian.
 
-## recuperation
+## recuperation (_récupération_)
 
 Recuperation is the process by which politically radical ideas and images are
 diluted, twisted, co-opted, absorbed, defused, incorporated, annexed and
@@ -163,7 +165,7 @@ perspective.
 
 A form of power inaccessible to the laboring and agrarian classes.
 
-## time of production
+## time of production (_temps du travail_)
 
 Time an individual spends working. The exploitable time of the laboring class.
 In an industrialized society, it is the time that has been atomized, segmented,
