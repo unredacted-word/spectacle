@@ -24,7 +24,7 @@ metadata-files:
 from: markdown+footnotes
 file-scope: false
 to: html5
-# css: https://private-expensive-caution.glitch.me/style.css
+template: "default.html"
 data-dir: "src"
 columns: 80
 standalone: true
