@@ -16,8 +16,11 @@ to produce the book in multiple formats for distribution.
 on macOS:
 
 ```bash
-brew install pandoc
+# install Pandoc and libs
+brew install pandoc librsvg
+# install pdflatex to /Library/TeX/texbin/pdflatex
 brew install --cask basictex
+# install Prince XML
 # brew install --cask --no-quarantine prince
 ```
 
