@@ -16,8 +16,10 @@ body {
 }
 @media only screen {
   body {
-    margin: 0 auto;
-    max-width: 35em;
+    box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+    padding: 1in;
+    margin: 1in auto;
+    width: 8.5in;
   }
 }
 
@@ -63,6 +65,10 @@ h3 {
   /* thesis numbers */
   font-size: 1.5rem;
   text-align: center;
+}
+
+p {
+  text-align: justify;
 }
 
 blockquote {
@@ -120,6 +126,7 @@ h2 + blockquote p:first-child em {
   /* chapter epigraphs with hanging quote */
   display: block;
   text-indent: -0.5rem;
+  text-align: left;
 }
 
 .hanging-indent p {
@@ -178,4 +185,5 @@ h2 + blockquote {
 }
 .bibliography p {
   page-break-inside: avoid;
+  text-align: left;
 }
