@@ -16,8 +16,7 @@ online at https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ISBN TODO (hardcover: alk. paper)<br /> Library of Congress Control Number: X
 
-_This book was typeset in Charter Roman_<br />
-_Book and cover design by 0xADADA_<br />
-_Printed in TODO by TODO_
+_This book was typeset in Charter Roman_<br /> _Book and cover design by
+0xADADA_<br /> _Printed in TODO by TODO_
 
 █ Unredacted Word<br /> https://unredacted-word.pub
