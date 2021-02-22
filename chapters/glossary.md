@@ -1,4 +1,6 @@
-# Glossary
+## Glossary {.centered}
+
+::::: {.glossary}
 
 Debord writes in a provocative style of classical French, often overloading
 terms with meanings defined in other Situationist texts. This makes reading the
@@ -170,3 +172,5 @@ In an industrialized society, it is the time that has been atomized, segmented,
 allocated, and turned into a commodity where each slice of equal interval is
 equivalent in value and indistinguishable. These slices of time are bought and
 sold on a marketplace for labor. This time is the inverse of consumable time.
+
+:::::

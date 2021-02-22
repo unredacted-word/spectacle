@@ -1,4 +1,6 @@
-# Bibliography
+## Bibliography {.centered}
+
+::::: {.hanging-indent .bibliography}
 
 Albon, C. d. (1775). _Eloge historique de François Quesnay, par M. le comte
 d'Albon, des Académies des sciences, belles-lettres & arts de Lyon, de la
@@ -367,3 +369,5 @@ Viking. 0670887366.
 
 Zuboff, S. (2019). _The age of surveillance capitalism: the fight for a human
 future at the new frontier of power_. New York: PublicAffairs. 9781610395694.
+
+:::::

@@ -10,12 +10,15 @@ body {
   -ms-text-size-adjust: none;
   text-size-adjust: none;
 
-  font-family: Charter, serif, "Apple Color Emoji", "Noto Color Emoji",
-    "Symbola", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Charter, serif;
   font-size: 100%;
   line-height: 1.4;
-  margin: 0 auto;
-  max-width: 35em;
+}
+@media only screen {
+  body {
+    margin: 0 auto;
+    max-width: 35em;
+  }
 }
 
 a {
@@ -45,9 +48,20 @@ h6 {
   page-break-after: avoid;
 }
 h1 {
-  page-break-before: always;
+  font-size: 3rem;
 }
 h2 {
+  /* chapters */
+  font-size: 2rem;
+  margin-bottom: 8rem;
+  padding-top: 8rem;
+  /* chapters start on new page */
+  page-break-before: always;
+}
+
+h3 {
+  /* thesis numbers */
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -60,6 +74,10 @@ p,
 q {
   hyphens: auto;
   quotes: "“" "”" "‘" "’";
+}
+
+em {
+  hyphens: none;
 }
 
 cite {
@@ -93,17 +111,25 @@ figure img {
   margin: 0 -3rem;
 }
 
-.hanging-indent {
+/* chapter page */
+h2 + blockquote {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+h2 + blockquote p:first-child em {
+  /* chapter epigraphs with hanging quote */
   display: block;
-  padding-left: 1.5em;
-  text-indent: -1.5em;
+  text-indent: -0.5rem;
+}
+
+.hanging-indent p {
+  margin: 0;
 }
 
 .footnotes ol {
   margin-left: -2.5rem;
 }
 .footnote-back {
-  font-family: sans-serif;
   text-decoration: none;
 }
 
@@ -112,7 +138,7 @@ figure img {
 }
 
 #title-block-header .title {
-  margin: 40vh 0 2rem -2rem;
+  margin: 40vh 0 2rem 0;
 }
 
 .author {
@@ -120,7 +146,6 @@ figure img {
 }
 
 .title {
-  font-size: 3rem;
   margin: 0 -3rem;
 }
 h1.title {
@@ -130,17 +155,27 @@ h1.title {
 .page-break-before {
   page-break-before: always;
 }
+
 #title-block-header,
-.page-break-after {
+.page-break-after,
+h2 + blockquote {
   page-break-after: always;
 }
 @media only screen {
-  h1,
+  h2,
   .page-break-before {
     margin-top: 100vh;
   }
+  h2 + blockquote,
   #title-block-header,
   .page-break-after {
     margin-bottom: 100vh;
   }
+}
+
+.glossary h3 {
+  text-align: left;
+}
+.bibliography p {
+  page-break-inside: avoid;
 }

@@ -1,4 +1,4 @@
-## Guy Debord {.halftitle-author .page-break-before}
+### Guy Debord {.halftitle-author .page-break-before}
 
 # The Society of the Spectacle {.halftitle-title}
 

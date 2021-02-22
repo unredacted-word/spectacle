@@ -1,4 +1,4 @@
-## GUY DEBORD {.author .centered .page-break-before}
+### GUY DEBORD {.author .centered .page-break-before}
 
 ---
 

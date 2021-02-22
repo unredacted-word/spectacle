@@ -1,3 +1,3 @@
-# Index
+## Index {.centered}
 
 TODO

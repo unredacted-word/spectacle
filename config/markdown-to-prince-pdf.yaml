@@ -20,16 +20,15 @@ input-files:
 output-file: "dist/book.pdf"
 metadata-files:
 - "chapters/metadata.yaml"
-from: markdown
-file-scope: false # Parse each file individually before combining for multifile documents. This will allow footnotes in different files with the same identifiers to work as expected. If this option is set, footnotes and links will not work across files.
+from: markdown+footnotes+smart
+file-scope: false
 to: pdf
 css: https://private-expensive-caution.glitch.me/style.css
 standalone: true
 pdf-engine: prince
 data-dir: "src"
+template: "default.html"
 table-of-contents: true
 toc-depth: 1
 top-level-division: chapter # default | section | chapter | part
-# log
 verbosity: WARNING # ERROR, WARNING, or INFO
-#log-file: log.json
