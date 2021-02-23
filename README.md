@@ -18,8 +18,13 @@ on macOS:
 ```bash
 # install Pandoc and libs
 brew install pandoc librsvg
-# install pdflatex to /Library/TeX/texbin/pdflatex
+
+# install basictex & pdflatex to /Library/TeX/texbin/pdflatex
 brew install --cask basictex
+eval "$(/usr/libexec/path_helper)"
+sudo tlmgr update --self
+sudo tlmgr install collection-fontsrecommended
+
 # install Prince XML
 # brew install --cask --no-quarantine prince
 ```
