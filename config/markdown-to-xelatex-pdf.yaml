@@ -26,6 +26,9 @@ to: pdf
 standalone: true
 pdf-engine: xelatex
 data-dir: "src"
+template: "default.latex"
+table-of-contents: true
+toc-depth: 2
 reference-location: block
 top-level-division: chapter # default | section | chapter | part
 verbosity: WARNING # ERROR, WARNING, or INFO
