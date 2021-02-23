@@ -135,7 +135,7 @@ class bourgeoisie. Their political and economic positions tend to imitate the
 positions of the bourgeoisie class above them, although this position may not be
 in their own best interests.
 
-### pseudo-cyclical time (_temps pseudo-cyclique _)
+### pseudo-cyclical time (_temps pseudo-cyclique_)
 
 Also called "consumable time" and "free time", this is time created outside the
 time spent working (see time of production), largely weekends, holidays,

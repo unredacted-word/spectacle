@@ -138,6 +138,8 @@ h2 + blockquote p:first-child em {
 
 .hanging-indent p {
   margin: 0;
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
 }
 
 .footnotes ol {
