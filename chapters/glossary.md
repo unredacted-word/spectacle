@@ -9,7 +9,7 @@ reader through its consistent use.
 
 ### absolute lie (_mensonge absolu_)
 
-The original French "mensonge absolu" or outright lying, or “the absolute lie”
+The original French "mensonge absolu" or outright lying, or "the absolute lie"
 is an idea Debord developed and often refers to, encompassing an ideology of
 balanced contradictions that obscure the true nature of all social
 relations—ones based on falsehoods.
@@ -73,8 +73,8 @@ The original French word (day-tor-n­uh-maw) means a diversion, a detour, a
 rerouting, to misappropriate, to hijack on purpose. Turning expressions of the
 capitalist system and its media culture against itself—as when slogans and logos
 are turned against their advertisers or the political status quo. It means
-_putting everything that was frozen back into play_, a game in which “all
-components of a past culture must be reinvested, or else disappear.” Vaneigem,
+_putting everything that was frozen back into play_, a game in which "all
+components of a past culture must be reinvested, or else disappear." Vaneigem,
 R., 2010 (Pp. 237).
 
 ### diffuse spectacle
@@ -106,7 +106,7 @@ fullest extent, the image of society presented by commodity-ideology describes
 all life as constituted by ideas and objects that derive their value as
 commodities tradeable in terms of their exchange value (not necessarily even use
 value), this in turn colonizes all aspects of life and reduces life to
-representation, or as he calls it “non-life”.
+representation, or as he calls it "non-life".
 
 ### irreversible time (_temps irréversible_)
 
@@ -121,8 +121,8 @@ see Braudel, F., 1982.
 
 ### lived time (_temps vécu_)
 
-Debord's concept of lived time, originally “temps vécu” and also translated as
-“lived experience” is a concept where an individual can directly experience,
+Debord's concept of lived time, originally "temps vécu" and also translated as
+"lived experience" is a concept where an individual can directly experience,
 participate, and contribute to the historical events and environment that
 defines the era in which they live. Thus, lived time is opposed to commodity
 fetishism.
@@ -137,7 +137,7 @@ in their own best interests.
 
 ### pseudo-cyclical time (_temps pseudo-cyclique _)
 
-Also called “consumable time” and “free time”, this is time created outside the
+Also called "consumable time" and "free time", this is time created outside the
 time spent working (see time of production), largely weekends, holidays,
 vacations, and festivals. It is the same as the time of production in that it is
 a homogeneous, fungible, and equally segmented unit of time. This time is
@@ -148,7 +148,7 @@ time freely.
 
 ### proletariat
 
-Working-class people, contemporarily the “blue collar working class.” From Latin
+Working-class people, contemporarily the "blue collar working class." From Latin
 proletarius "producing offspring"), is the class of wage-earners in an economic
 society whose only possession of significant material value is their
 labor-power. A member of such a class is a proletarian.

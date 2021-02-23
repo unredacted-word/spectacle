@@ -20,7 +20,7 @@ input-files:
 output-file: "dist/book.html"
 metadata-files:
 - "chapters/metadata.yaml"
-from: markdown+footnotes+smart
+from: markdown+footnotes
 file-scope: false
 to: html5
 data-dir: "src"
