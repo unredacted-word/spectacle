@@ -129,6 +129,13 @@ h2 + blockquote p:first-child em {
   text-align: left;
 }
 
+/* poems */
+.poem p {
+  text-align: center;
+  width: 20rem;
+  font-style: italic;
+}
+
 .hanging-indent p {
   margin: 0;
 }
