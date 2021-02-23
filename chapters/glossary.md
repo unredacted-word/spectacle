@@ -14,7 +14,7 @@ is an idea Debord developed and often refers to, encompassing an ideology of
 balanced contradictions that obscure the true nature of all social
 relations—ones based on falsehoods.
 
-### the autonomous economy (_l’économie autonome_)
+### the autonomous economy (_l'économie autonome_)
 
 In the spectacle, the product (i.e. the commodity) exists for its own sake,
 external to any human desire, or even society itself, organizing economic
@@ -54,7 +54,7 @@ in the consumption of ever-changing commodities.
 
 The emergence of a universal understanding within a class of its own unified
 history and the material conditions that constitute their cohesiveness as a
-class. When the working class generally has ‘consciousness’, they understand the
+class. When the working class generally has 'consciousness', they understand the
 nature and conditions of their own exploitation under capitalism. When this
 occurs, most Marxist thinkers would agree that the conditions are ripe for the
 working class to take control of the organization of society.
@@ -82,7 +82,7 @@ R., 2010 (Pp. 237).
 A society in which individuals willingly participate in a society that is both
 far more effective and efficient at subduing the masses, since it appears to
 empower individuals through consumer choice. The diffuse spectacle of modern
-capitalism reproduces itself by exploiting the spectator’s desires and
+capitalism reproduces itself by exploiting the spectator's desires and
 dissatisfaction with an endless cycle of promises to satiate these desires and
 then failing to do so; and yet offers another promise, an endless series of
 unsatisfying consumer promises.

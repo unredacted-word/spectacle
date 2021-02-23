@@ -212,7 +212,7 @@ de Lautreamont_. Cambridge, MA: Exact Change.
 Le Guin, U. K. (1994). _The Dispossessed_. United Kingdom:
 HarperCollins. 9780061054884.
 
-Lenin, V. (1909). _The attitude of the Workers’ Party to religion_. Retrieved
+Lenin, V. (1909). _The attitude of the Workers' Party to religion_. Retrieved
 from https://www.marxists.org/archive/lenin/works/1909/may/13.htm
 
 Lenin, V. (1961). _What is to be done?_. Retrieved from
@@ -239,7 +239,7 @@ Press. 0937832383.
 Marx, K. (1843, September). _Letter from Marx to Arnold Ruge_. Retrieved from
 https://www.marxists.org/archive/marx/works/1843/letters/43_09-alt.htm
 
-Marx, K. (1844). _Introduction to a Critique of Hegel’s Philosophy of Right_.
+Marx, K. (1844). _Introduction to a Critique of Hegel's Philosophy of Right_.
 Retrieved from http://www.bopsecrets.org/CF/marx-hegel.htm
 
 Marx, K. (1856). _Speech at the anniversary of the People's Paper_. Retrieved
