@@ -15,7 +15,11 @@ body {
   line-height: 1.4;
 }
 @media only screen {
+  html {
+    background: #f7f7f7;
+  }
   body {
+    background: white;
     box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
     padding: 1in;
     margin: 1in auto;
