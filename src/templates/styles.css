@@ -71,19 +71,23 @@ h3 {
   text-align: center;
 }
 
-p {
-  text-align: justify;
+@media only print {
+  p {
+    text-align: justify;
+  }
 }
 
 blockquote {
   text-align: left;
 }
 
-blockquote,
-p,
-q {
-  hyphens: auto;
-  quotes: "“" "”" "‘" "’";
+@media only print {
+  blockquote,
+  p,
+  q {
+    hyphens: auto;
+    quotes: "“" "”" "‘" "’";
+  }
 }
 
 em {
