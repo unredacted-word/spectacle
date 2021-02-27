@@ -17,7 +17,7 @@ Books. 9780919619067.
 Beller, J. (2006). _The cinematic mode of production: attention economy and the
 society of the spectacle_. Hanover, N.H: Dartmouth College Press. 9781584655831.
 
-Braudel, F. (1982). _Civilization and capitalism, 15th-18th century, Vol. 1: The
+Braudel, F. (1982). _Civilization and capitalism, 15^th^-18^th^ century, Vol. 1: The
 Structures of Everyday Life_. New York: Harper & Row, Publishers. 9780520081147.
 
 Barthes, R. (1970). _Writing degree zero, and elements of semiology_. Boston:
@@ -275,7 +275,7 @@ Kingdom: Prometheus Books. 9781573922586.
 Marx, K. & Engels, F. (2002). _The holy family, or, critique of critical
 critique_. Honolulu, Hawaii: University Press of the Pacific. 9780898759730.
 
-Marx, K. (2008). _The 18th Brumaire of Louis Bonaparte_. United States: Wildside
+Marx, K. (2008). _The 18^th^ Brumaire of Louis Bonaparte_. United States: Wildside
 Press. 9781434463746.
 
 Marx, K. (1995). _The poverty of philosophy_. Amherst, N.Y: Prometheus Books.
@@ -327,7 +327,7 @@ Sanguinetti, G., McHale, J. & Debord, G. (2003). _The real split in the
 International: theses on the Situationist International and its time_, 1972.
 London Sterling, Va: Pluto Press. 9780745321271.
 
-Sombart, W. (1896). _Socialism and the Social Movement in the 19th
+Sombart, W. (1896). _Socialism and the Social Movement in the 19^th^
 Century_. 1896. The Knickerbocker Press. Retreived from
 https://www.gutenberg.org/files/35210/35210-h/35210-h.htm#CHAPTER_II
 

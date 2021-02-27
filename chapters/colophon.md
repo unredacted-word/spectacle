@@ -22,8 +22,8 @@ online at https://creativecommons.org/licenses/by-nc-sa/4.0/
 ISBN TODO (hardcover: alk. paper)\
 Library of Congress Control Number: TODO
 
-_This book was typeset in Source Serif Pro by Frank Grießhammer_\
 _Book and cover design by 0xADADA_\
+_Typeset in Source Serif Pro by Frank Grießhammer_\
 _Printed in TODO by TODO_
 
 Library of Congress Cataloging-in-Publication Data
