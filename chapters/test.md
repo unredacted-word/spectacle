@@ -16,3 +16,11 @@ hard\
 breaks.
 
 
+This quote contains Arabic text:
+
+
+> "flight of Muhammad": The Hegira ( هِجْرَة‎) meaning "departure" is the
+> migration or journey of the Islamic prophet Muhammad and his followers from
+> Mecca to Yathrib, later renamed by him to Medina, in the year 622.
+
+

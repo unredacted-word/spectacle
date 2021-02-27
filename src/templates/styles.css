@@ -90,6 +90,10 @@ blockquote {
   }
 }
 
+sup {
+  font-size: 0.625em; /* fixes blowing-up the line-height */
+}
+
 em {
   hyphens: none;
 }
