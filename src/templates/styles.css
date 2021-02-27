@@ -48,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1;
   page-break-after: avoid;
@@ -137,6 +137,12 @@ h2 + blockquote p:first-child em {
   text-align: left;
 }
 
+.publisher-logo {
+  width: 8rem;
+  margin: 0 auto;
+  display: block;
+}
+
 /* poems */
 .poem p {
   text-align: center;
@@ -148,6 +154,8 @@ h2 + blockquote p:first-child em {
   margin: 0;
   margin-left: 1.5rem;
   text-indent: -1.5rem;
+  font-size: 0.75rem;
+  padding: 0 3rem;
 }
 
 .footnotes ol {
@@ -157,7 +165,8 @@ h2 + blockquote p:first-child em {
   text-decoration: none;
 }
 
-.centered {
+.centered,
+.centered p {
   text-align: center;
 }
 

@@ -1,1 +1,1 @@
-![Cover](images/cover.svg)
+![](images/cover.svg){.cover}
