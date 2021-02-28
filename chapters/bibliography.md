@@ -17,6 +17,9 @@ Cailleau.
 Augustine. & Dods, M. (1993). _The city of god_. New York: Modern
 Library. 0679600876.
 
+Barbrook, R. (2014). _Class Wargames: ludic subversion against spectacular
+capitalism_. Wivenhoe: Minor Compositions. 9781570272936.
+
 Bakunin, M. A. (1980). _Bakunin on anarchism_. United States: Black Rose
 Books. 9780919619067.
 
