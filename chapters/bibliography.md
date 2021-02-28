@@ -283,6 +283,8 @@ Marx, K. (1995). _The poverty of philosophy_. Amherst, N.Y: Prometheus Books.
 Marx, K., Engels, F. & Jones, G. (2002). _The communist manifesto_. London New
 York: Penguin Books. 0140447571.
 
+Marx, K. & Engels, F. (2012). _The communist manifesto: a modern edition_. London: Verso. 9781844678761.
+
 Marx, K. (2005). _Wages, price and profit_. Honolulu: University Press of the
 Pacific.
 
@@ -309,6 +311,9 @@ Pascal, B. & Ariew, R. (2005). _Pensées_. Indianapolis, IN: Hackett Pub.
 Co. 9780872207172.
 
 Perraud, A. (1891). _Panégyrique de saint Bernard_. Dejussieu père et fils.
+
+Reagle, J. (2019). _Hacking life: systematized living and its discontents_.
+Cambridge, Massachusetts: MIT Press. 9780262038157.
 
 Rexroth, K. (1974). _Communalism: from its origins to the twentieth century_.
 New York: Seabury Press.

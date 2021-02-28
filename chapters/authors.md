@@ -10,6 +10,7 @@ important radical book of the twentieth century.
 
 ![Ron. Adams (left)](images/translator.jpg)
 
-Ron. Adams lives in Somerville Massachusetts, his writing covers the
-intersection of media, technology, and power. His work can be found online at
-at: https://0xadada.pub
+Ron. Adams lives in Somerville Massachusetts, and is founder of █ Unredacted
+Word. His writing covers the intersection of media, technology, and power. He
+works professionally as a software engineer. His work can be found online at
+at: https://0xadada.pub.

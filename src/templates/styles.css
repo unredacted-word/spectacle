@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+@page {
+  size: 154mm 229mm;
+}
+
+@page :left {
+  margin-left: 3cm;
+}
+
+@page :right {
+  margin-left: 4cm;
+}
+
 body {
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
