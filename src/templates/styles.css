@@ -142,8 +142,8 @@ h2 + blockquote {
   font-size: 1.5rem;
   text-align: justify;
 }
-h2 + blockquote p:first-child em {
-  /* chapter epigraphs with hanging quote */
+h2 + blockquote > p:first-child em {
+  /* chapter epigraphs with a quote hanging to the left of text block */
   display: block;
   text-indent: -0.5rem;
   text-align: left;
