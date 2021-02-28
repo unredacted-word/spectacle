@@ -12,5 +12,5 @@ important radical book of the twentieth century.
 
 Ron. Adams lives in Somerville Massachusetts, and is founder of █ Unredacted
 Word. His writing covers the intersection of media, technology, and power. He
-works professionally as a software engineer. His work can be found online at
-at: https://0xadada.pub.
+works professionally as a software engineer. His work can be found online at at:
+https://0xadada.pub.

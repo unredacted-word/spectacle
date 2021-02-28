@@ -2,6 +2,12 @@
 
 ::::: {.hanging-indent .bibliography}
 
+0xADADA. (2019, April 16). _The City and The Freezing of Life_. Retreived from
+https://0xadada.pub/2019/04/16/the-city-and-the-freezing-of-life/
+
+0xADADA. (2021, January 14). _Bandersnatch Advertising_. Retreived from
+https://0xadada.pub/2021/01/14/bandersnatch-advertising/
+
 Albon, C. d. (1775). _Eloge historique de François Quesnay, par M. le comte
 d'Albon, des Académies des sciences, belles-lettres & arts de Lyon, de la
 Société d'agriculture de la même ville, de l'Académie royale de Nîmes, de la
@@ -17,8 +23,9 @@ Books. 9780919619067.
 Beller, J. (2006). _The cinematic mode of production: attention economy and the
 society of the spectacle_. Hanover, N.H: Dartmouth College Press. 9781584655831.
 
-Braudel, F. (1982). _Civilization and capitalism, 15^th^-18^th^ century, Vol. 1: The
-Structures of Everyday Life_. New York: Harper & Row, Publishers. 9780520081147.
+Braudel, F. (1982). _Civilization and capitalism, 15^th^-18^th^ century, Vol. 1:
+The Structures of Everyday Life_. New York: Harper & Row,
+Publishers. 9780520081147.
 
 Barthes, R. (1970). _Writing degree zero, and elements of semiology_. Boston:
 Beacon Press. 9780807015452.
@@ -58,8 +65,8 @@ _HyperNormalisation_. [Motion picture]. United Kingdom: BBC.
 Debord, G. & Imrie, M. (1998). _Comments on the society of the spectacle_.
 London New York: Verso. 9781844676729.
 
-Debord, G. (Producer), Debord, G. (Director). (1974). _The society of the
-spectacle_. [Motion Picture]. France: Simar Films.
+Debord, G. (Producer), Debord, G. (Director). (1974). _La société du spectacle_.
+[Motion Picture]. France: Simar Films.
 
 Debord, G. (2003). _Complete cinematic works: scripts, stills, documents_.
 Oakland, CA: AK Press. 9781902593838.
@@ -275,15 +282,16 @@ Kingdom: Prometheus Books. 9781573922586.
 Marx, K. & Engels, F. (2002). _The holy family, or, critique of critical
 critique_. Honolulu, Hawaii: University Press of the Pacific. 9780898759730.
 
-Marx, K. (2008). _The 18^th^ Brumaire of Louis Bonaparte_. United States: Wildside
-Press. 9781434463746.
+Marx, K. (2008). _The 18^th^ Brumaire of Louis Bonaparte_. United States:
+Wildside Press. 9781434463746.
 
 Marx, K. (1995). _The poverty of philosophy_. Amherst, N.Y: Prometheus Books.
 
 Marx, K., Engels, F. & Jones, G. (2002). _The communist manifesto_. London New
 York: Penguin Books. 0140447571.
 
-Marx, K. & Engels, F. (2012). _The communist manifesto: a modern edition_. London: Verso. 9781844678761.
+Marx, K. & Engels, F. (2012). _The communist manifesto: a modern edition_.
+London: Verso. 9781844678761.
 
 Marx, K. (2005). _Wages, price and profit_. Honolulu: University Press of the
 Pacific.
