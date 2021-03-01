@@ -26,7 +26,7 @@ to: pdf
 standalone: true
 pdf-engine: prince
 data-dir: "src"
-template: "default.html"
+template: "print.html"
 table-of-contents: true
 toc-depth: 2
 top-level-division: chapter # default | section | chapter | part

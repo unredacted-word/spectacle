@@ -1,0 +1,35 @@
+@page {
+  size: 154mm 229mm;
+}
+
+@page :left {
+  margin-left: 3cm;
+}
+
+@page :right {
+  margin-left: 3cm;
+}
+
+/* add book Title to the left page */
+@page :left{
+  @top-left {
+    content: "The Society of the Spectacle";
+    font-variant: small-caps;
+    font-size: 10pt;
+  }
+}
+
+/* page counters */
+@page :right{
+  @bottom-right-corner {
+    content: counter(page);
+    font-size: 10pt;
+  }
+}
+
+@page :left{
+  @bottom-left-corner {
+    content: counter(page);
+    font-size: 10pt;
+  }
+}

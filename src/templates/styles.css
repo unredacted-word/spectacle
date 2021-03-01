@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-@page {
-  size: 154mm 229mm;
-}
-
-@page :left {
-  margin-left: 3cm;
-}
-
-@page :right {
-  margin-left: 4cm;
-}
-
 body {
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -98,7 +86,9 @@ blockquote {
   p,
   q {
     hyphens: auto;
-    quotes: "“" "”" "‘" "’";
+    /* markdown produces smartquotes for us
+     * quotes: "“" "”" "‘" "’";
+     */
   }
 }
 
@@ -114,8 +104,8 @@ figure {
   text-align: center;
 }
 
-figure,
 blockquote,
+figure,
 .footnotes ol li p {
   margin: 0;
   font-size: 0.75rem;
@@ -225,3 +215,4 @@ h2 + blockquote {
   page-break-inside: avoid;
   text-align: left;
 }
+
