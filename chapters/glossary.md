@@ -74,8 +74,8 @@ rerouting, to misappropriate, to hijack on purpose. Turning expressions of the
 capitalist system and its media culture against itself—as when slogans and logos
 are turned against their advertisers or the political status quo. It means
 _putting everything that was frozen back into play_, a game in which "all
-components of a past culture must be reinvested, or else disappear." Vaneigem,
-R., 2010 (Pp. 237).
+components of a past culture must be reinvested, or else disappear." See
+Vaneigem, R., 2010 (Pp. 237).
 
 ### diffuse spectacle
 
@@ -149,7 +149,7 @@ time freely.
 ### proletariat
 
 Working-class people, contemporarily the "blue collar working class." From Latin
-proletarius "producing offspring"), is the class of wage-earners in an economic
+proletarius "producing offspring", is the class of wage-earners in an economic
 society whose only possession of significant material value is their
 labor-power. A member of such a class is a proletarian.
 
