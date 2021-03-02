@@ -31,7 +31,7 @@ This quote contains French:
 
 This quote contains Arabic text:
 
-> "flight of Muhammad": The Hegira <q lang="ar">هِجْرَة‎</a> meaning "departure"
+> "flight of Muhammad": The Hegira <q lang="ar" dir="rtl">الهجرة</q> meaning "departure"
 > is the migration or journey of the Islamic prophet Muhammad and his followers
 > from Mecca to Yathrib, later renamed by him to Medina, in the year 622.
 
