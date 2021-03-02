@@ -177,14 +177,15 @@ h2 + blockquote > p:first-child em {
 }
 
 .author {
+  line-height: 1;
   font-size: 2rem;
 }
 
 .title {
-  margin: 0 -3rem;
-}
-h1.title {
-  page-break-before: avoid;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1;
 }
 
 .page-break-before {
@@ -206,6 +207,10 @@ h2 + blockquote {
   .page-break-after {
     margin-bottom: 100vh;
   }
+}
+
+.colophon {
+  font-size: 0.625rem;
 }
 
 .glossary h3 {

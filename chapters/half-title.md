@@ -1,5 +1,16 @@
-### Guy Debord {.halftitle-author .page-break-before}
+::::: {.page-break-after}
+delete
+:::::
 
-# The Society of the Spectacle {.halftitle-title}
+::::: {.page-break-after .reset-page-counter}
+delete
+:::::
 
-<div class="page-break-after"></div>
+::::: {.title .halftitle-title}
+The Society of the Spectacle
+:::::
+
+::::: {.author .page-break-after}
+Guy Debord
+:::::
+

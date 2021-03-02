@@ -38,25 +38,6 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
-$if(title)$
-<header id="title-block-header">
-<p class="title">$title$</p>
-$if(subtitle)$
-<p class="subtitle">$subtitle$</p>
-$endif$
-$for(author)$
-<p class="author">$author$</p>
-$endfor$
-</header>
-$endif$
-$if(toc)$
-<nav id="$idprefix$TOC" role="doc-toc">
-$if(toc-title)$
-<h2 id="$idprefix$toc-title">$toc-title$</h2>
-$endif$
-$table-of-contents$
-</nav>
-$endif$
 $body$
 $for(include-after)$
 $include-after$

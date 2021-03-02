@@ -1,3 +1,5 @@
+::::: {.colophon}
+
 Originally published in Paris, France as _La Société du Spectacle_ by Éditions
 Buchet-Chastel (Paris) in 1967. It was reissued by Éditions Champ Libre (Paris)
 in 1971, and Éditions Gallimard (Paris) 1992.
@@ -7,10 +9,6 @@ This annotated English edition by Ron. Adams.
 █ Unredacted Word\
 Cambridge, Massachusetts, USA\
 https://unredacted-word.pub\
-
-_First Hardcover Edition 2021_\
-_First Printing 2021_\
-10 9 8 7 6 5 4 3 2 1
 
 This work is licensed under a Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to
@@ -37,3 +35,9 @@ Library of Congress Cataloging-in-Publication Data
 |     ISBN TODO
 |     1. Social psychology. 2. Proletariat. 3. Social classes.
 <!-- prettier-ignore-end -->
+
+_First Hardcover Edition 2021_\
+_First Printing 2021_\
+10 9 8 7 6 5 4 3 2 1
+
+:::::

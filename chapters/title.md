@@ -1,12 +1,16 @@
-### GUY DEBORD {.author .centered .page-break-before}
+::::: {.author .centered .page-break-before-right}
+Guy Debord
+:::::
 
 ---
 
-# The Society of the Spectacle {.title .centered}
+::::: {.title .centered}
+The Society of the Spectacle
+:::::
 
 ---
 
-::::: {.centered}
+::::: {.centered .page-break-after}
 
 English edition by Ron. Adams\
 Published by █ Unredacted Word\
@@ -17,4 +21,3 @@ Cambridge, Massachusetts
 
 :::::
 
-<div class="page-break-after"></div>

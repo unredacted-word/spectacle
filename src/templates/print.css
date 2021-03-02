@@ -2,32 +2,66 @@
   size: 154mm 229mm;
 }
 
-@page :left {
-  margin-left: 3cm;
+@page:left {
+  margin-left: 2cm;
 }
 
-@page :right {
-  margin-left: 3cm;
+@page:right {
+  margin-left: 2cm;
+}
+
+.reset-page-counter {
+  counter-reset: page;
+}
+
+.title {
+  font-size: 2rem;
+}
+.halftitle-title {
+  margin-top: 12rem;
+}
+
+.author {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.page-break-before-right {
+  page-break-before: right;
+}
+
+h2 {
+  /* force chapters to start on the right page */
+  break-before: right;
+  /* add chapter title to the right page */
+  string-set: chapter-title content();
+}
+@page:right {
+  @top-right {
+    content: string(chapter-title);
+    font-size: 10pt;
+    font-variant: small-caps;
+  }
 }
 
 /* add book Title to the left page */
-@page :left{
+@page:left{
   @top-left {
     content: "The Society of the Spectacle";
-    font-variant: small-caps;
     font-size: 10pt;
+    font-variant: small-caps;
   }
 }
 
 /* page counters */
-@page :right{
+@page:right{
   @bottom-right-corner {
     content: counter(page);
     font-size: 10pt;
   }
 }
 
-@page :left{
+@page:left{
   @bottom-left-corner {
     content: counter(page);
     font-size: 10pt;
