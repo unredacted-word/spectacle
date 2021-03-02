@@ -10,6 +10,26 @@
   margin-left: 2cm;
 }
 
+body {
+  font-size: 12pt;
+}
+
+p {
+ orphans: 4;
+ widows: 4;
+}
+
+figure img {
+  max-width: 120mm;
+  margin: 0 -1.2cm;
+}
+
+
+/* chapter page */
+h2 + blockquote {
+  font-size: 14pt;
+}
+
 .reset-page-counter {
   counter-reset: page;
 }

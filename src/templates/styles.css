@@ -135,12 +135,12 @@ h2 + blockquote {
 h2 + blockquote > p:first-child em {
   /* chapter epigraphs with a quote hanging to the left of text block */
   display: block;
-  text-indent: -0.5rem;
+  text-indent: -0.5em;
   text-align: left;
 }
 
 .publisher-logo {
-  width: 8rem;
+  width: 4rem;
   margin: 0 auto;
   display: block;
 }
@@ -157,7 +157,6 @@ h2 + blockquote > p:first-child em {
   margin-left: 1.5rem;
   text-indent: -1.5rem;
   font-size: 0.75rem;
-  padding: 0 3rem;
 }
 
 .footnotes ol {
