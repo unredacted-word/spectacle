@@ -24,6 +24,7 @@ metadata-files:
 - "chapters/metadata.yaml"
 from: markdown
 to: pdf
+dpi: 300
 pdf-engine: prince
 data-dir: "src"
 template: "print.html"

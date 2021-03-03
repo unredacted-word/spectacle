@@ -21,8 +21,10 @@ input-files:
 output-file: "dist/book-print.html"
 metadata-files:
 - "chapters/metadata.yaml"
-from: markdown+footnotes
+from: markdown
 to: html5
+reference-location: block
+section-divs: true
 data-dir: "src"
 template: "print.html"
 columns: 80

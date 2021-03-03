@@ -27,8 +27,6 @@ data-dir: "src"
 template: "default.html"
 columns: 80
 standalone: true
-table-of-contents: true
-toc-depth: 2
 reference-location: block
-top-level-division: chapter # default | section | chapter | part
+section-divs: true
 verbosity: WARNING # ERROR, WARNING, or INFO
