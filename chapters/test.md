@@ -22,26 +22,30 @@ contains\
 hard\
 breaks.
 
-This[^note-1] contains a footnote.
+This quote contains a French note on the organization of falsehoods[
+  "the organized spectacle of falsehoods": A rewording of the original French,
+  <q lang="fr">l'ignorance naturelle a fait place au spectacle organisé de
+  l'erreur</q> or a "natural ignorance has given way to the organized spectacle
+  of error".
+]{.footnote}
+and is of some importance.
 
-This quote contains French:
-
-> "the organized spectacle of falsehoods": A rewording of the original French,
-> <q lang="fr">l'ignorance naturelle a fait place au spectacle organisé de
-> l'erreur</q> or a "natural ignorance has given way to the organized spectacle
-> of error".
-
-This block of text^[an inline footnote] contains an inline footnote.
-
-this contains
-[A variant of this approach, useful when creating floating sidenotes in a multicol layout, can make use of some scripting to determine, with the help of The Box Tracking API, in which column the sidenote call, and thus the sidenote, is placed - making sure the sidenote is always in the correct position. You can see this in full action in the Sidenotes sample (HTML - PDF).]{.footnote}
-something that you probably dont wish to see, but you're going to see it anyways.
+this contains[
+  A variant of this approach, useful when creating floating
+  sidenotes in a multicol layout, can make use of some scripting to determine,
+  with the help of The Box Tracking API, in which column the sidenote call, and
+  thus the sidenote, is placed - making sure the sidenote is always in the correct
+  position. You can see this in full action in the Sidenotes sample.
+]{.footnote}
+something that you probably dont wish to see, but you're going to see it
+anyways.
 
 This quote contains Arabic text:
 
-> "flight of Muhammad": The Hegira <q lang="ar" dir="rtl">الهجرة</q> meaning "departure"
-> is the migration or journey of the Islamic prophet Muhammad and his followers
-> from Mecca to Yathrib, later renamed by him to Medina, in the year 622.
+> "flight of Muhammad": The Hegira <q lang="ar" dir="rtl">الهجرة</q> meaning
+> "departure" is the migration or journey of the Islamic prophet Muhammad and
+> his followers from Mecca to Yathrib, later renamed by him to Medina, in the
+> year 622.
 
 This quote is in German:
 
@@ -49,5 +53,3 @@ This quote is in German:
 > macht frei</q> or "city air liberates" a medieval German saying, expressing
 > that fact that serfs could free themselves from their ties to the landed
 > gentry by escaping to the towns.
-
-[^note-1]: This is `note-1`. It contains text.

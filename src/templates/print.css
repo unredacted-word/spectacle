@@ -88,29 +88,32 @@ h2 {
   }
 }
 
+body > * {
+  /* hack to create space for sidenotes */
+  margin-right: 4.25cm;
+}
+
 @page {
   @footnote {
     position: absolute;
-    left: -90px;
-    width: 60px;
+    right: -1cm;
+    width: 4.5cm;
   }
 }
+
 
 .footnote-ref {
   /* footnote reference link */
 }
 
 .footnote {
-  float: right;
   font-size: 9pt;
-  width: 5cm;
   display: block;
   text-align: justify;
-}
-
-.footnotes {
   float: footnote;
 }
+
+.footnotes {}
 .fn,
 .footnotes ol li p {
   /* footnote content */
