@@ -1,6 +1,7 @@
 # docs https://pandoc.org/MANUAL.html#default-files
 input-files:
-- chapters/half-title.md
+- chapters/test.md
+- chapters/cover.md
 - chapters/title.md
 - chapters/colophon.md
 - chapters/preface.md
@@ -17,18 +18,13 @@ input-files:
 - chapters/bibliography.md
 - chapters/actual-index.md
 - chapters/authors.md
-output-file: "dist/book.pdf"
+output-file: "dist/index.html"
 metadata-files:
 - "chapters/metadata.yaml"
-from: markdown+footnotes+smart
-file-scope: false
-to: pdf
-standalone: true
-pdf-engine: pdflatex
+from: markdown
+to: html5
+section-divs: true
 data-dir: "src"
-template: "default.latex"
-table-of-contents: true
-toc-depth: 2
-reference-location: block
-top-level-division: chapter # default | section | chapter | part
+template: "print.html"
+columns: 80
 verbosity: WARNING # ERROR, WARNING, or INFO

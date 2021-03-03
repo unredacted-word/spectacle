@@ -17,16 +17,15 @@ input-files:
 - chapters/bibliography.md
 - chapters/actual-index.md
 - chapters/authors.md
-output-file: "dist/book.html"
+output-file: "docs/index.html"
 metadata-files:
 - "chapters/metadata.yaml"
-from: markdown+footnotes
+from: markdown
 file-scope: false
 to: html5
 data-dir: "src"
 template: "default.html"
 columns: 80
 standalone: true
-reference-location: block
 section-divs: true
 verbosity: WARNING # ERROR, WARNING, or INFO
