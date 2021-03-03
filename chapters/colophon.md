@@ -15,14 +15,11 @@ Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to
 share, copy, and redistribute the material in any medium or format. Adapt,
 remix, transform, and build upon the material. The licensor cannot revoke these
 freedoms as long as you follow the license terms. Find the complete license
-online at https://creativecommons.org/licenses/by-nc-sa/4.0/
+online at\
+https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ISBN TODO (hardcover: alk. paper)\
 Library of Congress Control Number: TODO
-
-_Book and cover design by 0xADADA_\
-_Typeset in Source Serif Pro by Frank Grießhammer_\
-_Printed in TODO by TODO_
 
 Library of Congress Cataloging-in-Publication Data
 
@@ -35,6 +32,10 @@ Library of Congress Cataloging-in-Publication Data
 |     ISBN TODO
 |     1. Social psychology. 2. Proletariat. 3. Social classes.
 <!-- prettier-ignore-end -->
+
+_Book and cover design by 0xADADA_\
+_Typeset in Source Serif Pro by Frank Grießhammer_\
+_Printed in TODO by TODO_
 
 _First Hardcover Edition 2021_\
 _First Printing 2021_\
