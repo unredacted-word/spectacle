@@ -4,6 +4,7 @@ input-files:
 - chapters/title.md
 - chapters/colophon.md
 - chapters/contents.md
+- chapters/test.md
 - chapters/preface.md
 - chapters/01.md
 - chapters/02.md
@@ -22,9 +23,7 @@ output-file: "dist/book.pdf"
 metadata-files:
 - "chapters/metadata.yaml"
 from: markdown
-file-scope: false
 to: pdf
-standalone: true
 pdf-engine: prince
 data-dir: "src"
 template: "print.html"

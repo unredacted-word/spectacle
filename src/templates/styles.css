@@ -21,9 +21,9 @@ body {
   body {
     background: white;
     box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
-    padding: 1in;
+    padding: 2cm;
     margin: 1in auto;
-    width: 8.5in;
+    width: 154mm;
   }
 }
 
@@ -159,9 +159,7 @@ h2 + blockquote > p:first-child em {
   font-size: 0.75rem;
 }
 
-.footnotes ol {
-  margin-left: -2.5rem;
-}
+.footnote-ref,
 .footnote-back {
   text-decoration: none;
 }

@@ -3,6 +3,7 @@ input-files:
 - chapters/cover.md
 - chapters/title.md
 - chapters/colophon.md
+- chapters/test.md
 - chapters/preface.md
 - chapters/01.md
 - chapters/02.md
@@ -21,14 +22,8 @@ output-file: "dist/book-print.html"
 metadata-files:
 - "chapters/metadata.yaml"
 from: markdown+footnotes
-file-scope: false
 to: html5
 data-dir: "src"
 template: "print.html"
 columns: 80
-standalone: true
-table-of-contents: true
-toc-depth: 2
-reference-location: block
-top-level-division: chapter # default | section | chapter | part
 verbosity: WARNING # ERROR, WARNING, or INFO
