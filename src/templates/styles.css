@@ -36,9 +36,15 @@ a:hover {
 
 ::selection,
 *:target,
-*:target + * {
+*:target + .sidenote {
   /* give highlight to text-selection, target, and the footnote next to the target */
-  background-color: rgba(254, 231, 0, .9);
+  background-color: rgba(254, 231, 0, 0.5);
+  transition: background-color 4s ease;
+}
+.sidenote:target,
+*:target + .sidenote {
+  /* targeted sidenodes get padding because they have a yellog bg color */
+  padding: 0.5em;
 }
 
 hr {
