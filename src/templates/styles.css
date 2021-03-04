@@ -34,6 +34,13 @@ a:hover {
   color: #0000cc;
 }
 
+::selection,
+*:target,
+*:target + * {
+  /* give highlight to text-selection, target, and the footnote next to the target */
+  background-color: rgba(254, 231, 0, .9);
+}
+
 hr {
   border: none;
   border-top: 2pt solid black;
