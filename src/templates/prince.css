@@ -3,11 +3,11 @@
 }
 
 @page:left {
-  margin-left: 2cm;
+  margin: 2cm;
 }
 
 @page:right {
-  margin-left: 2cm;
+  margin: 2cm;
 }
 
 body {
@@ -17,6 +17,12 @@ body {
 p {
  orphans: 4;
  widows: 4;
+}
+
+
+h2 {
+  /* use chapter headings as level-1 PDF bookmarks */
+  -prince-bookmark-level: 1;
 }
 
 figure img {
@@ -30,15 +36,27 @@ h2 + blockquote {
   font-size: 14pt;
 }
 
+
+/* utilities */
+
+.break-before-right {
+  break-before: right;
+}
+
 .reset-page-counter {
-  counter-reset: page;
+  counter-reset: page 1;
+}
+
+
+/*  components */
+
+.halftitle-title {
+  margin-top: 12rem;
 }
 
 .title {
   font-size: 2rem;
-}
-.halftitle-title {
-  margin-top: 12rem;
+  string-set: doctitle content();
 }
 
 .author {
@@ -46,15 +64,21 @@ h2 + blockquote {
   font-size: 1.5rem;
 }
 
-.page-break-before-right {
-  page-break-before: right;
+.title-details {
+  margin-top: 4cm;
 }
+
+.blank {
+  prince-page-group: start;
+  -prince-page-group: start;
+}
+
 
 h2 {
   /* force chapters to start on the right page */
   break-before: right;
   /* add chapter title to the right page */
-  string-set: chapter-title content();
+  string-set: chapter-title attr(title);
 }
 @page:right {
   @top-right {
@@ -65,62 +89,83 @@ h2 {
 }
 
 /* add book Title to the left page */
-@page:left{
+@page:left {
   @top-left {
-    content: "The Society of the Spectacle";
+    content: string(doctitle);
     font-size: 10pt;
     font-variant: small-caps;
   }
 }
 
 /* page counters */
-@page:right{
+@page:right {
   @bottom-right-corner {
     content: counter(page);
     font-size: 10pt;
   }
 }
 
-@page:left{
+@page:left {
   @bottom-left-corner {
     content: counter(page);
     font-size: 10pt;
   }
 }
 
-body > * {
-  /* hack to create space for sidenotes */
-  margin-right: 4.25cm;
+/* remove margin content from blank pages */
+@page:blank {
+  @top-right { content: normal; }
+  @top-left { content: normal; }
+  @bottom-right-corner { content: normal; }
+  @bottom-left-corner { content: normal; }
 }
 
+
+/* notes */
 @page {
   @footnote {
+    /* sidenotes */
     position: absolute;
-    right: -1cm;
     width: 4.5cm;
+    right: -1cm;
+    top: 2.9375rem;
   }
 }
 
-
-.footnote-ref {
-  /* footnote reference link */
+.chapter {
+  page: chapter;
 }
 
-.footnote {
+@page chapter {
+  /* remove margin content from chapter title pages */
+  @top-right {
+    content: normal;
+  }
+  @bottom-right-corner {
+    content: normal;
+  }
+}
+
+.chapter-body {
+  margin-right: 4cm;
+}
+
+/* sidenotes */
+.sidenote,
+.floatnote {
   display: block;
   text-align: justify;
+}
+
+.sidenote {
   float: footnote;
 }
 
-.footnotes {}
-.fn,
-.footnotes ol li p {
-  /* footnote content */
-  float: footnote;
+.floatnote {
+  position: absolute;
+  right: -1cm;
+  width: 4.5cm;
+  margin-top: -1.125rem;
+  clear: none;
 }
 
-.footnote-back {
-  /* backlink in footnote content to reference link */
-  display: none;
-  content: 'back';
-}

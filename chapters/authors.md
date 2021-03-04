@@ -1,4 +1,4 @@
-<div class="page-break-before"></div>
+<div class="break-before"></div>
 
 ![Guy Debord (right)](images/author.jpg)
 

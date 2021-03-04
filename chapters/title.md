@@ -1,4 +1,4 @@
-::::: {.author .centered .page-break-before-right}
+::::: {.author .centered .break-before-right}
 Guy Debord
 :::::
 
@@ -10,10 +10,10 @@ The Society of the Spectacle
 
 ---
 
-::::: {.centered .page-break-after}
+::::: {.centered .title-details .break-after}
 
 English edition by Ron. Adams\
-Published by █ Unredacted Word\
+█ Unredacted Word\
 Cambridge, Massachusetts
 
 ![](images/logo.svg){.publisher-logo}

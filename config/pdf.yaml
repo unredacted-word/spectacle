@@ -4,7 +4,6 @@ input-files:
 - chapters/title.md
 - chapters/colophon.md
 - chapters/contents.md
-- chapters/test.md
 - chapters/preface.md
 - chapters/01.md
 - chapters/02.md

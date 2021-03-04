@@ -22,7 +22,7 @@ body {
     background: white;
     box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
     padding: 1cm;
-    margin: 2cm auto 2cm 20%;
+    margin: 2cm auto 2cm 24rem;
     width: 152mm;
   }
 }
@@ -39,7 +39,9 @@ hr {
   border-top: 2pt solid black;
   border-bottom: 1pt solid black;
   height: 4pt;
-  margin: 5rem 10rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -51,7 +53,7 @@ h6 {
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1;
-  page-break-after: avoid;
+  break-after: avoid;
 }
 h1 {
   font-size: 3rem;
@@ -62,7 +64,7 @@ h2 {
   margin-bottom: 8rem;
   padding-top: 8rem;
   /* chapters start on new page */
-  page-break-before: always;
+  break-before: always;
 }
 
 h3 {
@@ -86,9 +88,6 @@ blockquote {
   p,
   q {
     hyphens: auto;
-    /* markdown produces smartquotes for us
-     * quotes: "“" "”" "‘" "’";
-     */
   }
 }
 
@@ -109,7 +108,7 @@ figure,
 .footnotes ol li p {
   margin: 0;
   font-size: 0.75rem;
-  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 figure figcaption,
@@ -139,6 +138,26 @@ h2 + blockquote > p:first-child em {
   text-align: left;
 }
 
+
+/* utilities */
+
+.centered,
+.centered p {
+  text-align: center;
+}
+
+.hidden { display: none; }
+
+.break-before {
+  break-before: always;
+}
+
+
+/* components */
+h1.title {
+  margin-top: 25vh;
+}
+
 .publisher-logo {
   width: 4rem;
   margin: 0 auto;
@@ -148,8 +167,8 @@ h2 + blockquote > p:first-child em {
 /* poems */
 .poem p {
   text-align: center;
-  width: 20rem;
   font-style: italic;
+  width: 20rem;
 }
 
 .hanging-indent p {
@@ -159,38 +178,26 @@ h2 + blockquote > p:first-child em {
   font-size: 0.75rem;
 }
 
-.footnote {
+.sidenote,
+.floatnote {
   font-size: 0.75em;
 }
 @media only screen {
-  .footnote {
+  .sidenote {
     display: block;
     width: 20rem;
   }
   /* alternating side footnotes */
-  section.level2 .footnote:nth-child(odd) {
+  p .sidenote:nth-child(odd) {
     margin-right: -24rem;
     float: right;
   }
-  section.level2 .footnote:nth-child(even) {
+  p .sidenote:nth-child(even) {
     margin-left: -24rem;
     float: left;
   }
 }
 
-.footnote-ref,
-.footnote-back {
-  text-decoration: none;
-}
-
-.centered,
-.centered p {
-  text-align: center;
-}
-
-#title-block-header .title {
-  margin: 40vh 0 2rem 0;
-}
 
 .title,
 .author {
@@ -204,25 +211,21 @@ h2 + blockquote > p:first-child em {
   font-size: 2rem;
 }
 
-.hidden { display: none; }
-
-.page-break-before {
-  page-break-before: always;
-}
 
 #title-block-header,
-.page-break-after,
+.break-after,
 h2 + blockquote {
+  break-after: always;
   page-break-after: always;
 }
 @media only screen {
   h2,
-  .page-break-before {
+  .break-before {
     margin-top: 100vh;
   }
   h2 + blockquote,
   #title-block-header,
-  .page-break-after {
+  .break-after {
     margin-bottom: 100vh;
   }
 }

@@ -1,16 +1,16 @@
-::::: {.page-break-after}
-delete
+::::: {.break-after}
+delete recto
 :::::
 
-::::: {.page-break-after .reset-page-counter}
-delete
+::::: {.break-after}
+delete verso
 :::::
 
-::::: {.title .halftitle-title}
+::::: {.title .halftitle-title .reset-page-counter}
 The Society of the Spectacle
 :::::
 
-::::: {.author .page-break-after}
+::::: {.author .break-after}
 Guy Debord
 :::::
 
