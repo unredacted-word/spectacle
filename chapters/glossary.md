@@ -1,6 +1,6 @@
 ## Glossary {.centered}
 
-::::: {.glossary}
+::::: {.glossary .align-justify}
 
 Debord writes in a provocative style of classical French, often overloading
 terms with meanings defined in other Situationist texts. This makes reading the

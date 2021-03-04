@@ -1,5 +1,7 @@
 <div class="break-before"></div>
 
+::::: {.align-justify}
+
 ![Guy Debord (right)](images/author.jpg)
 
 Guy Debord was the most influential figure in the Situationist International,
@@ -14,3 +16,5 @@ Ron. Adams lives in Somerville Massachusetts. His writing covers the
 intersection of media, technology, and power. He discovered the work of Debord
 and The Situationists through his participation in Occupy Wall Street in 2011.
 His writing is online at https://0xadada.pub.
+
+:::::

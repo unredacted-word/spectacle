@@ -141,10 +141,16 @@ h2 + blockquote > p:first-child em {
 
 /* utilities */
 
-.centered,
-.centered p {
+.centered {
   text-align: center;
 }
+.align-left {
+  text-align: left;
+}
+.align-justify {
+  text-align: justify;
+}
+
 
 .hidden { display: none; }
 
@@ -231,7 +237,7 @@ h2 + blockquote {
 }
 
 .colophon {
-  font-size: 0.625rem;
+  font-size: 0.6875rem;
 }
 
 .glossary h3 {
