@@ -61,22 +61,8 @@ h3 {
   text-align: center;
 }
 
-@media only print {
-  p {
-    text-align: justify;
-  }
-}
-
 blockquote {
   text-align: left;
-}
-
-@media only print {
-  blockquote,
-  p,
-  q {
-    hyphens: auto;
-  }
 }
 
 sup {
@@ -152,7 +138,7 @@ h1.title {
   margin-top: 25vh;
 }
 
-.publisher-logo {
+.title-logo {
   width: 4rem;
   margin: 0 auto;
   display: block;

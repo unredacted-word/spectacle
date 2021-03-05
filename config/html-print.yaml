@@ -2,9 +2,9 @@
 input-files:
 - chapters/test.md
 - chapters/cover.md
-- chapters/title.md
 - chapters/colophon.md
 - chapters/preface.md
+- chapters/title.md
 - chapters/01.md
 - chapters/02.md
 - chapters/03.md

@@ -1,10 +1,10 @@
 # docs https://pandoc.org/MANUAL.html#default-files
 input-files:
 - chapters/cover.md
-- chapters/title.md
 - chapters/colophon.md
 - chapters/contents.md
 - chapters/preface.md
+- chapters/title.md
 - chapters/01.md
 - chapters/02.md
 - chapters/03.md

@@ -12,6 +12,8 @@
 
 body {
   font-size: 12pt;
+  text-align: justify;
+  hyphens: auto;
 }
 
 a {
@@ -40,7 +42,6 @@ h2 + blockquote {
   font-size: 14pt;
 }
 
-
 /* utilities */
 
 .break-before-right {
@@ -50,7 +51,6 @@ h2 + blockquote {
 .reset-page-counter {
   counter-reset: page 1;
 }
-
 
 /*  components */
 
@@ -70,6 +70,9 @@ h2 + blockquote {
 
 .title-details {
   margin-top: 4cm;
+}
+.title-logo {
+  margin-top: 6cm;
 }
 
 .blank {
@@ -131,8 +134,8 @@ h2 {
     /* sidenotes */
     position: absolute;
     width: 4.5cm;
-    right: -1cm;
-    top: 2.9375rem;
+    right: -1.24cm;
+    top: 1.72cm;
   }
 }
 
