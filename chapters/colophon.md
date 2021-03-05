@@ -18,6 +18,8 @@ freedoms as long as you follow the license terms. Find the complete license
 online at\
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 
+This book is available for free online at https://unredacted-word.pub/spectacle/
+
 ISBN TODO (hardcover: alk. paper)\
 Library of Congress Control Number: TODO
 
