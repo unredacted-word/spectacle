@@ -45,11 +45,11 @@ body::before {
     width: 20rem;
   }
   /* alternating side footnotes */
-  p .sidenote:nth-child(odd) {
+  p .sidenote:nth-of-type(odd) {
     margin-right: -24rem;
     float: right;
   }
-  p .sidenote:nth-child(even) {
+  p .sidenote:nth-of-type(even) {
     margin-left: -24rem;
     float: left;
   }
