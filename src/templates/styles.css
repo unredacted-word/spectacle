@@ -1,3 +1,17 @@
+body::before {
+  display: block;
+  content: 'draft';
+  font-family: system-ui, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20vw;
+  opacity: 0.25;
+  position: fixed;
+  transform: rotate(-15deg);
+  left: 20vw;
+  top: 20vh;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -32,6 +46,19 @@ a {
 }
 a:hover {
   color: #0000cc;
+}
+
+::selection,
+*:target,
+*:target + .sidenote {
+  /* give highlight to text-selection, target, and the footnote next to the target */
+  background-color: rgba(254, 231, 0, 0.5);
+  transition: background-color 4s ease;
+}
+.sidenote:target,
+*:target + .sidenote {
+  /* targeted sidenodes get padding because they have a yellog bg color */
+  padding: 0.5em;
 }
 
 hr {
