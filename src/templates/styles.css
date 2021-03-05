@@ -1,17 +1,3 @@
-body::before {
-  display: block;
-  content: 'draft';
-  font-family: system-ui, sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 20vw;
-  opacity: 0.25;
-  position: fixed;
-  transform: rotate(-15deg);
-  left: 20vw;
-  top: 20vh;
-}
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -24,21 +10,9 @@ body {
   -ms-text-size-adjust: none;
   text-size-adjust: none;
 
-  font-family: "Source Serif Pro", Charter, serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 100%;
   line-height: 1.4;
-}
-@media only screen {
-  html {
-    background: #f7f7f7;
-  }
-  body {
-    background: white;
-    box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
-    padding: 1cm;
-    margin: 2cm auto 2cm 24rem;
-    width: 152mm;
-  }
 }
 
 a {
@@ -46,19 +20,6 @@ a {
 }
 a:hover {
   color: #0000cc;
-}
-
-::selection,
-*:target,
-*:target + .sidenote {
-  /* give highlight to text-selection, target, and the footnote next to the target */
-  background-color: rgba(254, 231, 0, 0.5);
-  transition: background-color 4s ease;
-}
-.sidenote:target,
-*:target + .sidenote {
-  /* targeted sidenodes get padding because they have a yellog bg color */
-  padding: 0.5em;
 }
 
 hr {
@@ -215,22 +176,6 @@ h1.title {
 .floatnote {
   font-size: 0.75em;
 }
-@media only screen {
-  .sidenote {
-    display: block;
-    width: 20rem;
-  }
-  /* alternating side footnotes */
-  p .sidenote:nth-child(odd) {
-    margin-right: -24rem;
-    float: right;
-  }
-  p .sidenote:nth-child(even) {
-    margin-left: -24rem;
-    float: left;
-  }
-}
-
 
 .title,
 .author {
@@ -250,17 +195,6 @@ h1.title {
 h2 + blockquote {
   break-after: always;
   page-break-after: always;
-}
-@media only screen {
-  h2,
-  .break-before {
-    margin-top: 100vh;
-  }
-  h2 + blockquote,
-  #title-block-header,
-  .break-after {
-    margin-bottom: 100vh;
-  }
 }
 
 .colophon {
