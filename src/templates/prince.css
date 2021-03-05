@@ -176,3 +176,14 @@ h2 {
   clear: none;
 }
 
+/* table of contents */
+.toc h2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.toc li {
+  text-align: left;
+}
+.toc a::after {
+  content: leader('.') ' ' target-counter(attr(href), page);
+}

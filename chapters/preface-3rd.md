@@ -1,4 +1,10 @@
+::::: {.chapter}
+
 ## Preface to the Third French Edition
+
+:::::
+
+::::: {.chapter-body}
 
 _The Society of the Spectacle_ was first published in November 1967 in Paris by
 Buchet-Chastel. The 1968 unrest made it famous. The book, of which I have never
@@ -109,3 +115,4 @@ outrageous.
 June 30, 1992\
 GUY DEBORD
 
+:::::

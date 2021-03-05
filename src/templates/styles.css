@@ -50,7 +50,7 @@ h2 {
   /* chapters */
   font-size: 2rem;
   margin-bottom: 8rem;
-  padding-top: 8rem;
+  margin-top: 8rem;
   /* chapters start on new page */
   break-before: always;
 }
@@ -185,6 +185,21 @@ h2 + blockquote {
 
 .colophon {
   font-size: 0.6875rem;
+}
+
+/* table of contents */
+.toc h2 {
+  margin-left: 1.5rem;
+}
+.toc ul,
+.toc ol {
+  margin: 0 0 0 1.5rem;
+}
+.toc ul {
+  list-style: none;
+}
+.toc ol {
+  list-style: upper-roman;
 }
 
 .glossary h3 {

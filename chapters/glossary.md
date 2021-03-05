@@ -31,7 +31,7 @@ the rights of citizenship and political rights that rural peasants did not have,
 as they were legally tied to the lands. Bourgeoisie is the class, Bourgeois is
 the individual.
 
-### chronicle (_La chronique_)
+### chronicle (_la chronique_)
 
 A story or narrative explaining the events of the _ruling classes_ leading up to
 the present moment. The narrative is based upon a foundation of mythical

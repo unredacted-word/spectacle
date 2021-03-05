@@ -13,7 +13,8 @@ The Society of the Spectacle
 ::::: {.centered .title-details .break-after}
 
 English edition by Ron. Adams\
-█ Unredacted Word · Cambridge, Massachusetts
+█ Unredacted Word\
+Cambridge, Massachusetts
 
 ![](images/logo.svg){.title-logo}
 

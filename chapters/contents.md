@@ -1,3 +1,5 @@
+::::: {.toc}
+
 ## Contents
 
 - [Preface](#preface)
@@ -16,3 +18,5 @@
 - [Glossary](#glossary)
 - [Bibliography](#bibliography)
 - [Index](#index)
+
+:::::
