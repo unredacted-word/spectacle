@@ -1,6 +1,104 @@
+::::: {lang="fr"}
+
 # La societé du spectacle
 
 Guy Debord
+
+## Avertissement pour la troisième édition française
+
+_La Société du Spectacle_ a été publiée pour la première fois en novembre 1967 à
+Paris, chez Buchet-Chastel. Les troubles de 1968 l'ont fait connaître. Le livre,
+auquel je n'ai jamais changé un seul mot, a été réédité dès 1971 aux Éditions
+Champ Libre, qui ont pris le nom de Gérard Lebovici en 1984, après l'assassinat
+de l'éditeur. La série des réimpressions y a été poursuivie régulièrement,
+jusqu'en 1991. La présente édition, elle aussi, est restée rigoureusement
+identique à celle de 1967. La même règle commandera d'ailleurs, tout
+naturellement, la réédition de l'ensemble de mes livres chez Gallimard. Je ne
+suis pas quelqu'un qui se corrige.
+
+Une telle théorie critique n'a pas à être changée; aussi longtemps que n'auront
+pas été détruites les conditions générales de la longue période de l'histoire
+que cette théorie aura été la première à définir avec exactitude. La
+continuation du développement de la période n'a fait que vérifier et illustrer
+la théorie du spectacle dont l'exposé, ici réitéré, peut également être
+considéré comme historique dans une acception moins élevée: il témoigne de ce
+qu'a été la position la plus extrême au moment des querelles de 1968, et donc de
+ce qu'il était déjà possible de savoir en 1968. Les pires dupes de cette époque
+ont pu apprendre depuis, par les déconvenues de toute leur existence, ce que
+signifiaient la <q>négation de la vie qui est devenue visible</q>; la <q>perte
+de la qualité</q> liée à la forme-marchandise, et la <q>prolétarisation du
+monde</q>
+
+J'ai du reste ajouté en leur temps d'autres observations touchant les plus
+remarquables nouveautés que le cours ultérieur du même processus devait faire
+apparaître. En 1979, à l'occasion d'une préface destinée à une nouvelle
+traduction italienne, j'ai traité des transformations effectives dans la nature
+même de la production industrielle, comme dans les techniques de gouvernement,
+que commençait à autoriser l'emploi de la force spectaculaire. En 1988, les
+_Commentaires sur la société du spectacle_ ont nettement établi que la 
+précédente <q>division mondiale des tâches spectaculaires</q>, entre les règnes
+rivaux du <q>spectaculaire concentré</q> et du <q>spectaculaire diffus</q>,
+avait désormais pris fin au profit de leur fusion dans la forme commune du
+<q>spectaculaire intégré</q>.
+
+Cette fusion peut être sommairement résumée en corrigeant la thèse 105 qui,
+touchant ce qui s'était passé avant 1967, distinguait encore les formes
+antérieures selon certaines pratiques opposées. Le Grand Schisme du pouvoir de
+classe s'étant achevé par la réconciliation, il faut dire que la pratique
+unifiée du spectaculaire intégré, aujourd'hui, a <q>transformé économiquement le
+monde</q>, _en même temps_ qu'il a <q>transformé policièrement la
+perception</q>. (La police dans la circonstance est elle-même tout à fait
+nouvelle.)
+
+C'est seulement parce que cette fusion s'était déjà produite dans la réalité
+économico-politique du monde entier, que le monde pouvait enfin se proclamer
+officiellement unifié. C'est aussi parce que la situation où en est
+universellement arrivé le pouvoir séparé est si grave que ce monde avait besoin
+d'être unifié au plus tôt ; de participer comme un seul bloc à la même
+organisation consensuelle du marché mondial, _falsifié_ et garanti
+spectaculairement. Et il ne s'unifiera pas, finalement.
+
+La bureaucratie totalitaire, <q>classe dominante de substitution pour l'économie
+marchande</q>, n'avait jamais beaucoup cru à son destin. Elle se savait <q>forme
+sous-développée de classe dominante</q>, et se voulait mieux. La thèse 58 avait
+de longue date établi l'axiome suivant: <q>La racine du spectacle est dans le
+terrain de l'économie devenue abondante, et c'est de là que viennent les fruits
+qui tendent finalement à dominer le marché spectaculaire.</q>
+
+C'est cette volonté de modernisation et d'unification du spectacle, liée à tous
+les autres aspects de la simplification de la société, qui a conduit en 1989 la
+bureaucratie russe à se convertir soudain, comme un seul homme, à la présente
+_idéologie_ de la démocratie : c'est-à-dire la liberté dictatoriale du Marché,
+tempérée par la reconnaissance des Droits de l'homme spectateur. Personne en
+Occident n'a épilogué un seul jour sur la signification et les conséquences d'un
+si extraordinaire événement médiatique. Le progrès de la technique spectaculaire
+se prouve en ceci. Il n'y a eu à enregistrer que l'apparence d'une sorte de
+secousse géologique. On date le phénomène, et on l'estime bien assez compris, en
+se contentant de répéter un très simple signal — la chute-du-Mur-de-Berlin —,
+aussi indiscutable que tous les autres _signaux démocratiques_.
+
+En 1991, les premiers effets de la modernisation ont paru avec la dissolution
+complète de la Russie. Là s'exprime, plus franchement encore qu'en Occident, le
+résultat désastreux de l'évolution générale de l'économie. Le désordre n'en est
+que la conséquence. Partout se posera la même redoutable question, celle qui
+hante le monde depuis deux siècles: comment faire travailler les pauvres, là où
+l'illusion a déçu, et où la force s'est défaite?
+
+La thèse 111, reconnaissant les premiers symptômes d'un déclin russe dont nous
+venons de voir l'explosion finale, et envisageant la disparition prochaine d'une
+société mondiale qui, comme on peut dire maintenant, _s'eﬀacera de la mémoire de
+l'ordinateur_, énonçait ce jugement stratégique dont il va devenir facile de
+sentir la justesse : <q>La décomposition mondiale de l'alliance de la
+mystification bureaucratique est, en dernière analyse, le facteur le plus
+défavorable pour le développement actuel de la société capitaliste</q>.
+
+Il faut lire ce livre en considérant qu'il a été sciemment écrit dans
+l'intention de nuire à la société spectaculaire. Il n'a jamais rien dit
+d'outrancier.
+
+30 juin 1992
+
+GUY DEBORD
 
 ## I. La séparation achevée
 
@@ -3334,5 +3432,7 @@ individus sont «directement liés à l'histoire universelle» ; là seulement o
 dialogue s'est armé pour faire vaincre ses propres conditions.
 
 <cite>
-Debord, G. (1992). La Société du spectacle. Paris: Gallimard. ISBN 9782070394432.
-</cite>
+Debord, G. (1992). _La Société du spectacle_. Paris: Gallimard. ISBN 
+9782070394432.
+
+:::::

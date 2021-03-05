@@ -5,6 +5,7 @@ input-files:
 - chapters/contents.md
 - chapters/preface.md
 - chapters/title.md
+- chapters/authors-preface.md
 - chapters/01.md
 - chapters/02.md
 - chapters/03.md
