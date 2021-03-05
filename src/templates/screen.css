@@ -67,3 +67,9 @@ body::before {
   }
 }
 
+/* table of contents */
+.toc ul,
+.toc ol {
+  margin: 0.5rem 0 0.5rem -0.75rem;
+}
+
