@@ -1,6 +1,4 @@
-<div class="break-before"></div>
-
-::::: {.align-justify}
+::::: {.title-page}
 
 ![Guy Debord (right)](images/author.jpg)
 

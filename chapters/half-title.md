@@ -6,11 +6,11 @@ delete recto
 delete verso
 :::::
 
-::::: {.title .halftitle-title .reset-page-counter}
-The Society of the Spectacle
-:::::
+::::: {.title .halftitle-title .title-page .break-before-right .reset-page-counter}
 
-::::: {.author .break-after}
-Guy Debord
+The Society of the Spectacle
+
+[Guy Debord]{.author}
+
 :::::
 

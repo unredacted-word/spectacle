@@ -1,8 +1,4 @@
-::::: {.chapter}
-
-## Preface to the Third French Edition
-
-:::::
+### Preface to the Third French Edition {.preface .break-before-right}
 
 ::::: {.chapter-body}
 
@@ -55,6 +51,8 @@ labor</q>, between the rival reigns of the <q>concentrated spectacle</q> and the
 ]{.sidenote}
 in favor of their fusion, into the universal form of the <q>integrated
 spectacle</q>.
+
+:::::
 
 This fusion can be summarized summarily by correcting [thesis 105](#section-105)
 which, touching on what had happened before 1967, still distinguished the 
@@ -115,4 +113,3 @@ outrageous.
 June 30, 1992\
 GUY DEBORD
 
-:::::

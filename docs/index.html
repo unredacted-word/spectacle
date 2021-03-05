@@ -65,6 +65,13 @@
       /* chapters start on new page */
       break-before: always;
     }
+    .toc h2.centered,
+    .preface h2.centered
+    .glossary  h2.centered,
+    .bibliography h2.centered {
+      /* center align non-chapter headers */
+      text-align: center;
+    }
 
     h3 {
       /* thesis numbers */
@@ -187,13 +194,6 @@
     }
 
 
-    #title-block-header,
-    .break-after,
-    h2 + blockquote {
-      break-after: always;
-      page-break-after: always;
-    }
-
     .colophon {
       font-size: 0.6875rem;
     }
@@ -303,7 +303,7 @@
 <p class="author">Guy Debord</p>
 </header>
 <p><img src="images/cover.svg" class="cover" /></p>
-<div class="colophon">
+<div class="colophon title-page">
 <p>Originally published in Paris, France as <em>La Société du Spectacle</em> by Éditions Buchet-Chastel (Paris) in 1967. It was reissued by Éditions Champ Libre (Paris) in 1971, and Éditions Gallimard (Paris) 1992.</p>
 <p>This annotated English edition by Ron. Adams.</p>
 <p>█ Unredacted Word<br />
@@ -332,8 +332,8 @@ Library of Congress Control Number: TODO</p>
 <em>First Printing 2021</em><br />
 10 9 8 7 6 5 4 3 2 1</p>
 </div>
-<section id="contents" class="level2 toc">
-<h2>Contents</h2>
+<section id="contents" class="level2 centered toc title-page break-before-right">
+<h2 class="centered">Contents</h2>
 <ul>
 <li><a href="#preface">Preface</a></li>
 <li><a href="#preface-to-the-third-french-edition">Preface to the Third French Edition</a></li>
@@ -355,18 +355,16 @@ Library of Congress Control Number: TODO</p>
 <li><a href="#index">Index</a></li>
 </ul>
 </section>
-<section id="preface" class="level2">
-<h2>Preface</h2>
+<section id="preface" class="level3 preface break-before-right roman-number">
+<h3 class="preface break-before-right">Preface</h3>
 <p>TODO</p>
-<p>— Ron. Adams<br />
-March, 2021</p>
-<div class="author centered break-before-right">
-<p>Guy Debord</p>
-</div>
+<p>March, 2021<br />
+Ron. Adams</p>
+</section>
+<div class="centered title-page break-before-right">
+<p><span class="author">Guy Debord</span></p>
 <hr />
-<div class="title centered">
-<p>The Society of the Spectacle</p>
-</div>
+<p><span class="title">The Society of the Spectacle</span></p>
 <hr />
 <div class="centered title-details break-after">
 <p>English edition by Ron. Adams<br />
@@ -374,14 +372,14 @@ March, 2021</p>
 Cambridge, Massachusetts</p>
 <p><img src="images/logo.svg" class="title-logo" /></p>
 </div>
-</section>
-<section id="preface-to-the-third-french-edition" class="level2 chapter">
-<h2>Preface to the Third French Edition</h2>
-</section>
+</div>
+<section id="preface-to-the-third-french-edition" class="level3 preface break-before-right">
+<h3 class="preface break-before-right">Preface to the Third French Edition</h3>
 <div class="chapter-body">
 <p><em>The Society of the Spectacle</em> was first published in November 1967 in Paris by Buchet-Chastel. The 1968 unrest made it famous. The book, of which I have never changed a single word, was republished in 1971 by Éditions Champ Libre, who changed their name to Gérard Lebovici in 1984, after the publisher’s assassination. A series of reprints continued there regularly until 1991. The present edition<span id="tpe" class="sidenote">“The present edition…”: This preface was written for the Third French Edition published in 1992, four years after he had published <em>Comments on the Society of the Spectacle</em>, and roughly a year after the final collapse of the USSR (1989-1991).</span>, too, has remained rigorously identical to the 1967 edition. The same rule will naturally apply to the reprinting of all my books at Gallimard. I am not one who corrects myself.</p>
 <p>Such a critical theory does not have to be changed; as long as the general conditions of this period of history (that this theory was first to define accurately) have not been destroyed. The continued development of this period has only verified and illustrated the theory of the spectacle, whose presentation, reiterated here, can also be considered historical in a more limited sense: it testifies to what the most extreme position was at the time of the quarrels of 1968, and therefore to the knowledge that was already possible to know in 1968. The worst dupes of that time have since learned, through the disappointments of their entire existence, what the <q>negation of life that has become visible</q>; the <q>loss of quality</q> linked to the commodity-form, and the <q>proletarianization of the world</q> has meant.</p>
 <p>Over time, I also added other observations concerning the most remarkable developments that the subsequent course of the same process was to bring about. In 1979, on the occasion of a preface for a new Italian translation, I dealt with the effective transformations in the very nature of industrial production, as well as in the techniques of government, which began an authorized use of spectacular force. In 1988, the <em>Comments on the Society of the Spectacle</em> clearly established that the previous <q>worldwide division of spectacular labor</q>, between the rival reigns of the <q>concentrated spectacle</q> and the <q>diffuse spectacle</q>, had now ended<span class="sidenote">“the rival reigns… had now ended”: Debord is pointing to the ideologic rivalry between the diffuse spectacle exemplified by U.S. capitalism and the concentrated spectacle exemplified by the communism of the USSR. His book, <em>Comments on the Society of the Spectacle</em> was published a year before the collapse of the USSR, but he had predicted this collapse by describing the failure of the concentrated spectacle. Amazingly, both of Debords’ major works: <em>Spectacle</em> and <em>Comments</em> were published just one year prior to two major worldwide upheavals: <em>Spectacle</em> published a year before May 1968 in Paris and the general “troubles” of 1968, and <em>Comments</em> a year before the beginning of collapse of the USSR.</span> in favor of their fusion, into the universal form of the <q>integrated spectacle</q>.</p>
+</div>
 <p>This fusion can be summarized summarily by correcting <a href="#section-105">thesis 105</a> which, touching on what had happened before 1967, still distinguished the earlier forms according to some opposing practices. The Great Schism of class power having ended in reconciliation, it must be said that the unified practice of the integrated spectacle, today, has <q>economically transformed the world</q>, <em>at the same time</em> that it has <q>used police methods to transform perceptions</q> (The police in this case, are of a new specialized variety).</p>
 <p>Only because this merger had already occurred in the economic and political realms of the entire world, could the world finally proclaim itself officially unified. It is also because this situation that the universally separated power has reached such a predicament that this world needed to be reunited as soon as possible; to function as one block in the same consensual organization of the single global market, <em>falsified</em> and guaranteed by the spectacle. In the end it will not be unified.</p>
 <p>The totalitarian bureaucracy, that <q>dominant substitute class for the market economy</q>, had never believed much in its destiny. It knew itself to be an <q>underdeveloped form of dominant class,</q> and it wanted to be better. Thesis 58 had long established the following axiom: <q><a href="#fruits">As the spectacle is founded upon an economy of abundance, the fruits of that economy tend to dominate the spectacular market within its sphere of influence</a></q>.</p>
@@ -391,7 +389,7 @@ Cambridge, Massachusetts</p>
 <p>This book should be read considering that it was knowingly written with the intention of damaging the spectacular society. It never said anything outrageous.</p>
 <p>June 30, 1992<br />
 GUY DEBORD</p>
-</div>
+</section>
 <section id="i.-separation-perfected" class="level2 chapter" title="Separation Perfected">
 <h2 title="Separation Perfected">I. Separation Perfected</h2>
 <blockquote>
@@ -647,10 +645,7 @@ GUY DEBORD</p>
 </blockquote>
 <section id="section-35" class="level3">
 <h3>35</h3>
-<p>The spectacles basic operation is the incorporation of all the <em>transient</em>, directly experienced activities of human life into itself so as to regenerate them as commodities in frozen form. The spectacle is a process of the <em>inversion</em> of the values of daily life into purely abstract values. In these abstract values we recognize our old enemy <em>the commodity</em>, which seems trivial and obvious at first, but which is full of complexity and metaphysical subtleties.</p>
-<blockquote>
-<p>“the inversion of the values of daily life into purely abstract values”: The spectacle often presents these commodities in their negative, as products are typically advertised by their negative qualities, that which they are not: fat free, caffeine free, BPA-free, fair-trade (another way of saying it contains less exploitation.)</p>
-</blockquote>
+<p>The spectacles basic operation is the incorporation of all the <em>transient</em>, directly experienced activities of human life into itself so as to regenerate them as commodities in frozen form. The spectacle is a process of the <em>inversion</em> of the values of daily life into purely abstract values<span id="the-inversion" class="sidenote">“the inversion of the values of daily life into purely abstract values”: The spectacle often presents these commodities in their negative, as products are typically advertised by their negative qualities, that which they are not: fat free, caffeine free, BPA-free, fair-trade (another way of saying it contains less exploitation.)</span>. In these abstract values we recognize our old enemy <em>the commodity</em>, which seems trivial and obvious at first, but which is full of complexity and metaphysical subtleties.</p>
 <blockquote>
 <p>“we recognize our old enemy”: C.f. Marx, K., 1856. Full quotation “In the signs that bewilder the middle class, the aristocracy and the poor prophets of regression, we do recognise our brave friend, Robin Goodfellow…”</p>
 </blockquote>
@@ -2766,10 +2761,7 @@ We are nothing, let us be all.”</p>
 <div class="align-left">
 <p>TODO</p>
 </div>
-<div class="break-before">
-
-</div>
-<div class="align-justify">
+<div class="title-page">
 <figure>
 <img src="images/author.jpg" alt="Guy Debord (right)" /><figcaption aria-hidden="true">Guy Debord (right)</figcaption>
 </figure>

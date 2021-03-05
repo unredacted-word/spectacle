@@ -1,6 +1,6 @@
-::::: {.toc}
+::::: {.toc .title-page .break-before-right}
 
-## Contents
+## Contents {.centered}
 
 - [Preface](#preface)
 - [Preface to the Third French Edition](#preface-to-the-third-french-edition)

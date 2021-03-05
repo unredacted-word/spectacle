@@ -54,6 +54,13 @@ h2 {
   /* chapters start on new page */
   break-before: always;
 }
+.toc h2.centered,
+.preface h2.centered
+.glossary  h2.centered,
+.bibliography h2.centered {
+  /* center align non-chapter headers */
+  text-align: center;
+}
 
 h3 {
   /* thesis numbers */
@@ -175,13 +182,6 @@ h1.title {
   font-size: 2rem;
 }
 
-
-#title-block-header,
-.break-after,
-h2 + blockquote {
-  break-after: always;
-  page-break-after: always;
-}
 
 .colophon {
   font-size: 0.6875rem;

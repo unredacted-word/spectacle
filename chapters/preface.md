@@ -1,6 +1,10 @@
-## Preface
+::::: {.break-before-right .preface .roman-number}
+
+### Preface {.preface .break-before-right}
 
 TODO
 
-— Ron. Adams\
-March, 2021
+March, 2021\
+Ron. Adams
+
+:::::

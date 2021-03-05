@@ -41,16 +41,12 @@ figure img {
 h2 + blockquote {
   font-size: 14pt;
 }
-
-/* utilities */
-
-.break-before-right {
-  break-before: right;
+h2.centered {
+  /* centered page titles should have smaller margins */
+  margin-top: 0;
+  margin-bottom: 4rem;
 }
 
-.reset-page-counter {
-  counter-reset: page 1;
-}
 
 /*  components */
 
@@ -75,19 +71,53 @@ h2 + blockquote {
   margin-top: 6cm;
 }
 
+/* utilities for pagination */
+
+.break-before-right {
+  break-before: right;
+}
+.break-before-page {
+  break-before: page;
+}
+
+.reset-page-counter {
+  counter-reset: page 1;
+}
+
 .blank {
   prince-page-group: start;
   -prince-page-group: start;
 }
 
+/* title page */
+.title-page {
+  page: title-page;
+  -prince-page-group: start;
+  prince-page-group: start;
+}
+@page title-page {
+  /* remove marginalia from title pages */
+  @top-left { content: normal; }
+  @top-right { content: normal; }
+  @bottom-right-corner { content: normal; }
+  @bottom-left-corner { content: normal; }
+}
+
+#title-block-header,
+.break-after,
+h2 + blockquote {
+  break-after: always;
+  page-break-after: always; /* hack */
+}
 
 h2 {
   /* force chapters to start on the right page */
   break-before: right;
-  /* add chapter title to the right page */
+  /* set chapter title for the right page */
   string-set: chapter-title attr(title);
 }
 @page:right {
+  /* add chapter title to the recto page */
   @top-right {
     content: string(chapter-title);
     font-size: 10pt;
@@ -141,8 +171,8 @@ h2 {
 
 .chapter {
   page: chapter;
+  counter-reset: footnote 1; /* restart footnote per chapter */
 }
-
 @page chapter {
   /* remove margin content from chapter title pages */
   @top-right {
@@ -177,10 +207,7 @@ h2 {
 }
 
 /* table of contents */
-.toc h2 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
+.toc h2 { margin-bottom: 6rem; }
 .toc li {
   text-align: left;
 }

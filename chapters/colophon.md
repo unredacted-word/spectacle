@@ -1,4 +1,4 @@
-::::: {.colophon}
+::::: {.colophon .title-page}
 
 Originally published in Paris, France as _La Société du Spectacle_ by Éditions
 Buchet-Chastel (Paris) in 1967. It was reissued by Éditions Champ Libre (Paris)

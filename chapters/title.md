@@ -1,12 +1,10 @@
-::::: {.author .centered .break-before-right}
-Guy Debord
-:::::
+::::: {.centered .title-page .break-before-right}
+
+[Guy Debord]{.author}
 
 ---
 
-::::: {.title .centered}
-The Society of the Spectacle
-:::::
+[The Society of the Spectacle]{.title}
 
 ---
 
@@ -17,6 +15,8 @@ English edition by Ron. Adams\
 Cambridge, Massachusetts
 
 ![](images/logo.svg){.title-logo}
+
+:::::
 
 :::::
 
