@@ -122,9 +122,6 @@ h2 + blockquote > p:first-child em {
 
 /* utilities */
 
-.centered {
-  text-align: center;
-}
 .align-left {
   text-align: left;
 }
