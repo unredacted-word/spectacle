@@ -41,7 +41,6 @@ body::before {
 }
 @media only screen {
   .sidenote {
-    display: block;
     width: 20rem;
   }
   /* alternating side footnotes */

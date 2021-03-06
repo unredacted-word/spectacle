@@ -76,6 +76,7 @@ blockquote {
 
 sup {
   font-size: 0.625em; /* fixes blowing-up the line-height */
+  line-height: 0;
 }
 
 cite {
@@ -87,8 +88,7 @@ figure {
 }
 
 blockquote,
-figure,
-.footnotes ol li p {
+figure {
   margin: 0;
   font-size: 0.75rem;
   break-inside: avoid;
@@ -136,12 +136,9 @@ h2 + blockquote p + p {
   text-align: justify;
 }
 
-.hidden { display: none; }
-
-.break-before {
-  break-before: always;
+.hidden {
+  display: none;
 }
-
 
 /* components */
 h1.title {
@@ -169,7 +166,8 @@ h1.title {
 }
 
 .sidenote,
-.floatnote {
+.footnote {
+  display: block;
   font-size: 0.75em;
 }
 

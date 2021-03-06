@@ -73,6 +73,10 @@ h2.centered {
 
 /* utilities for pagination */
 
+.break-before {
+  break-before: always;
+}
+
 .break-before-right {
   break-before: right;
 }
@@ -189,7 +193,8 @@ h2 {
 
 /* sidenotes */
 .sidenote,
-.floatnote {
+.footnote {
+  counter-increment: footnote;
   display: block;
   text-align: justify;
 }
@@ -198,12 +203,23 @@ h2 {
   float: footnote;
 }
 
-.floatnote {
+.footnote {
+  float: bottom;
+  position: relative;
+}
+.footnote::before,
+.footnote-call::after {
+  content: counter(footnote) ' ';
+  font-size: 9pt;
+}
+.footnote-call::after {
+  vertical-align: super;
+  line-height: 0;
+}
+.footnote::before {
+  font-weight: bold;
   position: absolute;
-  right: -1cm;
-  width: 4.5cm;
-  margin-top: -1.125rem;
-  clear: none;
+  left: -1.5em;
 }
 
 /* table of contents */
