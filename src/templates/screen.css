@@ -43,6 +43,11 @@ body::before {
   .sidenote {
     width: 20rem;
   }
+  .footnote {
+    margin-bottom: 1em;
+    border-left: 4px solid rgba(0,0,0, 0.25);
+    padding-left: 1rem;
+  }
   /* alternating side footnotes */
   p .sidenote:nth-of-type(odd),
   p .sidenote.sidenote-r:nth-of-type(even) {

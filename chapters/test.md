@@ -53,3 +53,11 @@ This quote is in German:
 > macht frei</q> or "city air liberates" a medieval German saying, expressing
 > that fact that serfs could free themselves from their ties to the landed
 > gentry by escaping to the towns.
+
+[
+  This is the footnote.
+]{#fn56.1 .footnote}
+The falsified struggle between power groups[
+  this is the sidenote
+]{#fn56.2 .sidenote}
+This is the body text
