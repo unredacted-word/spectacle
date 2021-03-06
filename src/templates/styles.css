@@ -129,7 +129,6 @@ h2 + blockquote > p:first-child em {
   text-align: justify;
 }
 
-
 .hidden { display: none; }
 
 .break-before {
@@ -173,12 +172,15 @@ h1.title {
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1;
+  text-align: center;
 }
 
 .author {
   font-size: 2rem;
 }
-
+.title-details {
+  text-align: center;
+}
 
 .colophon {
   font-size: 0.6875rem;
