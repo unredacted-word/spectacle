@@ -1,4 +1,4 @@
-::::: {.centered .title-page .break-before-right}
+::::: {.titlepg .centered .title-page .break-before-right}
 
 [Guy Debord]{.author}
 

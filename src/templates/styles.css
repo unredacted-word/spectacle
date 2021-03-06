@@ -172,13 +172,14 @@ h1.title {
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .author {
   font-size: 2rem;
 }
-.title-details {
+
+.titlepg.centered {
   text-align: center;
 }
 
