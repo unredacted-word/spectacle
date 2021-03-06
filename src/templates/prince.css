@@ -216,6 +216,11 @@ h2 {
   line-height: 0;
   vertical-align: super;
 }
+section.footnote-call::after{
+  content: none; /* fixes headers with hosted classnames adding content
+                  * to sections themselves
+                  */
+}
 .footnote::before {
   content: counter(footnote) '.';
   position: absolute;
