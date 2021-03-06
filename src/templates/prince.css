@@ -209,17 +209,17 @@ h2 {
 }
 .footnote::before,
 .footnote-call::after {
-  content: counter(footnote) ' ';
   font-size: 9pt;
 }
 .footnote-call::after {
-  vertical-align: super;
+  content: counter(footnote);
   line-height: 0;
+  vertical-align: super;
 }
 .footnote::before {
-  font-weight: bold;
+  content: counter(footnote) '.';
   position: absolute;
-  left: -1.5em;
+  left: -1.25em;
 }
 
 /* table of contents */
