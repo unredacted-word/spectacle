@@ -175,7 +175,7 @@ h2 {
 
 .chapter {
   page: chapter;
-  counter-reset: footnote 0; /* restart footnote per chapter */
+  counter-reset: footnote 1; /* restart footnote per chapter */
 }
 @page chapter {
   /* remove margin content from chapter title pages */

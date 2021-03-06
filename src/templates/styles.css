@@ -121,7 +121,7 @@ h2 + blockquote > p:first-child em {
   text-indent: -0.5em;
   text-align: left;
 }
-h2 + blockquote p + p {
+h2 + blockquote p:first-child + p {
   /* right align attribution */
   text-align: right;
 }
