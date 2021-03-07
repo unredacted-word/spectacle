@@ -12,7 +12,7 @@ present edition[
   published in 1992, four years after he had published _Comments on the Society
   of the Spectacle_, and roughly a year after the final collapse of the USSR
   (1989-1991).
-]{#tpe .sidenote},
+]{#fntfe.1 .sidenote},
 too, has remained rigorously identical to the 1967 edition.  The same rule will
 naturally apply to the reprinting of all my books at Gallimard. I am not one who
 corrects myself.
@@ -48,7 +48,7 @@ labor</q>, between the rival reigns of the <q>concentrated spectacle</q> and the
   prior to two major worldwide upheavals: _Spectacle_ published a year before
   May 1968 in Paris and the general "troubles" of 1968, and _Comments_ a year
   before the beginning of collapse of the USSR.
-]{.sidenote}
+]{#fntfe.2 .sidenote}
 in favor of their fusion, into the universal form of the <q>integrated
 spectacle</q>.
 
@@ -104,7 +104,7 @@ the computer's memory_, formulated the following strategic judgment, the
 correctness of which should become obvious: "[In the final analysis, the collapse
 and failure of global alliances founded on bureaucratic mystification is an
 unfavorable aspect of the development of capitalist
-society.](#in-the-final-analysis){#itfnref}"
+society.](#ref111.1){#fntfe.3}"
 
 This book should be read considering that it was knowingly written with the
 intention of damaging the spectacular society. It never said anything

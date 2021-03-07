@@ -379,6 +379,9 @@ Zenou, Y., Zeitoun, L., Adassovsky, N.D., Loader, K. (Producers), Iannucci, A.
 Productions, Main Journey, France 3 Cinema, La Cie Cinématographique, Panache
 Productions, AFPI, Canal+, Ciné+, France Télévisions, Title Media.
 
+Žižek, S. (2010). _Living in the end times_. London New York: Verso.
+9781844675982.
+
 Zuboff, S. & Maxmin, J. (2002). _The support economy: why corporations are
 failing individuals and the next episode of capitalism_. New York:
 Viking. 0670887366.

@@ -75,8 +75,7 @@ blockquote {
 }
 
 sup {
-  font-size: 0.625em; /* fixes blowing-up the line-height */
-  line-height: 0;
+  line-height: 0; /* fixes blowing-up the line-height */
 }
 
 cite {
@@ -168,7 +167,12 @@ h1.title {
 .sidenote,
 .footnote {
   display: block;
-  font-size: 0.75em;
+  /* if note is in a header, we need to reset the typography */
+  font-size: 0.75rem;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
 }
 
 .title,

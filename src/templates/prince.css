@@ -194,6 +194,12 @@ h2 {
 /* sidenotes */
 .sidenote,
 .footnote {
+  /* if note is in a header, we need to reset the typography */
+  font-size: 9pt;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  /* increment footnote count */
   counter-increment: footnote;
   display: block;
   text-align: justify;

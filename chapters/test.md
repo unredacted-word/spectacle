@@ -9,6 +9,32 @@ the violent destruction of their own radical minority party members.
 
 ### Heading Three
 
+Here are some ligatures
+
+f-i
+
+: figure
+
+f-l
+
+: flood
+
+c-t 
+
+: Connecticut
+
+f-f
+
+: Staff
+
+f-f-i
+
+: office
+
+T-h
+
+: Theater 
+
 #### Heading Four
 
 This is text with "IV^e^ Internationale" superscript.
