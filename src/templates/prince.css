@@ -25,9 +25,17 @@ p {
  widows: 4;
 }
 
+h1 {
+  bookmark-state: open;
+}
 h2 {
   /* use chapter headings as level-1 PDF bookmarks */
-  -prince-bookmark-level: 1;
+  bookmark-level: 1;
+  bookmark-state: closed;
+}
+#iv h2 {
+  /* ch.4 fix for PDF bookmark label since this heading has a superscript */
+  bookmark-label: attr(data-bookmark-label);
 }
 
 h2 sup {
