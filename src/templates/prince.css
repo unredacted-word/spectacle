@@ -33,8 +33,14 @@ h2 {
   bookmark-level: 1;
   bookmark-state: closed;
 }
-#iv h2 {
-  /* ch.4 fix for PDF bookmark label since this heading has a superscript */
+#iv h2,
+h3#t56,
+h3#t66,
+h3#t68,
+h3#t110,
+h3#t213,
+h3#t218 {
+  /* fix for PDF bookmark labels on headers with footnotes */
   bookmark-label: attr(data-bookmark-label);
 }
 
