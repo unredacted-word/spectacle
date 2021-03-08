@@ -35,6 +35,9 @@ figure img {
   max-width: 120mm;
   margin: 0 -1.2cm;
 }
+figure figcaption {
+  padding: 0;
+}
 
 
 /* chapter page */

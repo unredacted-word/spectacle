@@ -150,12 +150,6 @@ h1.title {
   display: block;
 }
 
-/* poems */
-.poem p {
-  font-style: italic;
-  width: 20rem;
-}
-
 .hanging-indent p {
   margin: 0;
   margin-left: 1.5rem;
