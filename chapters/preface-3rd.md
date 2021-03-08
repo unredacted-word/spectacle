@@ -1,4 +1,8 @@
-### Preface to the Third French Edition {.preface .break-before-right}
+::::: {.break-before-right .preface .roman-number}
+
+### Preface to the Third French Edition {#preface-3rd .preface .break-before-right}
+
+:::::
 
 ::::: {.chapter-body}
 
