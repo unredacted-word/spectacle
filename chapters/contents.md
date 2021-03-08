@@ -8,7 +8,7 @@
 1. [Separation Perfected](#i.-separation-perfected)
 2. [The Commodity as Spectacle](#ii.-the-commodity-as-spectacle)
 3. [Unity & Division Within Appearances](#iii.-unity-division-within-appearances)
-4. [The Proletariat as Subject and Representation](#iv.-the-proletariat-as-subject-and-representation)
+4. [The Proletariat as Subject and Representation](#iv.-the-proletariat-as-subject-and-representation1)
 5. [Time & History](#v.-time-history)
 6. [Spectacular Time](#vi.-spectacular-time)
 7. [The Organization of Territory](#vii.-the-organization-of-territory)

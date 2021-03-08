@@ -25,10 +25,14 @@ p {
  widows: 4;
 }
 
-
 h2 {
   /* use chapter headings as level-1 PDF bookmarks */
   -prince-bookmark-level: 1;
+}
+
+h2 sup {
+  /* chapter footnote markers */
+  font-size: 9pt;
 }
 
 figure img {
@@ -38,7 +42,6 @@ figure img {
 figure figcaption {
   padding: 0;
 }
-
 
 /* chapter page */
 h2 + blockquote {

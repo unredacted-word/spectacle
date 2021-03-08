@@ -75,6 +75,8 @@ blockquote {
 }
 
 sup {
+  font-size: 0.75em;
+  font-weight: normal;
   line-height: 0; /* fixes blowing-up the line-height */
 }
 
