@@ -4,7 +4,10 @@
    * Allow an additional minimum `0.2in`/`5.08mm` in Gutter Margin for inners
    */
 
-  margin: 18mm; /* 18mm = 0.7in  */
+  margin-left: 18mm; /* 18mm = 0.7in  */
+  margin-right: 18mm; /* 18mm = 0.7in  */
+  margin-top: 14mm;
+  margin-bottom: 14mm;
   margin-inside: 23.5mm; /* 22.5mm = 18mm + 5.5mm */
 }
 
@@ -194,7 +197,10 @@ h2 {
     position: absolute;
     width: 46mm;
     right: -12mm;
-    top: 17mm;
+    top: 3pt;
+    bottom: 3mm;
+    border-left: 1pt solid red;
+    border-right: 1pt solid red;
   }
 }
 
@@ -222,7 +228,10 @@ h2 {
   /* if note is in a header, we need to reset the typography */
   font-size: 8pt;
   font-weight: normal;
-  line-height: 1.375; /* 11pt = 8*1.375 is 36 lines of footnote text p.p. */
+  line-height: 1.4375; /* 11.5pt = creates vertical rhythm with 8pt footnote
+                        * text and 11pt body text. This creates a vertical
+                        * rhythm of 4 body lines to 5 footnote lines.
+                        */
   letter-spacing: normal;
   /* increment footnote count */
   counter-increment: footnote;
