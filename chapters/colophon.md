@@ -7,8 +7,8 @@ in 1971, and Éditions Gallimard (Paris) 1992.
 This annotated English edition by Ron. Adams.
 
 █ Unredacted Word\
-Cambridge, Massachusetts, USA\
-https://unredacted-word.pub\
+Cambridge, Massachusetts\
+[https://unredacted-word.pub](https://unredacted-word.pub)
 
 This work is licensed under a Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to
@@ -16,9 +16,9 @@ share, copy, and redistribute the material in any medium or format. Adapt,
 remix, transform, and build upon the material. The licensor cannot revoke these
 freedoms as long as you follow the license terms. Find the complete license
 online at\
-https://creativecommons.org/licenses/by-nc-sa/4.0/
+[https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-This book is available for free online at https://unredacted-word.pub/spectacle/
+This book is available for free online at [https://unredacted-word.pub/spectacle/](https://unredacted-word.pub/spectacle/)
 
 ISBN TODO (hardcover: alk. paper)\
 Library of Congress Control Number: TODO
