@@ -1,4 +1,4 @@
-## Glossary {.centered}
+### Glossary {#glossary .break-before-right}
 
 ::::: {.glossary .align-justify}
 

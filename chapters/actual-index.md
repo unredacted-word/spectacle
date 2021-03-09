@@ -1,4 +1,4 @@
-## Index {.centered}
+### Index {#index .break-before-right}
 
 ::::: {.align-left}
 

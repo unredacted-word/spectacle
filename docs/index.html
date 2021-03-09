@@ -64,8 +64,15 @@
       margin-top: 8rem;
       text-align: left;
       hyphens: none;
+      position: relative;
       /* chapters start on new page */
       break-before: always;
+    }
+    h2 .ch-roman {
+      position: absolute;
+      opacity: 0.2;
+      font-size: 5em;
+      margin-top: -0.5em;
     }
     .toc h2.centered,
     .preface h2.centered
@@ -219,93 +226,104 @@
 
     .glossary h3 {
       text-align: left;
+      font-size: 1rem;
     }
+
     .bibliography p {
       page-break-inside: avoid;
       text-align: left;
     }
-    body::before {
-      display: block;
-      content: 'draft';
-      font-family: system-ui, sans-serif;
-      text-transform: uppercase;
-      font-weight: 900;
-      font-size: 20vw;
-      opacity: 0.25;
-      position: fixed;
-      transform: rotate(-15deg);
-      left: 20vw;
-      top: 20vh;
-      pointer-events: none;
-    }
 
-    @media only screen {
-      html {
-        background: #f7f7f7;
-      }
-      body {
-        background: white;
-        box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
-        padding: 1cm;
-        margin: 2cm auto 2cm 24rem;
-        width: 152mm;
-      }
+    #authors {
+      column-count: 2;
+      column-count: 2;
+      column-gap: 1rem;
+      text-align: justify;
     }
+    #authors figure img {
+      max-width: 100%;
+    }    body::before {
+       display: block;
+       content: 'draft';
+       font-family: system-ui, sans-serif;
+       text-transform: uppercase;
+       font-weight: 900;
+       font-size: 20vw;
+       opacity: 0.25;
+       position: fixed;
+       transform: rotate(-15deg);
+       left: 20vw;
+       top: 20vh;
+       pointer-events: none;
+     }
+
+     @media only screen {
+       html {
+         background: #f7f7f7;
+       }
+       body {
+         background: white;
+         box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+         padding: 1cm;
+         margin: 2cm auto 2cm 24rem;
+         width: 152mm;
+       }
+     }
 
 
-    ::selection,
-    *:target,
-    *:target + .sidenote {
-      /* give highlight to text-selection, target, and the footnote next to the target */
-      background-color: rgba(254, 231, 0, 0.5);
-      transition: background-color 4s ease;
-    }
-    .sidenote:target,
-    *:target + .sidenote {
-      /* targeted sidenodes get padding because they have a yellog bg color */
-      padding: 0.5em;
-    }
-    @media only screen {
-      .sidenote {
-        width: 20rem;
-      }
-      .footnote {
-        margin-bottom: 1em;
-        border-left: 4px solid rgba(0,0,0, 0.25);
-        padding-left: 1rem;
-      }
-      /* alternating side footnotes */
-      .sidenote:nth-of-type(odd),
-      .sidenote.sidenote-r:nth-of-type(even) {
-        margin-right: -24rem;
-        margin-left: 0;
-        float: right;
-      }
-      .sidenote:nth-of-type(even),
-      .sidenote.sidenote-l:nth-of-type(odd) {
-        margin-left: -24rem;
-        margin-right: 0;
-        float: left;
-      }
-    }
+     ::selection,
+     *:target,
+     *:target + .sidenote {
+       /* give highlight to text-selection, target, and the footnote next to the target */
+       background-color: rgba(254, 231, 0, 0.5);
+       transition: background-color 4s ease;
+     }
+     .sidenote:target,
+     *:target + .sidenote {
+       /* targeted sidenodes get padding because they have a yellog bg color */
+       padding: 0.5em;
+     }
+     @media only screen {
+       .sidenote {
+         width: 20rem;
+       }
+       .footnote {
+         margin-bottom: 1em;
+         border-left: 4px solid rgba(0,0,0, 0.25);
+         padding-left: 1rem;
+       }
+       /* alternating side footnotes */
+       .sidenote:nth-of-type(odd),
+       .sidenote.sidenote-r:nth-of-type(even) {
+         margin-right: -24rem;
+         margin-left: 0;
+         float: right;
+       }
+       .sidenote:nth-of-type(even),
+       .sidenote.sidenote-l:nth-of-type(odd) {
+         margin-left: -24rem;
+         margin-right: 0;
+         float: left;
+       }
+     }
 
-    @media only screen {
-      h2,
-      .break-before {
-        margin-top: 100vh;
-      }
-      h2 + blockquote,
-      #title-block-header,
-      .break-after {
-        margin-bottom: 100vh;
-      }
-    }
+     @media only screen {
+       h2,
+       .break-before {
+         margin-top: 100vh;
+       }
+       h2 + blockquote,
+       #title-block-header,
+       .break-after {
+         margin-bottom: 100vh;
+       }
+     }
 
-    /* table of contents */
-    .toc ul,
-    .toc ol {
-      margin: 0.5rem 0 0.5rem -0.75rem;
-    }
+     /* table of contents */
+     .toc ul,
+     .toc ol {
+       margin: 0.5rem 0 0.5rem -0.75rem;
+     }
   </style>
 
 </head>
@@ -403,7 +421,7 @@ Cambridge, Massachusetts</p>
 <p>June 30, 1992<br />
 GUY DEBORD</p>
 <section id="i.-separation-perfected" class="level2 chapter" title="Separation Perfected">
-<h2 title="Separation Perfected">I. Separation Perfected</h2>
+<h2 title="Separation Perfected"><span class="ch-roman">I.</span> Separation Perfected</h2>
 <blockquote>
 <p><em>“But certainly for the present age, which prefers the sign to the thing signified, the copy to the original, representation to reality, the appearance to the essence… illusion only is sacred, truth profane. Nay, sacredness is held to be enhanced in proportion as truth decreases and illusion increases, so that the highest degree of illusion comes to be the highest degree of sacredness.”</em></p>
 <p>—Feuerbach, Preface to the second edition of <em>The Essence of Christianity</em></p>
@@ -551,7 +569,7 @@ GUY DEBORD</p>
 </section>
 </div>
 <section id="ii.-the-commodity-as-spectacle" class="level2 chapter" title="The Commodity as Spectacle">
-<h2 title="The Commodity as Spectacle">II. The Commodity as Spectacle</h2>
+<h2 title="The Commodity as Spectacle"><span class="ch-roman">II.</span> The Commodity as Spectacle</h2>
 <blockquote>
 <p><em>“The commodity can be understood in its undistorted essence only when it becomes the universal category of society as a whole. Only in this context does the reification produced by commodity relations assume decisive importance both for the objective evolution of society and for the attitudes that people adopt toward it, as it subjugates their consciousness to the forms in which this reification finds expression …. As labor is increasingly rationalized and mechanized, this subjugation is reinforced by the fact that people’s activity becomes less and less active and more and more contemplative.”</em></p>
 <p>—Lukács, <em>History and Class Consciousness</em></p>
@@ -636,7 +654,7 @@ GUY DEBORD</p>
 </section>
 </div>
 <section id="iii.-unity-division-within-appearances" class="level2 chapter" title="Unity &amp; Division Within Appearances">
-<h2 title="Unity &amp; Division Within Appearances">III. Unity &amp; Division within Appearances</h2>
+<h2 title="Unity &amp; Division Within Appearances"><span class="ch-roman">III.</span> Unity &amp; Division within Appearances</h2>
 <blockquote>
 <p><em>“An intense new polemic is unfolding on the philosophical front in this country, focusing on the concepts ‘one divides into two’ and ‘two fuse into one’. This debate is a struggle between those who are for and those who are against the materialist dialectic, a struggle between two conceptions of the world: the proletarian conception and the bourgeois conception. Those who maintain that ‘one divides into two’ is the fundamental law of things are on the side of the materialist dialectic; those who maintain that the fundamental law of things is that ‘two fuse into one’ are against the materialist dialectic. The two sides have drawn a clear line of demarcation between them, and their arguments are diametrically opposed. This polemic is a reflection, on the ideological level, of the acute and complex class struggle taking place in China and in the world.”</em></p>
 <p>—<em>Red Flag</em> (Beijing), September 21, 1964</p>
@@ -721,7 +739,7 @@ GUY DEBORD</p>
 </section>
 </div>
 <section id="iv" class="level2 chapter" title="The Proletariat as Subject and Representation" data-bookmark-label="IV. The Proletariat as Subject and Representation">
-<h2 title="The Proletariat as Subject and Representation" data-bookmark-label="IV. The Proletariat as Subject and Representation">IV. The Proletariat as Subject and Representation<sup>0</sup></h2>
+<h2 title="The Proletariat as Subject and Representation" data-bookmark-label="IV. The Proletariat as Subject and Representation"><span class="ch-roman">IV.</span> The Proletariat as Subject and Representation<sup>0</sup></h2>
 <blockquote>
 <p><em>“Equal right to all the goods and pleasures of this world the destruction of all authority, the negation of all moral restraints—in the final analysis, these are the aims behind the March 18<sup>th</sup> insurrection and the charter of the fearsome organization that furnished it with an army.”</em></p>
 <p>—<em>Parliamentary Report on the Insurrection of March 18</em></p>
@@ -943,7 +961,7 @@ The insurrection of March 18<sup>th</sup> refers to the Paris Commune, the radic
 </section>
 </div>
 <section id="v.-time-history" class="level2 chapter" title="Time &amp; History">
-<h2 title="Time &amp; History">V. Time &amp; History</h2>
+<h2 title="Time &amp; History"><span class="ch-roman">V.</span> Time &amp; History</h2>
 <blockquote>
 <p><em>“O, gentlemen, the time of life is short!… And if we live, we live to tread on kings.”</em></p>
 <p>—Shakespeare, <em>Henry IV</em> (Part I)</p>
@@ -1054,7 +1072,7 @@ We are nothing, let us be all.”</em></span>.</p>
 </section>
 </div>
 <section id="vi.-spectacular-time" class="level2 chapter" title="Spectacular Time">
-<h2 title="Spectacular Time">VI. Spectacular Time</h2>
+<h2 title="Spectacular Time"><span class="ch-roman">VI.</span> Spectacular Time</h2>
 <blockquote>
 <p><em>“We have nothing that is ours but time, which even those without a roof can enjoy.”</em></p>
 <p>—Baltasar Gracian, <em>The Art of Worldly Wisdom</em></p>
@@ -1135,7 +1153,7 @@ We are nothing, let us be all.”</em></span>.</p>
 </section>
 </div>
 <section id="vii.-the-organization-of-territory" class="level2 chapter" title="The Organization of Territory">
-<h2 title="The Organization of Territory">VII. The Organization of Territory</h2>
+<h2 title="The Organization of Territory"><span class="ch-roman">VII.</span> The Organization of Territory</h2>
 <blockquote>
 <p><em>“Whoever becomes master of a city accustomed to live in freedom and does no destroy it, may reckon on being destroyed by it. For if it should rebel, it can always screen itself under the name of liberty and its ancient laws, which no length of time, nor any benefit conferred will ever cause it to forget; and do what you will, and take what care you may, unless the inhabitants be scattered and dispersed, this name, and the old order of things, will never cease to be remembered…”</em></p>
 <p>—Machiavelli, <em>The Prince</em></p>
@@ -1208,7 +1226,7 @@ We are nothing, let us be all.”</em></span>.</p>
 </section>
 </div>
 <section id="viii.-negation-and-consumption-in-the-cultural-sphere" class="level2 chapter" title="Negation and Consumption in the Cultural Sphere">
-<h2 title="Negation and Consumption in the Cultural Sphere">VIII. Negation and Consumption in the Cultural Sphere</h2>
+<h2 title="Negation and Consumption in the Cultural Sphere"><span class="ch-roman">VIII.</span> Negation and Consumption in the Cultural Sphere</h2>
 <blockquote>
 <p><em>“Do you really believe that these Germans will make a political revolution in our lifetime? My friend, that is just wishful thinking… Let us judge Germany on the basis of its present history—and surely you are not going to object that all its history is falsified, or that all its present public life does not reflect the actual state of the people? Read whatever newspapers you please and you cannot fail to be convinced that we never stop (and you must concede that the censorship prevents no one from stopping) celebrating the freedom and national happiness that we enjoy.”</em></p>
 <p>—Ruge<sup>0</sup>, <em>Letter to Marx, March 1843</em> <span class="fnviii.0 footnote">Arnold Ruge, the German philosopher and political writer glibly dismissed the idea of a revolution in his letter to Marx, it was only five years later when the Germans revolted in 1848, resulting in the Marzrevolution of 1848-1849. This quote appeared in <em>The Situationist International No. 12</em>, with this quote “Five years later that revolution had come. As an amusing example of a type of historical unconsciousness constantly produced by similar causes and always contradicted by similar results”. See <em>The Beginning of an Era</em> Knabb, K., 2006 (Pp. 288).</span></p>
@@ -1345,12 +1363,12 @@ We are nothing, let us be all.”</em></span>.</p>
 </section>
 </div>
 <section id="ix.-ideology-materialized" class="level2 chapter" title="Ideology Materialized">
-<h2 title="Ideology Materialized">IX. Ideology Materialized</h2>
+<h2 class="chapter" title="Ideology Materialized"><span class="ch-roman">IX.</span> Ideology Materialized</h2>
 <blockquote>
 <p><em>“Self-consciousness exists in itself and for itself only insofar as it exists in and for another self-consciousness; that is, it exists only by being recognized and acknowledged.”</em></p>
 <p>—Hegel, <em>The Phenomenology of Spirit</em></p>
 </blockquote>
-</section>
+<p>:::::</p>
 <div class="chapter-body">
 <section id="section-208" class="level3">
 <h3>212</h3>
@@ -1393,8 +1411,8 @@ We are nothing, let us be all.”</em></span>.</p>
 <p>Self-emancipation in the contemporary period is emancipation from our material basis within falsified reality. This “historic mission of establishing truth in the world”<span id="fn221.1" class="sidenote">“historic mission of establishing truth in the world”: c.f Marx, K., 1844. The full quotation is “The task of history is thus to establish the truth about this world once the otherworld has proved illusory.”</span> can not be accomplished by the isolated individual nor by the atomized and manipulated masses, but only and always by the “class that is able to dissolve all classes”<span id="fn221.2" class="sidenote">“class that is able to dissolve all classes”: Marx refers to the working class, quoted as “a class that is the dissolution of all classes.” Ibid.</span> by returning power to the disalienating, participatory, and universalized form of democracy. This is the power of the workers councils, in which practical theory controls itself and self-validates with its own actions. This can only be made possible when individuals are “directly linked to world history”<span id="fn221.3" class="sidenote">“directly linked to world history”: See Marx, K. &amp; Engels, F., 1998 (Part I, Ch. 2, Section 5).</span>—where dialog within the council arms itself to defeat its own conditions.</p>
 </section>
 </div>
-<section id="glossary" class="level2 centered">
-<h2 class="centered">Glossary</h2>
+<section id="glossary" class="level3 break-before-right">
+<h3 class="break-before-right">Glossary</h3>
 <div class="glossary align-justify">
 <p>Debord writes in a provocative style of classical French, often overloading terms with meanings defined in other Situationist texts. This makes reading the text impenetrable until his use of the terminology becomes apparent to the reader through its consistent use.</p>
 <section id="absolute-lie-mensonge-absolu" class="level3">
@@ -1475,8 +1493,8 @@ We are nothing, let us be all.”</em></span>.</p>
 </section>
 </div>
 </section>
-<section id="bibliography" class="level2 centered">
-<h2 class="centered">Bibliography</h2>
+<section id="bibliography" class="level3 break-before-right">
+<h3 class="break-before-right">Bibliography</h3>
 <div class="hanging-indent bibliography">
 <p>0xADADA. (2019, April 16). <em>The City and The Freezing of Life</em>. Retreived from https://0xadada.pub/2019/04/16/the-city-and-the-freezing-of-life/</p>
 <p>0xADADA. (2021, January 14). <em>Bandersnatch Advertising</em>. Retreived from https://0xadada.pub/2021/01/14/bandersnatch-advertising/</p>
@@ -1604,12 +1622,12 @@ We are nothing, let us be all.”</em></span>.</p>
 <p>Zuboff, S. (2019). <em>The age of surveillance capitalism: the fight for a human future at the new frontier of power</em>. New York: PublicAffairs. 9781610395694.</p>
 </div>
 </section>
-<section id="index" class="level2 centered">
-<h2 class="centered">Index</h2>
+<section id="index" class="level3 break-before-right">
+<h3 class="break-before-right">Index</h3>
 <div class="align-left">
 <p>TODO</p>
 </div>
-<div class="title-page">
+<div id="authors" class="title-page">
 <figure>
 <img src="images/author.jpg" alt="Guy Debord (right)" /><figcaption aria-hidden="true">Guy Debord (right)</figcaption>
 </figure>
@@ -1619,6 +1637,7 @@ We are nothing, let us be all.”</em></span>.</p>
 </figure>
 <p>Ron. Adams lives in Somerville Massachusetts. His writing covers the intersection of media, technology, and power. He discovered the work of Debord and The Situationists through his participation in Occupy Wall Street in 2011. His writing is online at https://0xadada.pub.</p>
 </div>
+</section>
 </section>
 </body>
 </html>

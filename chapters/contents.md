@@ -3,7 +3,7 @@
 ## Contents {#toc .centered data-bookmark-label="Table of Contents"}
 
 - [Preface](#preface)
-- [Preface to the Third French Edition](#preface-to-the-third-french-edition)
+- [Preface to the Third French Edition](#preface-3rd)
 
 1. [Separation Perfected](#i.-separation-perfected)
 2. [The Commodity as Spectacle](#ii.-the-commodity-as-spectacle)

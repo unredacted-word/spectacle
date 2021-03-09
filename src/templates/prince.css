@@ -262,3 +262,11 @@ section.footnote-call::after{
 #preface-3rd h3 {
   bookmark-level: 1;
 }
+/* glossary */
+#glossary,
+#bibliography,
+#index {
+  string-set: chapter-title '';
+  bookmark-level: 1;
+  bookmark-state: closed;
+}

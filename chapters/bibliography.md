@@ -1,4 +1,4 @@
-## Bibliography {.centered}
+### Bibliography {#bibliography .break-before-right}
 
 ::::: {.hanging-indent .bibliography}
 

@@ -53,8 +53,15 @@ h2 {
   margin-top: 8rem;
   text-align: left;
   hyphens: none;
+  position: relative;
   /* chapters start on new page */
   break-before: always;
+}
+h2 .ch-roman {
+  position: absolute;
+  opacity: 0.2;
+  font-size: 5em;
+  margin-top: -0.5em;
 }
 .toc h2.centered,
 .preface h2.centered
@@ -208,9 +215,20 @@ h1.title {
 
 .glossary h3 {
   text-align: left;
+  font-size: 1rem;
 }
+
 .bibliography p {
   page-break-inside: avoid;
   text-align: left;
 }
 
+#authors {
+  column-count: 2;
+  column-count: 2;
+  column-gap: 1rem;
+  text-align: justify;
+}
+#authors figure img {
+  max-width: 100%;
+}
