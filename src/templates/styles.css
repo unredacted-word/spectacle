@@ -24,8 +24,8 @@ a:hover {
 
 hr {
   border: none;
-  border-top: 2pt solid black;
-  border-bottom: 1pt solid black;
+  border-top: 1pt solid black;
+  border-bottom: 1pt dotted black;
   height: 4pt;
   width: 50%;
   margin-left: auto;
@@ -191,6 +191,12 @@ h1.title {
 }
 
 .titlepg.centered {
+  text-align: center;
+}
+.titlepg .author,
+.titlepg .title {
+  margin: 4rem 0;
+  display: block;
   text-align: center;
 }
 

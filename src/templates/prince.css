@@ -79,11 +79,16 @@ h2.centered {
   font-size: 1.5rem;
 }
 
+/* titlepg */
+.titlepg {
+  margin-top: 8rem;
+}
+
 .title-details {
-  margin-top: 4cm;
+  margin-top: 3cm;
 }
 .title-logo {
-  margin-top: 6cm;
+  margin-top: 4.5cm;
 }
 
 /* utilities for pagination */
