@@ -1,13 +1,18 @@
 @page {
   size: 152mm 229mm;
-  margin: 1.75cm;
-  margin-inside: 2cm;
+  /* Allow a minimum `0.50in`/`12.7mm` in Safety Margin for all content
+   * Allow an additional minimum `0.2in`/`5.08mm` in Gutter Margin for inners
+   */
+
+  margin: 18mm; /* 18mm = 0.7in  */
+  margin-inside: 23.5mm; /* 22.5mm = 18mm + 5.5mm */
 }
 
 body {
   font-size: 11pt;
   text-align: justify;
   hyphens: auto;
+  line-height: 1.3636363636; /* 15pt = 11*1.3636- is 36 lines of text p.p. */
 }
 
 a {
@@ -187,9 +192,9 @@ h2 {
   @footnote {
     /* sidenotes */
     position: absolute;
-    width: 4.5cm;
-    right: -1.24cm;
-    top: 1.72cm;
+    width: 46mm;
+    right: -12mm;
+    top: 17mm;
   }
 }
 
@@ -208,16 +213,16 @@ h2 {
 }
 
 .chapter-body {
-  margin-right: 4cm;
+  margin-right: 42mm;
 }
 
 /* sidenotes */
 .sidenote,
 .footnote {
   /* if note is in a header, we need to reset the typography */
-  font-size: 9pt;
+  font-size: 8pt;
   font-weight: normal;
-  line-height: 1.4;
+  line-height: 1.375; /* 11pt = 8*1.375 is 36 lines of footnote text p.p. */
   letter-spacing: normal;
   /* increment footnote count */
   counter-increment: footnote;
