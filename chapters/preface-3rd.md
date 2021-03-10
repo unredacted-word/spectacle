@@ -58,7 +58,7 @@ spectacle</q>.
 
 :::::
 
-This fusion can be summarized summarily by correcting [thesis 105](#section-105)
+This fusion can be summarized summarily by correcting [thesis 105](#ref105.0)
 which, touching on what had happened before 1967, still distinguished the 
 earlier forms according to some opposing practices. The Great Schism of class
 power having ended in reconciliation, it must be said that the unified practice
