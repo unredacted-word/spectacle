@@ -52,6 +52,13 @@ h2 sup {
   font-size: 9pt;
 }
 
+h3 {
+  /* thesis numbers */
+  font-size: 16pt;
+  line-height: 0.9375; /* 0.9375 = 16pt/15pt */ ;
+  margin: 28.125pt 0 16pt 0;
+}
+
 figure img {
   max-width: 120mm;
   margin: 0 -1.2cm;
@@ -198,9 +205,7 @@ h2 {
     width: 46mm;
     right: -12mm;
     top: 3pt;
-    bottom: 3mm;
-    border-left: 1pt solid red;
-    border-right: 1pt solid red;
+    bottom: 5mm;
   }
 }
 
@@ -228,10 +233,11 @@ h2 {
   /* if note is in a header, we need to reset the typography */
   font-size: 8pt;
   font-weight: normal;
-  line-height: 1.4375; /* 11.5pt = creates vertical rhythm with 8pt footnote
-                        * text and 11pt body text. This creates a vertical
-                        * rhythm of 4 body lines to 5 footnote lines.
-                        */
+  line-height: 1.40625; /* 11.25pt = creates vertical rhythm with 8pt footnote
+                         * text and 11pt body text. This creates a vertical
+                         * rhythm of 4 body lines to 5 footnote lines, and 48
+                         * lines in a footnote column.
+                         */
   letter-spacing: normal;
   /* increment footnote count */
   counter-increment: footnote;
@@ -276,7 +282,8 @@ section.footnote-call::after{
   content: leader('.') ' ' target-counter(attr(href), page);
 }
 
-/* preface */
+/* fix headings for PDF bookmarks */
+h1,
 #preface h3,
 #preface-3rd h3 {
   bookmark-level: 1;

@@ -4,7 +4,7 @@
 
 ---
 
-[The Society of the Spectacle]{.title}
+# The Society of the Spectacle {.title}
 
 ---
 

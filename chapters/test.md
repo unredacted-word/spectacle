@@ -95,6 +95,8 @@ Nulla mollis turpis dui, non dictum tellus feugiat nec. Nunc quam metus, blandit
 eget sapien facilisis, eleifend hendrerit felis. Sed iaculis leo vitae turpis
 suscipit dignissim. Phasellus nibh eros, feugiat id dolor non, ullamcorper
 interdum justo. Fusce vel libero volutpat metus viverra condimentum.
+Pellentesque pharetra molestie elemen- tum. Vivamus suscipit, sem et tristique
+rhoncus, turpis lectus viverra ligula, a ullamcorper lorem eros et neque. Nul-
 
 ::::: {.chapter-body}
 
@@ -103,33 +105,31 @@ rhoncus, turpis lectus viverra ligula, a ullamcorper lorem eros et neque. Nullam
 est dolor, semper ac dolor non, tincidunt ornare risus. Fusce at mi a augue
 viverra cursus sagittis ac justo. Maecenas mauris eros, scelerisque in tristique
 at, porta quis lacus. Proin pellentesque varius placerat. Praesent rhoncus nisi
-id pellentesque aliquam[ Aenean interdum ante vel nibh faucibus, efficitur
-semper mi condimentum. Nullam ut viverra ante. Mauris et mi sit amet ex mattis
-euismod id sit amet ligula. Duis tincidunt vitae purus vitae suscipit. Curabitur
-eu gravida lacus, commodo tempor nibh. Vestibulum in orci auctor, fermentum
-purus in, luctus nulla. Mauris tristique risus nec luctus porta. Aenean
-consectetur, nibh id bibendum cursus, orci felis fringilla sem, non imperdiet
-purus nisl ut ante. Nam a mi ullamcorper nulla vehicula ornare. Maecenas ac
-feugiat elit. Quisque id hendrerit dui, eget commodo elit. Cras vel euismod
-nunc. Donec eu turpis et urna tristique convallis. Duis ultrices metus elit, et
-auctor sapien feugiat ut. Curabitur porttitor sollicitudin nisi vitae
-pellentesque. Pellentesque habitant morbi tristique senectus et netus et
-malesuada fames ac turpis egestas. Praesent viverra feugiat feugiat. Phasellus
-ultrices lectus justo, id sodales massa hendrerit a. Aenean vitae neque in nisl
-faucibus molestie. Donec sed lorem non turpis sodales eleifend. Vestibulum ante
-ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-Vestibulum eu odio a felis pellentesque blandit id nec sem. Nam ut feugiat ante.
-Ut et nisi a urna consectetur aliquam. Aenean tempus, ante vel tempus posuere,
-odio turpis auctor leo, non facilisis ipsum nibh sit amet ipsum. Orci varius
-natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-vitae vulputate est.Donec sed lorem non turpis sodales eleifend. Vestibulum ante
-ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-Vestibulum eu odio a felis pellentesque blandit id nec sem. Nam ut feugiat ante.
-Ut et nisi a urna consectetur aliquam. Aenean tempus, Donec sed lorem non turpis
-sodales eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et
-ultrices posuere cubilia curae; Vestibulum eu odio a felis pellentesque blandit
-id nec sem. Nam ut feugiat ante. Ut et nisi a urna consectetur aliquam. Aenean
-tempus, ]{.sidenote}. Aenean interdum ante vel nibh faucibus, efficitur semper
+id pellentesque aliquam[
+  Aenean interdum ante vel nibh faucibus, efficitur
+  semper mi condimentum. Nullam ut viverra ante. Mauris et mi sit amet ex mattis
+  euismod id sit amet ligula. Duis tincidunt vitae purus vitae suscipit. Curabitur
+  eu gravida lacus, commodo tempor nibh. Vestibulum in orci auctor, fermentum
+  purus in, luctus nulla. Mauris tristique risus nec luctus porta. Aenean
+  consectetur, nibh id bibendum cursus, orci felis fringilla sem, non imperdiet
+  purus nisl ut ante. Nam a mi ullamcorper nulla vehicula ornare. Maecenas ac
+  feugiat elit. Quisque id hendrerit dui, eget commodo elit. Cras vel euismod
+  nunc. Donec eu turpis et urna tristique convallis. Duis ultrices metus elit, et
+  auctor sapien feugiat ut. Curabitur porttitor sollicitudin nisi vitae
+  pellentesque. Pellentesque habitant morbi tristique senectus et netus et
+  malesuada fames ac turpis egestas. Praesent viverra feugiat feugiat. Phasellus
+  ultrices lectus justo, id sodales massa hendrerit a. Aenean vitae neque in nisl
+  faucibus molestie. Donec sed lorem non turpis sodales eleifend. Vestibulum ante
+  ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+  Vestibulum eu odio a felis pellentesque blandit id nec sem. Nam ut feugiat ante.
+  Ut et nisi a urna consectetur aliquam. Aenean tempus, ante vel tempus posuere,
+  odio turpis auctor leo, non facilisis ipsum nibh sit amet ipsum. Orci varius
+  natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+  vitae vulputate est.Donec sed lorem non turpis sodales eleifend. Vestibulum ante
+  ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+  Vestibulum eu odio a felis pellentesque blandit id nec sem.
+]{.sidenote}.
+Aenean interdum ante vel nibh faucibus, efficitur semper
 mi condimentum. Nullam ut viverra ante. Mauris et mi sit amet ex mattis euismod
 id sit amet ligula. Duis tincidunt vitae purus vitae suscipit. Curabitur eu
 gravida lacus, commodo tempor nibh. Vestibulum in orci auctor, fermentum purus
@@ -142,15 +142,31 @@ feugiat ut. Curabitur porttitor sollicitudin nisi vitae pellentesque.
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
 turpis egestas. Praesent viverra feugiat feugiat. Phasellus ultrices lectus
 justo, id sodales massa hendrerit a. Aenean vitae neque in nisl faucibus
-molestie. Donec sed lorem non turpis sodales eleifend. Vestibulum ante ipsum
-primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum eu
-odio a felis pellentesque blandit id nec sem. Nam ut feugiat ante. Ut et nisi a
-urna consectetur aliquam. Aenean tempus,
+molestie. Donec sed lorem non turpis s…
 
-:::::
+### heading 3
 
 ante vel tempus posuere, odio turpis auctor leo, non facilisis ipsum nibh sit
-amet ipsum. Orci varius natoque penatibus et magnis dis parturient montes,
+amet ipsum[
+  Orci varius natoque penatibus et magnis dis parturient montes,
+  nascetur ridiculus mus. Donec vitae vulputate est. Praesent ac egestas ligula,
+  ultrices tincidunt elit. Integer eget neque ante. Phasellus augue turpis, mollis
+  id maximus at, hendrerit vitae ipsum. Ut leo justo, eleifend nec sodales vel,
+  placerat vitae leo. Curabitur sem dui, rutrum vestibulum scelerisque ac,
+  volutpat convallis lectus. Integer ac laoreet sem, a laoreet nibh. Nulla
+  condimentum nunc et nisl faucibus varius. Donec hendrerit nulla scelerisque nibh
+  tempus, vitae sodales nunc rhoncus. Aliquam rhoncus faucibus fringilla.
+  Vestibulum sed nunc mi. Donec sem purus, molestie nec volutpat non, commodo ac
+  ante. Mauris risus eros, sollicitudin nec facilisis ut, ultrices in neque.
+  Integer semper, mauris non consequat feugiat, neque velit imperdiet metus, non
+  faucibus massa odio eget arcu. Nam ultricies tristique tempus. Ut blandit risus
+  eget leo tincidunt viverra. Nam lacinia posuere leo, tristique volutpat nisl
+  tincidunt et. Duis dictum ultricies semper. Nulla at ante ante. Maecenas orci
+  nunc, pulvinar posuere justo ut, venenatis rhoncus erat. Curabitur tempor
+  pulvinar urna eu laoreet. Proin suscipit sagittis sagittis. Fusce venenatis,
+  neque vitae pharetra commodo, mi ipsum tempor libero, sed auctor ex tellus
+  gravida sem.
+]{.sidenote}. Orci varius natoque penatibus et magnis dis parturient montes,
 nascetur ridiculus mus. Donec vitae vulputate est. Praesent ac egestas ligula,
 ultrices tincidunt elit. Integer eget neque ante. Phasellus augue turpis, mollis
 id maximus at, hendrerit vitae ipsum. Ut leo justo, eleifend nec sodales vel,
@@ -176,6 +192,8 @@ Donec in volutpat ligula. Curabitur feugiat, ex vel aliquet iaculis, orci elit
 molestie elit, eu porta dolor neque id arcu. Integer in eleifend justo. Quisque
 sit amet lorem fermentum, fermentum velit et, lacinia quam. Donec mattis vel
 tortor at vestibulum.
+
+:::::
 
 Vestibulum tincidunt non odio in varius. Vivamus congue sem in enim imperdiet,
 in pretium purus ultricies. Nam maximus odio gravida condimentum rutrum. Morbi
