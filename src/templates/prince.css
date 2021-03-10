@@ -35,6 +35,7 @@ h2 {
   /* use chapter headings as level-1 PDF bookmarks */
   bookmark-level: 1;
   bookmark-state: closed;
+  counter-reset: footnote 0;
 }
 #iv h2,
 #toc h2,
@@ -76,6 +77,10 @@ figure figcaption {
 /* chapter page */
 h2 + blockquote {
   font-size: 14pt;
+}
+h2 + blockquote p:first-child + p {
+  /* decrease size of quote attribution */
+  font-size: 13pt;
 }
 h2.centered {
   /* centered page titles should have smaller margins */
@@ -193,7 +198,6 @@ h2 {
 
 .chapter {
   page: chapter;
-  counter-reset: footnote 0; /* restart footnote per chapter */
 }
 @page chapter {
   /* remove margin content from chapter title pages */
@@ -209,7 +213,16 @@ h2 {
   margin-right: 42mm;
 }
 
-/* sidenotes */
+
+/* notes */
+.footnote {
+  counter-increment: footnote;
+}
+.sidenote,
+.note {
+  /* increment footnote count */
+  counter-increment: footnote;
+}
 .sidenote,
 .footnote {
   /* if note is in a header, we need to reset the typography */
@@ -221,31 +234,24 @@ h2 {
                          * lines in a footnote column.
                          */
   letter-spacing: normal;
-  /* increment footnote count */
-  counter-increment: footnote;
   text-align: justify;
-}
-.footnote {
-  display: inline;
 }
 
 .sidenote {
   float: footnote;
 }
 
-.footnote-call {
-  counter-increment: x-footnote;
-}
 .footnote {
   float: bottom;
   position: relative;
+  display: inline;
 }
 .footnote::before,
 .footnote-call::after {
   font-size: 9pt;
 }
 .footnote-call::after {
-  content: counter(x-footnote);
+  content: counter(footnote);
   line-height: 0;
   vertical-align: super;
 }
@@ -255,9 +261,10 @@ section.footnote-call::after{
                   */
 }
 .footnote::before {
-  content: counter(x-footnote) '.';
+  content: counter(footnote) '.';
   position: absolute;
   left: -1.25em;
+  top: -1pt;
 }
 
 /* table of contents */
@@ -284,12 +291,12 @@ section.footnote-call::after{
 }
 
 /* preface to the third french edition */
-h3#forward,
-h3#preface-3rd {
+#forward,
+#preface-3rd {
   break-before: right;
   -prince-page-group: start;
   prince-page-group: start;
-  counter-reset: x-footnote 0;
+  counter-reset: footnote 0;
 }
 
 /* glossary */
@@ -302,5 +309,6 @@ h3#preface-3rd {
   string-set: chapter-title '';
   bookmark-level: 1;
   bookmark-state: closed;
+
 }
 

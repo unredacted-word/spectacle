@@ -136,7 +136,7 @@ h2 + blockquote > p:first-child em {
   text-align: left;
 }
 h2 + blockquote p:first-child + p {
-  /* right align attribution */
+  /* right align quote attribution */
   text-align: right;
 }
 
