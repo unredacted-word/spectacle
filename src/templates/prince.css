@@ -70,7 +70,7 @@ h3 {
 
 .chapter-body h3:first-child {
   /* hack: removes the odd margin-top on the first thesis in each chapter */
-  margin-top: 0;
+  margin-top: -0.5pt;
 }
 
 figure img {
