@@ -26,7 +26,7 @@ hr {
   border: none;
   border-top: 2pt solid black;
   border-bottom: 1pt solid black;
-  height: 3pt;
+  height: 4pt;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -44,7 +44,7 @@ h6 {
   break-after: avoid;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 h2 {
   /* chapters */
@@ -154,11 +154,35 @@ h2 + blockquote p:first-child + p {
   display: none;
 }
 
-/* components */
-h1.title {
-  margin-top: 25vh;
+.title,
+.author {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  text-align: left;
 }
 
+.author {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  string-set: doctitle content();
+}
+
+.titlepg.centered {
+  text-align: center;
+}
+.titlepg .author,
+.titlepg .title {
+  margin: 4rem 0;
+  display: block;
+  text-align: center;
+}
 .title-logo {
   width: 4rem;
   margin: 0 auto;
@@ -182,30 +206,6 @@ h1.title {
   letter-spacing: normal;
   text-align: left;
 }
-
-h1.title,
-.author {
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  line-height: 1;
-  text-align: left;
-}
-
-.author {
-  font-size: 2rem;
-}
-
-.titlepg.centered {
-  text-align: center;
-}
-.titlepg .author,
-.titlepg .title {
-  margin: 4rem 0;
-  display: block;
-  text-align: center;
-}
-
 .colophon {
   font-size: 0.6875rem;
 }

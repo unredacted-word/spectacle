@@ -3,7 +3,7 @@ input-files:
 - chapters/test.md
 - chapters/cover.md
 - chapters/colophon.md
-- chapters/preface.md
+- chapters/forward.md
 - chapters/title.md
 - chapters/preface-3rd.md
 - chapters/01.md

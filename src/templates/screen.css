@@ -5,7 +5,7 @@ body::before {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 20vw;
-  opacity: 0.25;
+  opacity: 0.2;
   position: fixed;
   transform: rotate(-15deg);
   left: 20vw;
@@ -26,6 +26,10 @@ body::before {
   }
 }
 
+/* components */
+h1.title {
+  margin-top: 25vh;
+}
 
 ::selection,
 *:target,

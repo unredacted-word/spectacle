@@ -8,7 +8,7 @@ delete verso
 
 ::::: {.title .halftitle-title .title-page .break-before-right .reset-page-counter}
 
-The Society of the Spectacle
+[The Society of the Spectacle]{.title}
 
 [Guy Debord]{.author}
 

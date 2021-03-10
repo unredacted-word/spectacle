@@ -23,13 +23,14 @@ a {
 }
 
 p {
- orphans: 4;
- widows: 4;
+ orphans: 2;
+ widows: 3;
 }
 
 h1 {
   bookmark-state: open;
 }
+
 h2 {
   /* use chapter headings as level-1 PDF bookmarks */
   bookmark-level: 1;
@@ -59,6 +60,11 @@ h3 {
   margin: 28.125pt 0 16pt 0;
 }
 
+.chapter-body h3:first-child {
+  /* hack: removes the odd margin-top on the first thesis in each chapter */
+  margin-top: 0;
+}
+
 figure img {
   max-width: 120mm;
   margin: 0 -1.2cm;
@@ -82,16 +88,6 @@ h2.centered {
 
 .halftitle-title {
   margin-top: 12rem;
-}
-
-.title {
-  font-size: 2rem;
-  string-set: doctitle content();
-}
-
-.author {
-  text-transform: uppercase;
-  font-size: 1.5rem;
 }
 
 /* titlepg */
@@ -126,20 +122,6 @@ h2.centered {
 .blank {
   prince-page-group: start;
   -prince-page-group: start;
-}
-
-/* title page */
-.title-page {
-  page: title-page;
-  -prince-page-group: start;
-  prince-page-group: start;
-}
-@page title-page {
-  /* remove marginalia from title pages */
-  @top-left { content: normal; }
-  @top-right { content: normal; }
-  @bottom-right-corner { content: normal; }
-  @bottom-left-corner { content: normal; }
 }
 
 #title-block-header,
@@ -241,14 +223,19 @@ h2 {
   letter-spacing: normal;
   /* increment footnote count */
   counter-increment: footnote;
-  display: block;
   text-align: justify;
+}
+.footnote {
+  display: inline;
 }
 
 .sidenote {
   float: footnote;
 }
 
+.footnote-call {
+  counter-increment: x-footnote;
+}
 .footnote {
   float: bottom;
   position: relative;
@@ -258,17 +245,17 @@ h2 {
   font-size: 9pt;
 }
 .footnote-call::after {
-  content: counter(footnote);
+  content: counter(x-footnote);
   line-height: 0;
   vertical-align: super;
 }
 section.footnote-call::after{
-  content: none; /* fixes headers with hosted classnames adding content
+  content: none; /* fixes headers with hoisted classnames adding content
                   * to sections themselves
                   */
 }
 .footnote::before {
-  content: counter(footnote) '.';
+  content: counter(x-footnote) '.';
   position: absolute;
   left: -1.25em;
 }
@@ -282,13 +269,33 @@ section.footnote-call::after{
   content: leader('.') ' ' target-counter(attr(href), page);
 }
 
-/* fix headings for PDF bookmarks */
-h1,
-#preface h3,
-#preface-3rd h3 {
-  bookmark-level: 1;
+/* title page */
+.title-page {
+  page: title-page;
+  -prince-page-group: start;
+  prince-page-group: start;
 }
+@page title-page {
+  /* remove marginalia from title pages */
+  @top-left { content: normal; }
+  @top-right { content: normal; }
+  @bottom-right-corner { content: normal; }
+  @bottom-left-corner { content: normal; }
+}
+
+/* preface to the third french edition */
+h3#forward,
+h3#preface-3rd {
+  break-before: right;
+  -prince-page-group: start;
+  prince-page-group: start;
+  counter-reset: x-footnote 0;
+}
+
 /* glossary */
+#forward,
+#preface,
+#preface-3rd,
 #glossary,
 #bibliography,
 #index {
@@ -296,3 +303,4 @@ h1,
   bookmark-level: 1;
   bookmark-state: closed;
 }
+
