@@ -30,6 +30,13 @@ p {
 h1 {
   bookmark-state: open;
 }
+span.title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  text-align: left;
+}
 
 h2 {
   /* use chapter headings as level-1 PDF bookmarks */
