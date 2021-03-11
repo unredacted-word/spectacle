@@ -191,8 +191,7 @@ h2 + blockquote p:first-child + p {
   font-size: 0.75rem;
 }
 
-.sidenote,
-.footnote {
+.fn {
   display: block;
   /* if note is in a header, we need to reset the typography */
   font-size: 0.75rem;
@@ -201,6 +200,7 @@ h2 + blockquote p:first-child + p {
   letter-spacing: normal;
   text-align: left;
 }
+
 .colophon {
   font-size: 0.6875rem;
 }

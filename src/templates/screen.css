@@ -33,34 +33,29 @@ h1.title {
 
 ::selection,
 *:target,
-*:target + .sidenote {
+*:target + .fn {
   /* give highlight to text-selection, target, and the footnote next to the target */
   background-color: rgba(254, 231, 0, 0.5);
   transition: background-color 4s ease;
 }
-.sidenote:target,
-*:target + .sidenote {
+.fn:target,
+*:target + .fn {
   /* targeted sidenodes get padding because they have a yellog bg color */
   padding: 0.5em;
 }
 @media only screen {
-  .sidenote {
+  .fn {
     width: 20rem;
   }
-  .footnote {
-    margin-bottom: 1em;
-    border-left: 4px solid rgba(0,0,0, 0.25);
-    padding-left: 1rem;
-  }
   /* alternating side footnotes */
-  .sidenote:nth-of-type(odd),
-  .sidenote.sidenote-r:nth-of-type(even) {
+  .fn:nth-of-type(odd),
+  .fn.fn-r:nth-of-type(even) {
     margin-right: -24rem;
     margin-left: 0;
     float: right;
   }
-  .sidenote:nth-of-type(even),
-  .sidenote.sidenote-l:nth-of-type(odd) {
+  .fn:nth-of-type(even),
+  .fn.fn-l:nth-of-type(odd) {
     margin-left: -24rem;
     margin-right: 0;
     float: left;

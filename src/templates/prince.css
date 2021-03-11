@@ -218,29 +218,27 @@ h2 {
 }
 
 /* notes */
-.sidenote,
 .fn {
-  float: footnote;
-  /* increment footnote count */
   counter-increment: footnote;
-}
-.fn {
   display: inline;
-}
-.sidenote,
-.fn {
+  float: footnote;
   /* if note is in a header, we need to reset the typography */
   font-size: 8pt;
   font-weight: normal;
   font-style: normal;
-  text-indent: 0;
+  letter-spacing: normal;
   line-height: 1.40625; /* 11.25pt = creates vertical rhythm with 8pt footnote
                          * text and 11pt body text. This creates a vertical
                          * rhythm of 4 body lines to 5 footnote lines, and 48
                          * lines in a footnote column.
                          */
-  letter-spacing: normal;
   text-align: justify;
+  text-indent: 0;
+}
+*::footnote-call {
+  line-height: 0;
+  font-size: 8pt;
+  vertical-align: super;
 }
 
 /* table of contents */

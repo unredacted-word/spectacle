@@ -128,7 +128,7 @@ id pellentesque aliquam[
   vitae vulputate est.Donec sed lorem non turpis sodales eleifend. Vestibulum ante
   ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
   Vestibulum eu odio a felis pellentesque blandit id nec sem.
-]{.sidenote}.
+]{.fn}.
 Aenean interdum ante vel nibh faucibus, efficitur semper
 mi condimentum. Nullam ut viverra ante. Mauris et mi sit amet ex mattis euismod
 id sit amet ligula. Duis tincidunt vitae purus vitae suscipit. Curabitur eu
@@ -166,7 +166,7 @@ amet ipsum[
   pulvinar urna eu laoreet. Proin suscipit sagittis sagittis. Fusce venenatis,
   neque vitae pharetra commodo, mi ipsum tempor libero, sed auctor ex tellus
   gravida sem.
-]{.sidenote}. Orci varius natoque penatibus et magnis dis parturient montes,
+]{.fn}. Orci varius natoque penatibus et magnis dis parturient montes,
 nascetur ridiculus mus. Donec vitae vulputate est. Praesent ac egestas ligula,
 ultrices tincidunt elit. Integer eget neque ante. Phasellus augue turpis, mollis
 id maximus at, hendrerit vitae ipsum. Ut leo justo, eleifend nec sodales vel,
