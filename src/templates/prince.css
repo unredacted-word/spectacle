@@ -237,34 +237,12 @@ h2 {
   text-align: justify;
 }
 
-.sidenote {
+.sidenote,
+.footnote {
   float: footnote;
 }
-
 .footnote {
-  float: bottom;
-  position: relative;
   display: inline;
-}
-.footnote::before,
-.footnote-call::after {
-  font-size: 9pt;
-}
-.footnote-call::after {
-  content: counter(footnote);
-  line-height: 0;
-  vertical-align: super;
-}
-section.footnote-call::after{
-  content: none; /* fixes headers with hoisted classnames adding content
-                  * to sections themselves
-                  */
-}
-.footnote::before {
-  content: counter(footnote) '.';
-  position: absolute;
-  left: -1.25em;
-  top: -1pt;
 }
 
 /* table of contents */
@@ -292,23 +270,30 @@ section.footnote-call::after{
 
 /* preface to the third french edition */
 #forward,
-#preface-3rd {
+#preface {
   break-before: right;
   -prince-page-group: start;
   prince-page-group: start;
   counter-reset: footnote 0;
 }
+.preface {
+  page: preface;
+}
+@page preface {
+  @footnotes {
+    position: static;
+  }
+}
 
 /* glossary */
 #forward,
 #preface,
-#preface-3rd,
+#preface,
 #glossary,
 #bibliography,
 #index {
   string-set: chapter-title '';
   bookmark-level: 1;
   bookmark-state: closed;
-
 }
 
