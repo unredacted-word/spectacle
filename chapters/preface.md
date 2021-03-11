@@ -1,5 +1,3 @@
-::::: {.preface}
-
 ### Preface to the Third French Edition {#preface}
 
 _The Society of the Spectacle_ was first published in November 1967 in Paris by
@@ -12,7 +10,7 @@ present edition[
   published in 1992, four years after he had published _Comments on the Society
   of the Spectacle_, and roughly a year after the final collapse of the USSR
   (1989-1991).
-]{#fntfe.1 .footnote},
+]{#fntfe.1 .fn},
 too, has remained rigorously identical to the 1967 edition.  The same rule will
 naturally apply to the reprinting of all my books at Gallimard. I am not one who
 corrects myself.
@@ -34,8 +32,7 @@ developments that the subsequent course of the same process was to bring about.
 In 1979, on the occasion of a preface for a new Italian translation, I dealt
 with the effective transformations in the very nature of industrial production,
 as well as in the techniques of government, which began an authorized use of 
-spectacular force.\
-In 1988, the _Comments on the Society of the Spectacle_
+spectacular force. In 1988, the _Comments on the Society of the Spectacle_
 clearly established that the previous <q>worldwide division of spectacular 
 labor</q>, between the rival reigns of the <q>concentrated spectacle</q> and the
 <q>diffuse spectacle</q>, had now ended[
@@ -49,7 +46,7 @@ labor</q>, between the rival reigns of the <q>concentrated spectacle</q> and the
   prior to two major worldwide upheavals: _Spectacle_ published a year before
   May 1968 in Paris and the general "troubles" of 1968, and _Comments_ a year
   before the beginning of collapse of the USSR.
-]{#fntfe.2 .footnote}
+]{#fntfe.2 .fn}
 in favor of their fusion, into the universal form of the <q>integrated
 spectacle</q>.
 
@@ -112,4 +109,3 @@ outrageous.
 June 30, 1992\
 GUY DEBORD
 
-:::::

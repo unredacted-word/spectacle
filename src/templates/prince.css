@@ -61,9 +61,9 @@ h3 {
   margin: 28.125pt 0 16pt 0;
 }
 
-.chapter-body h3:first-child {
+.sidenotes h3:first-child {
   /* hack: removes the odd margin-top on the first thesis in each chapter */
-  margin-top: -0.5pt;
+  margin-top: 0;
 }
 
 figure img {
@@ -183,19 +183,6 @@ h2 {
   @bottom-left-corner { content: normal; }
 }
 
-
-/* notes */
-@page {
-  @footnote {
-    /* sidenotes */
-    position: absolute;
-    width: 46mm;
-    right: -12mm;
-    top: 3pt;
-    bottom: 5mm;
-  }
-}
-
 .chapter {
   page: chapter;
 }
@@ -209,25 +196,44 @@ h2 {
   }
 }
 
-.chapter-body {
+/* notes */
+@page {
+  @footnote {
+    margin-top: 1em;
+  }
+}
+.sidenotes {
+  page: sidenotes;
   margin-right: 42mm;
 }
-
+@page sidenotes {
+  @footnote {
+    /* move sidenotes to side of the page */
+    position: absolute;
+    width: 46mm;
+    right: -12mm;
+    top: 7pt;
+    bottom: 5mm;
+  }
+}
 
 /* notes */
-.footnote {
-  counter-increment: footnote;
-}
 .sidenote,
-.note {
+.fn {
+  float: footnote;
   /* increment footnote count */
   counter-increment: footnote;
 }
+.fn {
+  display: inline;
+}
 .sidenote,
-.footnote {
+.fn {
   /* if note is in a header, we need to reset the typography */
   font-size: 8pt;
   font-weight: normal;
+  font-style: normal;
+  text-indent: 0;
   line-height: 1.40625; /* 11.25pt = creates vertical rhythm with 8pt footnote
                          * text and 11pt body text. This creates a vertical
                          * rhythm of 4 body lines to 5 footnote lines, and 48
@@ -235,14 +241,6 @@ h2 {
                          */
   letter-spacing: normal;
   text-align: justify;
-}
-
-.sidenote,
-.footnote {
-  float: footnote;
-}
-.footnote {
-  display: inline;
 }
 
 /* table of contents */
@@ -276,10 +274,10 @@ h2 {
   prince-page-group: start;
   counter-reset: footnote 0;
 }
-.preface {
-  page: preface;
+.footnotes {
+  page: footnotes;
 }
-@page preface {
+@page footnotes {
   @footnotes {
     position: static;
   }
