@@ -97,10 +97,10 @@ Thesis 111, which recognized the first symptoms of a Russian decline, the final
 explosion of which we have already seen, and envisaged the forthcoming
 disappearance of a world society which, as we can say now, _will be erased from
 the computer's memory_, formulated the following strategic judgment, the
-correctness of which should become obvious: "[In the final analysis, the collapse
+correctness of which should become obvious: ["In the final analysis, the collapse
 and failure of global alliances founded on bureaucratic mystification is an
 unfavorable aspect of the development of capitalist
-society.](#ref111.1){#fntfe.3}"
+society."](#ref111.1){#fntfe.3}
 
 This book should be read considering that it was knowingly written with the
 intention of damaging the spectacular society. It never said anything
