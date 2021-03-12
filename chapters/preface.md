@@ -5,12 +5,12 @@ Buchet-Chastel. The 1968 unrest made it famous. The book, of which I have never
 changed a single word, was republished in 1971 by Éditions Champ Libre, who 
 changed their name to Gérard Lebovici in 1984, after the publisher's
 assassination. A series of reprints continued there regularly until 1991. The 
-present edition[
+present edition,[
   "The present edition…": This preface was written for the Third French Edition
   published in 1992, four years after he had published _Comments on the Society
   of the Spectacle_, and roughly a year after the final collapse of the USSR
   (1989-1991). Debord died by suicide two years later, on November 30, 1994.
-]{#fntfe.1 .fn},
+]{#fntfe.1 .fn}
 too, has remained rigorously identical to the 1967 edition.  The same rule will
 naturally apply to the reprinting of all my books at Gallimard. I am not one who
 corrects myself.

@@ -105,7 +105,7 @@ rhoncus, turpis lectus viverra ligula, a ullamcorper lorem eros et neque. Nullam
 est dolor, semper ac dolor non, tincidunt ornare risus. Fusce at mi a augue
 viverra cursus sagittis ac justo. Maecenas mauris eros, scelerisque in tristique
 at, porta quis lacus. Proin pellentesque varius placerat. Praesent rhoncus nisi
-id pellentesque aliquam[
+id pellentesque aliquam.[
   Aenean interdum ante vel nibh faucibus, efficitur
   semper mi condimentum. Nullam ut viverra ante. Mauris et mi sit amet ex mattis
   euismod id sit amet ligula. Duis tincidunt vitae purus vitae suscipit. Curabitur
@@ -128,7 +128,7 @@ id pellentesque aliquam[
   vitae vulputate est.Donec sed lorem non turpis sodales eleifend. Vestibulum ante
   ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
   Vestibulum eu odio a felis pellentesque blandit id nec sem.
-]{.fn}.
+]{.fn}
 Aenean interdum ante vel nibh faucibus, efficitur semper
 mi condimentum. Nullam ut viverra ante. Mauris et mi sit amet ex mattis euismod
 id sit amet ligula. Duis tincidunt vitae purus vitae suscipit. Curabitur eu
@@ -147,7 +147,7 @@ molestie. Donec sed lorem non turpis s…
 ### heading 3
 
 ante vel tempus posuere, odio turpis auctor leo, non facilisis ipsum nibh sit
-amet ipsum[
+amet ipsum.[
   Orci varius natoque penatibus et magnis dis parturient montes,
   nascetur ridiculus mus. Donec vitae vulputate est. Praesent ac egestas ligula,
   ultrices tincidunt elit. Integer eget neque ante. Phasellus augue turpis, mollis
@@ -166,7 +166,7 @@ amet ipsum[
   pulvinar urna eu laoreet. Proin suscipit sagittis sagittis. Fusce venenatis,
   neque vitae pharetra commodo, mi ipsum tempor libero, sed auctor ex tellus
   gravida sem.
-]{.fn}. Orci varius natoque penatibus et magnis dis parturient montes,
+]{.fn} Orci varius natoque penatibus et magnis dis parturient montes,
 nascetur ridiculus mus. Donec vitae vulputate est. Praesent ac egestas ligula,
 ultrices tincidunt elit. Integer eget neque ante. Phasellus augue turpis, mollis
 id maximus at, hendrerit vitae ipsum. Ut leo justo, eleifend nec sodales vel,
