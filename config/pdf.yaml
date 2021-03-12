@@ -1,5 +1,6 @@
 # docs https://pandoc.org/MANUAL.html#default-files
 input-files:
+- chapters/print-blanks.md
 - chapters/half-title.md
 - chapters/colophon.md
 - chapters/contents.md

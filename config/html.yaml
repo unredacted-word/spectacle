@@ -1,6 +1,6 @@
 # docs https://pandoc.org/MANUAL.html#default-files
 input-files:
-- chapters/cover.md
+- chapters/half-title.md
 - chapters/colophon.md
 - chapters/contents.md
 - chapters/forward.md

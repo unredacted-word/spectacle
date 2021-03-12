@@ -26,11 +26,6 @@ body::before {
   }
 }
 
-/* components */
-h1.title {
-  margin-top: 25vh;
-}
-
 ::selection,
 *:target,
 *:target + .fn {
@@ -68,10 +63,27 @@ h1.title {
     margin-top: 100vh;
   }
   h2 + blockquote,
-  #title-block-header,
   .break-after {
     margin-bottom: 100vh;
   }
+}
+/* half title */
+.halftitle-title {
+  background-color: #0adada;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -10mm -10mm 100vh -10mm;
+  padding: 10mm;
+  position: relative;
+}
+.halftitle-translator {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 4em;
 }
 
 /* table of contents */
