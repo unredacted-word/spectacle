@@ -140,7 +140,7 @@ h2 {
   /* add chapter title to the recto page */
   @top-right {
     content: string(chapter-title);
-    font-size: 10pt;
+    font-size: 11pt;
     font-variant: small-caps;
   }
 }
@@ -149,23 +149,23 @@ h2 {
 @page:left {
   @top-left {
     content: string(doctitle);
-    font-size: 10pt;
+    font-size: 11pt;
     font-variant: small-caps;
   }
 }
 
 /* page counters */
 @page:right {
-  @bottom-right-corner {
+  @bottom-right {
     content: counter(page);
-    font-size: 10pt;
+    font-size: 11pt;
   }
 }
 
 @page:left {
-  @bottom-left-corner {
+  @bottom-left {
     content: counter(page);
-    font-size: 10pt;
+    font-size: 11pt;
   }
 }
 
@@ -173,8 +173,8 @@ h2 {
 @page:blank {
   @top-right { content: normal; }
   @top-left { content: normal; }
-  @bottom-right-corner { content: normal; }
-  @bottom-left-corner { content: normal; }
+  @bottom-right { content: normal; }
+  @bottom-left { content: normal; }
 }
 
 .chapter {
@@ -185,7 +185,7 @@ h2 {
   @top-right {
     content: normal;
   }
-  @bottom-right-corner {
+  @bottom-right {
     content: normal;
   }
 }
@@ -255,8 +255,8 @@ h2 {
   /* remove marginalia from title pages */
   @top-left { content: normal; }
   @top-right { content: normal; }
-  @bottom-right-corner { content: normal; }
-  @bottom-left-corner { content: normal; }
+  @bottom-right { content: normal; }
+  @bottom-left { content: normal; }
 }
 
 /* preface to the third french edition */
