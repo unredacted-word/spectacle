@@ -70,7 +70,7 @@ body::before {
 /* half title */
 .halftitle-title {
   background-color: #0adada;
-  height: 100vh;
+  height: 22.5cm;
   display: flex;
   flex-direction: column;
   justify-content: center;
