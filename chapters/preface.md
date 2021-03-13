@@ -41,11 +41,12 @@ labor</q>, between the rival reigns of the <q>concentrated spectacle</q> and the
   concentrated spectacle exemplified by the communism of the USSR. His book,
   _Comments on the Society of the Spectacle_ was published a year before the
   collapse of the USSR, but he had predicted this collapse by describing the
-  failure of the concentrated spectacle. Amazingly, both of 
-  Debords' major works: _Spectacle_ and _Comments_ were published just one year
-  prior to two major worldwide upheavals: _Spectacle_ published a year before
-  May 1968 in Paris and the general "troubles" of 1968, and _Comments_ a year
-  before the beginning of collapse of the USSR.
+  failure of the concentrated spectacle. Amazingly, two of 
+  Debords' major works: _The Society of the Spectacle_ and _Comments on the
+  Society of the Spectacle_ were published just one year
+  prior to two major worldwide upheavals: Spectacle published a year before
+  May 1968 in Paris, and Comments a year before the beginning of collapse of
+  the USSR.
 ]{#fntfe.2 .fn}
 in favor of their fusion, into the universal form of the <q>integrated
 spectacle</q>.

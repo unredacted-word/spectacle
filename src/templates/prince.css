@@ -4,11 +4,10 @@
    * Allow an additional minimum `0.2in`/`5.08mm` in Gutter Margin for inners
    */
 
-  margin-left: 18mm; /* 18mm = 0.7in  */
-  margin-right: 18mm; /* 18mm = 0.7in  */
   margin-top: 14mm;
   margin-bottom: 14mm;
-  margin-inside: 23.5mm; /* 22.5mm = 18mm + 5.5mm */
+  margin-outside: 13.3mm;
+  margin-inside: 19mm;
 }
 
 body {
@@ -70,7 +69,7 @@ figure figcaption {
 
 /* chapter page */
 h2 + blockquote {
-  font-size: 14pt;
+  font-size: 14pt; /* TODO: increase to 15pt? */
 }
 h2 + blockquote p:first-child + p {
   /* decrease size of quote attribution */
@@ -136,18 +135,18 @@ h2 {
   /* set chapter title for the right page */
   string-set: chapter-title attr(title);
 }
-@page:right {
-  /* add chapter title to the recto page */
+@page:recto {
   @top-right {
+    /* add chapter title to the recto page */
     content: string(chapter-title);
     font-size: 11pt;
     font-variant: small-caps;
   }
 }
 
-/* add book Title to the left page */
-@page:left {
+@page:verso {
   @top-left {
+    /* add book Title to the left page */
     content: string(doctitle);
     font-size: 11pt;
     font-variant: small-caps;
@@ -155,14 +154,13 @@ h2 {
 }
 
 /* page counters */
-@page:right {
+@page:recto {
   @bottom-right {
     content: counter(page);
     font-size: 11pt;
   }
 }
-
-@page:left {
+@page:verso {
   @bottom-left {
     content: counter(page);
     font-size: 11pt;
@@ -198,17 +196,38 @@ h2 {
 }
 .sidenotes {
   page: sidenotes;
-  margin-right: 42mm;
 }
 @page sidenotes {
+  margin-outside: 66.5mm;
   @footnote {
     margin-top: 0;
     /* move sidenotes to side of the page */
     position: absolute;
-    width: 46mm;
-    right: -12mm;
-    top: 3pt;
     bottom: 5mm;
+    top: 3pt;
+    width: 45.6mm;
+  }
+}
+@page sidenotes:verso {
+  @footnote {
+    left: -53.2mm;
+  }
+  @top-left {
+    margin-left: -53.2mm;
+  }
+  @bottom-left {
+    margin-left: -53.2mm;
+  }
+}
+@page sidenotes:recto {
+  @footnote {
+    right: -53.2mm;
+  }
+  @top-right {
+    margin-right: -53.2mm;
+  }
+  @bottom-right {
+    margin-right: -53.2mm;
   }
 }
 
@@ -266,14 +285,6 @@ h2 {
   -prince-page-group: start;
   prince-page-group: start;
   counter-reset: footnote 0;
-}
-.footnotes {
-  page: footnotes;
-}
-@page footnotes {
-  @footnotes {
-    position: static;
-  }
 }
 
 /* glossary */

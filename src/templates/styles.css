@@ -203,6 +203,8 @@ h2 + blockquote p:first-child + p {
 
 .colophon {
   font-size: 0.6875rem;
+  line-height: 1.2;
+  text-align: left;
 }
 
 /* table of contents */
