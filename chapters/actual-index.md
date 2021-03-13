@@ -1,6 +1,6 @@
-### Index {#index .break-before-right}
+::::: {.index .backmatter}
 
-::::: {.align-left}
+## Index
 
 TODO
 

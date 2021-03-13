@@ -51,8 +51,6 @@ h2 {
   text-align: left;
   hyphens: none;
   position: relative;
-  /* chapters start on new page */
-  break-before: always;
 }
 h2 .ch-roman {
   position: absolute;
@@ -60,11 +58,15 @@ h2 .ch-roman {
   font-size: 5em;
   margin-top: -0.5em;
 }
-.toc h2.centered,
-.preface h2.centered
-.glossary  h2.centered,
-.bibliography h2.centered {
-  /* center align non-chapter headers */
+.toc  h2,
+.forward h2,
+.preface h2,
+.glossary h2,
+.bibliography h2,
+.index h2 {
+  font-size: 1.3636363636rem; /*1.36- = 15/11 */
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
 }
 

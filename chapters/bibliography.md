@@ -1,6 +1,7 @@
-### Bibliography {#bibliography .break-before-right}
+::::: {.bibliography .hanging-indent .backmatter}
 
-::::: {.hanging-indent .bibliography}
+## Bibliography
+
 
 0xADADA. (2019, April 16). _The City and The Freezing of Life_. Retreived from
 https://0xadada.pub/2019/04/16/the-city-and-the-freezing-of-life/

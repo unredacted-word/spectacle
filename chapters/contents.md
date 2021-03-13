@@ -1,6 +1,6 @@
 ::::: {.toc .title-page .break-before-right}
 
-## Contents {#toc .centered data-bookmark-label="Table of Contents"}
+## Contents {#toc data-bookmark-label="Table of Contents"}
 
 - [Forward](#forward)
 - [Preface to the Third French Edition](#preface)
