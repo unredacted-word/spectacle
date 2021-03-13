@@ -54,9 +54,10 @@ h3 {
   line-height: 1;
   margin: 1em 0;
 }
-.sidenotes h3:first-child {
+.chapter blockquote + h3 {
   /* hack: removes the odd margin-top on the first thesis in each chapter */
   margin-top: 0;
+  background: red;
 }
 
 figure img {
@@ -81,14 +82,10 @@ h2.centered {
   margin-bottom: 4rem;
 }
 
-
-/*  components */
-
 .halftitle-title {
   margin-top: 12rem;
 }
 
-/* titlepg */
 .titlepg {
   margin-top: 8rem;
 }
@@ -122,7 +119,6 @@ h2.centered {
   -prince-page-group: start;
 }
 
-#title-block-header,
 .break-after,
 h2 + blockquote {
   break-after: always;
@@ -135,99 +131,62 @@ h2 {
   /* set chapter title for the right page */
   string-set: chapter-title attr(title);
 }
-@page:recto {
-  @top-right {
-    /* add chapter title to the recto page */
-    content: string(chapter-title);
-    font-size: 11pt;
-    font-variant: small-caps;
-  }
-}
-
-@page:verso {
-  @top-left {
-    /* add book Title to the left page */
-    content: string(doctitle);
-    font-size: 11pt;
-    font-variant: small-caps;
-  }
-}
-
-/* page counters */
-@page:recto {
-  @bottom-right {
-    content: counter(page);
-    font-size: 11pt;
-  }
-}
-@page:verso {
-  @bottom-left {
-    content: counter(page);
-    font-size: 11pt;
-  }
-}
-
-/* remove margin content from blank pages */
-@page:blank {
-  @top-right { content: normal; }
-  @top-left { content: normal; }
-  @bottom-right { content: normal; }
-  @bottom-left { content: normal; }
-}
 
 .chapter {
   page: chapter;
+  prince-page-group: start;
 }
 @page chapter {
-  /* remove margin content from chapter title pages */
-  @top-right {
-    content: normal;
-  }
-  @bottom-right {
-    content: normal;
-  }
-}
-
-/* notes */
-@page {
-  @footnote {
-    margin-top: 1em;
-  }
-}
-.sidenotes {
-  page: sidenotes;
-}
-@page sidenotes {
   margin-outside: 66.5mm;
   @footnote {
     margin-top: 0;
-    /* move sidenotes to side of the page */
+    /* move notes to outside margin of page */
     position: absolute;
     bottom: 5mm;
     top: 3pt;
     width: 45.6mm;
   }
 }
-@page sidenotes:verso {
-  @footnote {
-    left: -53.2mm;
-  }
+@page chapter:verso {
   @top-left {
+    /* add book Title to the left page */
+    content: string(doctitle);
+    font-size: 11pt;
+    font-variant: small-caps;
     margin-left: -53.2mm;
   }
   @bottom-left {
+    content: counter(page);
+    font-size: 11pt;
     margin-left: -53.2mm;
   }
+  @footnote { left: -53.2mm; }
 }
-@page sidenotes:recto {
-  @footnote {
-    right: -53.2mm;
-  }
+@page chapter:recto {
   @top-right {
+    /* add chapter title to the recto page */
+    content: string(chapter-title);
+    font-size: 11pt;
+    font-variant: small-caps;
     margin-right: -53.2mm;
   }
   @bottom-right {
+    content: counter(page);
+    font-size: 11pt;
     margin-right: -53.2mm;
+  }
+  @footnote { right: -53.2mm; }
+}
+@page chapter:first {
+  margin-outside: 13.3mm;
+  /* remove margin content from chapter title pages */
+  @top-right { content: normal; }
+  @bottom-right { content: normal; }
+  /* place footnotes on the bottom */
+  @footnote {
+    margin-top: 1em;
+    position: static;
+    width: auto;
   }
 }
 
