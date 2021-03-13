@@ -1,3 +1,5 @@
+::::: {.preface}
+
 ### Preface to the Third French Edition {#preface}
 
 _The Society of the Spectacle_ was first published in November 1967 in Paris by
@@ -110,3 +112,4 @@ outrageous.
 June 30, 1992\
 GUY DEBORD
 
+:::::

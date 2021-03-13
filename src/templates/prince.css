@@ -35,6 +35,8 @@ h2 {
   bookmark-level: 1;
   bookmark-state: closed;
   counter-reset: footnote 0;
+  /* set chapter title for the right page */
+  string-set: chapter-title attr(title);
 }
 #iv h2,
 #toc h2,
@@ -57,7 +59,6 @@ h3 {
 .chapter blockquote + h3 {
   /* hack: removes the odd margin-top on the first thesis in each chapter */
   margin-top: 0;
-  background: red;
 }
 
 figure img {
@@ -121,20 +122,41 @@ h2.centered {
 
 .break-after,
 h2 + blockquote {
-  break-after: always;
-  page-break-after: always; /* hack */
+  /* break after chapter title quotes */
+  break-after: always; /* TODO: this property doesn't seem to work? */
+  page-break-after: always;
 }
 
-h2 {
-  /* force chapters to start on the right page */
+.preface {
+  page: preface;
+  prince-page-group: start;
   break-before: right;
-  /* set chapter title for the right page */
-  string-set: chapter-title attr(title);
+}
+@page preface {
+  @footnote { margin-top: 1em; }
+}
+@page preface:verso {
+  @bottom-left {
+    content: counter(page, lower-roman);
+    font-size: 8pt;
+  }
+}
+@page preface:recto {
+  @bottom-right {
+    content: counter(page, lower-roman);
+    font-size: 8pt;
+  }
+}
+@page preface:blank {
+  /* remove page numbers on blank pages */
+  @bottom-right { content: normal; }
+  @bottom-left { content: normal; }
 }
 
 .chapter {
   page: chapter;
   prince-page-group: start;
+  break-before: right;
 }
 @page chapter {
   margin-outside: 66.5mm;
@@ -237,23 +259,11 @@ h2 {
   @bottom-left { content: normal; }
 }
 
-/* preface to the third french edition */
 #forward,
-#preface {
-  break-before: right;
-  -prince-page-group: start;
-  prince-page-group: start;
-  counter-reset: footnote 0;
-}
-
-/* glossary */
-#forward,
-#preface,
 #preface,
 #glossary,
 #bibliography,
 #index {
-  string-set: chapter-title '';
   bookmark-level: 1;
   bookmark-state: closed;
 }
