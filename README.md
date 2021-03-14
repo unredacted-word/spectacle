@@ -1,8 +1,8 @@
 # The Society of the Spectacle
 
-A new translation of Guy Debord's 1967 book, _La Société du Spectacle_.
+A new English edition of Guy Debord's 1967 book, _La Société du Spectacle_.
 
-📕 [Book](chapters/index.md)
+📕 [Book](https://unredacted-word.pub/spectacle/)
 
 This repo is the text of the book, source references, and a collection of tools
 to produce the book in multiple formats for distribution.
@@ -11,7 +11,7 @@ to produce the book in multiple formats for distribution.
 
 - NodeJS
 - Yarn / npm
-- pandoc
+- Pandoc / Prince XML
 
 on macOS:
 
@@ -22,14 +22,6 @@ brew install pandoc librsvg
 brew install --cask font-source-serif-pro
 # install Prince XML
 # brew install --cask --no-quarantine prince
-
-# install basictex & pdflatex to /Library/TeX/texbin/pdflatex
-brew install --cask basictex
-eval "$(/usr/libexec/path_helper)"
-sudo tlmgr update --self
-sudo tlmgr install collection-fontsrecommended
-
-
 ```
 
 ## Development
@@ -38,10 +30,6 @@ sudo tlmgr install collection-fontsrecommended
 yarn lint   # show lint errors
 yarn format # format markdown
 ```
-
-After checking out the repo, run `git config core.hooksPath .githooks` to enable
-automatic markdown formatting. Alternatively run `yarn format` to manually
-format the Markdown files.
 
 To live preview markdown in a browser:
 
@@ -52,5 +40,6 @@ yarn pen <filename>
 # Generating Books
 
 ```
-pandoc -d config/pdf.yaml
+pandoc -d config/pdf.yaml  # print-ready book
+pandoc -d config/html.yaml # HTML book
 ```
