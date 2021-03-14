@@ -264,6 +264,24 @@
       }
     }
 
+    /* add a banner on devices that support landscape with enough real-estate to
+     * display sidenote layout
+     */
+    @media screen and (min-height: 45rem) /*and (orientation : portrait)*/ {
+      body::before {
+        position: absolute;
+        background-color: rgba(254, 231, 0, 0.5);
+        content: 'Rotate to landscape to view sidenote layout.';
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      .halftitle-title {
+        margin-top: 4rem;
+      }
+    }
+
     ::selection,
     *:target,
     *:target + .fn {
@@ -273,15 +291,23 @@
     }
 
     .fn {
-      display: inline;
       color: #292929;
+      display: inline;
       font-family: system-ui, sans-serif;
       border: 1px solid rgba(29,29,29, 0.25);
+    }
+    @media (min-width: 36.25rem) {
+      .fn {
+        display: block;
+        float: right;
+        width: 50%;
+        margin: 0.25rem 0 0.5rem 0.5rem;
+        border: none;
+      }
     }
     @media (min-width: 45rem) {
       /* 960px */
       .fn {
-        border: none;
         background-color: #f7f7f7;
         color: black;
         display: block;
