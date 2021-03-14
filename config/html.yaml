@@ -29,5 +29,6 @@ data-dir: "src"
 template: "default.html"
 columns: 80
 standalone: true
+self-contained: true
 section-divs: true
 verbosity: WARNING # ERROR, WARNING, or INFO
