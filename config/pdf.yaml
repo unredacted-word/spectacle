@@ -28,5 +28,5 @@ to: pdf
 dpi: 300
 pdf-engine: prince
 data-dir: "src"
-template: "print.html"
+template: "default.html"
 verbosity: WARNING # ERROR, WARNING, or INFO

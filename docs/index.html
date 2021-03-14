@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="Unredactor 0.8.0 by Unredacted Word" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Guy Debord" />
   <meta name="dcterms.date" content="2021-02-19" />
@@ -359,7 +359,295 @@
       margin: 0.5rem 0 0.5rem -0.75rem;
     }
   </style>
+  <style media="print">
+    @page {
+      size: 152mm 229mm;
+      /* Allow a minimum `0.50in`/`12.7mm` in Safety Margin for all content
+       * Allow an additional minimum `0.2in`/`5.08mm` in Gutter Margin for inners
+       */
 
+      margin-top: 14mm;
+      margin-bottom: 14mm;
+      margin-outside: 13.3mm;
+      margin-inside: 19mm;
+    }
+
+    body {
+      font-size: 11pt;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    p {
+     orphans: 2;
+     widows: 3;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      break-after: avoid;
+    }
+
+    h1 {
+      bookmark-state: open;
+    }
+
+    h2 {
+      /* use chapter headings as level-1 PDF bookmarks */
+      bookmark-level: 1;
+      bookmark-state: closed;
+      counter-reset: footnote 0;
+      /* set chapter title for the right page */
+      string-set: chapter-title attr(title);
+    }
+    .forward h2,
+    .preface h2,
+    .glossary h2,
+    .bibliography h2,
+    .index h2 {
+      bookmark-level: 1;
+      bookmark-state: closed;
+    }
+
+    #iv h2,
+    #toc h2,
+    h3#t56,
+    h3#t66,
+    h3#t68,
+    h3#t110,
+    h3#t213,
+    h3#t218 {
+      /* fix for PDF bookmark labels on headers with footnotes */
+      bookmark-label: attr(data-bookmark-label);
+    }
+
+    .chapter blockquote + h3 {
+      /* hack: removes the odd margin-top on the first thesis in each chapter */
+      margin-top: 0;
+    }
+
+    blockquote,
+    figure {
+      break-inside: avoid;
+    }
+
+    figure img {
+      max-width: 119.7mm;
+      margin-left: -1mm;
+    }
+
+    .halftitle-title {
+      margin-top: 12rem;
+    }
+
+    .title {
+      string-set: doctitle content();
+    }
+
+    .titlepg {
+      margin-top: 8rem;
+    }
+
+    .title-details {
+      margin-top: 3cm;
+    }
+    .title-logo {
+      margin-top: 4.5cm;
+    }
+
+    /* utilities for pagination */
+    .break-before-right {
+      break-before: right;
+    }
+
+    .reset-page-counter {
+      counter-reset: page 1;
+    }
+
+    h2 + blockquote {
+      /* break after chapter title quotes */
+      break-after: always; /* TODO: this property doesn't seem to work? */
+      page-break-after: always;
+    }
+
+    .preface {
+      page: preface;
+      prince-page-group: start;
+      break-before: right;
+    }
+    @page preface {
+      @footnote { margin-top: 1em; }
+    }
+    @page preface:verso {
+      @bottom-left {
+        content: counter(page, lower-roman);
+        font-size: 8pt;
+      }
+    }
+    @page preface:recto {
+      @bottom-right {
+        content: counter(page, lower-roman);
+        font-size: 8pt;
+      }
+    }
+    @page preface:blank {
+      /* remove page numbers on blank pages */
+      @bottom-right { content: normal; }
+      @bottom-left { content: normal; }
+    }
+
+    .chapter {
+      page: chapter;
+      prince-page-group: start;
+      break-before: right;
+    }
+    @page chapter {
+      margin-outside: 66.5mm;
+      @footnote {
+        margin-top: 0;
+        /* move notes to outside margin of page */
+        position: absolute;
+        bottom: 5mm;
+        top: 3pt;
+        width: 45.6mm;
+      }
+    }
+    @page chapter:verso {
+      @top-left {
+        /* add book Title to the left page */
+        content: string(doctitle);
+        font-size: 11pt;
+        font-variant: small-caps;
+        margin-left: -53.2mm;
+      }
+      @bottom-left {
+        content: counter(page);
+        font-size: 11pt;
+        margin-left: -53.2mm;
+      }
+      @footnote { left: -53.2mm; }
+    }
+    @page chapter:recto {
+      @top-right {
+        /* add chapter title to the recto page */
+        content: string(chapter-title);
+        font-size: 11pt;
+        font-variant: small-caps;
+        margin-right: -53.2mm;
+      }
+      @bottom-right {
+        content: counter(page);
+        font-size: 11pt;
+        margin-right: -53.2mm;
+      }
+      @footnote { right: -53.2mm; }
+    }
+    @page chapter:first {
+      margin-outside: 13.3mm;
+      /* remove margin content from chapter title pages */
+      @top-right { content: normal; }
+      @bottom-right { content: normal; }
+      /* place footnotes on the bottom */
+      @footnote {
+        margin-top: 1em;
+        position: static;
+        width: auto;
+      }
+    }
+    @page chapter:blank {
+      /* remove marginalia on blank pages */
+      @top-right { content: normal; }
+      @top-left { content: normal; }
+      @bottom-right { content: normal; }
+      @bottom-left { content: normal; }
+    }
+
+
+    /* notes */
+    .fn {
+      counter-increment: footnote;
+      display: inline;
+      float: footnote;
+      /* if note is in a header, we need to reset the typography */
+      font-size: 8pt;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 11.25pt;
+                            /* 11pt = creates vertical rhythm with 8pt footnote
+                             * text and 11pt body text. This creates a vertical
+                             * rhythm of 4 body lines to 5 footnote lines, and 48
+                             * lines in a footnote column.
+                             */
+      text-align: justify;
+      text-indent: 0;
+    }
+    *::footnote-call {
+      line-height: 0;
+      font-size: 8pt;
+      vertical-align: super;
+    }
+
+    /* table of contents */
+    .toc h2 {
+      font-size: 2rem;
+      margin-top: 4em;
+      margin-bottom: 4em;
+    }
+    .toc li {
+      text-align: left;
+    }
+    .toc a::after {
+      content: leader(' ') target-counter(attr(href), page);
+    }
+
+    .bibliography p {
+      /* prevent bib entries from breaking across pages */
+      page-break-inside: avoid;
+    }
+
+    /* title page */
+    .frontmatter {
+      page: frontmatter;
+      prince-page-group: start;
+    }
+    @page frontmatter {
+      /* remove marginalia from frontmatter pages */
+      @top-left { content: normal; }
+      @top-right { content: normal; }
+      @bottom-right { content: normal; }
+      @bottom-left { content: normal; }
+    }
+
+    .backmatter {
+      page: backmatter;
+      prince-page-group: start;
+      break-before: right;
+    }
+    @page backmatter:verso {
+      @bottom-left {
+        content: counter(page);
+        font-size: 11pt;
+      }
+    }
+    @page backmatter:recto {
+      @bottom-right {
+        content: counter(page);
+        font-size: 11pt;
+      }
+    }
+    @page backmatter:blank {
+      /* remove marginalia on blank pages */
+      @bottom-right { content: normal; }
+      @bottom-left { content: normal; }
+    }
+  </style>
 </head>
 <body>
 <div class="halftitle-title frontmatter break-before-right reset-page-counter">

@@ -2,7 +2,7 @@
 <html lang="$lang$">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="Unredactor 0.8.0 by Unredacted Word" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 $for(author-meta)$
   <meta name="author" content="$author-meta$" />
@@ -23,7 +23,9 @@ $endif$
   <style media="screen">
     $screen.css()$
   </style>
-
+  <style media="print">
+    $print.css()$
+  </style>
 $for(header-includes)$
   $header-includes$
 $endfor$
