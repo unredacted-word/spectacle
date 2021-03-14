@@ -1,4 +1,4 @@
-::::: {#authors .authors .title-page}
+::::: {.authors .frontmatter .break-before-right}
 
 ![Guy Debord (right)](images/author.jpg)
 

@@ -1,4 +1,4 @@
-::::: {.titlepg .centered .title-page .break-before-right}
+::::: {.titlepg .centered .frontmatter .break-before-right}
 
 [Guy Debord]{.author}
 
@@ -8,7 +8,7 @@
 
 ---
 
-::::: {.centered .title-details .break-after}
+::::: {.centered .title-details}
 
 English edition by Ron. Adams\
 █ Unredacted Word\

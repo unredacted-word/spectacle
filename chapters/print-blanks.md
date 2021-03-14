@@ -1,8 +1,8 @@
-::::: {.break-after}
+::::: {.frontmatter}
 delete recto
 :::::
 
-::::: {.break-after}
+::::: {.frontmatter}
 delete verso
 :::::
 

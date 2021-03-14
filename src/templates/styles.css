@@ -12,7 +12,7 @@ body {
 
   font-family: "Source Serif Pro", Georgia, serif;
   font-size: 100%;
-  line-height: 1.4;
+  line-height: 1.3636363636; /* 15/11, or 36 lines p.p. */
 }
 
 a {
@@ -35,13 +35,10 @@ hr {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1;
-  break-after: avoid;
 }
 h2 {
   /* chapters */
@@ -58,7 +55,7 @@ h2 .ch-roman {
   font-size: 5em;
   margin-top: -0.5em;
 }
-.toc  h2,
+.toc h2,
 .forward h2,
 .preface h2,
 .glossary h2,
@@ -72,7 +69,8 @@ h2 .ch-roman {
 
 h3 {
   /* thesis numbers */
-  font-size: 1.5rem;
+  font-size: 1.3636363636rem; /* 15 / 21.8181818176 */
+  margin: 1em 0;
   text-align: center;
 }
 
@@ -92,10 +90,6 @@ sup {
   line-height: 0; /* fixes blowing-up the line-height */
 }
 
-cite {
-  font-style: normal;
-}
-
 figure {
   text-align: center;
 }
@@ -104,13 +98,12 @@ blockquote,
 figure {
   margin: 0;
   font-size: 0.75rem;
-  break-inside: avoid;
 }
 
 figure figcaption,
 blockquote figcaption {
   font-style: italic;
-  padding: 0.25rem 4rem;
+  padding: 0;
 }
 
 img {
@@ -119,18 +112,16 @@ img {
 figure img {
   max-height: 100vh;
   max-width: 40rem;
-  margin: 0 -3rem;
 }
 
 /* chapter page */
 h2 + blockquote {
-  text-align: justify;
-  font-size: 1rem;
-  line-height: 1.3;
+  font-size: 1.3636363636rem;
 }
 h2 + blockquote > p:first-child em {
   /* chapter epigraphs with a quote hanging to the left of text block */
   display: block;
+  font-size: 1.1818181818rem; /* 13pt */
   text-indent: -0.5em;
   text-align: left;
 }
@@ -141,17 +132,6 @@ h2 + blockquote p:first-child + p {
 
 
 /* utilities */
-
-.align-left {
-  text-align: left;
-}
-.align-justify {
-  text-align: justify;
-}
-
-.hidden {
-  display: none;
-}
 
 .title,
 .author {
@@ -168,7 +148,6 @@ h2 + blockquote p:first-child + p {
 .title {
   font-size: 2.25rem;
   letter-spacing: -0.05em;
-  string-set: doctitle content();
 }
 
 .titlepg.centered {
@@ -204,12 +183,11 @@ h2 + blockquote p:first-child + p {
 }
 
 .colophon {
-  font-size: 0.6875rem;
+  font-size: 0.7272727273rem; /* 0.72- = 8pt / 11.6 */
   line-height: 1.2;
   text-align: left;
 }
 
-/* table of contents */
 .toc h2 {
   margin-left: 1.5rem;
 }
@@ -234,12 +212,11 @@ h2 + blockquote p:first-child + p {
   text-align: left;
 }
 
-#authors {
-  column-count: 2;
+.authors {
   column-count: 2;
   column-gap: 1rem;
   text-align: justify;
 }
-#authors figure img {
+.authors figure img {
   max-width: 100%;
 }

@@ -1,4 +1,4 @@
-::::: {.halftitle-title .title-page .break-before-right .reset-page-counter}
+::::: {.halftitle-title .frontmatter .break-before-right .reset-page-counter}
 
 ![](images/infinity-rope.svg){.halftitle-image}
 

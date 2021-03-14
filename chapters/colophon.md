@@ -1,4 +1,4 @@
-::::: {.colophon .title-page}
+::::: {.colophon .frontmatter}
 
 Originally published in Paris, France as _La Société du Spectacle_ by Éditions
 Buchet-Chastel (Paris) in 1967. It was reissued by Éditions Champ Libre (Paris)
@@ -14,8 +14,8 @@ This work is licensed under a Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to
 share, copy, and redistribute the material in any medium or format. Adapt,
 remix, transform, and build upon the material. The licensor cannot revoke these
-freedoms as long as you follow the license terms. Find the complete license
-online at\
+freedoms as long as you follow the license terms.\
+Find the complete license online at\
 [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This book is available for free online at [https://unredacted-word.pub/spectacle/](https://unredacted-word.pub/spectacle/)

@@ -1,4 +1,4 @@
-::::: {.toc .title-page .break-before-right}
+::::: {.toc .frontmatter .break-before-right}
 
 ## Contents {#toc data-bookmark-label="Table of Contents"}
 

@@ -14,7 +14,6 @@ body {
   font-size: 11pt;
   text-align: justify;
   hyphens: auto;
-  line-height: 15pt; /* 36 lines of text p.p. */
 }
 
 a {
@@ -24,6 +23,13 @@ a {
 p {
  orphans: 2;
  widows: 3;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  break-after: avoid;
 }
 
 h1 {
@@ -59,41 +65,27 @@ h3#t218 {
   bookmark-label: attr(data-bookmark-label);
 }
 
-h3 {
-  /* thesis numbers */
-  font-size: 15pt;
-  line-height: 1;
-  margin: 1em 0;
-}
 .chapter blockquote + h3 {
   /* hack: removes the odd margin-top on the first thesis in each chapter */
   margin-top: 0;
 }
 
-figure img {
-  max-width: 120mm;
-  margin: 0 -1.2cm;
-}
-figure figcaption {
-  padding: 0;
+blockquote,
+figure {
+  break-inside: avoid;
 }
 
-/* chapter page */
-h2 + blockquote {
-  font-size: 15pt;
-}
-h2 + blockquote p:first-child + p {
-  /* decrease size of quote attribution */
-  font-size: 13pt;
-}
-h2.centered {
-  /* centered page titles should have smaller margins */
-  margin-top: 0;
-  margin-bottom: 4rem;
+figure img {
+  max-width: 119.7mm;
+  margin-left: -1mm;
 }
 
 .halftitle-title {
   margin-top: 12rem;
+}
+
+.title {
+  string-set: doctitle content();
 }
 
 .titlepg {
@@ -108,28 +100,14 @@ h2.centered {
 }
 
 /* utilities for pagination */
-
-.break-before {
-  break-before: always;
-}
-
 .break-before-right {
   break-before: right;
-}
-.break-before-page {
-  break-before: page;
 }
 
 .reset-page-counter {
   counter-reset: page 1;
 }
 
-.blank {
-  prince-page-group: start;
-  -prince-page-group: start;
-}
-
-.break-after,
 h2 + blockquote {
   /* break after chapter title quotes */
   break-after: always; /* TODO: this property doesn't seem to work? */
@@ -239,7 +217,8 @@ h2 + blockquote {
   font-weight: normal;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 11.25pt; /* 11pt = creates vertical rhythm with 8pt footnote
+  line-height: 11.25pt;
+                        /* 11pt = creates vertical rhythm with 8pt footnote
                          * text and 11pt body text. This creates a vertical
                          * rhythm of 4 body lines to 5 footnote lines, and 48
                          * lines in a footnote column.
@@ -266,20 +245,23 @@ h2 + blockquote {
   content: leader(' ') target-counter(attr(href), page);
 }
 
+.bibliography p {
+  /* prevent bib entries from breaking across pages */
+  page-break-inside: avoid;
+}
+
 /* title page */
-.title-page {
-  page: title-page;
-  -prince-page-group: start;
+.frontmatter {
+  page: frontmatter;
   prince-page-group: start;
 }
-@page title-page {
-  /* remove marginalia from title pages */
+@page frontmatter {
+  /* remove marginalia from frontmatter pages */
   @top-left { content: normal; }
   @top-right { content: normal; }
   @bottom-right { content: normal; }
   @bottom-left { content: normal; }
 }
-
 
 .backmatter {
   page: backmatter;
