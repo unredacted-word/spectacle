@@ -29,7 +29,7 @@ body > section {
 /* add a banner on devices that support landscape with enough real-estate to
  * display sidenote layout
  */
-@media screen and (min-height: 45rem) /*and (orientation : portrait)*/ {
+@media screen and (min-device-height: 45rem) and (orientation : portrait) {
   body::before {
     position: absolute;
     background-color: rgba(254, 231, 0, 0.5);
