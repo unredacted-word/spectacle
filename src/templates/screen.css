@@ -1,11 +1,6 @@
 html {
   background: #f7f7f7;
 }
-@media screen and (45rem) {
-  html {
-    min-width: 1290px;
-  }
-}
 
 body {
   margin: 0;
@@ -17,13 +12,16 @@ body > section {
   padding: 1rem;
   margin-bottom: 50vh;
 }
-@media screen and (min-width: 36.25rem) {
+@media screen and (min-width: 45rem) {
+  html {
+    min-width: 1290px;
+  }
   body > div,
   body > section {
     box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
     margin-right: auto;
-    margin-left: auto;
-    max-width: 36.25rem; /* 36.25 = 580/16 */
+    margin-left: 23rem;
+    width: 36.25rem; /* 36.25 = 580/16 */
     padding: 2rem;
   }
 }
