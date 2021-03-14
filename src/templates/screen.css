@@ -58,7 +58,8 @@ body > section {
   font-family: system-ui, sans-serif;
   border: 1px solid rgba(29,29,29, 0.25);
 }
-@media (min-width: 36.25rem) {
+@media (min-width: 23.4375rem) {
+  /* 375px */
   .fn {
     display: block;
     float: right;
