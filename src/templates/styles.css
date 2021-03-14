@@ -211,6 +211,9 @@ h2 + blockquote p:first-child + p {
 .bibliography p {
   page-break-inside: avoid;
   text-align: left;
+  /* force-wrap long URLs */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .authors {
