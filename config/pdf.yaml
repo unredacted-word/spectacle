@@ -18,7 +18,7 @@ input-files:
 - chapters/09.md
 - chapters/glossary.md
 - chapters/bibliography.md
-- chapters/actual-index.md
+- chapters/index.md
 - chapters/authors.md
 output-file: "dist/book.pdf"
 metadata-files:

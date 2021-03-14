@@ -1,7 +1,0 @@
-::::: {.index .backmatter}
-
-## Index
-
-TODO
-
-:::::
