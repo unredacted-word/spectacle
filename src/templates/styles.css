@@ -10,7 +10,7 @@ body {
   -ms-text-size-adjust: none;
   text-size-adjust: none;
 
-  font-family: "Source Serif Pro", Georgia, serif;
+  font-family: "Source Serif Pro", Georgia, Times, serif;
   font-size: 100%;
   line-height: 1.3636363636; /* 15/11, or 36 lines p.p. */
 }
@@ -176,6 +176,7 @@ h2 + blockquote p:first-child + p {
   display: block;
   /* if note is in a header, we need to reset the typography */
   font-size: 0.75rem;
+  font-style: normal;
   font-weight: normal;
   line-height: 1.4;
   letter-spacing: normal;

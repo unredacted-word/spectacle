@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 $for(author-meta)$
   <meta name="author" content="$author-meta$" />
 $endfor$
@@ -19,14 +19,10 @@ $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
   <style>
     $styles.css()$
+  </style>
+  <style media="screen">
     $screen.css()$
   </style>
-$for(css)$
-  <link rel="stylesheet" href="$css$" />
-$endfor$
-$if(math)$
-  $math$
-$endif$
 
 $for(header-includes)$
   $header-includes$

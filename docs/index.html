@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Guy Debord" />
   <meta name="dcterms.date" content="2021-02-19" />
   <meta name="keywords" content="Philosophy, Critical Theory, Marxism, Anarchism, Proletariat, Social Classes" />
@@ -21,9 +21,9 @@
       -ms-text-size-adjust: none;
       text-size-adjust: none;
 
-      font-family: "Source Serif Pro", Georgia, serif;
+      font-family: "Source Serif Pro", Georgia, Times, serif;
       font-size: 100%;
-      line-height: 1.4;
+      line-height: 1.3636363636; /* 15/11, or 36 lines p.p. */
     }
 
     a {
@@ -46,13 +46,10 @@
     h1,
     h2,
     h3,
-    h4,
-    h5,
-    h6 {
+    h4 {
       font-weight: 600;
       letter-spacing: -0.025em;
       line-height: 1;
-      break-after: avoid;
     }
     h2 {
       /* chapters */
@@ -62,8 +59,6 @@
       text-align: left;
       hyphens: none;
       position: relative;
-      /* chapters start on new page */
-      break-before: always;
     }
     h2 .ch-roman {
       position: absolute;
@@ -71,17 +66,22 @@
       font-size: 5em;
       margin-top: -0.5em;
     }
-    .toc h2.centered,
-    .preface h2.centered
-    .glossary  h2.centered,
-    .bibliography h2.centered {
-      /* center align non-chapter headers */
+    .toc h2,
+    .forward h2,
+    .preface h2,
+    .glossary h2,
+    .bibliography h2,
+    .index h2 {
+      font-size: 1.3636363636rem; /*1.36- = 15/11 */
+      margin-top: 1em;
+      margin-bottom: 1em;
       text-align: center;
     }
 
     h3 {
       /* thesis numbers */
-      font-size: 1.5rem;
+      font-size: 1.3636363636rem; /* 15 / 21.8181818176 */
+      margin: 1em 0;
       text-align: center;
     }
 
@@ -101,10 +101,6 @@
       line-height: 0; /* fixes blowing-up the line-height */
     }
 
-    cite {
-      font-style: normal;
-    }
-
     figure {
       text-align: center;
     }
@@ -113,13 +109,12 @@
     figure {
       margin: 0;
       font-size: 0.75rem;
-      break-inside: avoid;
     }
 
     figure figcaption,
     blockquote figcaption {
       font-style: italic;
-      padding: 0.25rem 4rem;
+      padding: 0;
     }
 
     img {
@@ -128,18 +123,16 @@
     figure img {
       max-height: 100vh;
       max-width: 40rem;
-      margin: 0 -3rem;
     }
 
     /* chapter page */
     h2 + blockquote {
-      text-align: justify;
-      font-size: 1rem;
-      line-height: 1.3;
+      font-size: 1.3636363636rem;
     }
     h2 + blockquote > p:first-child em {
       /* chapter epigraphs with a quote hanging to the left of text block */
       display: block;
+      font-size: 1.1818181818rem; /* 13pt */
       text-indent: -0.5em;
       text-align: left;
     }
@@ -150,17 +143,6 @@
 
 
     /* utilities */
-
-    .align-left {
-      text-align: left;
-    }
-    .align-justify {
-      text-align: justify;
-    }
-
-    .hidden {
-      display: none;
-    }
 
     .title,
     .author {
@@ -177,7 +159,6 @@
     .title {
       font-size: 2.25rem;
       letter-spacing: -0.05em;
-      string-set: doctitle content();
     }
 
     .titlepg.centered {
@@ -206,6 +187,7 @@
       display: block;
       /* if note is in a header, we need to reset the typography */
       font-size: 0.75rem;
+      font-style: normal;
       font-weight: normal;
       line-height: 1.4;
       letter-spacing: normal;
@@ -213,12 +195,11 @@
     }
 
     .colophon {
-      font-size: 0.6875rem;
+      font-size: 0.7272727273rem; /* 0.72- = 8pt / 11.6 */
       line-height: 1.2;
       text-align: left;
     }
 
-    /* table of contents */
     .toc h2 {
       margin-left: 1.5rem;
     }
@@ -243,124 +224,131 @@
       text-align: left;
     }
 
-    #authors {
-      column-count: 2;
+    .authors {
       column-count: 2;
       column-gap: 1rem;
       text-align: justify;
     }
-    #authors figure img {
+    .authors figure img {
       max-width: 100%;
-    }    body::before {
-       display: block;
-       content: 'draft';
-       font-family: system-ui, sans-serif;
-       text-transform: uppercase;
-       font-weight: 900;
-       font-size: 20vw;
-       opacity: 0.2;
-       position: fixed;
-       transform: rotate(-15deg);
-       left: 20vw;
-       top: 20vh;
-       pointer-events: none;
-     }
+    }  </style>
+  <style media="screen">
+    html {
+      background: #f7f7f7;
+    }
+    @media screen and (45rem) {
+      html {
+        min-width: 1290px;
+      }
+    }
 
-     @media only screen {
-       html {
-         background: #f7f7f7;
-       }
-       body {
-         background: white;
-         box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
-         padding: 1cm;
-         margin: 2cm auto 2cm 24rem;
-         width: 152mm;
-       }
-     }
+    body {
+      margin: 0;
+    }
+    body > div,
+    body > section {
+      background: white;
+      box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+      padding: 1rem;
+      margin-bottom: 50vh;
+    }
+    @media screen and (min-width: 36.25rem) {
+      body > div,
+      body > section {
+        box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 36.25rem; /* 36.25 = 580/16 */
+        padding: 2rem;
+      }
+    }
 
-     ::selection,
-     *:target,
-     *:target + .fn {
-       /* give highlight to text-selection, target, and the footnote next to the target */
-       background-color: rgba(254, 231, 0, 0.5);
-       transition: background-color 4s ease;
-     }
-     .fn:target,
-     *:target + .fn {
-       /* targeted sidenodes get padding because they have a yellog bg color */
-       padding: 0.5em;
-     }
-     @media only screen {
-       .fn {
-         width: 20rem;
-       }
-       /* alternating side footnotes */
-       .fn:nth-of-type(odd),
-       .fn.fn-r:nth-of-type(even) {
-         margin-right: -24rem;
-         margin-left: 0;
-         float: right;
-       }
-       .fn:nth-of-type(even),
-       .fn.fn-l:nth-of-type(odd) {
-         margin-left: -24rem;
-         margin-right: 0;
-         float: left;
-       }
-     }
+    ::selection,
+    *:target,
+    *:target + .fn {
+      /* give highlight to text-selection, target, and the footnote next to the target */
+      background-color: rgba(254, 231, 0, 0.5) !important;
+      transition: background-color 4s ease;
+    }
 
-     @media only screen {
-       h2,
-       .break-before {
-         margin-top: 100vh;
-       }
-       h2 + blockquote,
-       .break-after {
-         margin-bottom: 100vh;
-       }
-     }
-     /* half title */
-     .halftitle-title {
-       background-color: #0adada;
-       height: 22.5cm;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       margin: -10mm -10mm 100vh -10mm;
-       padding: 10mm;
-       position: relative;
-     }
-     .halftitle-translator {
-       position: absolute;
-       text-align: center;
-       left: 0;
-       right: 0;
-       bottom: 4em;
-     }
+    .fn {
+      display: inline;
+      color: #292929;
+      font-family: system-ui, sans-serif;
+      border: 1px solid rgba(29,29,29, 0.25);
+    }
+    @media (min-width: 45rem) {
+      /* 960px */
+      .fn {
+        border: none;
+        background-color: #f7f7f7;
+        color: black;
+        display: block;
+        font-family: "Source Serif Pro", Georgia, Times, serif;
+        padding: 0.5em;
+        width: 20rem;
+        z-index: 0;
+      }
+      .fn-scroll {
+        height: 3.75em;
+        overflow: scroll;
+        border-bottom: 1px dashed rgba(0,0,0,0.5);
+      }
+      /* alternating side footnotes */
+      .fn:nth-of-type(odd),
+      .fn.fn-r:nth-of-type(even) {
+        margin-right: -24rem;
+        margin-left: 0;
+        float: right;
+      }
+      .fn:nth-of-type(even),
+      .fn.fn-l:nth-of-type(odd) {
+        margin-left: -24rem;
+        margin-right: 0;
+        float: left;
+      }
+    }
 
-     /* table of contents */
-     .toc ul,
-     .toc ol {
-       margin: 0.5rem 0 0.5rem -0.75rem;
-     }
+    /* half title */
+    .halftitle-title {
+      background-color: #0adada;
+      height: 52rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+    .halftitle-translator {
+      position: absolute;
+      text-align: center;
+      left: 0;
+      right: 0;
+      bottom: 4em;
+    }
+
+    /* table of contents */
+    .toc ul,
+    .toc ol {
+      margin: 0.5rem 0 0.5rem -0.75rem;
+    }
   </style>
 
 </head>
 <body>
-<div class="halftitle-title title-page break-before-right reset-page-counter">
+<div class="halftitle-title frontmatter break-before-right reset-page-counter">
 <p><img src="images/infinity-rope.svg" class="halftitle-image" /></p>
 <p><span class="title">The Society of the Spectacle</span></p>
 <p><span class="author">Guy Debord</span></p>
 <p><span class="halftitle-translator">English Edition by Ron. Adams</span></p>
 </div>
-<div class="colophon title-page">
+<div class="colophon frontmatter">
 <p>Originally published in Paris, France as <em>La Société du Spectacle</em> by Éditions Buchet-Chastel (Paris) in 1967. It was reissued by Éditions Champ Libre (Paris) in 1971, and Éditions Gallimard (Paris) 1992.</p>
 <p>This annotated English edition by Ron. Adams.</p>
 <p>█ Unredacted Word<br />
 Cambridge, Massachusetts<br />
 <a href="https://unredacted-word.pub">https://unredacted-word.pub</a></p>
-<p>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to share, copy, and redistribute the material in any medium or format. Adapt, remix, transform, and build upon the material. The licensor cannot revoke these freedoms as long as you follow the license terms. Find the complete license online at<br />
+<p>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to share, copy, and redistribute the material in any medium or format. Adapt, remix, transform, and build upon the material. The licensor cannot revoke these freedoms as long as you follow the license terms.<br />
+Find the complete license online at<br />
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a></p>
 <p>This book is available for free online at <a href="https://unredacted-word.pub/spectacle/">https://unredacted-word.pub/spectacle/</a></p>
 <p>ISBN TODO (hardcover: alk. paper)<br />
@@ -382,8 +370,8 @@ Library of Congress Control Number: TODO</p>
 <em>First Printing 2021</em><br />
 10 9 8 7 6 5 4 3 2 1</p>
 </div>
-<section id="toc" class="level2 centered toc title-page break-before-right" data-bookmark-label="Table of Contents">
-<h2 class="centered" data-bookmark-label="Table of Contents">Contents</h2>
+<section id="toc" class="level2 toc frontmatter break-before-right" data-bookmark-label="Table of Contents">
+<h2 data-bookmark-label="Table of Contents">Contents</h2>
 <ul>
 <li><a href="#forward">Forward</a></li>
 <li><a href="#preface">Preface to the Third French Edition</a></li>
@@ -405,18 +393,19 @@ Library of Congress Control Number: TODO</p>
 <li><a href="#index">Index</a></li>
 </ul>
 </section>
-<section id="forward" class="level3">
-<h3>Forward</h3>
+<section id="forward" class="level2 preface forward">
+<h2>Forward</h2>
 <p>TODO</p>
 <p>March, 2021<br />
 Ron. Adams</p>
-<div class="titlepg centered title-page break-before-right">
+</section>
+<div class="titlepg centered frontmatter break-before-right">
 <p><span class="author">Guy Debord</span></p>
 <hr />
 <section id="the-society-of-the-spectacle" class="level1">
 <h1><span class="title">The Society of the Spectacle</span></h1>
 <hr />
-<div class="centered title-details break-after">
+<div class="centered title-details">
 <p>English edition by Ron. Adams<br />
 █ Unredacted Word<br />
 Cambridge, Massachusetts</p>
@@ -424,9 +413,8 @@ Cambridge, Massachusetts</p>
 </div>
 </section>
 </div>
-</section>
-<section id="preface" class="level3">
-<h3>Preface to the Third French Edition</h3>
+<section id="preface-to-the-third-french-edition" class="level2 preface">
+<h2>Preface to the Third French Edition</h2>
 <p><em>The Society of the Spectacle</em> was first published in November 1967 in Paris by Buchet-Chastel. The 1968 unrest made it famous. The book, of which I have never changed a single word, was republished in 1971 by Éditions Champ Libre, who changed their name to Gérard Lebovici in 1984, after the publisher’s assassination. A series of reprints continued there regularly until 1991. The present edition,<span id="fntfe.1" class="fn">“The present edition…”: This preface was written for the Third French Edition published in 1992, four years after he had published <em>Comments on the Society of the Spectacle</em>, and roughly a year after the final collapse of the USSR (1989-1991). Debord died by suicide two years later, on November 30, 1994.</span> too, has remained rigorously identical to the 1967 edition. The same rule will naturally apply to the reprinting of all my books at Gallimard. I am not one who corrects myself.</p>
 <p>Such a critical theory does not have to be changed; as long as the general conditions of this period of history (that this theory was first to define accurately) have not been destroyed. The continued development of this period has only verified and illustrated the theory of the spectacle, whose presentation, reiterated here, can also be considered historical in a more limited sense: it testifies to what the most extreme position was at the time of the quarrels of 1968, and therefore to the knowledge that was already possible to know in 1968. The worst dupes of that time have since learned, through the disappointments of their entire existence, what the <q>negation of life that has become visible</q>; the <q>loss of quality</q> linked to the commodity-form, and the <q>proletarianization of the world</q> has meant.</p>
 <p>Over time, I also added other observations concerning the most remarkable developments that the subsequent course of the same process was to bring about. In 1979, on the occasion of a preface for a new Italian translation, I dealt with the effective transformations in the very nature of industrial production, as well as in the techniques of government, which began an authorized use of spectacular force. In 1988, the <em>Comments on the Society of the Spectacle</em> clearly established that the previous <q>worldwide division of spectacular labor</q>, between the rival reigns of the <q>concentrated spectacle</q> and the <q>diffuse spectacle</q>, had now ended<span id="fntfe.2" class="fn">“the rival reigns… had now ended”: Debord is pointing to the ideologic rivalry between the diffuse spectacle exemplified by U.S. capitalism and the concentrated spectacle exemplified by the communism of the USSR. His book, <em>Comments on the Society of the Spectacle</em> was published a year before the collapse of the USSR, but he had predicted this collapse by describing the failure of the concentrated spectacle. Amazingly, two of Debords’ major works: <em>The Society of the Spectacle</em> and <em>Comments on the Society of the Spectacle</em> were published just one year prior to two major worldwide upheavals: Spectacle published a year before May 1968 in Paris, and Comments a year before the beginning of collapse of the USSR.</span> in favor of their fusion, into the universal form of the <q>integrated spectacle</q>.</p>
@@ -453,7 +441,7 @@ GUY DEBORD</p>
 </section>
 <section id="section-1" class="level3">
 <h3>2</h3>
-<p>Whereas directly lived experience is a continuum of emotion and sensation, the representational life is a stream of images detached from their living context. The original context of this directly lived reality cannot be reestablished. Living a representational life has a <em>completely separate</em>, but unified experience unto itself that exists purely in thought. As reality is increasingly represented as images to be experienced by sight alone, eventually a completely <em>separate pseudo-world</em> of images emerges—where the “real” reality is only represented, but never actually experienced; merely performed and eventually simulated. The horizon of this representational reality is one in which individuals experience a representational world of fully autonomous non-lived lives.<span id="fn2.1" class="fn">“fully autonomous non-lived lives”: The original French is <q lang="fr">est le mouvement autonome du non-vivant.</q> or “the autonomous movement of the non-living.” C.f. Hegel, G., Harris, H. &amp; Knox, T., 1979. The same reference is later made in <a href="#dead">thesis 215</a>; the full quotation reads: “Need for labor, elevated into this universality, then form on their own account a monstrous system of community and mutual interdependence in a great people; the life of the dead body, that moves itself within itself, one which ebbs and flows in its motion blindly, like the elements, and which requires continual strict dominance and taming like a wild beast.”</span></p>
+<p>Whereas directly lived experience is a continuum of emotion and sensation, the representational life is a stream of images detached from their living context. The original context of this directly lived reality cannot be reestablished. Living a representational life has a <em>completely separate</em>, but unified experience unto itself that exists purely in thought. As reality is increasingly represented as images to be experienced by sight alone, eventually a completely <em>separate pseudo-world</em> of images emerges—where the “real” reality is only represented, but never actually experienced; merely performed and eventually simulated. The horizon of this representational reality is one in which individuals experience a representational world of fully autonomous non-lived lives.<span id="fn2.1" class="fn fn-l">“fully autonomous non-lived lives”: The original French is <q lang="fr">est le mouvement autonome du non-vivant.</q> or “the autonomous movement of the non-living.” C.f. Hegel, G., Harris, H. &amp; Knox, T., 1979. The same reference is later made in <a href="#dead">thesis 215</a>; the full quotation reads: “Need for labor, elevated into this universality, then form on their own account a monstrous system of community and mutual interdependence in a great people; the life of the dead body, that moves itself within itself, one which ebbs and flows in its motion blindly, like the elements, and which requires continual strict dominance and taming like a wild beast.”</span></p>
 </section>
 <section id="section-2" class="level3">
 <h3>3</h3>
@@ -758,7 +746,7 @@ GUY DEBORD</p>
 </blockquote>
 <section id="section-69" class="level3">
 <h3>73</h3>
-<p>The spectacle began when the bourgeoisie won the economy, and became visible when the bourgeois politicians put their interests into action within politics. The real movement that dissolves existing conditions<span id="fn73.1" class="fn">“The real movement that dissolves existing conditions”: C.f. Marx, K. &amp; Engels, F., 1998 (Part 1, Ch. 2, Section 5.) Full quotation: “Communism is for us not a state of affairs which is to be established, an ideal to which reality will have to adjust itself. What we call communism is the real movement that is dissolving existing conditions.”</span>—the continual progression of capitalism destroying the old way of life in which individuals created goods as craft,<span id="fn73.2" class="fn">“individuals created goods as craft…”: In its place is a thoughtless production of items bankrupt of craft, only to be consumed not for its use, but in order to satisfy an unsatisfiable pseudo-need.</span> and their relation to the goods as an item with use value, the old static order crumbled into dust.<span id="fn73.3" class="fn">“the old static order crumbled into dust.”: C.f. Marx, K., Engels, F. &amp; Jones, G., 2002 (Part 1). Full quotation: “All that is solid melts into air, all that is holy is profaned, and man is at last compelled to face his real conditions of life, and his relations with his kind, in a clear and disabused manner.”</span> Everything that had been directly lived has been relegated to history.</p>
+<p>The spectacle began when the bourgeoisie won the economy, and became visible when the bourgeois politicians put their interests into action within politics. The real movement that dissolves existing conditions<span id="fn73.1" class="fn fn-scroll">“The real movement that dissolves existing conditions”: C.f. Marx, K. &amp; Engels, F., 1998 (Part 1, Ch. 2, Section 5.) Full quotation: “Communism is for us not a state of affairs which is to be established, an ideal to which reality will have to adjust itself. What we call communism is the real movement that is dissolving existing conditions.”</span>—the continual progression of capitalism destroying the old way of life in which individuals created goods as craft,<span id="fn73.2" class="fn">“individuals created goods as craft…”: In its place is a thoughtless production of items bankrupt of craft, only to be consumed not for its use, but in order to satisfy an unsatisfiable pseudo-need.</span> and their relation to the goods as an item with use value, the old static order crumbled into dust.<span id="fn73.3" class="fn">“the old static order crumbled into dust.”: C.f. Marx, K., Engels, F. &amp; Jones, G., 2002 (Part 1). Full quotation: “All that is solid melts into air, all that is holy is profaned, and man is at last compelled to face his real conditions of life, and his relations with his kind, in a clear and disabused manner.”</span> Everything that had been directly lived has been relegated to history.</p>
 </section>
 <section id="section-70" class="level3">
 <h3>74</h3>
@@ -766,7 +754,7 @@ GUY DEBORD</p>
 </section>
 <section id="section-71" class="level3">
 <h3>75</h3>
-<p>The class struggles of the <em>long era of revolutions</em><span id="fn75.1" class="fn">“the long era of revolutions”: The period from approximately 1774 to 1849 in which a number of significant revolutionary movements occurred in most of Europe and the Americas. The period is noted for the change from absolutist monarchies to representative governments with a written constitution, and the creation of nation states. Arguably includes the Russian Revolution which would extend its end until 1923.</span> that was initiated by the ascendance of the bourgeoisie, arrived with <em>historical thought</em>. This is the dialectic—a line of reasoning that doesn’t conclude at the definition of meaning of what exists, but aspires to understand the dissolution of everything that is—and in the process dissolve all separation.<span id="fn75.2" class="fn">“dissolve all separation”: The role of human labor has shifted from one of active manual labor to one of knowledge labor, or even later, pure contemplation which is sufficient to call “labor.” Within this regime, class distinctions seem to dissolve, but will be (in reality) ascribed by ownership of power, capital, and signifiers of class membership. The potential for a revolution of the proletariat is then to ignore meaning in the contemporary moment, and instead to create new meaning through direct actions that seeks to eliminate all existing meaning and all forms of alienation. Pure contemplation can take an active form such as automation and computation (software engineering), and machine learning (data mining and neural-network training.) The passive form includes individuals who exchange their time for television, social media apps like Instagram, etc; their attention becomes labor in itself. For more on this topic see Beller, J., 2006.</span></p>
+<p>The class struggles of the <em>long era of revolutions</em><span id="fn75.1" class="fn">“the long era of revolutions”: The period from approximately 1774 to 1849 in which a number of significant revolutionary movements occurred in most of Europe and the Americas. The period is noted for the change from absolutist monarchies to representative governments with a written constitution, and the creation of nation states. Arguably includes the Russian Revolution which would extend its end until 1923.</span> that was initiated by the ascendance of the bourgeoisie, arrived with <em>historical thought</em>. This is the dialectic—a line of reasoning that doesn’t conclude at the definition of meaning of what exists, but aspires to understand the dissolution of everything that is—and in the process dissolve all separation.<span id="fn75.2" class="fn fn-scroll">“dissolve all separation”: The role of human labor has shifted from one of active manual labor to one of knowledge labor, or even later, pure contemplation which is sufficient to call “labor.” Within this regime, class distinctions seem to dissolve, but will be (in reality) ascribed by ownership of power, capital, and signifiers of class membership. The potential for a revolution of the proletariat is then to ignore meaning in the contemporary moment, and instead to create new meaning through direct actions that seeks to eliminate all existing meaning and all forms of alienation. Pure contemplation can take an active form such as automation and computation (software engineering), and machine learning (data mining and neural-network training.) The passive form includes individuals who exchange their time for television, social media apps like Instagram, etc; their attention becomes labor in itself. For more on this topic see Beller, J., 2006.</span></p>
 </section>
 <section id="section-72" class="level3">
 <h3>76</h3>
@@ -774,7 +762,7 @@ GUY DEBORD</p>
 </section>
 <section id="section-73" class="level3">
 <h3>77</h3>
-<p>When the working class exert their power &amp; presence through actions, they demonstrate how they have not forgotten the historical thought.<span id="fn77.1" class="fn">“they have not forgotten the historical thought”: C.f. Hegel, G., Hoffmeister, J., Nisbet, H. &amp; Forbes, D., 1975. Full quotation: “Spirit often seems to have forgotten and lost itself, but inwardly opposed to itself, it is inwardly working ever forward as Hamlet says of the ghost of his father, ‘Well done, old mole’-until grown strong in itself it bursts asunder the crust of earth which divided it from its sun, its Notion, so that the earth crumbles away.”</span> Their actions demonstrate the denial of <em>the ends</em><span id="fn77.2" class="fn">“the ends/new ends”: Ends as in ‘the ultimate goal’ or ‘ultimate purpose’. This language comes directly from Hegel: ‘End of history’ meaning the final form of human society, or the ultimate goal of the process of human social development. It does not imply that nothing more will ever happen. This is a denial of Hegel’s idealized philosophical conclusion.</span> of historical thought, demonstrating the very real possibility of new ends that they themselves will materialize. These actions will simultaneously be a validation of <em>their methods</em>.<span id="fn77.3" class="fn">“their methods”: Hegel’s dialectical methods.</span></p>
+<p>When the working class exert their power &amp; presence through actions, they demonstrate how they have not forgotten the historical thought.<span id="fn77.1" class="fn fn-scroll">“they have not forgotten the historical thought”: C.f. Hegel, G., Hoffmeister, J., Nisbet, H. &amp; Forbes, D., 1975. Full quotation: “Spirit often seems to have forgotten and lost itself, but inwardly opposed to itself, it is inwardly working ever forward as Hamlet says of the ghost of his father, ‘Well done, old mole’-until grown strong in itself it bursts asunder the crust of earth which divided it from its sun, its Notion, so that the earth crumbles away.”</span> Their actions demonstrate the denial of <em>the ends</em><span id="fn77.2" class="fn">“the ends/new ends”: Ends as in ‘the ultimate goal’ or ‘ultimate purpose’. This language comes directly from Hegel: ‘End of history’ meaning the final form of human society, or the ultimate goal of the process of human social development. It does not imply that nothing more will ever happen. This is a denial of Hegel’s idealized philosophical conclusion.</span> of historical thought, demonstrating the very real possibility of new ends that they themselves will materialize. These actions will simultaneously be a validation of <em>their methods</em>.<span id="fn77.3" class="fn">“their methods”: Hegel’s dialectical methods.</span></p>
 </section>
 <section id="section-74" class="level3">
 <h3>78</h3>
@@ -831,7 +819,7 @@ Henry George (1839-1897). Their theories were contrasted with the “scientific 
 </section>
 <section id="section-86" class="level3">
 <h3>90</h3>
-<p>Theory and practice must go hand in hand, as one guarantees the validity of the other. At the <em>moment of the revolutionary event</em>, the proletarian class must congeal into a conscious subject<span id="fn90.1" class="fn">conscious subject/consciousness: See glossary: “<a href="#consciousness">Consciousness</a>”.</span> with the organization of actions on the ground to further their own interests with the reorganization of society. This is where <em>practical conditions of consciousness must exist</em>, If this occurs, it confirms theory with practice by becoming practical theory.<span id="fn90.2" class="fn">“theory with practice by becoming practical theory”: According to Debord this is detourned from Lukács, G., 1971.</span> However, the central question of organization was ignored by revolutionary theory at the time when the workers’ movement was beginning to take shape, that is, when this theory was still <em>unified</em> with practice it had inherited from historical thought (thought which vowed to develop into unified historical <em>practice</em>). Instead, the organizational question became the weakest aspect of radical theory, a confused terrain mired down by a revival of hierarchical command structures borrowed from the state<span id="fn90.3" class="fn">“a revival of hierarchical command structures borrowed from the state”: Or, more contemporaneously, borrowing organization and management structures from business.</span> and inherited from the bourgeois revolution. Organizational forms that are co-opted from state become a weakening force that break up the unity of the movement into specialized and ideologically fragmented disciplines that will be unable to recognize the success of practical actions and unified theory of working class struggles. Instead it represses every manifestation of struggle and undermines the memory of their successes. Practice is least theorized as it requires unique conditions and unique actions responding to the dynamic changes to the terrain underfoot. Practice must be planned immediately, as to prevent its dissemination and potential for disruption. Verification of theory emerges from successful application and deployment of practice. The <em>Soviet</em>, for example, was never theorized,<span id="fn90.4" class="fn">“The Soviet… was never theorized”: The first soviet (Russian for “council”) was spontaneously formed by striking workers during the 1905 Russian revolution. No previous radical theorists had envisaged this form of popular self-organization, however obvious it may have seemed in retrospect.</span> but its practice verified the theoretical truth of the existence<span id="fn90.5" class="fn">“its practice verified the theoretical truth of its existence…”: Détourned from Marx, K., Kemp, A., 1968; full quotation “the greatest social measure of the [Paris] Commune was its own working existence.”</span> of the International Workers’ Association.<span id="fn90.6" class="fn">International Workers’ Association: The International Workingmen’s Association (IWA), often called the First International (1864–1876), was an international organisation which aimed at uniting a variety of different left-wing socialist, communist and anarchist groups and trade unions that were based on the working class and class struggle. It was founded in 1864 in a workmen’s meeting held in St. Martin’s Hall, London, and dissolved in the 1870s following the split between the Marxist and Bakuninist factions.</span></p>
+<p>Theory and practice must go hand in hand, as one guarantees the validity of the other. At the <em>moment of the revolutionary event</em>, the proletarian class must congeal into a conscious subject<span id="fn90.1" class="fn">conscious subject/consciousness: See glossary: “<a href="#consciousness">Consciousness</a>”.</span> with the organization of actions on the ground to further their own interests with the reorganization of society. This is where <em>practical conditions of consciousness must exist</em>, If this occurs, it confirms theory with practice by becoming practical theory.<span id="fn90.2" class="fn">“theory with practice by becoming practical theory”: According to Debord this is detourned from Lukács, G., 1971.</span> However, the central question of organization was ignored by revolutionary theory at the time when the workers’ movement was beginning to take shape, that is, when this theory was still <em>unified</em> with practice it had inherited from historical thought (thought which vowed to develop into unified historical <em>practice</em>). Instead, the organizational question became the weakest aspect of radical theory, a confused terrain mired down by a revival of hierarchical command structures borrowed from the state<span id="fn90.3" class="fn">“a revival of hierarchical command structures borrowed from the state”: Or, more contemporaneously, borrowing organization and management structures from business.</span> and inherited from the bourgeois revolution. Organizational forms that are co-opted from state become a weakening force that break up the unity of the movement into specialized and ideologically fragmented disciplines that will be unable to recognize the success of practical actions and unified theory of working class struggles. Instead it represses every manifestation of struggle and undermines the memory of their successes. Practice is least theorized as it requires unique conditions and unique actions responding to the dynamic changes to the terrain underfoot. Practice must be planned immediately, as to prevent its dissemination and potential for disruption. Verification of theory emerges from successful application and deployment of practice. The <em>Soviet</em>, for example, was never theorized,<span id="fn90.4" class="fn fn-scroll">“The Soviet… was never theorized”: The first soviet (Russian for “council”) was spontaneously formed by striking workers during the 1905 Russian revolution. No previous radical theorists had envisaged this form of popular self-organization, however obvious it may have seemed in retrospect.</span> but its practice verified the theoretical truth of the existence<span id="fn90.5" class="fn">“its practice verified the theoretical truth of its existence…”: Détourned from Marx, K., Kemp, A., 1968; full quotation “the greatest social measure of the [Paris] Commune was its own working existence.”</span> of the International Workers’ Association.<span id="fn90.6" class="fn">International Workers’ Association: The International Workingmen’s Association (IWA), often called the First International (1864–1876), was an international organisation which aimed at uniting a variety of different left-wing socialist, communist and anarchist groups and trade unions that were based on the working class and class struggle. It was founded in 1864 in a workmen’s meeting held in St. Martin’s Hall, London, and dissolved in the 1870s following the split between the Marxist and Bakuninist factions.</span></p>
 </section>
 <section id="section-87" class="level3">
 <h3>91</h3>
@@ -871,7 +859,7 @@ Henry George (1839-1897). Their theories were contrasted with the “scientific 
 </section>
 <section id="section-96" class="level3">
 <h3>100</h3>
-<p>The very moment when Bolshevism celebrated its victory <em>for itself</em> in Russia, and when social democracy fought victoriously for <em>the old world</em>,<span id="fn100.1" class="fn">“when Bolshevism celebrated its victory for itself in… for the old world”: In more detail: “The triumph of the Bolshevik order coincided with the international counter revolutionary movement that began with the crushing of the Spartakists by German ‘Social Democracy.’ The commonality of the jointly victorious Bolshevism and reformism went deeper than their apparent antagonism, for the Bolshevik order also turned out to be merely a new variation on the old theme, a new guise of the old order. … Capitalism, in its bureaucratic and bourgeois variants, won a new lease on life, over the dead bodies of the sailors of Kronstadt, the peasants of the Ukraine, and the workers of Berlin, Kiel, Turin, Shanghai, and finally Barcelona” See Knabb, K. 2006 (Pp. 422-423).</span> marked the shift to our contemporary state of affairs. This shift marked the foundation of spectacular domination: the <em>representation</em> of the working class had become the <em>enemy</em> of the working class.</p>
+<p>The very moment when Bolshevism celebrated its victory <em>for itself</em> in Russia, and when social democracy fought victoriously for <em>the old world</em>,<span id="fn100.1" class="fn fn-scroll">“when Bolshevism celebrated its victory for itself in… for the old world”: In more detail: “The triumph of the Bolshevik order coincided with the international counter revolutionary movement that began with the crushing of the Spartakists by German ‘Social Democracy.’ The commonality of the jointly victorious Bolshevism and reformism went deeper than their apparent antagonism, for the Bolshevik order also turned out to be merely a new variation on the old theme, a new guise of the old order. … Capitalism, in its bureaucratic and bourgeois variants, won a new lease on life, over the dead bodies of the sailors of Kronstadt, the peasants of the Ukraine, and the workers of Berlin, Kiel, Turin, Shanghai, and finally Barcelona” See Knabb, K. 2006 (Pp. 422-423).</span> marked the shift to our contemporary state of affairs. This shift marked the foundation of spectacular domination: the <em>representation</em> of the working class had become the <em>enemy</em> of the working class.</p>
 </section>
 <section id="section-97" class="level3">
 <h3>101</h3>
@@ -907,7 +895,7 @@ Henry George (1839-1897). Their theories were contrasted with the “scientific 
 </section>
 <section id="section-103" class="level3">
 <h3>109</h3>
-<p>Between the two world wars, the revolutionary workers movements were destroyed, in Russia by the Stalinist bureaucracy and in Germany by the fascist totalitarians who had borrowed their organizational form from the more developed totalitarian party in Russia. Fascism was an extreme defense mechanism for the bourgeois economy which was threatened at the time by working class subversion and the reparations of the Germans<span id="fn109.1" class="fn">“reparations of the Germans”: As a result of World War I, the Paris Peace Conference imposed reparations on Germany (and the other Central Powers) following their defeat in the First World War by the Allied and Associate Powers. The German people saw reparations as a national humiliation; the German government worked to undermine the validity of the Treaty of Versailles and the requirement to pay.</span> after World War I. Fascism is an expensive to maintain <em>state of siege</em> by the capitalist economy attempting to defend itself with an emergency dose of rationalization and massive state intervention in its economic and social management. But this rationalization is itself hindered by the immense irrationality of the methods it imposed. Fascism rallies to the defense of the conservative bourgeois ideology of the family, private property, the moral order, and patriotic nationalism. It unites the petty-bourgeois<span id="fn109.2" class="fn">petty-bourgeois: A social class comprising small business owners, and the middle class whose personal identities are determined by an aspiration to the upper class bourgeoisie. Their political and economic positions tend to imitate the positions of the bourgeoisie class above them, although this position is often not in their own best interests.</span> and the unemployed who have been hurt by the crisis or disappointed by the impotence of the socialist revolution—it is not by its nature fundamentally ideological, but may exhibit ideology to suit its needs. Its strength is how it presents itself truthfully as a violent resurrection of <em>mythic</em> origins—to claim the past as a “Golden Age” and a return to the successes of this golden past. It demands participation in a community held together by mythical archaic pseudo-values: race, blood, and the leader. Fascism is a <em>cult of the archaic fitted out by modern technology</em>. It revives and recreates its myth (both past and present) through the spectacle using speeches, television, radio, internet, and pop culture. It is a major factor in the formation of the modern spectacle. The false mythology of this “Golden Age” is one of the fundamental factors of contemporary society, and was a primary factor in the destruction of the workers movement. Fascism however, is the most <em>costly</em> means<span id="fn109.3" class="fn">“Fascism however, is the most costly means…”: Debord is alluding to the direct and expensive form of authoritarian-totalitarian enforcement of false spectacular consciousness he terms “The Concentrated Spectacle”. This form is less effective and more costly than the other variants of spectacular society—“The Diffuse Spectacle”, in which individuals willingly participate in a society that is both far more effective and efficient at subduing the masses, since it appears to empower individuals through consumer choice. The diffuse spectacle of contemporary capitalism reproduces itself by exploiting the spectator’s desires and dissatisfaction with an endless cycle of promises to satiate these desires and then failing to do so; and yet offers another promise.</span> of preserving a capitalist order due to the scale and effort required of the state to enforce the authoritarian rule of a minority with a police state apparatus. Fascism is unsustainable in the long-term, and must be pushed aside by a more efficient and rational form of power.<span id="fn109.4" class="fn">“more efficient and rational form of power”: Neoconservative or neoliberal representational democracy being examples in the West, and ‘Capitalism with Asian values’ being examples in the East. See Žižek, S., 2010 for more on the shift to post-democratic capitalist fascism.</span></p>
+<p>Between the two world wars, the revolutionary workers movements were destroyed, in Russia by the Stalinist bureaucracy and in Germany by the fascist totalitarians who had borrowed their organizational form from the more developed totalitarian party in Russia. Fascism was an extreme defense mechanism for the bourgeois economy which was threatened at the time by working class subversion and the reparations of the Germans<span id="fn109.1" class="fn">“reparations of the Germans”: As a result of World War I, the Paris Peace Conference imposed reparations on Germany (and the other Central Powers) following their defeat in the First World War by the Allied and Associate Powers. The German people saw reparations as a national humiliation; the German government worked to undermine the validity of the Treaty of Versailles and the requirement to pay.</span> after World War I. Fascism is an expensive to maintain <em>state of siege</em> by the capitalist economy attempting to defend itself with an emergency dose of rationalization and massive state intervention in its economic and social management. But this rationalization is itself hindered by the immense irrationality of the methods it imposed. Fascism rallies to the defense of the conservative bourgeois ideology of the family, private property, the moral order, and patriotic nationalism. It unites the petty-bourgeois<span id="fn109.2" class="fn">petty-bourgeois: A social class comprising small business owners, and the middle class whose personal identities are determined by an aspiration to the upper class bourgeoisie. Their political and economic positions tend to imitate the positions of the bourgeoisie class above them, although this position is often not in their own best interests.</span> and the unemployed who have been hurt by the crisis or disappointed by the impotence of the socialist revolution—it is not by its nature fundamentally ideological, but may exhibit ideology to suit its needs. Its strength is how it presents itself truthfully as a violent resurrection of <em>mythic</em> origins—to claim the past as a “Golden Age” and a return to the successes of this golden past. It demands participation in a community held together by mythical archaic pseudo-values: race, blood, and the leader. Fascism is a <em>cult of the archaic fitted out by modern technology</em>. It revives and recreates its myth (both past and present) through the spectacle using speeches, television, radio, internet, and pop culture. It is a major factor in the formation of the modern spectacle. The false mythology of this “Golden Age” is one of the fundamental factors of contemporary society, and was a primary factor in the destruction of the workers movement. Fascism however, is the most <em>costly</em> means<span id="fn109.3" class="fn fn-scroll">“Fascism however, is the most costly means…”: Debord is alluding to the direct and expensive form of authoritarian-totalitarian enforcement of false spectacular consciousness he terms “The Concentrated Spectacle”. This form is less effective and more costly than the other variants of spectacular society—“The Diffuse Spectacle”, in which individuals willingly participate in a society that is both far more effective and efficient at subduing the masses, since it appears to empower individuals through consumer choice. The diffuse spectacle of contemporary capitalism reproduces itself by exploiting the spectator’s desires and dissatisfaction with an endless cycle of promises to satiate these desires and then failing to do so; and yet offers another promise.</span> of preserving a capitalist order due to the scale and effort required of the state to enforce the authoritarian rule of a minority with a police state apparatus. Fascism is unsustainable in the long-term, and must be pushed aside by a more efficient and rational form of power.<span id="fn109.4" class="fn">“more efficient and rational form of power”: Neoconservative or neoliberal representational democracy being examples in the West, and ‘Capitalism with Asian values’ being examples in the East. See Žižek, S., 2010 for more on the shift to post-democratic capitalist fascism.</span></p>
 </section>
 <section id="t110" class="level3" data-bookmark-label="110">
 <h3 data-bookmark-label="110">110<span id="fn110.0" class="fn">This thesis presciently described the collapse of the USSR twenty-two years before it occured.</span></h3>
@@ -919,7 +907,7 @@ Henry George (1839-1897). Their theories were contrasted with the “scientific 
 </section>
 <section id="section-105" class="level3">
 <h3>112</h3>
-<p>With the exemption of some Trotskyist tendencies, Leninism no longer has any solid foundations. It’s stubborn insistence on an ideologically based and rigid hierarchical organization despite all the historical experiences that have refuted these practices. Trotskyism is able to succeed in its revolutionary critique of present day society by maintaining a differential attitude towards ideological and tactical positions already proven false when they were used in real struggle. Trotsky was fundamentally loyal to the high bureaucracy until 1927, seeking to capture it to resume a properly Bolshevik foreign policy externally (he went as far as to slander his own supporter Max Eastman in order to hide the criticism against him, contained within Lenin’s famous “Testament”.<span id="fn112.1" class="fn">“Max Eastman… ‘Testament’”: The famous <em>Testament</em> was a letter written by Lenin for the Russian Communist Party during his illness in December 1922, stating his views on how the regime should proceed following his death. The letter featured a sharp attack on Stalin’s brutality and deceitfulness and urged his removal from the position of General Secretary of the Party. It also criticized Trotsky’s bureaucratic tendencies. The <em>Testament</em> was suppressed by the Stalinists and only officially acknowledged much later in 1956 by Khrushchev.</span>) Trotsky was doomed by his underlying perspective, for as soon as the bureaucracy realized its actions were counterrevolutionary on the domestic front, it had to become <em>similarly counterrevolutionary</em> on the international front (of course, in the name of the revolution at home.) Trotsky’s subsequent efforts to create the Fourth International<span id="fn112.2" class="fn">Fourth International: An international alliance of Trotskyist parties founded in 1938 as an alternative to the Stalinist Third International. The original French text is written as “IV<sup>e</sup> Internationale.”</span> contained the same inconsistency. During the second Russian revolution,<span id="fn112.3" class="fn">“During the second Russian revolution…”: the first being in 1905, the second in 1917. During the first revolution Trotsky maintained an independent position between the Mensheviks and Bolsheviks. In 1917 he supported the Bolshevik Party.</span> Trotsky became an unconditional believer in the Bolshevik style of bureaucratic organization, and from then on refused to acknowledge that the bureaucracy itself had become the new ruling class, a separate class apart from the working class. In 1923 Lukács<span id="fn112.4" class="fn">“In 1923 Lukács”: Debord is referring to the last chapter of <em>History and Class Consciousness</em>, section “Towards a Methodology of the Problem of Organization.”</span> pointed to the Bolshevik style of organization as the middle way between theory and practice, where the working class are no longer mere “spectators” of events inside their organization, but consciously choose and live these events as participants; here what he was describing as the merits of the Bolshevik party were in fact everything that the party was <em>not</em>. Despite his profound theoretical work, Lukács was an ideologist promoting a power not actually available to the workers movement, and instead most grossly held by the bureaucratic class, he both believed and pretended that it was, and that he was <em>completely comfortable with it</em>. Subsequent events proved otherwise, as the aforementioned power repudiated and eliminated its servants; Lukács ended up repudiating everything he identified with and argued for in his prior work, <em>History and Class Consciousness</em>—instead identifying with <em>the opposite</em> and thus making a caricature of himself in the process. Lukàcs best verifies the essential heuristic that judges all the intellectuals of this century: that which they <em>respect</em> is that which is able to precisely measure their own <em>contemptible reality</em>. Lenin however was under no such allusions, he realized the party and the philosophies of its members were always one and the same, agreeing that “a political organisation cannot put its members through an examination to see if there is no contradiction between their views and the Party program.”<span id="fn112.5" class="fn">“a political organisation cannot put its members through an examination to see if there is no contradiction between their views and the Party program”: Quotation from Lenin, V., 1909.</span> The party whose idolized image Lukacs had so inopportunely drawn was coherent and precise on one task only—the seizure of state power.</p>
+<p>With the exemption of some Trotskyist tendencies, Leninism no longer has any solid foundations. It’s stubborn insistence on an ideologically based and rigid hierarchical organization despite all the historical experiences that have refuted these practices. Trotskyism is able to succeed in its revolutionary critique of present day society by maintaining a differential attitude towards ideological and tactical positions already proven false when they were used in real struggle. Trotsky was fundamentally loyal to the high bureaucracy until 1927, seeking to capture it to resume a properly Bolshevik foreign policy externally (he went as far as to slander his own supporter Max Eastman in order to hide the criticism against him, contained within Lenin’s famous “Testament”.<span id="fn112.1" class="fn fn-scroll">“Max Eastman… ‘Testament’”: The famous <em>Testament</em> was a letter written by Lenin for the Russian Communist Party during his illness in December 1922, stating his views on how the regime should proceed following his death. The letter featured a sharp attack on Stalin’s brutality and deceitfulness and urged his removal from the position of General Secretary of the Party. It also criticized Trotsky’s bureaucratic tendencies. The <em>Testament</em> was suppressed by the Stalinists and only officially acknowledged much later in 1956 by Khrushchev.</span>) Trotsky was doomed by his underlying perspective, for as soon as the bureaucracy realized its actions were counterrevolutionary on the domestic front, it had to become <em>similarly counterrevolutionary</em> on the international front (of course, in the name of the revolution at home.) Trotsky’s subsequent efforts to create the Fourth International<span id="fn112.2" class="fn">Fourth International: An international alliance of Trotskyist parties founded in 1938 as an alternative to the Stalinist Third International. The original French text is written as “IV<sup>e</sup> Internationale.”</span> contained the same inconsistency. During the second Russian revolution,<span id="fn112.3" class="fn">“During the second Russian revolution…”: the first being in 1905, the second in 1917. During the first revolution Trotsky maintained an independent position between the Mensheviks and Bolsheviks. In 1917 he supported the Bolshevik Party.</span> Trotsky became an unconditional believer in the Bolshevik style of bureaucratic organization, and from then on refused to acknowledge that the bureaucracy itself had become the new ruling class, a separate class apart from the working class. In 1923 Lukács<span id="fn112.4" class="fn">“In 1923 Lukács”: Debord is referring to the last chapter of <em>History and Class Consciousness</em>, section “Towards a Methodology of the Problem of Organization.”</span> pointed to the Bolshevik style of organization as the middle way between theory and practice, where the working class are no longer mere “spectators” of events inside their organization, but consciously choose and live these events as participants; here what he was describing as the merits of the Bolshevik party were in fact everything that the party was <em>not</em>. Despite his profound theoretical work, Lukács was an ideologist promoting a power not actually available to the workers movement, and instead most grossly held by the bureaucratic class, he both believed and pretended that it was, and that he was <em>completely comfortable with it</em>. Subsequent events proved otherwise, as the aforementioned power repudiated and eliminated its servants; Lukács ended up repudiating everything he identified with and argued for in his prior work, <em>History and Class Consciousness</em>—instead identifying with <em>the opposite</em> and thus making a caricature of himself in the process. Lukàcs best verifies the essential heuristic that judges all the intellectuals of this century: that which they <em>respect</em> is that which is able to precisely measure their own <em>contemptible reality</em>. Lenin however was under no such allusions, he realized the party and the philosophies of its members were always one and the same, agreeing that “a political organisation cannot put its members through an examination to see if there is no contradiction between their views and the Party program.”<span id="fn112.5" class="fn">“a political organisation cannot put its members through an examination to see if there is no contradiction between their views and the Party program”: Quotation from Lenin, V., 1909.</span> The party whose idolized image Lukacs had so inopportunely drawn was coherent and precise on one task only—the seizure of state power.</p>
 </section>
 <section id="ref113.0" class="level3">
 <h3>113</h3>
@@ -931,7 +919,7 @@ Henry George (1839-1897). Their theories were contrasted with the “scientific 
 </section>
 <section id="section-107" class="level3">
 <h3>115</h3>
-<p>We can conclude that a new period has already begun, when amongst the economically advanced countries we see increasing signs of negation. We witnessed first failures against capitalism with the workers movements from 1905 through the 1930s, now we are witnessing the <em>failure of capitalist abundance</em>.<span id="fn115.1" class="fn">“the failure of capitalist abundance”: Even under conditions of objective material abundance and relative affluence, we experience artificial impoverishment and a continual desire to <strong>BUY MORE!</strong> in order to satisfy continually disappointed desires. Spectacular society falsifies our needs into thinking we need to buy things we don’t need, to become more like the model-people we see in celebrities but who we don’t actually need to imitate. Simultaneously, objective material abundance is increasingly diminished as wealth is funneled to a shrinking group of oligarchs.</span> We are witnessing a new spontaneous struggle on two fronts, namely the suppression of the workers struggle against capital, largely suppressed by the labor unions, and simultaneously protest by the youth that is still unorganized, untargeted, and abstract—against art, everyday life, and the old world of liberal and specialized and technocratic politics. The first symptoms of this struggle appear as <em>criminal</em> behavior: theft, vandalism, riots, piracy, etc. These symptoms are the harbingers of a second proletariat assault on class society. When these <em>lost boys</em><span id="fn115.2" class="fn">“lost boys”: Original French: <q lang="fr">enfants perdus</q> or “lost children”; an old military term for soldiers or scouts assigned to particularly dangerous or suicidal missions; by extension, people who are on the extreme cutting edge of a movement. Debord used this term, with its multiple evocative associations in many of his works.</span> enter the battlefield of class struggle (which has changed and yet stays the same), they will have a new “General Ludd”<span id="fn115.3" class="fn">“General Ludd”: Ned Ludd, possibly born Edward Ludlam, mythic leader of The Luddites, a secret oath-based organization of English textile workers in the 19<sup>th</sup> century, a radical faction which destroyed textile machinery as a form of protest against increasing mechanization. Over time, the term “Luddite” has come to mean one opposed to industrialisation, automation, computerisation, or new technologies in general.</span> at the vanguard, leading them to attack the <em>machinery of permitted consumption</em>.<span id="fn115.4" class="fn">“machinery of permitted consumption”: This is to say, to attack advertising, brands, and the mass market industry that creates the pseudo-needs and desires to consume; an attack on the <em>industry of artificial impoverishment</em> itself.</span></p>
+<p>We can conclude that a new period has already begun, when amongst the economically advanced countries we see increasing signs of negation. We witnessed first failures against capitalism with the workers movements from 1905 through the 1930s, now we are witnessing the <em>failure of capitalist abundance</em>.<span id="fn115.1" class="fn">“the failure of capitalist abundance”: Even under conditions of objective material abundance and relative affluence, we experience artificial impoverishment and a continual desire to <strong>BUY MORE!</strong> in order to satisfy continually disappointed desires. Spectacular society falsifies our needs into thinking we need to buy things we don’t need, to become more like the model-people we see in celebrities but who we don’t actually need to imitate. Simultaneously, objective material abundance is increasingly diminished as wealth is funneled to a shrinking group of oligarchs.</span> We are witnessing a new spontaneous struggle on two fronts, namely the suppression of the workers struggle against capital, largely suppressed by the labor unions, and simultaneously protest by the youth that is still unorganized, untargeted, and abstract—against art, everyday life, and the old world of liberal and specialized and technocratic politics. The first symptoms of this struggle appear as <em>criminal</em> behavior: theft, vandalism, riots, piracy, etc. These symptoms are the harbingers of a second proletariat assault on class society. When these <em>lost boys</em><span id="fn115.2" class="fn fn-scroll">“lost boys”: Original French: <q lang="fr">enfants perdus</q> or “lost children”; an old military term for soldiers or scouts assigned to particularly dangerous or suicidal missions; by extension, people who are on the extreme cutting edge of a movement. Debord used this term, with its multiple evocative associations in many of his works.</span> enter the battlefield of class struggle (which has changed and yet stays the same), they will have a new “General Ludd”<span id="fn115.3" class="fn fn-scroll">“General Ludd”: Ned Ludd, possibly born Edward Ludlam, mythic leader of The Luddites, a secret oath-based organization of English textile workers in the 19<sup>th</sup> century, a radical faction which destroyed textile machinery as a form of protest against increasing mechanization. Over time, the term “Luddite” has come to mean one opposed to industrialisation, automation, computerisation, or new technologies in general.</span> at the vanguard, leading them to attack the <em>machinery of permitted consumption</em>.<span id="fn115.4" class="fn">“machinery of permitted consumption”: This is to say, to attack advertising, brands, and the mass market industry that creates the pseudo-needs and desires to consume; an attack on the <em>industry of artificial impoverishment</em> itself.</span></p>
 </section>
 <section id="section-108" class="level3">
 <h3>116</h3>
@@ -976,8 +964,6 @@ Henry George (1839-1897). Their theories were contrasted with the “scientific 
 <p><em>“O, gentlemen, the time of life is short!… And if we live, we live to tread on kings.”</em></p>
 <p>—Shakespeare, <em>Henry IV</em> (Part I)</p>
 </blockquote>
-</section>
-<div class="sidenotes">
 <section id="section-117" class="level3">
 <h3>125</h3>
 <p>Man, “the negative being who <em>is</em> solely to the extent that he suppresses Being” is identical with time.<span id="fn125.1" class="fn">“Man… is identical with time”: see Papaioannou, K. 1962. Possibly taken from Papaioannou, who is referencing and interpreting Hegel, but Debord may have taken the phrase directly from one of Hegel’s works.</span> “History is itself a real part of <em>natural history</em>, and of the transformation of nature into man”<span id="fn125.2" class="fn">“History is itself…”: C.f. from Marx’s <em>1844 Manuscripts</em>, Marx, K. Engels, F. 1988.</span> (Marx, K. Engels, F. 1988). Man’s self-determination of our own nature is at the same time our understanding of the development of the universe.<span id="fn125.3" class="fn">“our understanding of the development of the universe”: Humanity perceives our place in the universe in the negative, in that we define our existence only by denying our existence as part of the whole. This is man’s general definition of time itself, as something apart from the singular time/space duality of the universe. This definition of time says much about the nature of humanity—displaying at the same time an unease and apprehension with the unfolding of the universe that operates independently of mankind.</span> This “natural history” has no actual existence other than via the process of human history, which continually reaches into time, into the past in order to recreate it, like a telescope whose sight reaches back <em>in time</em> to the creation of nebulae at the periphery of the universe. History has always existed,<span id="fn125.4" class="fn">“History has always existed…” C.f. <em>Marx’s Letter to Ruge</em>: “Reason has always existed, but not always in its rational form.” See Marx, K. 1843, September.</span> but not in its historical form. The mediation of society produces the temporalization of humanity, and conversely produces an equivalent humanization of time. The unconscious progression of time only manifests itself and becomes <em>true</em> within humanity’s creation of historical consciousness.</p>
@@ -992,7 +978,7 @@ Henry George (1839-1897). Their theories were contrasted with the “scientific 
 </section>
 <section id="section-120" class="level3">
 <h3>128</h3>
-<p>The social appropriation of time and the production of humanity by means of labor develops into a society divided into classes. Prior to classed society, time was external to society, so as to be outside the reach of appropriation. Within the agrarian society of cyclical time, the class that organized its social labor built itself a power on the basis of the accumulation of wealth, and the impoverishment of the laboring class by the appropriation of the limited surplus value which was extracted from their labor. This class also appropriated the <em>temporal surplus value</em> that was the result of the organization of irreversible social time.<span id="fn128.1" class="fn">“irreversible social time”: Debord introduces the term <q lang="fr">le temps irréversible du vivant</q>—the “irreversible time of life” for the first time. He frequently returns to this term throughout the text. Historical history presupposes the prospect of irreversible and endless economic development; it is linked to the production of surplus value, control of this value in the form of capital, and to the political management of the economic power that results. Alternately rendered as “irreversible time of the living” in translations by Knabb, 2014 and Nicholson-Smith, 1994.</span> Thus this class had the sole possession over how time was used and allocated: the irreversible time of the living. The wealth accumulated by this class was expended on lavish feasts and festivals,<span id="fn128.2" class="fn">lavish feasts and festivals: These were a precursor to the Bread &amp; Circuses of the Roman Empire. The term comes from Juvenal, a Roman poet active in the Second Century AD. The phrase is a critique of the political class who deliver not public services or policy, but instead public diversions, distractions, or other means of appeasing the populace with trivial or base appeals to amusement or other simple pleasures that make no lasting change or improvements to society. See Graeber, D., 2011.</span> as well as squandering <em>historical time at society’s surface</em>. This class, owning the surplus value of both labor and time, were the only ones to be in a position to have knowledge of, and experience the enjoyment of directly lived events.<span id="fn128.3" class="fn">“directly lived events”: Debord uses the term <q lang="fr">événements vécus</q> or “lived events”. In the city, those who participate in the “lived events” of history are not necessarily the ones who direct them. They participate in, and spectate upon what is essentially a conflict over power. It may be considered that the people of whom Debord speaks is the one who at the same time is deprived of an ability to direct the historical events as they occur; yet they are the ones who make the events of history possible. (Fabbri, 2008) But these events are part of a story that is not their own; that is to say, they are mere spectators, alienated from directing the most important events that define their lives.</span> Historical time flows independently and above its own community of workers, separated from the social organization of time—as it is associated with labor and the reproduction of social life. (Thus there is a difference between commodified social time and the historical time—historical time being the recorded series of events as recorded by kings, queens, and rulers describing a narrative of their own lives and conquests.) Historical time is the official time of adventures and wars, the time from which the rulers of cyclical society pursue their personal histories; it is the same time that is contested in clashes between foreign states. Historical time is thus alien to ordinary individuals, something they don’t seek out and something from which they had thought they were protected from. This history revives the negative <em>restlessness</em> (the need to move) of the people who have been temporarily asleep during the development of agrarian social forms of living.</p>
+<p>The social appropriation of time and the production of humanity by means of labor develops into a society divided into classes. Prior to classed society, time was external to society, so as to be outside the reach of appropriation. Within the agrarian society of cyclical time, the class that organized its social labor built itself a power on the basis of the accumulation of wealth, and the impoverishment of the laboring class by the appropriation of the limited surplus value which was extracted from their labor. This class also appropriated the <em>temporal surplus value</em> that was the result of the organization of irreversible social time.<span id="fn128.1" class="fn fn-scroll">“irreversible social time”: Debord introduces the term <q lang="fr">le temps irréversible du vivant</q>—the “irreversible time of life” for the first time. He frequently returns to this term throughout the text. Historical history presupposes the prospect of irreversible and endless economic development; it is linked to the production of surplus value, control of this value in the form of capital, and to the political management of the economic power that results. Alternately rendered as “irreversible time of the living” in translations by Knabb, 2014 and Nicholson-Smith, 1994.</span> Thus this class had the sole possession over how time was used and allocated: the irreversible time of the living. The wealth accumulated by this class was expended on lavish feasts and festivals,<span id="fn128.2" class="fn">lavish feasts and festivals: These were a precursor to the Bread &amp; Circuses of the Roman Empire. The term comes from Juvenal, a Roman poet active in the Second Century AD. The phrase is a critique of the political class who deliver not public services or policy, but instead public diversions, distractions, or other means of appeasing the populace with trivial or base appeals to amusement or other simple pleasures that make no lasting change or improvements to society. See Graeber, D., 2011.</span> as well as squandering <em>historical time at society’s surface</em>. This class, owning the surplus value of both labor and time, were the only ones to be in a position to have knowledge of, and experience the enjoyment of directly lived events.<span id="fn128.3" class="fn">“directly lived events”: Debord uses the term <q lang="fr">événements vécus</q> or “lived events”. In the city, those who participate in the “lived events” of history are not necessarily the ones who direct them. They participate in, and spectate upon what is essentially a conflict over power. It may be considered that the people of whom Debord speaks is the one who at the same time is deprived of an ability to direct the historical events as they occur; yet they are the ones who make the events of history possible. (Fabbri, 2008) But these events are part of a story that is not their own; that is to say, they are mere spectators, alienated from directing the most important events that define their lives.</span> Historical time flows independently and above its own community of workers, separated from the social organization of time—as it is associated with labor and the reproduction of social life. (Thus there is a difference between commodified social time and the historical time—historical time being the recorded series of events as recorded by kings, queens, and rulers describing a narrative of their own lives and conquests.) Historical time is the official time of adventures and wars, the time from which the rulers of cyclical society pursue their personal histories; it is the same time that is contested in clashes between foreign states. Historical time is thus alien to ordinary individuals, something they don’t seek out and something from which they had thought they were protected from. This history revives the negative <em>restlessness</em> (the need to move) of the people who have been temporarily asleep during the development of agrarian social forms of living.</p>
 </section>
 <section id="section-121" class="level3">
 <h3>129</h3>
@@ -1037,24 +1023,35 @@ Henry George (1839-1897). Their theories were contrasted with the “scientific 
 <section id="section-131" class="level3">
 <h3>139</h3>
 <p>With the end of the Middle Age springs forth the Renaissance. This period took possession of the historical chronicle from the ancient world, refuting the religious authority of the Middle Ages and instead establishing both its heritage and legitimacy from the antiquity of the Greeks and Romans. It is a celebratory break from the concept of the eternal Kingdom of Heaven. With it comes an irreversible time defined by an infinite accumulation of knowledge; its historical consciousness is generated-by and written according-to the actions and experiences of its democratic governments and people. With it arrives both the ability to critique and analyze the power of authority vested in the state, and, as shown by Machiavelli,<span id="fn139.1" class="fn">Machiavelli: Nicolo Machiavelli (1469-1527), author of <em>The Prince</em> and <em>The Discourses</em>, which are early critiques of the power of the state. See Machiavelli, N., Bull, G. &amp; Grafton, A., 2003.</span> an ability to say the formerly unspeakable—state legitimacy is desanctified, not bestowed by God, but by man. In the Italian cities of the Renaissance, the arts and festivals were for the enjoyment of the passage of time, but this enjoyment of transience was transient itself; which Burckhardt considered to be “the very zeitgeist of the era”: as evidenced by his reference to a song by Lorenzo de’ Medici, “How beautiful the spring of life—and how quickly it vanishes.”<span id="fn139.2" class="fn">“How beautiful the spring of life…”: Burckhardt refers to the fleeting nature of the Renaissance period itself along with the enjoyment of transient as emblematic of that period. The quotation is from a song by Lorenzo de’ Medici (1449-1492), an Italian statesman, enthusiastic patron of Renaissance culture, and de facto ruler of the Florentine Republic. See Burckhardt, J., 1914, (Part V, Ch. 8). The song in Italian is:<br />
+<br />
 <em><q lang="it" class="poem">Quanto è bella giovinezza<br />
 Che si fugge tuttavia!<br />
 Chi vuol esser lieto sia;<br />
-doman non c’è certezza.</q></em><br /> Roughly:<br />
+doman non c’è certezza.</q></em><br />
+<br />
+Roughly:<br />
+<br />
 <em>“How beautiful the spring of life<br />
-and how quickly it vanishes<br />
+    and how quickly it vanishes<br />
 Let whoever wants to be happy, be;<br />
-There is no certainty of tomorrow.”</em></span></p>
+There is no certainty of tomorrow.”</em><br />
+<br />
+</span></p>
 </section>
 <section id="section-132" class="level3">
 <h3>140</h3>
-<p>The age of kings and monarchs was defined by their tireless struggle to monopolize and determine historical time. It was a transitional period along the way to a complete and total domination of historical time by the bourgeois class, the first class to control irreversible time. The irreversible time of the bourgeoisie is tightly coupled with labor time,<span id="fn140.1" class="fn">“labor time”: see Glossary, “time of production”.</span> they are now liberated from the natural flows and cycles of the seasons as determined by the cyclical time of the peasant classes. As the bourgeoisie gained control over historical time, their labor gradually became <em>a project to transform historical conditions</em>. The bourgeoisie was the first ruling class for which labor became a valuable commodity. With the abolition of all social privileges, nobility, and titles, they recognize value only from the exploitation of labor, and have identified the control of the commoditized body of labor as their primary form of capital. Finally, the bourgeoisie recognized the growth of labor-capital as the measure of their own progress. The class that accumulates commodities and capital continually modifies nature by modifying labor itself, by unleashing and controlling its productivity. Up to this time, all official social life had been focused upon the poverty of court life—in the trivial ornamentation and superficial etiquette of banal state administration, whose prestige culminated in the “profession of king”—to whom all individual personal histories had to be sacrificed.<span id="fn140.2" class="fn">“and to whom all individual personal histories had to be sacrificed”: The original French is <q lang="fr">et toute liberté historique particulière a dû consentir à sa perte</q> or directly “any particular sense of historical freedom had to consent to its loss”. This can be interpreted as literal sacrifices to the king in the form of one’s body: as a soldier in his wars, as sacrifice of crops and wealth in the form of taxes. Can also be interpreted figuratively, as the sacrifice of one’s personal lived experience, since the historical chronicle is only ever written by kings, and laypeople are only passive spectators destined to be forgotten.</span> The era of control over irreversible time by feudal lords ended with the French wars of the Fronde<span id="fn140.3" class="fn">“French wars of the Fronde”: a complex series of social conflicts, revolts and civil wars in France between 1648 and 1653. Debord has variously expressed great interest in the Fronde, and even proposed to make a film about it: <em>Les aspects ludiques manifestes et latents dans la Fronde</em> (“Visible and Hidden Playful Aspects in the Fronde”). See Debord, G., 2003.</span> in the 17<sup>th</sup> century, and with the failure in Scotland to put Charles Edward on the throne.<span id="fn140.4" class="fn">“the failure in Scotland to put Charles Edward on the throne”: The failed Jacobite uprising between 1745 and 1746 in support of Charles Edward Stuart (“Bonnie Prince Charlie”). Also known as the Forty-five Rebellion, Charles Edward Stuart led the Jacobite army into England, culminating in the Battle of Culloden in April of 1746, resulting in the end of Jacobitism as a significant political force.</span> The world was about to change its foundations.<span id="fn140.5" class="fn">“The world is about to change its foundations.”: A verse copied from “The Internationale” (French: <q lang="fr">L’Internationale</q>) a left-wing anthem. It has been a standard of the socialist movement since the late 19<sup>th</sup> century, when the Second International adopted it as its official anthem. The original stanza in French is:<br />
+<p>The age of kings and monarchs was defined by their tireless struggle to monopolize and determine historical time. It was a transitional period along the way to a complete and total domination of historical time by the bourgeois class, the first class to control irreversible time. The irreversible time of the bourgeoisie is tightly coupled with labor time,<span id="fn140.1" class="fn">“labor time”: see Glossary, “time of production”.</span> they are now liberated from the natural flows and cycles of the seasons as determined by the cyclical time of the peasant classes. As the bourgeoisie gained control over historical time, their labor gradually became <em>a project to transform historical conditions</em>. The bourgeoisie was the first ruling class for which labor became a valuable commodity. With the abolition of all social privileges, nobility, and titles, they recognize value only from the exploitation of labor, and have identified the control of the commoditized body of labor as their primary form of capital. Finally, the bourgeoisie recognized the growth of labor-capital as the measure of their own progress. The class that accumulates commodities and capital continually modifies nature by modifying labor itself, by unleashing and controlling its productivity. Up to this time, all official social life had been focused upon the poverty of court life—in the trivial ornamentation and superficial etiquette of banal state administration, whose prestige culminated in the “profession of king”—to whom all individual personal histories had to be sacrificed.<span id="fn140.2" class="fn fn-scroll">“and to whom all individual personal histories had to be sacrificed”: The original French is <q lang="fr">et toute liberté historique particulière a dû consentir à sa perte</q> or directly “any particular sense of historical freedom had to consent to its loss”. This can be interpreted as literal sacrifices to the king in the form of one’s body: as a soldier in his wars, as sacrifice of crops and wealth in the form of taxes. Can also be interpreted figuratively, as the sacrifice of one’s personal lived experience, since the historical chronicle is only ever written by kings, and laypeople are only passive spectators destined to be forgotten.</span> The era of control over irreversible time by feudal lords ended with the French wars of the Fronde<span id="fn140.3" class="fn">“French wars of the Fronde”: a complex series of social conflicts, revolts and civil wars in France between 1648 and 1653. Debord has variously expressed great interest in the Fronde, and even proposed to make a film about it: <em>Les aspects ludiques manifestes et latents dans la Fronde</em> (“Visible and Hidden Playful Aspects in the Fronde”). See Debord, G., 2003.</span> in the 17<sup>th</sup> century, and with the failure in Scotland to put Charles Edward on the throne.<span id="fn140.4" class="fn">“the failure in Scotland to put Charles Edward on the throne”: The failed Jacobite uprising between 1745 and 1746 in support of Charles Edward Stuart (“Bonnie Prince Charlie”). Also known as the Forty-five Rebellion, Charles Edward Stuart led the Jacobite army into England, culminating in the Battle of Culloden in April of 1746, resulting in the end of Jacobitism as a significant political force.</span> The world was about to change its foundations.<span id="fn140.5" class="fn">“The world is about to change its foundations.”: A verse copied from “The Internationale” (French: <q lang="fr">L’Internationale</q>) a left-wing anthem. It has been a standard of the socialist movement since the late 19<sup>th</sup> century, when the Second International adopted it as its official anthem. The original stanza in French is:<br />
 <em><q lang="fr" class="poem">Foule esclave, debout! debout!<br />
 Le monde va changer de base<br />
-Nous ne sommes rien, soyons tout!</q></em><br /> in English:<br />
+Nous ne sommes rien, soyons tout!</q></em><br />
+<br />
+in English:<br />
+<br />
 <em>“Enslaved masses, stand up!, stand up!<br />
-The world is about to change its foundations<br />
-We are nothing, let us be all.”</em></span></p>
+The world will change its bedrock<br />
+We are nothing, let us be everything!”</em><br />
+<br />
+</span></p>
 </section>
 <section id="section-133" class="level3">
 <h3>141</h3>
@@ -1080,15 +1077,13 @@ We are nothing, let us be all.”</em></span></p>
 <h3>146</h3>
 <p>The irreversible time of commodity production is primarily the measure of commodities produced.<span id="fn146.1" class="fn">“the measure of commodities produced”: E.g. GDP: Gross Domestic Product.</span> Therefore <em>the conception of time generalized</em> across the globe refers only to the time spent laboring to produce commodities, and should only be organized by the specialist interest groups who own the production of those commodities. This conception of time is not general in character, but <em>merely one particular type of time</em>.<span id="fn146.2" class="fn">“merely one particular type of time”: Irreversible time attempts to generalize only the time spent laboring, which serves only the interest of capital, but this is a time that is devoid of any social value. Laborers only experience exploitation with the increase in capital, and the increase in measures like GDP are completely divorced from lived experience.</span></p>
 </section>
-</div>
+</section>
 <section id="vi.-spectacular-time" class="level2 chapter" title="Spectacular Time">
 <h2 title="Spectacular Time"><span class="ch-roman">VI.</span> Spectacular Time</h2>
 <blockquote>
 <p><em>“We have nothing that is ours but time, which even those without a roof can enjoy.”</em></p>
 <p>—Baltasar Gracian, <em>The Art of Worldly Wisdom</em></p>
 </blockquote>
-</section>
-<div class="sidenotes">
 <section id="section-139" class="level3">
 <h3>147</h3>
 <p>The time of production—commodified time, that time which has been segmented, allocated, where every interval is equivalent in value and therefore indistinguishable. The time of production produces an infinite accumulation of these fungible intervals of time that are equivalent without equality. This effectively renders irreversible time into abstract units, of which each segment must prove on the stopwatch their quantitative equality. These abstracted units of time are, in reality, merely their use-value in <em>exchangeability</em>. According to this regime of social-control by commoditized time—“time is everything, man is nothing; at best he is the carcass of time.”<span id="fn147.1" class="fn">“time is everything, man is nothing…”: See Marx, K., 1995 (Ch. 1, Sec­tion 2).</span> This is a complete devaluation of time—an inversion of the idea that time is the space in which human society grows and blossoms into the “terrain of human development”.<span id="fn147.2" class="fn">“terrain of human development”: See Marx, K. 2005 (Ch. 13).</span></p>
@@ -1161,15 +1156,13 @@ We are nothing, let us be all.”</em></span></p>
 <h3>164</h3>
 <p>The world has already dreamt of such a time<span id="fn164.1" class="fn">“The world already dreams of such a time”: See Marx, K., September 1843.</span>—it has to just wake and remember to really live it.</p>
 </section>
-</div>
+</section>
 <section id="vii.-the-organization-of-territory" class="level2 chapter" title="The Organization of Territory">
 <h2 title="The Organization of Territory"><span class="ch-roman">VII.</span> The Organization of Territory</h2>
 <blockquote>
 <p><em>“Whoever becomes master of a city accustomed to live in freedom and does no destroy it, may reckon on being destroyed by it. For if it should rebel, it can always screen itself under the name of liberty and its ancient laws, which no length of time, nor any benefit conferred will ever cause it to forget; and do what you will, and take what care you may, unless the inhabitants be scattered and dispersed, this name, and the old order of things, will never cease to be remembered…”</em></p>
 <p>—Machiavelli, <em>The Prince</em></p>
 </blockquote>
-</section>
-<div class="sidenotes">
 <section id="section-157" class="level3">
 <h3>165</h3>
 <p>Capitalist production has become ubiquitous, all military, political, and trade barriers between societies have been broken down, there is no longer an outside to Capitalism. This is an extensive and intensive process of <em>trivialization</em> of unique local customs, traditions, methods, languages, and cultures. These local distinctions are commoditized and <em>banalized</em> for consumption by the global market. This created a universal space of the global market, where local goods, cultures and the places themselves are made accessible to the market, each comparable and homogeneous to better conform to the ease of exchange—therefore bankrupt of its once unique character. The corporate restrictions on craft guilds of the Middle Ages assuring the <em>quality</em> of craft production had to be destroyed to make way for the era of mass production, just as it had to dissolve the autonomy and quality of <em>places</em>.<span id="fn165.1" class="fn">“it had to dissolve the autonomy and quality of places”: This can be seen happening everywhere simultaneously, with the reproduction of the same banal streets, stores, languages, restaurants, styles, and customs across the globe—the “airbnb-ification” of the world. See Chayka, K., 2016.</span> The cheap prices of its commodities are the heavy artillery with which it batters down all Chinese walls.<span id="fn165.2" class="fn">“The cheap prices of its commodities are the heavy artillery with which it batters down all Chinese walls”: From the original French: <q lang="fr">Cette puissance d’homogénéisation est la grosse artillerie qui a fait tomber toutes les murailles de Chine.</q> This is a direct reference to <em>The Communist Manifesto</em>, see Marx, K., Engels, F. &amp; Jones, G. 2002 (Part 1)</span></p>
@@ -1234,26 +1227,24 @@ We are nothing, let us be all.”</em></span></p>
 <h3>179</h3>
 <p>The most revolutionary idea about urban development hasn’t emerged from urbanism, technology, nor from aesthetics. It is the decision to reconstruct the environment according to the needs of power vested with the workers councils. The environment will be configured by the <em>anti-state dictatorship</em> of the proletariat<span id="fn179.1" class="fn">“anti-state dictatorship of the proletariat”: Debord specifically chose the phrase <q lang="fr">la dictature anti-étatique du prolétariat</q> to cut through the ambiguities of Marx’s dictatorship of the proletariat, implemented by Stalin as a dictatorship <em>over</em> the proletariat. His wording makes it very clear that he envisages a distinctly non-state form of social organization.</span>—a generalized and collective form of self-management of aligned individuals working together to create a public good, a “generalized self-management”<span id="fn179.2" class="fn">“generalized self-management”: A Situationist term for the form of self-governance elsewhere called the “anti-state dictatorship of the proletariat”. See Raoul Vaneigem’s <em>Notice to the Civilized Concerning Generalized Self-Management</em> in Knabb, K., 2006 (Pp. 363-371).</span> according to the needs of the collective. The power of the workers councils can only be realized and effective if it has the ambition to transform the totality of existing conditions. It cannot assign itself trivial reformist policy or any lesser task than the total transformation of existing conditions if it is to be recognized and <em>to recognize itself</em> in a world of its own making.</p>
 </section>
-</div>
+</section>
 <section id="viii.-negation-and-consumption-in-the-cultural-sphere" class="level2 chapter" title="Negation and Consumption in the Cultural Sphere">
 <h2 title="Negation and Consumption in the Cultural Sphere"><span class="ch-roman">VIII.</span> Negation and Consumption in the Cultural Sphere</h2>
 <blockquote>
 <p><em>“Do you really believe that these Germans will make a political revolution in our lifetime? My friend, that is just wishful thinking… Let us judge Germany on the basis of its present history—and surely you are not going to object that all its history is falsified, or that all its present public life does not reflect the actual state of the people? Read whatever newspapers you please and you cannot fail to be convinced that we never stop (and you must concede that the censorship prevents no one from stopping) celebrating the freedom and national happiness that we enjoy.”</em></p>
 <p>—Ruge,<span class="fnviii.0 fn">Arnold Ruge: German philosopher and political writer glibly dismissed the idea of a revolution in his letter to Marx, it was only five years later when the Germans revolted in 1848, resulting in the Marzrevolution of 1848-1849. This quote appeared in <em>The Situationist International No. 12</em>, with this quote “Five years later that revolution had come. As an amusing example of a type of historical unconsciousness constantly produced by similar causes and always contradicted by similar results”. See <em>The Beginning of an Era</em> Knabb, K., 2006 (Pp. 288).</span> <em>Letter to Marx, March 1843</em></p>
 </blockquote>
-</section>
-<div class="sidenotes">
 <section id="section-172" class="level3">
 <h3>180</h3>
 <p>Culture, in a historical society divided into classes, is the sphere of ephemeral knowledge shared in common amongst living individuals, that is to say, it is that power of generalization which <em>exists independently</em> and autonomous to itself, as a division of intellectual labor<span id="fn180.1" class="fn">“a division of intellectual labor”: The development of historical society from its roots as a society of myth to the agrarian cyclical society is a shift from one based upon an oral history integrated and entwined with lived experience as one in the same, to a historical society which has separated written chronology from lived experience, which is represented as culture.</span> and intellectual labor of division. A society in which culture is detached from history, a development beyond the agrarian society of a unified mythical culture-and-history is, according to Hegel, “when human life lost its unifying power<span id="fn180.2" class="fn">"when human life lost its unifying power…": What was lost with the ancient Greek oral traditions were the regular occurrence of mortals interacting with Gods. With the gradual decline of the Greek mythic society, we see a corresponding rise in the Greek philosophical tradition. Debord reworded this quote originally by Hegel: "When the power of synthesis vanishes from the lives of men and when the antitheses have lost their vital relation and their power of interaction and gain independence, it is then that philosophy becomes a felt need." See Hegel, G. &amp; Guth., 2013. This line by Hegel is also quoted by Georg Lukács, <em>History &amp; Class Consciousness</em>, see Lukács, G., 1971.</span> and when opposites lost their living connections and interactions and became autonomous.” When culture gains independence from history, it then can embark upon an imperialistic drive to make itself predominant (over history.) This drive gradually undermines cultures’ own historical basis and eventually negates itself, destroying this independence. The history that creates the relative autonomy of culture, and the ideological illusions about this autonomy, is also expressed as the history of culture. The history of culture can be read as the gradual negation of culture, a triumphant march towards cultures self-destruction. Culture is society’s intellectual labor to search for the loss of society’s unification of history and culture. In the course of this search, culture as a sphere separate from history is destined to negate itself.</p>
 </section>
 <section id="section-173" class="level3">
 <h3>181</h3>
-<p>The struggle between tradition and innovation, which is the principle of the internal development of the culture of historical societies, can only be sustained through the permanent victory of innovation. And yet, cultural development is carried forth by the total movement of history. When history discovers the self-encompassing totality of its own role in culture, it tends to both ignore the importance and impact of the role of culture to society, and assert itself as the totalizing force towards a suppression of all alternatives.<span id="fn181.1" class="fn">“a suppression of all alternatives”: The original French is <q lang="fr">la suppression de toute séparation</q> but I’ve translated to clarify its meaning as a suppression of all alternatives to the total dominance of the time of production. This has the effect of solidifying cultural aspects of society as implicit truth—ideology. This freezes the historical society into a specific ideological period. This is the mechanism Debord was alluding to in chapter VI. Spectacular Time, where he says “<a href="#ref155.1">the time of production—which is motionless; its history has reached a stable, unchanging conclusion</a>” (see thesis 155). In this case the ideology of the contemporary period is the “time of production”: an unchanging fact, society can change in superficial (e.g. cultural) ways, but the time of production is a fixed and permanent condition.</span></p>
+<p>The struggle between tradition and innovation, which is the principle of the internal development of the culture of historical societies, can only be sustained through the permanent victory of innovation. And yet, cultural development is carried forth by the total movement of history. When history discovers the self-encompassing totality of its own role in culture, it tends to both ignore the importance and impact of the role of culture to society, and assert itself as the totalizing force towards a suppression of all alternatives.<span id="fn181.1" class="fn fn-scroll">“a suppression of all alternatives”: The original French is <q lang="fr">la suppression de toute séparation</q> but I’ve translated to clarify its meaning as a suppression of all alternatives to the total dominance of the time of production. This has the effect of solidifying cultural aspects of society as implicit truth—ideology. This freezes the historical society into a specific ideological period. This is the mechanism Debord was alluding to in chapter VI. Spectacular Time, where he says “<a href="#ref155.1">the time of production—which is motionless; its history has reached a stable, unchanging conclusion</a>” (see thesis 155). In this case the ideology of the contemporary period is the “time of production”: an unchanging fact, society can change in superficial (e.g. cultural) ways, but the time of production is a fixed and permanent condition.</span></p>
 </section>
 <section id="section-174" class="level3">
 <h3>182</h3>
-<p>The explosion of society’s general body of knowledge, which contains the understanding of history as the heart of culture, becoming an irreversible self-knowledge, which is expressed by the destruction of God.<span id="fn182.1" class="fn fn-l">“the destruction of God”: The society’s mythic past is viewed as a mere fictional narrative, and with it is the fiction of a God that previously formed its foundations.</span> As Marx said in his <em>Introduction to a critique of Hegel’s Philosophy of Right</em>: “The critique of religion is the essential precondition for all criticism”.<span id="fn182.2" class="fn">“The critique of religion is the essential precondition for all criticism”: See Marx, K. 1844.</span> The critique that begins with the negation of religion and therefore God is also the critique that continues forever.<span id="fn182.3" class="fn">“the critique that continues forever”: The society founded upon a critique without end becomes the basis of its self-perpetuating ideology.</span> Without the constraints of religion, there is no longer a coherent set of rules to live by, and the lived reality of culture forces this culture to its own dissolution. Like philosophy, once it gains autonomy from the shackles of history—is bound to collapse, any single (non-integrated) discipline becomes autonomous and attempts to account for all of society with its own methodologies even within its narrow field of study. The <em>lack of total rationality</em> in favor of a narrow focus dooms these separate disciplines to obsolescence—or to have limited use because the wider integrated social sphere will always demand a cohesive understanding of both culture and history; which the specialized field alone cannot deliver.</p>
+<p>The explosion of society’s general body of knowledge, which contains the understanding of history as the heart of culture, becoming an irreversible self-knowledge, which is expressed by the destruction of God.<span id="fn182.1" class="fn">“the destruction of God”: The society’s mythic past is viewed as a mere fictional narrative, and with it is the fiction of a God that previously formed its foundations.</span> As Marx said in his <em>Introduction to a critique of Hegel’s Philosophy of Right</em>: “The critique of religion is the essential precondition for all criticism”.<span id="fn182.2" class="fn">“The critique of religion is the essential precondition for all criticism”: See Marx, K. 1844.</span> The critique that begins with the negation of religion and therefore God is also the critique that continues forever.<span id="fn182.3" class="fn">“the critique that continues forever”: The society founded upon a critique without end becomes the basis of its self-perpetuating ideology.</span> Without the constraints of religion, there is no longer a coherent set of rules to live by, and the lived reality of culture forces this culture to its own dissolution. Like philosophy, once it gains autonomy from the shackles of history—is bound to collapse, any single (non-integrated) discipline becomes autonomous and attempts to account for all of society with its own methodologies even within its narrow field of study. The <em>lack of total rationality</em> in favor of a narrow focus dooms these separate disciplines to obsolescence—or to have limited use because the wider integrated social sphere will always demand a cohesive understanding of both culture and history; which the specialized field alone cannot deliver.</p>
 </section>
 <section id="section-175" class="level3">
 <h3>183</h3>
@@ -1293,7 +1284,7 @@ We are nothing, let us be all.”</em></span></p>
 </section>
 <section id="section-184" class="level3">
 <h3>192</h3>
-<p>The spectacular society produces a tendency to consume the art and cultures of the past, recontextualizing it with contemporary language to be relevant to the present and yet stripped of its original meaning, its symbolism, and its referents—leaving only a congealed mass of superficially artistic form, bankrupt of any communicative or emotional qualities. This consumption is not discerning, it captures both positive and negative aspects of culture. This consuming power is the representative voice of the spectacle in its most expressive form: the <em>communication of the incommunicable</em>, or speech without meaning for the sake of speaking. In this social environment we see flagrant attack on language and the use of certain words as having a positive value by the ruling authorities as its use results in the maintenance of the status quo. The horizon of this state of affairs is a language that is celebrated for its total absence of communicative power. The true nature of the attacks on communicative language is concealed when examining the creative expression of contemporary art and poetry, since the primary function of the spectacle is to <span id="ref192.1"><em>bury historical memory under the weight of decontextualized and non-communicative cultural artifacts</em>,</span><span id="fn192.1" class="fn">“decontextualized and non-communicative cultural artifacts”: Baudrillard’s later concept of hyperreality and “the copy without original” draws upon Debords conception of the Spectacle: appropriating history in order to generate pseudo-cultural artifacts based upon the original but abstracted from it. See Baudrillard, J., 1994. An additional pointer to the concept of hyperreality is also in <a href="#ref198.1">thesis 198 where Debord directly references Boorstin’s book <em>The Image</em></a>, which elaborates on the concept in detail, see Boorstin, D., 1992. This concept is also relevant to Deleuze &amp; Guattari with their concept of deterritorialization, see Deleuze, G. &amp; Guattari, F., 1987.</span> thus the artistic referents located within art and poetry remain hidden. These cultural artifacts are continually presented as a parade of new and novel innovations, but are only recontextualizations of artifacts from the past, yet stripped of communicative value. This is a society of pseudo-novelty that continues to use a Modernist ideology and methods that make up its fundamental core. This is a strategy used in such disciplines as “neoliterature” which blatantly admits that it merely contemplates the written word for its own sake,<span id="fn192.2" class="fn">“neoliterature which admits that it merely contemplates the written word for its own sake”: Another example is how so much postmodern film uses the breaking of the fourth wall to involve the viewer as a participant in the action, and yet Shakespeare had used this technique long before, and yet it is presented as a novel innovation.</span> and yet acts as if this were a new approach. So while the contemporary movement celebrates the death of a universal common language as beautiful in its own right, it simultaneously executes its most atomizing practice against a generalized organization of a common society: the application of a “globalized” homogeneity onto all cultures worldwide. This approach seeks to establish the same commercial brands and “experiences” worldwide, a universal hegemonic order of the corporate global village.<span id="fn192.3" class="fn">“global village”: Another proponent of hyperreality, Marshall McLuhan coined the term “global village”; understood as a global coexistence altered by transnational commerce, migration, and culture. See McLuhan, M. &amp; Lapham, L., 1994. McLuhan was also an influence on Baudrillard’s conception hyperreality.</span> This results in a hodgepodge of decomposed capitalist values, marketing arts, and hegemonic “neo-artistic” aesthetics—creating a flat and banal experience of recomposed pseudo-life, applied everywhere simultaneously.<span id="fn192.4" class="fn">“a flat and banal experience of real life, everywhere simultaneously”: It is now possible to hang out in the same coffeeshops in any major city worldwide, taste the same flavors, listen to the same music, and see the same art on the walls. You are everywhere and yet nowhere. See Chayka, K. 2016.</span> This recomposed hodgepodge of “orchestral works” is most visible in the architecture and urban planning<span id="fn192.5" class="fn">“This recomposed hodgepodge of ‘orchestral works’ is most visible in the architecture and urban planning”: An example of how the spectacle seeks to create “integrated spaces” where artists, software engineers, and workers exist side-by-side and yet their specialized languages make universal communication impossible. These workers become isolated, together; an aggregate of unmixed elements.</span> of the spectacle. The hodgepodge is the product of the spectacle: to recreate the formerly fragmented worker into a form more ideal to the efficiencies required under late-capitalism—“a personality well integrated into the group”<span id="fn192.6" class="fn">“a personality well integrated into the group”: A reference to Riesman, D., Glazer, N., Denney, R. &amp; Gitlin, T., 2001. See Whyte, W., 2002.</span> an increasing trend described by American sociologists Riesman and Whyte. Ultimately the project of late-capitalism is the same everywhere: to <em>reorganize society without community</em>.</p>
+<p>The spectacular society produces a tendency to consume the art and cultures of the past, recontextualizing it with contemporary language to be relevant to the present and yet stripped of its original meaning, its symbolism, and its referents—leaving only a congealed mass of superficially artistic form, bankrupt of any communicative or emotional qualities. This consumption is not discerning, it captures both positive and negative aspects of culture. This consuming power is the representative voice of the spectacle in its most expressive form: the <em>communication of the incommunicable</em>, or speech without meaning for the sake of speaking. In this social environment we see flagrant attack on language and the use of certain words as having a positive value by the ruling authorities as its use results in the maintenance of the status quo. The horizon of this state of affairs is a language that is celebrated for its total absence of communicative power. The true nature of the attacks on communicative language is concealed when examining the creative expression of contemporary art and poetry, since the primary function of the spectacle is to <span id="ref192.1"><em>bury historical memory under the weight of decontextualized and non-communicative cultural artifacts</em>,</span><span id="fn192.1" class="fn">“decontextualized and non-communicative cultural artifacts”: Baudrillard’s later concept of hyperreality and “the copy without original” draws upon Debords conception of the Spectacle: appropriating history in order to generate pseudo-cultural artifacts based upon the original but abstracted from it. See Baudrillard, J., 1994. An additional pointer to the concept of hyperreality is also in <a href="#ref198.1">thesis 198 where Debord directly references Boorstin’s book <em>The Image</em></a>, which elaborates on the concept in detail, see Boorstin, D., 1992. This concept is also relevant to Deleuze &amp; Guattari with their concept of deterritorialization, see Deleuze, G. &amp; Guattari, F., 1987.</span> thus the artistic referents located within art and poetry remain hidden. These cultural artifacts are continually presented as a parade of new and novel innovations, but are only recontextualizations of artifacts from the past, yet stripped of communicative value. This is a society of pseudo-novelty that continues to use a Modernist ideology and methods that make up its fundamental core. This is a strategy used in such disciplines as “neoliterature” which blatantly admits that it merely contemplates the written word for its own sake,<span id="fn192.2" class="fn">“neoliterature which admits that it merely contemplates the written word for its own sake”: Another example is how so much postmodern film uses the breaking of the fourth wall to involve the viewer as a participant in the action, and yet Shakespeare had used this technique long before, and yet it is presented as a novel innovation.</span> and yet acts as if this were a new approach. So while the contemporary movement celebrates the death of a universal common language as beautiful in its own right, it simultaneously executes its most atomizing practice against a generalized organization of a common society: the application of a “globalized” homogeneity onto all cultures worldwide. This approach seeks to establish the same commercial brands and “experiences” worldwide, a universal hegemonic order of the corporate global village.<span id="fn192.3" class="fn">“global village”: Another proponent of hyperreality, Marshall McLuhan coined the term “global village”; understood as a global coexistence altered by transnational commerce, migration, and culture. See McLuhan, M. &amp; Lapham, L., 1994. McLuhan was also an influence on Baudrillard’s conception hyperreality.</span> This results in a hodgepodge of decomposed capitalist values, marketing arts, and hegemonic “neo-artistic” aesthetics—creating a flat and banal experience of recomposed pseudo-life, applied everywhere simultaneously.<span id="fn192.4" class="fn fn-scroll">“a flat and banal experience of real life, everywhere simultaneously”: It is now possible to hang out in the same coffeeshops in any major city worldwide, taste the same flavors, listen to the same music, and see the same art on the walls. You are everywhere and yet nowhere. See Chayka, K. 2016.</span> This recomposed hodgepodge of “orchestral works” is most visible in the architecture and urban planning<span id="fn192.5" class="fn">“This recomposed hodgepodge of ‘orchestral works’ is most visible in the architecture and urban planning”: An example of how the spectacle seeks to create “integrated spaces” where artists, software engineers, and workers exist side-by-side and yet their specialized languages make universal communication impossible. These workers become isolated, together; an aggregate of unmixed elements.</span> of the spectacle. The hodgepodge is the product of the spectacle: to recreate the formerly fragmented worker into a form more ideal to the efficiencies required under late-capitalism—“a personality well integrated into the group”<span id="fn192.6" class="fn">“a personality well integrated into the group”: A reference to Riesman, D., Glazer, N., Denney, R. &amp; Gitlin, T., 2001. See Whyte, W., 2002.</span> an increasing trend described by American sociologists Riesman and Whyte. Ultimately the project of late-capitalism is the same everywhere: to <em>reorganize society without community</em>.</p>
 </section>
 <section id="section-185" class="level3">
 <h3>193</h3>
@@ -1341,7 +1332,7 @@ We are nothing, let us be all.”</em></span></p>
 </section>
 <section id="section-196" class="level3">
 <h3>204</h3>
-<p>The critical theory of the spectacle must be <em>communicated</em> in its own language—the language of contradiction, where words and meanings must be reappropriated from their debased and bankrupt meanings in contemporary usage, and either restored or reinvented.<span id="fn204.1" class="fn">“where words and meanings… restored or reinvented.”: This sentence is not in the original text, but I’ve added it for additional clarity. Spectacular society continually strips words of their meaning through repetition in debased contexts, or recuperates their meaning through capture in ad campaigns and the spectacular media. It is the task of critical theory to clearly showcase the debasement of language and reappropriate it in order to communicate its final critique.</span> This critique must be dialectical in both form and content, proposing a utopian vision as its thesis, its practical steps to achieve actual change as its synthesis, and a fully comprehensive critique of the historical and material basis of the present state of oppression as its antithesis.<span id="fn204.2" class="fn">“proposing a utopian vision as its thesis… the present state of oppression as its antithesis”: Not in the original text, but added to clarify what is a reference to the application of the dialectic methodology of Hegel.</span> It is not some “writing degree zero”<span id="fn204.3" class="fn">“writing degree zero”: A form and style of writing independent of language, one totally stripped of substance and meaning, leaving nothing but the text itself; writing unto itself, for its own sake. See Barthes, R., 1970.</span>—a text devoid of meaning and substance, but the opposite; a text pregnant with substance and significance. This critique must not be a negation of style, but a style of critique capable of communicating the negation of the society of the spectacle.</p>
+<p>The critical theory of the spectacle must be <em>communicated</em> in its own language—the language of contradiction, where words and meanings must be reappropriated from their debased and bankrupt meanings in contemporary usage, and either restored or reinvented.<span id="fn204.1" class="fn fn-scroll">“where words and meanings… restored or reinvented.”: This sentence is not in the original text, but I’ve added it for additional clarity. Spectacular society continually strips words of their meaning through repetition in debased contexts, or recuperates their meaning through capture in ad campaigns and the spectacular media. It is the task of critical theory to clearly showcase the debasement of language and reappropriate it in order to communicate its final critique.</span> This critique must be dialectical in both form and content, proposing a utopian vision as its thesis, its practical steps to achieve actual change as its synthesis, and a fully comprehensive critique of the historical and material basis of the present state of oppression as its antithesis.<span id="fn204.2" class="fn">“proposing a utopian vision as its thesis… the present state of oppression as its antithesis”: Not in the original text, but added to clarify what is a reference to the application of the dialectic methodology of Hegel.</span> It is not some “writing degree zero”<span id="fn204.3" class="fn">“writing degree zero”: A form and style of writing independent of language, one totally stripped of substance and meaning, leaving nothing but the text itself; writing unto itself, for its own sake. See Barthes, R., 1970.</span>—a text devoid of meaning and substance, but the opposite; a text pregnant with substance and significance. This critique must not be a negation of style, but a style of critique capable of communicating the negation of the society of the spectacle.</p>
 </section>
 <section id="section-197" class="level3">
 <h3>205</h3>
@@ -1371,15 +1362,13 @@ We are nothing, let us be all.”</em></span></p>
 <h3>211</h3>
 <p>The language of contradiction, détournement, is a <em>unified</em> critique of culture, in so far as it dominates the whole of culture, its knowledge as poetry—manifesting itself as an integrated form of theory aligned with practice that is not separable from a critique of the social totality. This <em>unified theoretical critique</em> of all of society goes along with its manifestation as a <em>unified social practice</em>.</p>
 </section>
-</div>
+</section>
 <section id="ix.-ideology-materialized" class="level2 chapter" title="Ideology Materialized">
 <h2 title="Ideology Materialized"><span class="ch-roman">IX.</span> Ideology Materialized</h2>
 <blockquote>
 <p><em>“Self-consciousness exists in itself and for itself only insofar as it exists in and for another self-consciousness; that is, it exists only by being recognized and acknowledged.”</em></p>
 <p>—Hegel, <em>The Phenomenology of Spirit</em></p>
 </blockquote>
-</section>
-<div class="sidenotes">
 <section id="section-204" class="level3">
 <h3>212</h3>
 <p>Ideology<span id="fn212.1" class="fn">Ideology: the general social consensus around beliefs that are commonly accepted as true—which may not be.</span> is the intellectual <em>basis</em> of class societies throughout the course of all established history, a history rife with conflict.<span id="fn212.2" class="fn">“a history rife with conflict”: History is indeed rife with conflict, but infrequently conflicts over the bases of ideology.</span> Ideological facts were never pure fictions or outright falsehoods, but rather distorted perspectives of the nature of reality, misunderstood causation, or oversimplified narratives. These forms have been major factors that have and continue to influence human actions that go on to produce actual distorting effects on reality itself. These distorting effects gradually produce a <em>materialization</em> of the very ideology that underpin the human actions performed in response to the distortions of ideology. Ideology materializes in the form of the spectacle, through the concrete human actions brought about through systems of autonomous economic production. The resulting social reality is built upon the effects of an autonomous system of false belief leading to actions that create a reality custom-tailored to reflect the false model of reality: this is ideology materialized. In this way, ideology remodels reality in its own image, and becomes self-confirming.</p>
@@ -1394,7 +1383,7 @@ We are nothing, let us be all.”</em></span></p>
 </section>
 <section id="section-206" class="level3">
 <h3>215</h3>
-<p>The spectacle is the ideology par excellence, for once manifest in its complete form, it exhibits the essence of all ideological systems: the oversimplification, impoverishment, and the very negation of real life; the reduction of beauty to banality. The spectacle has an impact on real life, materially it is “the expression of estrangement, of alienation between man and man”<span id="fn215.1" class="fn">“the expression of estrangement, of alienation between man and man”: Quote from Marx, K. &amp; Engels, F. 1988 (Section “Alienated Labor”).</span>—which is to say, it presents a unique perspective of reality for each, isolating each on false islands of separate reality.<span id="fn215.2" class="fn">“isolating each on a false island of separate reality”: Since <em>The Society of the Spectacle</em> was written, we’ve witnessed a quantitative proliferation of images, but also of qualitatively personalized content. Commercial social media companies like Facebook, Youtube, and Netflix lead this charge, isolating individuals onto islands of their own personalized media, but the next phase of innovation points beyond personalized <em>choice of content</em> to <em>personalized content</em> whereby media is customized for each individual—leaving them unable to relate their perspectives with others. For more on this, see 0xADADA, 2021 (January 14).</span> Through this isolation arises “the new power of deception”<span id="fn215.3" class="fn">“the new power of deception”: ibid.</span> which is the basis of all spectacular power. It is the increase in the production of images, TV, film, and social media—“within the mass of objects grows the mass of alien powers to which man is subjected”<span id="fn215.4" class="fn">“within the mass of objects… to which man is subjected”: Ibid., section “Human Requirements”.</span> and the personalization and customization of this media which has enabled an alien power of deception, demanding a shift in our attention to the spectacle, which is mistaken for real life. This state of alienated unreality is the supreme stage of expansion of the spectacle, which has finally replaced lived experience with need. “The need for money is for that reason the real need created by the modern economic system, and the only need it creates.”<span id="fn215.5" class="fn">“The need for money is for that reason the real need created by the modern economic system, and the only need it creates.”: C.f. Marx, K. &amp; Engels, F. 1988 (Section “Human Requirements”). The rise of social media has augmented the need for money with the need for social validation on social media, as described by Jenny Odell: “we submit even our leisure for numerical evaluation via likes on Facebook and Instagram, constantly checking on its performance like one checks a stock, monitoring the ongoing development of our personal brand.” See Odell, J., 2019.</span> This was elaborated upon by Hegel, <q id="dead">the life of the dead body, that moves itself within itself</q>,<span id="fn215.6" class="fn">“the life of the dead body, that moves itself within itself”: See Hegel, G., Harris, H. &amp; Knox, T. 1979. See note for <a href="#fn2.1">thesis 2</a> for the complete quotation.</span> which is to say, the spectacle turns all human decisions into considerations of economic value, weighed and distorted by the decision to need more money and improve wealth above all other considerations—the privileging of money over life itself.</p>
+<p>The spectacle is the ideology par excellence, for once manifest in its complete form, it exhibits the essence of all ideological systems: the oversimplification, impoverishment, and the very negation of real life; the reduction of beauty to banality. The spectacle has an impact on real life, materially it is “the expression of estrangement, of alienation between man and man”<span id="fn215.1" class="fn fn-scroll">“the expression of estrangement, of alienation between man and man”: Quote from Marx, K. &amp; Engels, F. 1988 (Section “Alienated Labor”).</span>—which is to say, it presents a unique perspective of reality for each, isolating each on false islands of separate reality.<span id="fn215.2" class="fn fn-scroll">“isolating each on a false island of separate reality”: Since <em>The Society of the Spectacle</em> was written, we’ve witnessed a quantitative proliferation of images, but also of qualitatively personalized content. Commercial social media companies like Facebook, Youtube, and Netflix lead this charge, isolating individuals onto islands of their own personalized media, but the next phase of innovation points beyond personalized <em>choice of content</em> to <em>personalized content</em> whereby media is customized for each individual—leaving them unable to relate their perspectives with others. For more on this, see 0xADADA, 2021 (January 14).</span> Through this isolation arises “the new power of deception”<span id="fn215.3" class="fn">“the new power of deception”: ibid.</span> which is the basis of all spectacular power. It is the increase in the production of images, TV, film, and social media—“within the mass of objects grows the mass of alien powers to which man is subjected”<span id="fn215.4" class="fn">“within the mass of objects… to which man is subjected”: Ibid., section “Human Requirements”.</span> and the personalization and customization of this media which has enabled an alien power of deception, demanding a shift in our attention to the spectacle, which is mistaken for real life. This state of alienated unreality is the supreme stage of expansion of the spectacle, which has finally replaced lived experience with need. “The need for money is for that reason the real need created by the modern economic system, and the only need it creates.”<span id="fn215.5" class="fn">“The need for money is for that reason the real need created by the modern economic system, and the only need it creates.”: C.f. Marx, K. &amp; Engels, F. 1988 (Section “Human Requirements”). The rise of social media has augmented the need for money with the need for social validation on social media, as described by Jenny Odell: “we submit even our leisure for numerical evaluation via likes on Facebook and Instagram, constantly checking on its performance like one checks a stock, monitoring the ongoing development of our personal brand.” See Odell, J., 2019.</span> This was elaborated upon by Hegel, <q id="dead">the life of the dead body, that moves itself within itself</q>,<span id="fn215.6" class="fn">“the life of the dead body, that moves itself within itself”: See Hegel, G., Harris, H. &amp; Knox, T. 1979. See note for <a href="#fn2.1">thesis 2</a> for the complete quotation.</span> which is to say, the spectacle turns all human decisions into considerations of economic value, weighed and distorted by the decision to need more money and improve wealth above all other considerations—the privileging of money over life itself.</p>
 </section>
 <section id="section-207" class="level3">
 <h3>216</h3>
@@ -1402,7 +1391,7 @@ We are nothing, let us be all.”</em></span></p>
 </section>
 <section id="section-208" class="level3">
 <h3>217</h3>
-<p>Joseph Gabel, in his book <em>False Consciousness</em><span id="fn217.1" class="fn"><em>False Consciousness</em>: See Gabel, J., 1975.</span> draws a parallel between ideology and schizophrenia, this relationship should be considered in the context of the spectacles’ domineering influence on the economic process of production that manifests concrete reality. Society has become what ideology already was. Wherever the spectacle dominates there is the promotion of its false perspective of reality, a disintegration of the practice of everyday life and the anti-dialectic false consciousness that accompanies it. This repression is imposed at every moment of daily life subjected to the spectacle. The repression of the practice of lived experience should be understood as an organized attempt to destroy the “faculty to encounter”—our very ability to perceive, experience, participate, and enjoy the realities of daily life; replacing this faculty with a <em>social hallucination</em>. The social hallucination is a falsified proxy for experience, an “illusion of encounter”.<span id="fn217.2" class="fn">“illusion of encounter”: The illusion of encounter is the experience of manufactured pseudo-events, participation in the spectating of real events, or witness of the non-events of mass media. That which was once real is replaced by that which is proxied, virtualized, or simply spectated upon.</span> Within this alienated terrain, we are unable to <em>recognize</em> others, and unable to recognize our own reality. It is here where ideology is home, and alienation has built its own reality for us each.<span id="fn217.3" class="fn">“alienation has built its own reality for us each”: The original French was <q lang="fr">la séparation a bâti son monde</q> or “separation has built its world”. Separation is felt concretely with the elimination of lived and therefore shareable experiences, entailing the direct replacement of social bonds with relations that are mediated by technology, relationships <em>to</em> technology rather than to each other, e.g. Facebook.</span><span id="fn217.4" class="fn">“It is here where ideology is home, and alienation has built its own reality for us each.”: See Proverbs 9:1, “Wisdom has built her house, she has carved out its seven pillars.”</span></p>
+<p>Joseph Gabel, in his book <em>False Consciousness</em><span id="fn217.1" class="fn"><em>False Consciousness</em>: See Gabel, J., 1975.</span> draws a parallel between ideology and schizophrenia, this relationship should be considered in the context of the spectacles’ domineering influence on the economic process of production that manifests concrete reality. Society has become what ideology already was. Wherever the spectacle dominates there is the promotion of its false perspective of reality, a disintegration of the practice of everyday life and the anti-dialectic false consciousness that accompanies it. This repression is imposed at every moment of daily life subjected to the spectacle. The repression of the practice of lived experience should be understood as an organized attempt to destroy the “faculty to encounter”—our very ability to perceive, experience, participate, and enjoy the realities of daily life; replacing this faculty with a <em>social hallucination</em>. The social hallucination is a falsified proxy for experience, an “illusion of encounter”.<span id="fn217.2" class="fn fn-scroll">“illusion of encounter”: The illusion of encounter is the experience of manufactured pseudo-events, participation in the spectating of real events, or witness of the non-events of mass media. That which was once real is replaced by that which is proxied, virtualized, or simply spectated upon.</span> Within this alienated terrain, we are unable to <em>recognize</em> others, and unable to recognize our own reality. It is here where ideology is home, and alienation has built its own reality for us each.<span id="fn217.3" class="fn">“alienation has built its own reality for us each”: The original French was <q lang="fr">la séparation a bâti son monde</q> or “separation has built its world”. Separation is felt concretely with the elimination of lived and therefore shareable experiences, entailing the direct replacement of social bonds with relations that are mediated by technology, relationships <em>to</em> technology rather than to each other, e.g. Facebook.</span><span id="fn217.4" class="fn fn-scroll">“It is here where ideology is home, and alienation has built its own reality for us each.”: See Proverbs 9:1, “Wisdom has built her house, she has carved out its seven pillars.”</span></p>
 </section>
 <section id="t218" class="level3" data-bookmark-label="218">
 <h3 data-bookmark-label="218">218<span id="fn218.0" class="fn fn-l">This thesis describes the apogee of the spectacle, a life in which one does not live through their own actions and experiences, but delegating them to a false mediator, in this case the celebrity. As the mediator themselves merely acts out these actions and experiences, no experience is ever actually experienced; thus all lived experience is staged, what remains of all our lives is a form of autism—disconnection from ourselves and others, surrounded by a cacophony of sensory input. The spectacle is a pair of glasses we wear, “correcting” our vision of reality.</span></h3>
@@ -1420,10 +1409,9 @@ We are nothing, let us be all.”</em></span></p>
 <h3>221</h3>
 <p>Self-emancipation in the contemporary period is emancipation from our material basis within falsified reality. This “historic mission of establishing truth in the world”<span id="fn221.1" class="fn">“historic mission of establishing truth in the world”: c.f Marx, K., 1844. The full quotation is “The task of history is thus to establish the truth about this world once the otherworld has proved illusory.”</span> can not be accomplished by the isolated individual nor by the atomized and manipulated masses, but only and always by the “class that is able to dissolve all classes”<span id="fn221.2" class="fn">“class that is able to dissolve all classes”: Marx refers to the working class, quoted as “a class that is the dissolution of all classes.” Ibid.</span> by returning power to the disalienating, participatory, and universalized form of democracy. This is the power of the workers councils, in which practical theory controls itself and self-validates with its own actions. This can only be made possible when individuals are “directly linked to world history”<span id="fn221.3" class="fn">“directly linked to world history”: See Marx, K. &amp; Engels, F., 1998 (Part I, Ch. 2, Section 5).</span>—where dialog within the council arms itself to defeat its own conditions.</p>
 </section>
-</div>
-<section id="glossary" class="level3 break-before-right">
-<h3 class="break-before-right">Glossary</h3>
-<div class="glossary align-justify">
+</section>
+<section id="glossary" class="level2 glossary backmatter">
+<h2>Glossary</h2>
 <p>Debord writes in a provocative style of classical French, often overloading terms with meanings defined in other Situationist texts. This makes reading the text impenetrable until his use of the terminology becomes apparent to the reader through its consistent use.</p>
 <section id="absolute-lie-mensonge-absolu" class="level3">
 <h3>absolute lie (<em>mensonge absolu</em>)</h3>
@@ -1501,11 +1489,9 @@ We are nothing, let us be all.”</em></span></p>
 <h3>time of production (<em>temps du travail</em>)</h3>
 <p>Time an individual spends working. The exploitable time of the laboring class. In an industrialized society, it is the time that has been atomized, segmented, allocated, and turned into a commodity where each slice of equal interval is equivalent in value and indistinguishable. These slices of time are bought and sold on a marketplace for labor. This time is the inverse of consumable time.</p>
 </section>
-</div>
 </section>
-<section id="bibliography" class="level3 break-before-right">
-<h3 class="break-before-right">Bibliography</h3>
-<div class="hanging-indent bibliography">
+<section id="bibliography" class="level2 bibliography hanging-indent backmatter">
+<h2>Bibliography</h2>
 <p>0xADADA. (2019, April 16). <em>The City and The Freezing of Life</em>. Retreived from https://0xadada.pub/2019/04/16/the-city-and-the-freezing-of-life/</p>
 <p>0xADADA. (2021, January 14). <em>Bandersnatch Advertising</em>. Retreived from https://0xadada.pub/2021/01/14/bandersnatch-advertising/</p>
 <p>Albon, C. d. (1775). <em>Eloge historique de François Quesnay, par M. le comte d’Albon, des Académies des sciences, belles-lettres &amp; arts de Lyon, de la Société d’agriculture de la même ville, de l’Académie royale de Nîmes, de la société économique de Berne, Nouvelle édition</em>. France: de l’imprimerie de Cailleau.</p>
@@ -1630,14 +1616,12 @@ We are nothing, let us be all.”</em></span></p>
 <p>Žižek, S. (2010). <em>Living in the end times</em>. London New York: Verso. 9781844675982.</p>
 <p>Zuboff, S. &amp; Maxmin, J. (2002). <em>The support economy: why corporations are failing individuals and the next episode of capitalism</em>. New York: Viking. 0670887366.</p>
 <p>Zuboff, S. (2019). <em>The age of surveillance capitalism: the fight for a human future at the new frontier of power</em>. New York: PublicAffairs. 9781610395694.</p>
-</div>
 </section>
-<section id="index" class="level3 break-before-right">
-<h3 class="break-before-right">Index</h3>
-<div class="align-left">
+<section id="index" class="level2 index backmatter">
+<h2>Index</h2>
 <p>TODO</p>
-</div>
-<div id="authors" class="title-page">
+</section>
+<div class="authors frontmatter break-before-right">
 <figure>
 <img src="images/author.jpg" alt="Guy Debord (right)" /><figcaption aria-hidden="true">Guy Debord (right)</figcaption>
 </figure>
@@ -1647,6 +1631,5 @@ We are nothing, let us be all.”</em></span></p>
 </figure>
 <p>Ron. Adams lives in Somerville Massachusetts. His writing covers the intersection of media, technology, and power. He discovered the work of Debord and The Situationists through his participation in Occupy Wall Street in 2011. His writing is online at https://0xadada.pub.</p>
 </div>
-</section>
 </body>
 </html>

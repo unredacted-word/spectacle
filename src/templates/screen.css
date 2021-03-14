@@ -1,28 +1,30 @@
-body::before {
-  display: block;
-  content: 'draft';
-  font-family: system-ui, sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 20vw;
-  opacity: 0.2;
-  position: fixed;
-  transform: rotate(-15deg);
-  left: 20vw;
-  top: 20vh;
-  pointer-events: none;
+html {
+  background: #f7f7f7;
+}
+@media screen and (45rem) {
+  html {
+    min-width: 1290px;
+  }
 }
 
-@media only screen {
-  html {
-    background: #f7f7f7;
-  }
-  body {
-    background: white;
+body {
+  margin: 0;
+}
+body > div,
+body > section {
+  background: white;
+  box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+  padding: 1rem;
+  margin-bottom: 50vh;
+}
+@media screen and (min-width: 36.25rem) {
+  body > div,
+  body > section {
     box-shadow: rgb(60 64 67 / 15%) 0px 1px 3px 1px;
-    padding: 1cm;
-    margin: 2cm auto 2cm 24rem;
-    width: 152mm;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 36.25rem; /* 36.25 = 580/16 */
+    padding: 2rem;
   }
 }
 
@@ -30,17 +32,32 @@ body::before {
 *:target,
 *:target + .fn {
   /* give highlight to text-selection, target, and the footnote next to the target */
-  background-color: rgba(254, 231, 0, 0.5);
+  background-color: rgba(254, 231, 0, 0.5) !important;
   transition: background-color 4s ease;
 }
-.fn:target,
-*:target + .fn {
-  /* targeted sidenodes get padding because they have a yellog bg color */
-  padding: 0.5em;
+
+.fn {
+  display: inline;
+  color: #292929;
+  font-family: system-ui, sans-serif;
+  border: 1px solid rgba(29,29,29, 0.25);
 }
-@media only screen {
+@media (min-width: 45rem) {
+  /* 960px */
   .fn {
+    border: none;
+    background-color: #f7f7f7;
+    color: black;
+    display: block;
+    font-family: "Source Serif Pro", Georgia, Times, serif;
+    padding: 0.5em;
     width: 20rem;
+    z-index: 0;
+  }
+  .fn-scroll {
+    height: 3.75em;
+    overflow: scroll;
+    border-bottom: 1px dashed rgba(0,0,0,0.5);
   }
   /* alternating side footnotes */
   .fn:nth-of-type(odd),
@@ -57,25 +74,13 @@ body::before {
   }
 }
 
-@media only screen {
-  h2,
-  .break-before {
-    margin-top: 100vh;
-  }
-  h2 + blockquote,
-  .break-after {
-    margin-bottom: 100vh;
-  }
-}
 /* half title */
 .halftitle-title {
   background-color: #0adada;
-  height: 22.5cm;
+  height: 52rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: -10mm -10mm 100vh -10mm;
-  padding: 10mm;
   position: relative;
 }
 .halftitle-translator {
