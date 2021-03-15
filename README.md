@@ -40,6 +40,5 @@ yarn pen <filename>
 # Generating Books
 
 ```
-pandoc -d config/pdf.yaml -V date="$(date -R)" # print-ready book
-pandoc -d config/html.yaml -V date="$(date -R)" # HTML book
+yarn build  # build all formats
 ```

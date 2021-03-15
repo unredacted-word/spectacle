@@ -2,13 +2,13 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Unredactor 0.8.0 by Unredacted Word" />
+  <meta name="generator" content="ReadingGlasses v0 by █ Unredacted Word" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Guy Debord, English edition by Ron. Adams" />
   <meta name="copyright" content="Copyright © 2021 Ron. Adams, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" />
   <meta name="publisher" content="Unredacted Word, LLC" />
-  <meta name="dcterms.date" content="2021-03-14T20:31:52Z" />
-  <meta name="keywords" content="Philosophy, Critical Theory, Marxism, Anarchism, Proletariat, Economics, Social Classes" />
+  <meta name="dcterms.date" content="2021-03-14T21:21:58Z" />
+  <meta name="keywords" content="Anarchism, Communism, Critical Theory, Economics, End of History, History, Marxism, Philosophy, Politics, Political Theory, Proletariat, Socialism, Social Classes" />
   <title>The Society of the Spectacle</title>
   <style>
     * {
@@ -652,7 +652,150 @@
     }
   </style>
   <script>
-  </script>
+    Prince.trackBoxes = true;
+    Prince.addEventListener("complete", makeIx, false);
+
+    function getText(e) {
+      var text = "";
+
+      for (var x = e.firstChild; x != null; x = x.nextSibling) {
+        if (x.nodeType == x.TEXT_NODE) {
+          text += x.data;
+        } else if (x.nodeType == x.ELEMENT_NODE) {
+          text += getText(x);
+        }
+      }
+
+      return text;
+    }
+
+    function getElementsByClassName(oElm, strTagName, strClassName) {
+      var arrElements =
+        strTagName == "*" && oElm.all
+          ? oElm.all
+          : oElm.getElementsByTagName(strTagName);
+      var arrReturnElements = new Array();
+      strClassName = strClassName.replace(/\-/g, "\\-");
+      var j = /\six\s/;
+      var oRegExp = new RegExp(j);
+      var oElement;
+      for (var i = 0; i < arrElements.length; i++) {
+        oElement = arrElements[i];
+        if (oRegExp.test(oElement.className)) {
+          arrReturnElements.push(oElement);
+        }
+      }
+      return arrReturnElements;
+    }
+
+    function makeIndex() {
+      var hs = document.getElementsByTagName("h2");
+      var toc = document.getElementById("toc");
+      for (var i = 0; i < hs.length; i++) {
+        var text = document.createTextNode(getText(hs[i]));
+        hs[i].setAttribute("id", "ch" + i);
+        var link = document.createElement("a");
+        link.setAttribute("href", "#ch" + i);
+        link.appendChild(text);
+        var li = document.createElement("li");
+        li.appendChild(link);
+        toc.appendChild(li);
+      }
+    }
+
+    function makeIx() {
+      var ixcontainer = document.getElementById("idx");
+      var ids = new Array();
+      var ent = new Array();
+
+      // find all elements that contain index entries, go through them sequentially
+
+      ix = getElementsByClassName(document, "*", "ix");
+      for (var i = 0; i < ix.length; i++) {
+        ix[i].setAttribute("id", "ix" + i);
+
+        // store the reference in a string in an associative array
+
+        var str = getText(ix[i]);
+        if (ids[str]) {
+          ids[str] = ids[str] + ",ix" + i;
+        } else {
+          ids[str] = "ix" + i;
+        }
+
+        // check to see if the index entry is there already, if not add it
+
+        if (ent.join("").indexOf(str) < 0) {
+          ent.push(str);
+        }
+      }
+
+      // the ent array now contains list of index entries, sort it!
+
+      ent.sort();
+
+      var str = "<ul id=ix>";
+
+      // go through list of index entries, create one li element per entry
+
+      for (var i = 0; i < ent.length; i++) {
+        str = str + "<li><span class=entry>" + ent[i] + "</span>";
+
+        var idsa = ids[ent[i]].split(",");
+
+        //     idsa is an array which contains strings like "ix0","ix4"
+
+        var prevpage = 0;
+        var collapsing = "";
+        var divider = "";
+
+        for (var j = 0; j < idsa.length; j++) {
+          var e = document.getElementById(idsa[j]);
+          var eboxes = e.getPrinceBoxes();
+          if (eboxes.length > 0) {
+            var box = eboxes[0];
+            var page = box.pageNum;
+
+            //            page now has the name numer of the index entry
+
+            if (page > prevpage) {
+              //
+              if (prevpage == 0) {
+                // first index for this entry
+                str = str + "<span id=#" + idsa[j] + ">" + page + "</span>";
+                prevpage = page;
+              } else if (page > prevpage + 1) {
+                // e.g. prevpage = 1; page = 3
+                if (collapsing) {
+                  // now we must terminate collapse
+                  str = str + "-<span id=#" + idsa[j] + ">" + prevpage + "</span>";
+                  collapsing = 0; // not collapsing any more
+                } else {
+                  str = str + ", <span id=#" + idsa[j] + ">" + page + "</span>";
+                  prevpage = page;
+                }
+              } else {
+                // e.g.  prevpage = 43  and page = 44, who knows what is next?
+                str = str + "<!-- collapsing " + page + " -->";
+                collapsing = "-"; // true
+                prevpage = page;
+              }
+            } else {
+              str =
+                str + "<!--skipping id=#" + idsa[j] + " on page " + page + "-->";
+            }
+          }
+        }
+
+        // if we are collapsing at the end, terminate
+
+        if (collapsing) {
+          str = str + "-<span id=#" + idsa[j - 1] + ">" + page + "</span>"; //
+        }
+      }
+      str = str + "</ul>";
+      console.log(str);
+    }  </script>
 </head>
 <body>
 <div class="halftitle-title frontmatter break-before-right reset-page-counter">
@@ -757,7 +900,7 @@ GUY DEBORD</p>
 </blockquote>
 <section id="section" class="level3">
 <h3>1</h3>
-<p>In post-industrial societies where mass production and mainstream media predominate society, life is presented as an immense accumulation of <em>spectacles</em>. Everything that was directly experienced<span id="fn1.1" class="fn">“directly experienced”: A life experience in which an individual directly participates. For example, acting in a play at a local theatrical festival, or as simple as playing a game of soccer with friends. A concrete example of the replacement of direct experience with its representation is how the previously common practice of hunting for animals which will be cooked and then eaten was first replaced with packaged meat bought at a grocery store, has finally given way to the proliferation of packaged pre-cooked meals, where the natural ingredients have been obfuscated and abstracted into food products.</span> has been replaced with its representation in the form of images.</p>
+<p>In post-industrial societies where mass production and mainstream <span class="ix">media</span> predominate society, life is presented as an immense accumulation of <em>spectacles</em>. Everything that was directly experienced<span id="fn1.1" class="fn">“directly experienced”: A life experience in which an individual directly participates. For example, acting in a play at a local theatrical festival, or as simple as playing a game of soccer with friends. A concrete example of the replacement of direct experience with its representation is how the previously common practice of hunting for animals which will be cooked and then eaten was first replaced with packaged meat bought at a grocery store, has finally given way to the proliferation of packaged pre-cooked meals, where the natural ingredients have been obfuscated and abstracted into food products.</span> has been replaced with its representation in the form of images.</p>
 </section>
 <section id="section-1" class="level3">
 <h3>2</h3>
@@ -1940,7 +2083,9 @@ We are nothing, let us be everything!”</em><br />
 </section>
 <section id="index" class="level2 index backmatter">
 <h2>Index</h2>
-<p>TODO</p>
+<div id="idx">
+
+</div>
 </section>
 <div class="authors frontmatter break-before-right">
 <figure>
@@ -1954,3 +2099,4 @@ We are nothing, let us be everything!”</em><br />
 </div>
 </body>
 </html>
+<ul id=ix></ul>

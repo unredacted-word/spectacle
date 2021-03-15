@@ -26,8 +26,11 @@ $endif$
   <style media="print">
     $print.css()$
   </style>
+$if(ispdf)$
   <script>
+    $prince.js()$
   </script>
+$endif$
 $for(header-includes)$
   $header-includes$
 $endfor$
