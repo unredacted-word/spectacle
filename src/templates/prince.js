@@ -7,8 +7,8 @@ Prince.registerPostLayoutFunc(function () {
 });
 
 function getText(e) {
-  if (e.hasAttribute('data-idx')) {
-    return e.getAttribute('data-idx');
+  if (e.hasAttribute('data-ix')) {
+    return e.getAttribute('data-ix');
   }
   var text = '';
   for (var x = e.firstChild; x != null; x = x.nextSibling) {
@@ -27,7 +27,6 @@ function makeIx() {
 
   // find all elements that contain index entries, go through them sequentially
   var ix = document.querySelectorAll('.ix');;
-  console.log('results', getText(ix[0]));
   for (var i = 0; i < ix.length; i++) {
     ix[i].setAttribute("id", "ix." + i);
 
