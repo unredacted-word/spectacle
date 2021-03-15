@@ -10,7 +10,6 @@ function getText(e) {
   if (e.hasAttribute('data-idx')) {
     return e.getAttribute('data-idx');
   }
-
   var text = '';
   for (var x = e.firstChild; x != null; x = x.nextSibling) {
     if (x.nodeType == x.TEXT_NODE) {
@@ -19,7 +18,6 @@ function getText(e) {
       text += getText(x);
     }
   }
-
   return text;
 }
 
@@ -59,11 +57,9 @@ function makeIx() {
 
     var idsa = ids[ent[i]].split(",");
 
-    //     idsa is an array which contains strings like "ix0","ix4"
-
+    // idsa is an array which contains strings like "ix.0","ix.4"
     var prevpage = 0;
     var collapsing = "";
-    var divider = "";
 
     for (var j = 0; j < idsa.length; j++) {
       var e = document.getElementById(idsa[j]);
@@ -72,9 +68,8 @@ function makeIx() {
         var box = eboxes[0];
         var page = box.pageNum - 2; /* -2 remove front blank pages */
 
-        //            page now has the name numer of the index entry
+        // page now has the name numer of the index entry
         if (page > prevpage) {
-          //
           if (prevpage == 0) {
             // first index for this entry
             str = str + "<span id=#" + idsa[j] + ">: " + page + "</span>";
@@ -103,9 +98,8 @@ function makeIx() {
     }
 
     // if we are collapsing at the end, terminate
-
     if (collapsing) {
-      str = str + "-<span id=#" + idsa[j - 1] + ">" + page + "</span>"; //
+      str = str + "-<span id=#" + idsa[j - 1] + ">" + page + "</span>";
     }
   }
   // write the output to stdout
