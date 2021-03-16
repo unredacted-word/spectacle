@@ -44,10 +44,10 @@ function makeIx() {
     }
   }
 
-  // the ent array now contains list of index entries, sort it!
-  ent.sort();
-  console.log('ids', Object.keys(ids));
-  console.log('ent', ent);
+  // the ent array now contains list of index entries, case-insensitive sort
+  ent.sort(function (a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+  });
 
   var str = '';
 
