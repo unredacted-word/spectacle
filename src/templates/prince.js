@@ -46,6 +46,8 @@ function makeIx() {
 
   // the ent array now contains list of index entries, sort it!
   ent.sort();
+  console.log('ids', Object.keys(ids));
+  console.log('ent', ent);
 
   var str = '';
 
