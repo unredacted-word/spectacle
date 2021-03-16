@@ -79,6 +79,11 @@ figure img {
   max-width: 119.7mm;
   margin-left: -1mm;
 }
+.figure-1 {
+  margin-left: -50mm;
+  width: 120mm;
+  max-width: 120mm;
+}
 
 .halftitle-title {
   margin-top: 12rem;
