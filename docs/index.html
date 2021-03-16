@@ -283,9 +283,13 @@
     }
 
     ::selection,
-    *:target,
-    *:target + .fn {
-      /* give highlight to text-selection, target, and the footnote next to the target */
+    .level3:target,
+    span:target,
+    *:target + .fn
+    {
+      /* highlight color for text-selection, thesis targets, references, footnotes,
+       * and reference + footnotes
+       */
       background-color: rgba(254, 231, 0, 0.5) !important;
       transition: background-color 4s ease;
     }
