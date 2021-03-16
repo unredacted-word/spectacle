@@ -1,8 +1,16 @@
+<p align="center">
+  <img alt="Infinity Rope" src="images/infinity-rope.svg" width="480">
+</p>
+
 # The Society of the Spectacle
 
-A new English edition of Guy Debord's 1967 book, _La Société du Spectacle_.
+by Guy Debord
+
+> A new English edition of Guy Debord's 1967 book, _La Société du Spectacle_.
 
 📕 [Book](https://unredacted-word.pub/spectacle/)
+
+---
 
 This repo is the text of the book, source references, and a collection of tools
 to produce the book in multiple formats for distribution.
