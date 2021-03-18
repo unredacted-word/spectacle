@@ -13,7 +13,10 @@ function getText(e) {
   } else {
     text = e.textContent;
   }
-  return text.split(";");
+  var entries = text.split(";");
+  return entries.map(function (e) {
+    return e.trim();
+  });
 }
 
 function makeIx() {
@@ -27,7 +30,6 @@ function makeIx() {
 
     // store the reference in a string in an associative array
     var entryNames = getText(ix[i]);
-    console.log("entryNames", entryNames);
     for (var x = 0; x < entryNames.length; x++) {
       var str = entryNames[x];
       if (ids[str]) {
