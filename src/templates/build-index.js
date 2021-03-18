@@ -7,18 +7,13 @@ Prince.registerPostLayoutFunc(function () {
 });
 
 function getText(e) {
-  if (e.hasAttribute('data-ix')) {
-    return e.getAttribute('data-ix');
+  var text = "";
+  if (e.hasAttribute("data-ix")) {
+    text = e.getAttribute("data-ix");
+  } else {
+    text = e.textContent;
   }
-  var text = '';
-  for (var x = e.firstChild; x != null; x = x.nextSibling) {
-    if (x.nodeType == x.TEXT_NODE) {
-      text += x.data;
-    } else if (x.nodeType == x.ELEMENT_NODE) {
-      text += getText(x);
-    }
-  }
-  return text;
+  return text.split(";");
 }
 
 function makeIx() {
@@ -26,21 +21,25 @@ function makeIx() {
   var ent = [];
 
   // find all elements that contain index entries, go through them sequentially
-  var ix = document.querySelectorAll('.ix');;
+  var ix = document.querySelectorAll(".ix");
   for (var i = 0; i < ix.length; i++) {
     ix[i].setAttribute("id", "ix." + i);
 
     // store the reference in a string in an associative array
-    var str = getText(ix[i]);
-    if (ids[str]) {
-      ids[str] = ids[str] + ",ix." + i;
-    } else {
-      ids[str] = "ix." + i;
-    }
+    var entryNames = getText(ix[i]);
+    console.log("entryNames", entryNames);
+    for (var x = 0; x < entryNames.length; x++) {
+      var str = entryNames[x];
+      if (ids[str]) {
+        ids[str] = ids[str] + ";ix." + i;
+      } else {
+        ids[str] = "ix." + i;
+      }
 
-    // check to see if the index entry is there already, if not add it
-    if (ent.join("").indexOf(str) < 0) {
-      ent.push(str);
+      // check to see if the index entry is there already, if not add it
+      if (ent.indexOf(str) < 0) {
+        ent.push(str);
+      }
     }
   }
 
@@ -49,14 +48,14 @@ function makeIx() {
     return a.toLowerCase().localeCompare(b.toLowerCase());
   });
 
-  var str = '';
+  var str = "";
 
   // go through list of index entries, create one li element per entry
 
   for (var i = 0; i < ent.length; i++) {
-    str = str + '<li class="entry"><span class="name">' + ent[i] + '</span>';
+    str = str + '<li class="entry"><span class="name">' + ent[i] + "</span>";
 
-    var idsa = ids[ent[i]].split(",");
+    var idsa = ids[ent[i]].split(";");
 
     // idsa is an array which contains strings like "ix.0","ix.4"
     var prevpage = 0;
@@ -106,6 +105,6 @@ function makeIx() {
   // write the output to stdout
   console.log(str);
   // write the output to the document before PDF is rendered
-  var idx = document.getElementById('index-entries');
+  var idx = document.getElementById("index-entries");
   idx.innerHTML = str;
 }
