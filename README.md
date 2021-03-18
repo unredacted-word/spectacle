@@ -17,8 +17,7 @@ to produce the book in multiple formats for distribution.
 
 ## Requirements
 
-- NodeJS
-- Yarn / npm
+- NodeJS, npm
 - Pandoc / Prince XML
 
 on macOS:
@@ -35,18 +34,18 @@ brew install --cask font-source-serif-pro
 ## Development
 
 ```bash
-yarn lint   # show lint errors
-yarn format # format markdown
+npm run lint    # show lint errors
+npm run format  # format markdown
 ```
 
 To live preview markdown in a browser:
 
 ```bash
-yarn pen <filename>
+npm run pen <filename>
 ```
 
 # Generating Books
 
 ```
-yarn build  # build all formats
+npm run build  # build all formats
 ```
