@@ -3,10 +3,50 @@ Prince.registerPostLayoutFunc(function () {
   /* called after layout finished. If this function modifies the DOM, Prince
    * will perform layout again on the updated document.
    */
-  makeIx();
+  buildIndex();
 });
 
-function getText(e) {
+function getRanges(array) {
+  var ranges = [],
+    rstart,
+    rend;
+  for (var i = 0; i < array.length; i++) {
+    rstart = array[i];
+    rend = rstart;
+    while (array[i + 1] - array[i] == 1) {
+      rend = array[i + 1];
+      i++;
+    }
+    ranges.push(rstart == rend ? rstart + "" : rstart + "-" + rend);
+  }
+  return ranges;
+}
+
+function renderItem(entry) {
+  return (
+    '<li class="ix-entry">' +
+    '<span class="ix-entry-name">' +
+    entry.name +
+    "</span>: " +
+    '<span class="ix-entry-pages">' +
+    entry.pages.join(", ") +
+    "</span>" +
+    render(entry.entries) +
+    "</li>"
+  );
+}
+
+function render(entries) {
+  if (entries.length === 0) return "";
+  var output = "";
+  for (var i = 0; i < entries.length; i++) {
+    var item = renderItem(entries[i]);
+    output = output + item;
+  }
+  return "<ol>" + output + "</ol>";
+}
+
+function getIndexEntryNames(e) {
   var text = "";
   if (e.hasAttribute("data-ix")) {
     text = e.getAttribute("data-ix");
@@ -19,94 +59,145 @@ function getText(e) {
   });
 }
 
-function makeIx() {
-  var ids = [];
-  var ent = [];
+function getPageNum(element) {
+  var pageNum = Math.floor(Math.random() * 20);
+  if (element.getPrinceBoxes) {
+    var eboxes = element.getPrinceBoxes();
+    if (eboxes.length > 0) {
+      var box = eboxes[0];
+      return box.pageNum - 2; /* -2 remove front blank pages */
+    }
+  }
+  return pageNum;
+}
 
-  // find all elements that contain index entries, go through them sequentially
-  var ix = document.querySelectorAll(".ix");
-  for (var i = 0; i < ix.length; i++) {
-    ix[i].setAttribute("id", "ix." + i);
+function getEntryName(name) {
+  /* if name is a proper name, return entire name
+   * e.g. Hegel, Friedrich, return name
+   */
+  if (hasSubEntry(name)) {
+    // has a subentry, so return first portion of name
+    return name.split(",")[0].trim();
+  } else {
+    // a proper name, return entire entry name
+    return name;
+  }
+}
 
-    // store the reference in a string in an associative array
-    var entryNames = getText(ix[i]);
-    for (var x = 0; x < entryNames.length; x++) {
-      var str = entryNames[x];
-      if (ids[str]) {
-        ids[str] = ids[str] + ";ix." + i;
-      } else {
-        ids[str] = "ix." + i;
-      }
+function hasSubEntry(name) {
+  // only return true if matches comma, and isn't a proper name
+  if (name.match(/, [a-z]/)) {
+    return true;
+  }
+  return false;
+}
 
-      // check to see if the index entry is there already, if not add it
-      if (ent.indexOf(str) < 0) {
-        ent.push(str);
-      }
+function createEntry(entries, name, element, pageNum) {
+  var entryName = getEntryName(name);
+
+  // find if entry already exists
+  // TODO: this is a search, can be optimized
+  var entry = null;
+  for (var i = 0; i < entries.length; i++) {
+    if (entries[i].name === entryName) {
+      entry = entries[i];
+      break;
     }
   }
 
-  // the ent array now contains list of index entries, case-insensitive sort
-  ent.sort(function (a, b) {
-    return a.toLowerCase().localeCompare(b.toLowerCase());
+  // create a subentry record if the name has a comma
+  if (hasSubEntry(name)) {
+    var subEntryName = name.split(",")[1].trim();
+    // create a subentry
+    if (entry) {
+      // update existing record
+      entry.pages = [].concat(entry.pages).concat(pageNum);
+      entry.entries = createEntry(
+        entry.entries,
+        subEntryName,
+        element,
+        pageNum
+      );
+      return entries;
+    } else {
+      // create new record
+      entry = {
+        name: entryName,
+        element: element,
+        pages: [pageNum],
+        entries: createEntry([], subEntryName, element, pageNum),
+      };
+      return [].concat(entries).concat(entry);
+    }
+  } else {
+    if (entry) {
+      // update existing record
+      entry.pages = [].concat(entry.pages).concat(pageNum);
+      entry.entries = [].concat(entry.entries);
+      return entries;
+    } else {
+      // create new record
+      entry = {
+        name: getEntryName(name),
+        element: element,
+        pages: [pageNum],
+        entries: [],
+      };
+      return [].concat(entries).concat(entry);
+    }
+  }
+}
+
+function buildIndex() {
+  var entries = [];
+  var injectElement = document.getElementById("index-entries");
+
+  // get all index elements
+  var ixs = document.querySelectorAll(".ix");
+  for (var a = 0; a < ixs.length; a++) {
+    // get the index entry name
+    var element = ixs[a];
+    var names = getIndexEntryNames(element);
+    // for each index entry name
+    for (var b = 0; b < names.length; b++) {
+      // get its page number
+      var pageNum = getPageNum(element);
+      // for each index tag, create an index entry
+      // { id, name, element, pages: [page], entries: [entry]}
+      entries = createEntry(entries, names[b], element, pageNum);
+    }
+  }
+  // sort the list case insensitive
+  var sortedEntries = entries.sort(function (a, b) {
+    return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
   });
-
-  var str = "";
-
-  // go through list of index entries, create one li element per entry
-
-  for (var i = 0; i < ent.length; i++) {
-    str = str + '<li class="entry"><span class="name">' + ent[i] + "</span>";
-
-    var idsa = ids[ent[i]].split(";");
-
-    // idsa is an array which contains strings like "ix.0","ix.4"
-    var prevpage = 0;
-    var collapsing = "";
-
-    for (var j = 0; j < idsa.length; j++) {
-      var e = document.getElementById(idsa[j]);
-      var eboxes = e.getPrinceBoxes();
-      if (eboxes.length > 0) {
-        var box = eboxes[0];
-        var page = box.pageNum - 2; /* -2 remove front blank pages */
-
-        // page now has the name numer of the index entry
-        if (page > prevpage) {
-          if (prevpage == 0) {
-            // first index for this entry
-            str = str + "<span id=#" + idsa[j] + ">: " + page + "</span>";
-            prevpage = page;
-          } else if (page > prevpage + 1) {
-            // e.g. prevpage = 1; page = 3
-            if (collapsing) {
-              // now we must terminate collapse
-              str = str + "-<span id=#" + idsa[j] + ">" + prevpage + "</span>";
-              collapsing = 0; // not collapsing any more
-            } else {
-              str = str + ", <span id=#" + idsa[j] + ">" + page + "</span>";
-              prevpage = page;
-            }
-          } else {
-            // e.g.  prevpage = 43  and page = 44, who knows what is next?
-            str = str + "<!-- collapsing " + page + " -->";
-            collapsing = "-"; // true
-            prevpage = page;
-          }
-        } else {
-          str =
-            str + "<!--skipping id=#" + idsa[j] + " on page " + page + "-->";
+  // sort and collapse the pages into ranges
+  var rangedEntries = sortedEntries.map(function (j) {
+    // sort page numbers
+    var sortedPages = j.pages.sort(function (a, b) {
+      return a - b;
+    });
+    // remove duplicate pages
+    var deDupedPages = [];
+    if (sortedPages.length > 1) {
+      for (var i = 1; i < sortedPages.length; i++) {
+        if (sortedPages[i] !== sortedPages[i - 1]) {
+          deDupedPages.push(sortedPages[i]);
         }
       }
+    } else {
+      deDupedPages = [].concat(sortedPages);
     }
-
-    // if we are collapsing at the end, terminate
-    if (collapsing) {
-      str = str + "-<span id=#" + idsa[j - 1] + ">" + page + "</span>";
-    }
-  }
-  // write the output to stdout
-  console.log(str);
-  // write the output to the document before PDF is rendered
-  var idx = document.getElementById("index-entries");
-  idx.innerHTML = str;
+    var ranged = getRanges(deDupedPages);
+    return {
+      name: j.name,
+      element: j.element,
+      pages: ranged,
+      entries: j.entries,
+    };
+  });
+  // convert list to HTML list
+  var str = render(rangedEntries);
+  // inject html into the DOM
+  injectElement.innerHTML = str;
 }

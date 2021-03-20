@@ -2,6 +2,6 @@
 
 ## Index
 
-<ol id="index-entries" class="entries"></ol>
+<div id="index-entries" class="entries"></div>
 
 :::::
