@@ -282,13 +282,14 @@ h2 + blockquote {
   padding: 0;
 }
 .index .ix-entry {
-  margin-left: 1em;
-  text-indent: -1em;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
   font-size: 9pt;
   break-inside: avoid;
 }
 .index .entries ol li ol {
   padding-left: 0;
+  margin-left: -0.5em;
 }
 
 /* title page */
