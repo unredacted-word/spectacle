@@ -148,6 +148,33 @@ function createEntry(entries, name, element, pageNum) {
   }
 }
 
+// remove duplicates from an array
+function uniq(items) {
+  function unique(value, index, self) {
+    return self.indexOf(value) === index;
+  }
+  return items.filter(unique);
+}
+
+function paginate(entries) {
+  // sort and collapse the pages into ranges
+  return entries.map(function (j) {
+    // sort page numbers
+    var sortedPages = j.pages.sort(function (a, b) {
+      return a - b;
+    });
+    var uniquePages = uniq(sortedPages);
+    var ranged = getRanges(uniquePages);
+    // return object deduped with ranged pages
+    return {
+      name: j.name,
+      element: j.element,
+      pages: ranged,
+      entries: paginate(j.entries),
+    };
+  });
+}
+
 function buildIndex() {
   var entries = [];
   var injectElement = document.getElementById("index-entries");
@@ -172,25 +199,7 @@ function buildIndex() {
     return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
   });
   // sort and collapse the pages into ranges
-  var rangedEntries = sortedEntries.map(function (j) {
-    // sort page numbers
-    var sortedPages = j.pages.sort(function (a, b) {
-      return a - b;
-    });
-    // remove duplicate pages
-    function unique(value, index, self) {
-      return self.indexOf(value) === index;
-    }
-    var uniquePages = sortedPages.filter(unique);
-    var ranged = getRanges(uniquePages);
-    // return object deduped with ranged pages
-    return {
-      name: j.name,
-      element: j.element,
-      pages: ranged,
-      entries: j.entries,
-    };
-  });
+  var rangedEntries = paginate(sortedEntries);
   // convert list to HTML list
   var str = render(rangedEntries);
   // inject html into the DOM
