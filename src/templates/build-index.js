@@ -111,7 +111,6 @@ function createEntry(entries, name, element, pageNum) {
     // create a subentry
     if (entry) {
       // update existing record
-      entry.pages = [].concat(entry.pages).concat(pageNum);
       entry.entries = createEntry(
         entry.entries,
         subEntryName,
