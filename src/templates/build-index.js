@@ -132,7 +132,7 @@ function createEntry(entries, name, element, pageNum) {
   } else {
     if (entry) {
       // update existing record
-      entry.pages = [].concat(entry.pages).concat(pageNum);
+      entry.pages = entry.pages.concat(pageNum);
       entry.entries = [].concat(entry.entries);
       return entries;
     } else {
@@ -143,7 +143,7 @@ function createEntry(entries, name, element, pageNum) {
         pages: [pageNum],
         entries: [],
       };
-      return [].concat(entries).concat(entry);
+      return entries.concat(entry);
     }
   }
 }
@@ -178,17 +178,12 @@ function buildIndex() {
       return a - b;
     });
     // remove duplicate pages
-    var deDupedPages = [];
-    if (sortedPages.length > 1) {
-      for (var i = 1; i < sortedPages.length; i++) {
-        if (sortedPages[i] !== sortedPages[i - 1]) {
-          deDupedPages.push(sortedPages[i]);
-        }
-      }
-    } else {
-      deDupedPages = [].concat(sortedPages);
+    function unique(value, index, self) {
+      return self.indexOf(value) === index;
     }
-    var ranged = getRanges(deDupedPages);
+    var uniquePages = sortedPages.filter(unique);
+    var ranged = getRanges(uniquePages);
+    // return object deduped with ranged pages
     return {
       name: j.name,
       element: j.element,
