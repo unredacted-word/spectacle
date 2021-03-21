@@ -170,8 +170,14 @@ function paginate(entries) {
       name: j.name,
       element: j.element,
       pages: ranged,
-      entries: paginate(j.entries),
+      entries: sort(paginate(j.entries)),
     };
+  });
+}
+
+function sort(entries) {
+  return entries.sort(function (a, b) {
+    return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
   });
 }
 
@@ -195,9 +201,7 @@ function buildIndex() {
     }
   }
   // sort the list case insensitive
-  var sortedEntries = entries.sort(function (a, b) {
-    return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
-  });
+  var sortedEntries = sort(entries);
   // sort and collapse the pages into ranges
   var rangedEntries = paginate(sortedEntries);
   // convert list to HTML list
