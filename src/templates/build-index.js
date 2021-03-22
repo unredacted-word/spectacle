@@ -22,11 +22,25 @@ function getRanges(array) {
   return ranges;
 }
 
+function renderName(name) {
+  /* handle book entries, e.g.
+   * Society of the Spectacle, The (Debord)
+   */
+  if (name.indexOf("(") > -1) {
+    return "<em>" + name + "</em>";
+  } else if (name.indexOf("see also") > -1) {
+    var parts = name.split("see also ");
+    return parts[0] + " <em>see also</em> <strong>" + parts[1] + "</strong>";
+  } else {
+    return name;
+  }
+}
+
 function renderItem(entry) {
   return (
     '<li class="ix-entry">' +
     '<span class="ix-entry-name">' +
-    entry.name +
+    renderName(entry.name) +
     "</span>: " +
     '<span class="ix-entry-pages">' +
     entry.pages.join(", ") +
