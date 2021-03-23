@@ -288,6 +288,9 @@ h2 + blockquote {
   font-size: 9pt;
   break-inside: avoid;
 }
+.index .ix-entry-cr .ix-entry-pages {
+  display: none; /* hide pages on cross reference entries */
+}
 .index .entries ol li ol {
   padding-left: 0;
   margin-left: -0.5em;

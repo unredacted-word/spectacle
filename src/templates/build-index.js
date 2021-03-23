@@ -31,6 +31,9 @@ function renderName(name) {
   } else if (name.indexOf("see also") > -1) {
     var parts = name.split("see also ");
     return parts[0] + " <em>see also</em> <strong>" + parts[1] + "</strong>";
+  } else if (name.indexOf(" see ") > -1) {
+    var parts = name.split("see ");
+    return parts[0] + " <em>see</em> <strong>" + parts[1] + "</strong>";
   } else {
     return name;
   }
@@ -38,11 +41,13 @@ function renderName(name) {
 
 function renderItem(entry) {
   return (
-    '<li class="ix-entry">' +
+    (entry.name.match(" see ") !== null
+      ? '<li class="ix-entry ix-entry-cr">'
+      : '<li class="ix-entry">') +
     '<span class="ix-entry-name">' +
     renderName(entry.name) +
-    "</span>: " +
-    '<span class="ix-entry-pages">' +
+    "</span>" +
+    '<span class="ix-entry-pages">: ' +
     entry.pages.join(", ") +
     "</span>" +
     render(entry.entries) +
