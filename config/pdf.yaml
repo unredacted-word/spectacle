@@ -4,7 +4,7 @@ input-files:
 - chapters/half-title.md
 - chapters/colophon.md
 - chapters/contents.md
-- chapters/forward.md
+- chapters/foreword.md
 - chapters/title.md
 - chapters/preface.md
 - chapters/01.md
@@ -18,7 +18,7 @@ input-files:
 - chapters/09.md
 - chapters/glossary.md
 - chapters/bibliography.md
-- chapters/actual-index.md
+- chapters/index.md
 - chapters/authors.md
 output-file: "dist/book.pdf"
 metadata-files:
@@ -27,6 +27,7 @@ from: markdown
 to: pdf
 dpi: 300
 pdf-engine: prince
+pdf-engine-opt: "--javascript"
 data-dir: "src"
 template: "default.html"
 verbosity: WARNING # ERROR, WARNING, or INFO

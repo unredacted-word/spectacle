@@ -21,8 +21,8 @@ a {
 }
 
 p {
- orphans: 2;
- widows: 3;
+  orphans: 2;
+  widows: 3;
 }
 
 h1,
@@ -44,7 +44,7 @@ h2 {
   /* set chapter title for the right page */
   string-set: chapter-title attr(title);
 }
-.forward h2,
+.foreword h2,
 .preface h2,
 .glossary h2,
 .bibliography h2,
@@ -78,6 +78,11 @@ figure {
 figure img {
   max-width: 119.7mm;
   margin-left: -1mm;
+}
+.figure-1 {
+  margin-left: -50mm;
+  width: 120mm;
+  max-width: 120mm;
 }
 
 .halftitle-title {
@@ -120,7 +125,9 @@ h2 + blockquote {
   break-before: right;
 }
 @page preface {
-  @footnote { margin-top: 1em; }
+  @footnote {
+    margin-top: 1em;
+  }
 }
 @page preface:verso {
   @bottom-left {
@@ -136,8 +143,12 @@ h2 + blockquote {
 }
 @page preface:blank {
   /* remove page numbers on blank pages */
-  @bottom-right { content: normal; }
-  @bottom-left { content: normal; }
+  @bottom-right {
+    content: normal;
+  }
+  @bottom-left {
+    content: normal;
+  }
 }
 
 .chapter {
@@ -169,7 +180,9 @@ h2 + blockquote {
     font-size: 11pt;
     margin-left: -53.2mm;
   }
-  @footnote { left: -53.2mm; }
+  @footnote {
+    left: -53.2mm;
+  }
 }
 @page chapter:recto {
   @top-right {
@@ -184,13 +197,19 @@ h2 + blockquote {
     font-size: 11pt;
     margin-right: -53.2mm;
   }
-  @footnote { right: -53.2mm; }
+  @footnote {
+    right: -53.2mm;
+  }
 }
 @page chapter:first {
   margin-outside: 13.3mm;
   /* remove margin content from chapter title pages */
-  @top-right { content: normal; }
-  @bottom-right { content: normal; }
+  @top-right {
+    content: normal;
+  }
+  @bottom-right {
+    content: normal;
+  }
   /* place footnotes on the bottom */
   @footnote {
     margin-top: 1em;
@@ -200,12 +219,19 @@ h2 + blockquote {
 }
 @page chapter:blank {
   /* remove marginalia on blank pages */
-  @top-right { content: normal; }
-  @top-left { content: normal; }
-  @bottom-right { content: normal; }
-  @bottom-left { content: normal; }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+  @bottom-right {
+    content: normal;
+  }
+  @bottom-left {
+    content: normal;
+  }
 }
-
 
 /* notes */
 .fn {
@@ -218,7 +244,7 @@ h2 + blockquote {
   font-style: normal;
   letter-spacing: normal;
   line-height: 11.25pt;
-                        /* 11pt = creates vertical rhythm with 8pt footnote
+  /* 11pt = creates vertical rhythm with 8pt footnote
                          * text and 11pt body text. This creates a vertical
                          * rhythm of 4 body lines to 5 footnote lines, and 48
                          * lines in a footnote column.
@@ -242,12 +268,32 @@ h2 + blockquote {
   text-align: left;
 }
 .toc a::after {
-  content: leader(' ') target-counter(attr(href), page);
+  content: leader(" ") target-counter(attr(href), page);
 }
 
 .bibliography p {
   /* prevent bib entries from breaking across pages */
   page-break-inside: avoid;
+}
+
+.index .entries ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.index .ix-entry {
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+  font-size: 9pt;
+  break-inside: avoid;
+}
+.index .ix-entry-cr .ix-entry-pages {
+  display: none; /* hide pages on cross reference entries */
+}
+.index .entries ol li ol {
+  padding-left: 0;
+  margin-left: -0.5em;
 }
 
 /* title page */
@@ -257,10 +303,18 @@ h2 + blockquote {
 }
 @page frontmatter {
   /* remove marginalia from frontmatter pages */
-  @top-left { content: normal; }
-  @top-right { content: normal; }
-  @bottom-right { content: normal; }
-  @bottom-left { content: normal; }
+  @top-left {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @bottom-right {
+    content: normal;
+  }
+  @bottom-left {
+    content: normal;
+  }
 }
 
 .backmatter {
@@ -282,7 +336,10 @@ h2 + blockquote {
 }
 @page backmatter:blank {
   /* remove marginalia on blank pages */
-  @bottom-right { content: normal; }
-  @bottom-left { content: normal; }
+  @bottom-right {
+    content: normal;
+  }
+  @bottom-left {
+    content: normal;
+  }
 }
-

@@ -1,6 +1,6 @@
-::::: {.preface .forward}
+::::: {.preface .foreword}
 
-## Forward
+## Foreword
 
 TODO
 

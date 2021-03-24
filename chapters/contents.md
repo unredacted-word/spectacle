@@ -17,6 +17,6 @@
 
 - [Glossary](#glossary)
 - [Bibliography](#bibliography)
-- [Index](#index)
+- [Index](#index){.s-index}
 
 :::::

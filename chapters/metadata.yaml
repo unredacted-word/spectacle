@@ -1,15 +1,25 @@
 ---
 lang: en-US
 title: "The Society of the Spectacle"
-author: "Guy Debord"
-creator:
-- role: Translator
-  text: Ron. Adams
-date: 2021-02-19
+author: "Guy Debord, English edition by Ron. Adams"
 epub-cover-image: "images/cover.svg"
-keywords: "Philosophy, Critical Theory, Marxism, Anarchism, Proletariat, Social Classes"
-publisher: Unredacted Word, LLC
-rights: Copyright © 2021 Ron. Adams, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+keywords:
+  - Anarchism
+  - Communism
+  - Critical Theory
+  - Economics
+  - End of History
+  - History
+  - Marxism
+  - Philosophy
+  - Politics
+  - Political Theory
+  - Proletariat
+  - Socialism
+  - Social Classes
+publisher: "Unredacted Word, LLC"
+rights: 2021 █ Unredacted Word, LLC, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+generator: "ReadingGlasses v0 by █ Unredacted Word"
 identifier:
 - scheme: ISBN-10
   text: 1234567890
