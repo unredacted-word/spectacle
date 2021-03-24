@@ -4,7 +4,7 @@ input-files:
 - chapters/half-title.md
 - chapters/colophon.md
 - chapters/contents.md
-- chapters/forward.md
+- chapters/foreword.md
 - chapters/title.md
 - chapters/preface.md
 - chapters/01.md

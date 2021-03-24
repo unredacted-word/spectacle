@@ -44,7 +44,7 @@ h2 {
   /* set chapter title for the right page */
   string-set: chapter-title attr(title);
 }
-.forward h2,
+.foreword h2,
 .preface h2,
 .glossary h2,
 .bibliography h2,
