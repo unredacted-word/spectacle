@@ -258,6 +258,13 @@ h2 + blockquote {
   vertical-align: super;
 }
 
+/* foreword */
+
+.foreword p {
+  orphans: 1;
+  widows: 2;
+}
+
 /* table of contents */
 .toc h2 {
   font-size: 2rem;
