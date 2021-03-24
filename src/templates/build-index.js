@@ -41,7 +41,7 @@ function renderName(name) {
 
 function renderItem(entry) {
   return (
-    (entry.name.match(" see ") !== null
+    (entry.name.match("see ") !== null
       ? '<li class="ix-entry ix-entry-cr">'
       : '<li class="ix-entry">') +
     '<span class="ix-entry-name">' +
