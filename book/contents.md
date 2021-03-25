@@ -2,7 +2,7 @@
 
 ## Contents {#toc data-bookmark-label="Table of Contents"}
 
-- [Forward](#forward)
+- [Foreword](#foreword)
 - [Preface to the Third French Edition](#preface-to-the-third-french-edition)
 
 1. [Separation Perfected](#i.-separation-perfected)

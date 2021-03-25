@@ -29,11 +29,11 @@ body > section {
 /* add a banner on devices that support landscape with enough real-estate to
  * display sidenote layout
  */
-@media screen and (min-device-height: 45rem) and (orientation : portrait) {
+@media screen and (min-device-height: 45rem) and (orientation: portrait) {
   body::before {
     position: absolute;
     background-color: rgba(254, 231, 0, 0.5);
-    content: 'Rotate to landscape to view sidenote layout.';
+    content: "Rotate to landscape to view sidenote layout.";
     top: 0;
     left: 0;
     right: 0;
@@ -47,8 +47,7 @@ body > section {
 ::selection,
 .level3:target,
 span:target,
-*:target + .fn
-{
+*:target + .fn {
   /* highlight color for text-selection, thesis targets, references, footnotes,
    * and reference + footnotes
    */
@@ -60,7 +59,7 @@ span:target,
   color: #292929;
   display: inline;
   font-family: system-ui, sans-serif;
-  border: 1px solid rgba(29,29,29, 0.25);
+  border: 1px solid rgba(29, 29, 29, 0.25);
 }
 @media (min-width: 23.4375rem) {
   /* 375px */
@@ -86,7 +85,7 @@ span:target,
   .fn-scroll {
     height: 3.75em;
     overflow: scroll;
-    border-bottom: 1px dashed rgba(0,0,0,0.5);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
   }
   /* alternating side footnotes */
   .fn:nth-of-type(odd),
@@ -111,13 +110,7 @@ span:target,
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
-.halftitle-translator {
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 4em;
+  margin-top: 4rem;
 }
 
 /* table of contents */

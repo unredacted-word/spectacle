@@ -261,7 +261,7 @@ h2 + blockquote {
 /* foreword */
 
 .foreword p {
-  orphans: 1;
+  orphans: 3;
   widows: 2;
 }
 
