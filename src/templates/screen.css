@@ -82,10 +82,19 @@ span:target,
     width: 20rem;
     z-index: 0;
   }
+  .fn {
+    border-top: 1px solid red;
+  }
   .fn-scroll {
     height: 3.75em;
     overflow: scroll;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+  }
+  .fn-scroll.fn-scroll-md {
+    height: 7.5em;
+  }
+  .fn-scroll.fn-scroll-lg {
+    height: 11.25em;
   }
   /* alternating side footnotes */
   .fn:nth-of-type(odd),
