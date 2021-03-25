@@ -60,6 +60,7 @@ span:target,
   display: inline;
   font-family: system-ui, sans-serif;
   border: 1px solid rgba(29, 29, 29, 0.25);
+  text-indent: 0;
 }
 @media (min-width: 23.4375rem) {
   /* 375px */
