@@ -29,6 +29,8 @@ brew install pandoc librsvg
 brew install --cask font-source-serif-pro
 # install Prince XML
 # brew install --cask --no-quarantine prince
+# install dependencies
+npm install
 ```
 
 ## Development
@@ -47,5 +49,5 @@ npm run pen <filename>
 # Generating Books
 
 ```
-npm run build  # build all formats
+npm run build  # build all formats to docs/*.{html,pdf}
 ```
