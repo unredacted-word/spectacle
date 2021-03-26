@@ -29,7 +29,7 @@ _Empire_ as "delirious"[
   us real anticipations of the path of capitalist development." And continuting
   in their notes: "[The Spectacle], which is perhaps the best articulation, in its own
   delirious way, of the contemporary consciousness of the triumph of capital."
-  See Hardt, M. & Negri, A., 2000.
+  See Hardt, M. & Negri, A., 2000 (Pp. 188/444).
 ]{#fnforeward00 .fn}. His language is pregnant with references to Hegel and
 Marx. He uses words and phrases defined in other Situationist texts, and expects
 the reader to be familiar with them. This is to be expected, as he demands much
