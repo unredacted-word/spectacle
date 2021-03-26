@@ -1,7 +1,7 @@
 # docs https://pandoc.org/MANUAL.html#default-files
 input-files:
 - book/half-title.md
-- book/colophon.md
+- book/colophon-website.md
 - book/contents.md
 - book/foreword.md
 - book/title.md

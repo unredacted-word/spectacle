@@ -21,8 +21,8 @@ publisher: "Unredacted Word, LLC"
 rights: "Copyleft 🄯 2021 █ Unredacted Word, LLC, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
 generator: "ReadingGlasses v0 by █ Unredacted Word"
 identifier:
-- scheme: ISBN-10
-  text: 1234567890
+- scheme: ISBN-13
+  text: 9781736961810
 
 # Formatting
 toc-title: "Contents"

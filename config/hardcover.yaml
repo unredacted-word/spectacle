@@ -2,7 +2,7 @@
 input-files:
 - book/print-blanks.md
 - book/half-title.md
-- book/colophon-pdf.md
+- book/colophon-hardcover.md
 - book/contents.md
 - book/foreword.md
 - book/title.md

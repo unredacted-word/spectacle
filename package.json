@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "build": "yarn build-pdf && yarn build-html",
-    "build-pdf": "pandoc -d config/pdf.yaml -V ispdf -V date=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\" --verbose",
-    "build-html": "pandoc -d config/html.yaml -V date=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\"",
+    "build-pdf": "pandoc -d config/pdf.yaml -V ispdf -V date=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\" -V isbn=\"9781736961827\" --verbose",
+    "build-hardcover": "pandoc -d config/hardcover.yaml -V ispdf -V date=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\" -V isbn=\"9781736961810\" --verbose",
+    "build-html": "pandoc -d config/html.yaml -V date=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\" -V isbn=\"9781736961803\" --verbose",
     "format": "prettier --write *.md **/*.md",
     "lint": "prettylint *.md **/*.md",
     "preview": "pen"
