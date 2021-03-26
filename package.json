@@ -1,15 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "build": "yarn build-pdf && yarn build-html",
-    "build-pdf": "pandoc -d config/pdf.yaml -V ispdf -V date=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\" -V isbn=\"9781736961827\" --verbose",
-    "build-hardcover": "pandoc -d config/hardcover.yaml -V ispdf -V date=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\" -V isbn=\"9781736961810\" --verbose",
-    "build-html": "pandoc -d config/html.yaml -V date=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\" -V isbn=\"9781736961803\" --verbose",
+    "build": "npm run build-hardcover && npm run build-pdf && npm run build-html",
+    "build-pdf": "pandoc -d config/pdf.yaml -V ispdf --verbose",
+    "build-hardcover": "pandoc -d config/hardcover.yaml -V ispdf --verbose",
+    "build-html": "pandoc -d config/html.yaml --verbose",
     "format": "prettier --write *.md **/*.md",
     "lint": "prettylint *.md **/*.md",
     "preview": "pen"
   },
   "devDependencies": {
+    "pandoc-filter": "^2.0.2",
     "pen": "^2.2.0",
     "prettier": "^2.2.1",
     "prettylint": "^1.0.0"

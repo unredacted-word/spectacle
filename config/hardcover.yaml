@@ -2,7 +2,7 @@
 input-files:
 - book/print-blanks.md
 - book/half-title.md
-- book/colophon-hardcover.md
+- book/colophon.md
 - book/contents.md
 - book/foreword.md
 - book/title.md
@@ -20,9 +20,10 @@ input-files:
 - book/bibliography.md
 - book/index.md
 - book/authors.md
-output-file: "docs/book.pdf"
+output-file: "docs/debord-guy-the-society-of-the-spectacle-hardcover.pdf"
 metadata-files:
 - "book/metadata.yaml"
+- "book/metadata-hardcover.yaml"
 from: markdown
 to: pdf
 dpi: 300
@@ -30,4 +31,7 @@ pdf-engine: prince
 pdf-engine-opt: "--javascript"
 data-dir: "src"
 template: "default.html"
+filters:
+  - "src/filter-isbn.js"
+  - "src/filter-date.lua"
 verbosity: WARNING # ERROR, WARNING, or INFO

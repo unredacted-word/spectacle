@@ -1,7 +1,7 @@
 # docs https://pandoc.org/MANUAL.html#default-files
 input-files:
 - book/half-title.md
-- book/colophon-website.md
+- book/colophon.md
 - book/contents.md
 - book/foreword.md
 - book/title.md
@@ -21,11 +21,15 @@ input-files:
 output-file: "docs/index.html"
 metadata-files:
 - "book/metadata.yaml"
+- "book/metadata-website.yaml"
 from: markdown
 file-scope: false
 to: html5
 data-dir: "src"
 template: "default.html"
+filters:
+  - "src/filter-isbn.js"
+  - "src/filter-date.lua"
 columns: 80
 standalone: true
 self-contained: true

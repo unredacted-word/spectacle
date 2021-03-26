@@ -20,7 +20,7 @@ Find the complete license online at\
 
 This book is available for free online at [https://unredacted-word.pub/spectacle/](https://unredacted-word.pub/spectacle/)
 
-ISBN 978-1-7369618-0-3 (website)\
+ISBN var_isbn (var_format)\
 Library of Congress Control Number: TODO
 
 Library of Congress Cataloging-in-Publication Data
@@ -31,7 +31,7 @@ Library of Congress Cataloging-in-Publication Data
 |     The Society of the Spectacle / Guy Debord ; translated by Ron Adams.
 |         p. cm.
 |     Translation of La Société du Spectacle.
-|     ISBN 978-1-7369618-0-3
+|     ISBN var_isbn
 |     1. Social psychology. 2. Proletariat. 3. Social classes.
 <!-- prettier-ignore-end -->
 
@@ -39,8 +39,7 @@ _Book and cover design by 0xADADA_\
 _Typeset in Source Serif Pro by Frank Grießhammer_\
 _Printed in TODO by TODO_
 
-_First Hardcover Edition 2021_\
-_First Printing April 2021_\
-10 9 8 7 6 5 4 3 2 1
+_var_edition_ \
+var_printing
 
 :::::

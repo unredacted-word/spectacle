@@ -1,4 +1,3 @@
 node_modules/
-dist/
 .tool-versions
-docs/book.pdf
+docs/*.pdf

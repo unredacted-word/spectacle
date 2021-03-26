@@ -2,7 +2,6 @@
 lang: en-US
 title: "The Society of the Spectacle"
 author: "Guy Debord, English edition by Ron. Adams"
-epub-cover-image: "images/cover.svg"
 keywords:
   - Anarchism
   - Communism
@@ -20,21 +19,4 @@ keywords:
 publisher: "Unredacted Word, LLC"
 rights: "Copyleft 🄯 2021 █ Unredacted Word, LLC, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
 generator: "ReadingGlasses v0 by █ Unredacted Word"
-identifier:
-- scheme: ISBN-13
-  text: 9781736961810
-
-# Formatting
-toc-title: "Contents"
-toc: true
-toc_depth: 2
-lof: false # List of figures
-lot: false # List of tables
-
-documentclass: book # See https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes
-#classoption: [notitlepage, onecolumn, openany]
-geometry: [a5paper, bindingoffset=0mm, inner=20mm, outer=20mm, top=20mm, bottom=20mm] # See https://ctan.org/pkg/geometry
-
-# style
-fontfamily: "charter"
 ---
