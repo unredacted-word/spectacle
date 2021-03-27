@@ -1,0 +1,12 @@
+# docs https://pandoc.org/MANUAL.html#default-files
+input-files:
+- book/colophon.md
+- book/dust-jacket.md
+output-file: "docs/dust-jacket-hardcover.pdf"
+from: markdown
+to: pdf
+dpi: 600
+pdf-engine: prince
+data-dir: "src"
+template: "dust-jacket.html"
+verbosity: WARNING # ERROR, WARNING, or INFO
