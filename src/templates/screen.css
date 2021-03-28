@@ -63,6 +63,35 @@ q:target,
   border: 1px solid rgba(29, 29, 29, 0.25);
   text-indent: 0;
 }
+
+/* footnote modals */
+.fn {
+  position: relative;
+  visibility: hidden;
+}
+.fn:focus {
+  visibility: visible;
+  display: block;
+  position: fixed;
+  background: white;
+  overflow-y: scroll;
+  top: 2rem;
+  left: 2rem;
+  bottom: 36vh;
+  right: 2rem;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  box-shadow: 0 0 1rem black;
+}
+.fn::before {
+  content: " ☨ ";
+  text-decoration: underline;
+  vertical-align: super;
+  line-height: 0;
+  visibility: visible;
+}
+
 @media (min-width: 23.4375rem) {
   /* 375px */
   .fn {
