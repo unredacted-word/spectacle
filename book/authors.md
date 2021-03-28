@@ -13,6 +13,6 @@ important radical book of the 20^th^ century.
 Ron. Adams lives in Somerville Massachusetts. His writing covers the
 intersection of media, technology, and power. He discovered the work of Debord
 and The Situationists through his participation in Occupy Wall Street in 2011.
-His writing is online at https://0xadada.pub.
+His writing is online at [https://0xadada.pub](https://0xadada.pub).
 
 :::::
