@@ -115,7 +115,7 @@ machine learning.
 If you’re looking for a translation that aims to stay faithful to Debord’s
 classical French prose, this book is not that. There are editions perfectly
 suited for that purpose, I would direct you to the translations by Ken Knabb,
-Donald Nichonson-Smith, or Fredy Perlman—all of which I referenced extensively
+Donald Nicholson-Smith, or Fredy Perlman—all of which I referenced extensively
 during the preparation of this book. I’d especially like to point out how
 valuable Ken Knabb’s annotated translation has been as a resource for this
 edition. His work handed me many of these references, and was instrumental in
