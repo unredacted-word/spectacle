@@ -29,6 +29,7 @@ data-dir: "src"
 template: "default.html"
 filters:
   - "src/filter-isbn.js"
+  - "src/filter-imagepath.js"
   - "src/filter-date.lua"
 columns: 80
 standalone: true

@@ -33,5 +33,6 @@ data-dir: "src"
 template: "default.html"
 filters:
   - "src/filter-isbn.js"
+  - "src/filter-imagepath.js"
   - "src/filter-date.lua"
 verbosity: WARNING # ERROR, WARNING, or INFO
