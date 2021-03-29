@@ -57,53 +57,44 @@ q:target,
 }
 
 .fn {
-  color: #292929;
-  display: inline;
-  font-family: system-ui, sans-serif;
-  border: 1px solid rgba(29, 29, 29, 0.25);
+  display: none;
   text-indent: 0;
 }
 
 /* footnote modals */
-.fn {
-  position: relative;
-  visibility: hidden;
+@media (max-width: 44.9999rem) {
+  .fn:target {
+    display: block;
+    position: fixed;
+    background-color: rgba(254, 231, 0, 0.9) !important;
+    overflow-y: scroll;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    max-height: 80vh;
+    padding: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  }
 }
-.fn:focus {
-  visibility: visible;
+.fn .close {
   display: block;
-  position: fixed;
-  background: white;
-  overflow-y: scroll;
-  top: 2rem;
-  left: 2rem;
-  bottom: 36vh;
-  right: 2rem;
-  width: auto;
-  height: auto;
-  padding: 1rem;
-  box-shadow: 0 0 1rem black;
+  font-family: system-ui;
+  font-size: 1rem;
+  text-align: right;
 }
-.fn::before {
-  content: " ☨ ";
+
+.fn-marker {
   text-decoration: underline;
   vertical-align: super;
   line-height: 0;
-  visibility: visible;
 }
 
-@media (min-width: 23.4375rem) {
-  /* 375px */
-  .fn {
-    display: block;
-    float: right;
-    width: 50%;
-    margin: 0.25rem 0 0.5rem 0.5rem;
-    border: none;
-  }
-}
 @media (min-width: 45rem) {
   /* 960px */
+  .fn-marker,
+  .fn .close {
+    display: none;
+  }
   .fn {
     background-color: #f7f7f7;
     color: black;
