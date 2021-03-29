@@ -30,8 +30,7 @@ Michael Hardt & Antonio Negri describe it in their notes to _Empire_ as
   continuting in their notes: "[The Spectacle], which is perhaps the best
   articulation, in its own delirious way, of the contemporary consciousness of the
   triumph of capital." See Hardt, M. & Negri, A., 2000 (Pp. 188/444).
-]{#fnforeward00 .fn}.
-His work contains many references to Hegel and Marx. He
+]{#fnforeward.0 .fn}. His work contains many references to Hegel and Marx. He
 uses words and phrases defined in other Situationist texts, and expects the
 reader to be familiar with them. This is to be expected, as he demands much from
 the reader, and had written for a small audience of “fifty or sixty people”[
@@ -46,7 +45,7 @@ the reader, and had written for a small audience of “fifty or sixty people”[
   account of readers who are both attentive and diversely influential, I obviously
   cannot speak with complete freedom. Above all, I must take care not to give too
   much information to just anybody.” See Debord, G. & Imrie, M, 1998. Pp 1.
-]{#fnforeward.0 .fn} who were well versed in the history of the western
+]{#fnforeward.1 .fn} who were well versed in the history of the western
 philosophical tradition.
 
 Debord was concerned that these ideas themselves would be recuperated by
@@ -59,11 +58,11 @@ ideas were difficult because they were abstract, but the abstraction meant that
 it continues to remain relevant, arguably even more relevant half a century
 later.
 
-The very first time I read _The Society of the Spectacle_, I knew I’d
-need to re-read it, and possibly need to re-write it in my own words if I wanted
-to truly understand it. It was only once I had grasped the gist of the text,
-that I was then confronted with the task of understanding the philosophy behind
-it. Debord didn’t lay out his ideas using plain language, because his ideas are
+The very first time I read _The Society of the Spectacle_, I knew I’d need to
+re-read it, and possibly need to re-write it in my own words if I wanted to
+truly understand it. It was only once I had grasped the gist of the text, that I
+was then confronted with the task of understanding the philosophy behind it.
+Debord didn’t lay out his ideas using plain language, because his ideas are
 austere, terrifying, and extremely dangerous. He is the kind of philosopher
 whose ideas and observations of the world are so bleak that one fears these
 ideas reaching mass consciousness.
@@ -75,20 +74,19 @@ contextualize and reveal abstract ideas by bringing in references and
 annotations in order to add relevance for our current time. I have added a few
 thoughts and examples to help elucidate difficult concepts.
 
-Foreign languages
-are much like distant places, and the act of translation is to visit these
-places. We may recognize similarities, but these places are unique because they
-have distinct histories. With languages, words not only have semantic meaning,
-but attachments to the rich cultural narratives that tell their histories, and
-these words are attached to libraries of other texts within the same cultural
-milieu. When translating these words, the histories, narratives, and cultural
-aspects most relevant to the original text aren’t always translatable with words
-alone; words simply aren’t enough to capture the rich cultural depth that exists
-between the words. As such, I’ve tried to add notes where the text made implicit
-references. When translating, "[plagiarism is necessary](#ref207.1)", it demands
-embracing the author’s ideas, and making them semantically and culturally
-relevant, and if done well, it can create an entirely new work, a copy without
-an original.
+Foreign languages are much like distant places, and the act of translation is to
+visit these places. We may recognize similarities, but these places are unique
+because they have distinct histories. With languages, words not only have
+semantic meaning, but attachments to the rich cultural narratives that tell
+their histories, and these words are attached to libraries of other texts within
+the same cultural milieu. When translating these words, the histories,
+narratives, and cultural aspects most relevant to the original text aren’t
+always translatable with words alone; words simply aren’t enough to capture the
+rich cultural depth that exists between the words. As such, I’ve tried to add
+notes where the text made implicit references. When translating,
+"[plagiarism is necessary](#ref207.1)", it demands embracing the author’s ideas,
+and making them semantically and culturally relevant, and if done well, it can
+create an entirely new work, a copy without an original.
 
 This edition isn’t merely a translation of words, but a translation of _time_.
 Since Debord wrote this book, society hasn’t changed in kind, but by degree,
