@@ -87,6 +87,7 @@ q:target,
   text-decoration: underline;
   vertical-align: super;
   line-height: 0;
+  font-size: 0.75em;
 }
 
 @media (min-width: 45rem) {
