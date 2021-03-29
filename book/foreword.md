@@ -119,9 +119,8 @@ pointing me in the right direction for many others. All of these editions can be
 found in the bibliography and are well worth reading.
 
 I’ve arranged the notes along the margins rather than as endnotes because
-they’re meant to be read alongside the main text. If you’re reading this on a
-mobile device, the notes are laid out in-line with the text, and meant to be
-read as such. If you are reading this book for the first time, I would suggest
+they’re meant to be read alongside the main text. If you are reading this book
+for the first time, I would suggest
 reading it in a particular order, as the first few chapters can be discouraging.
 I agree with the preface to Ken Knabb’s 2014 translation, in which he suggests
 starting with chapter 4 and 5 because they provide relevant historical and
