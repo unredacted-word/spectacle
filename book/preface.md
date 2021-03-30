@@ -40,15 +40,11 @@ labor</q>, between the rival reigns of the <q>concentrated spectacle</q> and the
 <q>diffuse spectacle</q>, had now ended[
   "the rival reigns… had now ended": Debord is pointing to the ideologic rivalry
   between the diffuse spectacle exemplified by U.S. capitalism and the
-  concentrated spectacle exemplified by the communism of the USSR. His book,
-  _Comments on the Society of the Spectacle_ was published a year before the
-  collapse of the USSR, but he had predicted this collapse by describing the
-  failure of the concentrated spectacle. Amazingly, two of 
-  Debords' major works: _The Society of the Spectacle_ and _Comments on the
-  Society of the Spectacle_ were published just one year
-  prior to two major worldwide upheavals: Spectacle published a year before
-  May 1968 in Paris, and Comments a year before the beginning of collapse of
-  the USSR.
+  concentrated spectacle exemplified by the communism of the USSR. Amazingly,
+  two of Debords' major works: _The Society of the Spectacle_ and _Comments on
+  the Society of the Spectacle_ were each published one year prior to two
+  major worldwide upheavals: Spectacle published a year before the civil unrest
+  in Paris in May 1968, and Comments a year before the collapse of the USSR.
 ]{#fntfe.2 .fn}
 in favor of their fusion, into the universal form of the <q>integrated
 spectacle</q>.
