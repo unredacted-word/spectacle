@@ -4,7 +4,7 @@ Originally published in Paris, France as _La Société du Spectacle_ by Édition
 Buchet-Chastel (Paris) in 1967. It was reissued by Éditions Champ Libre (Paris)
 in 1971, and Éditions Gallimard (Paris) 1992.
 
-This annotated English edition by Ron. Adams.
+This annotated English edition by [Ron. Adams](mailto:ron@0xadada.pub).
 
 █ Unredacted Word\
 Cambridge, Massachusetts\
