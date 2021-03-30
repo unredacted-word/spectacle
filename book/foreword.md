@@ -83,10 +83,10 @@ the same cultural milieu. When translating these words, the histories,
 narratives, and cultural aspects most relevant to the original text aren’t
 always translatable with words alone; words simply aren’t enough to capture the
 rich cultural depth that exists between the words. As such, I’ve tried to add
-notes where the text made implicit references. When translating,
+notes where the text made implicit references. [When translating,
 "[plagiarism is necessary](#ref207.1)", it demands embracing the author’s ideas,
 and making them semantically and culturally relevant, and if done well, it can
-create an entirely new work, a copy without an original.
+create an entirely new work, a copy without an original]{#plagairism}.
 
 This edition isn’t merely a translation of words, but a translation of _time_.
 Since Debord wrote this book, society hasn’t changed in kind, but by degree,
