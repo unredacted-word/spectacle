@@ -324,9 +324,6 @@ Co. 9780872207172.
 
 Perraud, A. (1891). _Panégyrique de saint Bernard_. Dejussieu père et fils.
 
-Reagle, J. (2019). _Hacking life: systematized living and its discontents_.
-Cambridge, Massachusetts: MIT Press. 9780262038157.
-
 Rexroth, K. (1974). _Communalism: from its origins to the twentieth century_.
 New York: Seabury Press.
 
