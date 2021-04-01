@@ -21,7 +21,7 @@ Find the complete license online at\
 This book is available for free online at [https://unredacted-word.pub/spectacle/](https://unredacted-word.pub/spectacle/)
 
 ISBN var_isbn (var_format)\
-Library of Congress Control Number: TODO
+Library of Congress Control Number: 2021936393
 
 Library of Congress Cataloging-in-Publication Data
 
