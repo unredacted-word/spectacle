@@ -26,13 +26,11 @@ Library of Congress Control Number: [2021936393](https://lccn.loc.gov/2021936393
 Library of Congress Cataloging-in-Publication Data
 
 <!-- prettier-ignore-start -->
-| Debord, Guy, 1931-1994
-|     [La Société du Spectacle. English]
-|     The Society of the Spectacle / Guy Debord ; translated by Ron Adams.
-|         p. cm.
-|     Translation of La Société du Spectacle.
-|     ISBN var_isbn
-|     1. Social psychology. 2. Proletariat. 3. Social classes.
+| Debord, Guy, 1931-1994 author.
+|    The Society of the Spectacle / Guy Debord, Ron. Adams.
+|    First. Cambridge : Unredacted Word, 2021.
+|    pages cm
+|    ISBN var_isbn
 <!-- prettier-ignore-end -->
 
 _Book and cover design by 0xADADA_\
