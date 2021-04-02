@@ -337,6 +337,9 @@ Free Press. 0029271401.
 Rushkoff, D. (2013). _Present shock: when everything happens now_. New York, New
 York, U.S.A: Current. 1617230103.
 
+Russell. (2021). Spectacular logic in Hegel and Debord : why everything is as it
+seems. London New York: Bloomsbury Academic. 9781350157651.
+
 Sanguinetti, G., McHale, J. & Debord, G. (2003). _The real split in the
 International: theses on the Situationist International and its time_, 1972.
 London Sterling, Va: Pluto Press. 9780745321271.
