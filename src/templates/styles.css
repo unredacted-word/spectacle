@@ -105,6 +105,9 @@ blockquote figcaption {
   font-style: italic;
   padding: 0;
 }
+figure figcaption strong {
+  font-style: normal;
+}
 
 img {
   max-width: 100%;
