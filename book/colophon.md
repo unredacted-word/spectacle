@@ -35,7 +35,7 @@ Library of Congress Cataloging-in-Publication Data
 
 _Book and cover design by 0xADADA_\
 _Typeset in Source Serif Pro by Frank Grießhammer_\
-_Printed in TODO by TODO_
+_Printed in Massachusetts_
 
 _var_edition_ \
 var_printing
