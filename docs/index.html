@@ -8,7 +8,7 @@
   <meta name="rights" content="Copyleft 🄯 2021 █ Unredacted Word, LLC, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" />
   <meta name="publisher" content="Unredacted Word, LLC" />
   <meta name="isbn-13" content="9781736961803" />
-  <meta name="dcterms.date" content="April 2, 2021" />
+  <meta name="dcterms.date" content="April 3, 2021" />
   <meta name="keywords" content="Anarchism, Communism, Critical Theory, Economics, End of History, History, Marxism, Philosophy, Politics, Political Theory, Proletariat, Socialism, Social Classes" />
   <title>The Society of the Spectacle</title>
   <style>
@@ -111,7 +111,6 @@
     blockquote,
     figure {
       margin: 0;
-      font-size: 0.75rem;
     }
 
     figure figcaption,
@@ -132,12 +131,11 @@
 
     /* chapter page */
     h2 + blockquote {
-      font-size: 1.3636363636rem;
+      font-size: 1rem;
     }
     h2 + blockquote > p:first-child em {
       /* chapter epigraphs with a quote hanging to the left of text block */
       display: block;
-      font-size: 1.1818181818rem; /* 13pt */
       text-indent: -0.5em;
       text-align: left;
     }
@@ -314,7 +312,7 @@
       .fn:target {
         display: block;
         position: fixed;
-        background-color: rgba(254, 231, 0, 0.9) !important;
+        background-color: rgba(254, 231, 0, 0.95) !important;
         overflow-y: scroll;
         top: 2rem;
         left: 2rem;
@@ -481,6 +479,7 @@
       margin-left: -1mm;
     }
     .figure-1 {
+      /* Debords' time */
       margin-left: -50mm;
       width: 120mm;
       max-width: 120mm;
@@ -531,23 +530,23 @@
       }
     }
     @page preface:verso {
-      @bottom-left {
+      @top-left {
         content: counter(page, lower-roman);
         font-size: 8pt;
       }
     }
     @page preface:recto {
-      @bottom-right {
+      @top-right {
         content: counter(page, lower-roman);
         font-size: 8pt;
       }
     }
     @page preface:blank {
       /* remove page numbers on blank pages */
-      @bottom-right {
+      @top-right {
         content: normal;
       }
-      @bottom-left {
+      @top-left {
         content: normal;
       }
     }
@@ -569,16 +568,16 @@
       }
     }
     @page chapter:verso {
-      @top-left {
+      @top-right {
         /* add book Title to the left page */
         content: string(doctitle);
-        font-size: 11pt;
+        font-size: 1rem;
         font-variant: small-caps;
         margin-left: -53.2mm;
       }
-      @bottom-left {
+      @top-left {
         content: counter(page);
-        font-size: 11pt;
+        font-size: 1rem;
         margin-left: -53.2mm;
       }
       @footnote {
@@ -586,16 +585,16 @@
       }
     }
     @page chapter:recto {
-      @top-right {
+      @top-left {
         /* add chapter title to the recto page */
         content: string(chapter-title);
-        font-size: 11pt;
+        font-size: 1rem;
         font-variant: small-caps;
         margin-right: -53.2mm;
       }
-      @bottom-right {
+      @top-right {
         content: counter(page);
-        font-size: 11pt;
+        font-size: 1rem;
         margin-right: -53.2mm;
       }
       @footnote {
@@ -605,10 +604,11 @@
     @page chapter:first {
       margin-outside: 13.3mm;
       /* remove margin content from chapter title pages */
-      @top-right {
+      @top-left {
         content: normal;
       }
-      @bottom-right {
+      @top-right {
+        /* remove page numbers */
         content: normal;
       }
       /* place footnotes on the bottom */
@@ -623,13 +623,10 @@
       @top-right {
         content: normal;
       }
+      @top-right {
+        content: normal;
+      }
       @top-left {
-        content: normal;
-      }
-      @bottom-right {
-        content: normal;
-      }
-      @bottom-left {
         content: normal;
       }
     }
@@ -660,17 +657,23 @@
     }
 
     /* foreword */
-
     .foreword p {
       orphans: 3;
       widows: 2;
     }
 
-    /* table of contents */
-    .toc h2 {
-      font-size: 2rem;
+    .foreword h2,
+    .preface h2,
+    .toc h2,
+    .glossary h2,
+    .bibliography h2,
+    .index h2 {
       margin-top: 4em;
       margin-bottom: 4em;
+    }
+
+    .toc h2 {
+      font-size: 2rem;
     }
     .toc li {
       text-align: left;
@@ -684,6 +687,7 @@
       page-break-inside: avoid;
     }
 
+    /* index */
     .index .entries ol {
       list-style: none;
       margin: 0;
@@ -710,7 +714,7 @@
       prince-page-group: start;
     }
     @page frontmatter {
-      /* remove marginalia from frontmatter pages */
+      /* remove marginalia from frontmatter pages
       @top-left {
         content: normal;
       }
@@ -723,6 +727,7 @@
       @bottom-left {
         content: normal;
       }
+      */
     }
 
     .backmatter {
@@ -731,23 +736,23 @@
       break-before: right;
     }
     @page backmatter:verso {
-      @bottom-left {
+      @top-left {
         content: counter(page);
-        font-size: 11pt;
+        font-size: 1rem;
       }
     }
     @page backmatter:recto {
-      @bottom-right {
+      @top-right {
         content: counter(page);
-        font-size: 11pt;
+        font-size: 1rem;
       }
     }
     @page backmatter:blank {
       /* remove marginalia on blank pages */
-      @bottom-right {
+      @top-right {
         content: normal;
       }
-      @bottom-left {
+      @top-left {
         content: normal;
       }
     }  </style>

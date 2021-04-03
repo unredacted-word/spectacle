@@ -80,6 +80,7 @@ figure img {
   margin-left: -1mm;
 }
 .figure-1 {
+  /* Debords' time */
   margin-left: -50mm;
   width: 120mm;
   max-width: 120mm;
@@ -130,23 +131,23 @@ h2 + blockquote {
   }
 }
 @page preface:verso {
-  @bottom-left {
+  @top-left {
     content: counter(page, lower-roman);
     font-size: 8pt;
   }
 }
 @page preface:recto {
-  @bottom-right {
+  @top-right {
     content: counter(page, lower-roman);
     font-size: 8pt;
   }
 }
 @page preface:blank {
   /* remove page numbers on blank pages */
-  @bottom-right {
+  @top-right {
     content: normal;
   }
-  @bottom-left {
+  @top-left {
     content: normal;
   }
 }
@@ -168,16 +169,16 @@ h2 + blockquote {
   }
 }
 @page chapter:verso {
-  @top-left {
+  @top-right {
     /* add book Title to the left page */
     content: string(doctitle);
-    font-size: 11pt;
+    font-size: 1rem;
     font-variant: small-caps;
     margin-left: -53.2mm;
   }
-  @bottom-left {
+  @top-left {
     content: counter(page);
-    font-size: 11pt;
+    font-size: 1rem;
     margin-left: -53.2mm;
   }
   @footnote {
@@ -185,16 +186,16 @@ h2 + blockquote {
   }
 }
 @page chapter:recto {
-  @top-right {
+  @top-left {
     /* add chapter title to the recto page */
     content: string(chapter-title);
-    font-size: 11pt;
+    font-size: 1rem;
     font-variant: small-caps;
     margin-right: -53.2mm;
   }
-  @bottom-right {
+  @top-right {
     content: counter(page);
-    font-size: 11pt;
+    font-size: 1rem;
     margin-right: -53.2mm;
   }
   @footnote {
@@ -204,10 +205,11 @@ h2 + blockquote {
 @page chapter:first {
   margin-outside: 13.3mm;
   /* remove margin content from chapter title pages */
-  @top-right {
+  @top-left {
     content: normal;
   }
-  @bottom-right {
+  @top-right {
+    /* remove page numbers */
     content: normal;
   }
   /* place footnotes on the bottom */
@@ -222,13 +224,10 @@ h2 + blockquote {
   @top-right {
     content: normal;
   }
+  @top-right {
+    content: normal;
+  }
   @top-left {
-    content: normal;
-  }
-  @bottom-right {
-    content: normal;
-  }
-  @bottom-left {
     content: normal;
   }
 }
@@ -259,17 +258,23 @@ h2 + blockquote {
 }
 
 /* foreword */
-
 .foreword p {
   orphans: 3;
   widows: 2;
 }
 
-/* table of contents */
-.toc h2 {
-  font-size: 2rem;
+.foreword h2,
+.preface h2,
+.toc h2,
+.glossary h2,
+.bibliography h2,
+.index h2 {
   margin-top: 4em;
   margin-bottom: 4em;
+}
+
+.toc h2 {
+  font-size: 2rem;
 }
 .toc li {
   text-align: left;
@@ -283,6 +288,7 @@ h2 + blockquote {
   page-break-inside: avoid;
 }
 
+/* index */
 .index .entries ol {
   list-style: none;
   margin: 0;
@@ -308,21 +314,6 @@ h2 + blockquote {
   page: frontmatter;
   prince-page-group: start;
 }
-@page frontmatter {
-  /* remove marginalia from frontmatter pages */
-  @top-left {
-    content: normal;
-  }
-  @top-right {
-    content: normal;
-  }
-  @bottom-right {
-    content: normal;
-  }
-  @bottom-left {
-    content: normal;
-  }
-}
 
 .backmatter {
   page: backmatter;
@@ -330,23 +321,23 @@ h2 + blockquote {
   break-before: right;
 }
 @page backmatter:verso {
-  @bottom-left {
+  @top-left {
     content: counter(page);
-    font-size: 11pt;
+    font-size: 1rem;
   }
 }
 @page backmatter:recto {
-  @bottom-right {
+  @top-right {
     content: counter(page);
-    font-size: 11pt;
+    font-size: 1rem;
   }
 }
 @page backmatter:blank {
   /* remove marginalia on blank pages */
-  @bottom-right {
+  @top-right {
     content: normal;
   }
-  @bottom-left {
+  @top-left {
     content: normal;
   }
 }
