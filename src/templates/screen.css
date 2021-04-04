@@ -48,7 +48,8 @@ body > section {
 .level3:target,
 span:target,
 q:target,
-*:target + .fn {
+*:target + .fn,
+*:target + .fn-marker + .fn {
   /* highlight color for text-selection, thesis targets, references, footnotes,
    * and reference + footnotes
    */

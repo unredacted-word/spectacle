@@ -34,6 +34,9 @@ Publishers. 9780520081147.
 Barthes, R. (1970). _Writing degree zero, and elements of semiology_. Boston:
 Beacon Press. 9780807015452.
 
+Baudrillard, J. (1975), _The Mirror of Production_, trans. M. Poster, New York:
+Telos Press.
+
 Baudrillard, J. (1994). _Simulacra and simulation_. Ann Arbor: University of
 Michigan Press. 9780472065219.
 
@@ -173,6 +176,8 @@ phase of capitalist development_. London Boston: Routledge & Kegan Paul.
 Janaway, C., Schopenhauer, A. (2010). _Schopenhauer: the world as will and
 representation: Volume 1_. United Kingdom: Cambridge University
 Press. 9780521871846.
+
+Jappe, A. (2010). Baudrillard, détournement par excès. _Lignes_ 31.
 
 Kerr, C. (2001). _The uses of the university_. Cambridge, Mass: Harvard
 University Press. 9780674005327.
