@@ -4,14 +4,17 @@
    * Allow an additional minimum `0.2in`/`5.08mm` in Gutter Margin for inners
    */
 
-  margin-top: 14mm;
+  margin-top: 24mm;
   margin-bottom: 14mm;
   margin-outside: 13.3mm;
   margin-inside: 19mm;
 }
 
+html,
 body {
-  font-size: 11pt;
+  font-size: 10pt;
+}
+body {
   text-align: justify;
   hyphens: auto;
 }
@@ -85,6 +88,13 @@ figure img {
   width: 120mm;
   max-width: 120mm;
 }
+.figure-1 + figcaption {
+  margin-left: -50mm;
+}
+.figure-2 + figcaption {
+  padding: 0 1rem;
+  width: 120mm;
+}
 
 .halftitle-title {
   margin-top: 12rem;
@@ -95,14 +105,15 @@ figure img {
 }
 
 .titlepg {
-  margin-top: 8rem;
+  margin-top: 12rem;
 }
 
 .title-details {
   margin-top: 3cm;
 }
 .title-logo {
-  margin-top: 4.5cm;
+  /* title page uw logo */
+  margin-top: 3.5cm;
 }
 
 /* utilities for pagination */
@@ -133,13 +144,13 @@ h2 + blockquote {
 @page preface:verso {
   @top-left {
     content: counter(page, lower-roman);
-    font-size: 8pt;
+    font-size: 0.7rem;
   }
 }
 @page preface:recto {
   @top-right {
     content: counter(page, lower-roman);
-    font-size: 8pt;
+    font-size: 0.7rem;
   }
 }
 @page preface:blank {
@@ -164,7 +175,7 @@ h2 + blockquote {
     /* move notes to outside margin of page */
     position: absolute;
     bottom: 5mm;
-    top: 3pt;
+    top: 3.25pt;
     width: 45.6mm;
   }
 }
@@ -238,29 +249,18 @@ h2 + blockquote {
   display: inline;
   float: footnote;
   /* if note is in a header, we need to reset the typography */
-  font-size: 8pt;
+  font-size: 7pt;
   font-weight: normal;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 11.25pt;
-  /* 11pt = creates vertical rhythm with 8pt footnote
-                         * text and 11pt body text. This creates a vertical
-                         * rhythm of 4 body lines to 5 footnote lines, and 48
-                         * lines in a footnote column.
-                         */
+  line-height: 9.3125pt; /* vertical rhythm: 3:4 */
   text-align: justify;
   text-indent: 0;
 }
 *::footnote-call {
   line-height: 0;
-  font-size: 8pt;
+  font-size: 0.6rem;
   vertical-align: super;
-}
-
-/* foreword */
-.foreword p {
-  orphans: 3;
-  widows: 2;
 }
 
 .foreword h2,
@@ -270,7 +270,7 @@ h2 + blockquote {
 .bibliography h2,
 .index h2 {
   margin-top: 4em;
-  margin-bottom: 4em;
+  margin-bottom: 6em;
 }
 
 .toc h2 {
@@ -298,7 +298,7 @@ h2 + blockquote {
 .index .ix-entry {
   margin-left: 1.5em;
   text-indent: -1.5em;
-  font-size: 9pt;
+  font-size: 1rem;
   break-inside: avoid;
 }
 .index .ix-entry-cr .ix-entry-pages {

@@ -11,8 +11,8 @@ body {
   text-size-adjust: none;
 
   font-family: "Source Serif Pro", Georgia, Times, serif;
-  font-size: 100%;
-  line-height: 1.3636363636; /* 15/11, or 36 lines p.p. */
+  font-size: 100%; /* 16px */
+  line-height: 1.4; /* 14pt / 22.4px, or 36 lines p.p. */
 }
 
 a {
@@ -26,7 +26,7 @@ hr {
   border: none;
   border-top: 2pt solid black;
   border-bottom: 1pt solid black;
-  height: 4pt;
+  height: 5pt;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -43,8 +43,8 @@ h4 {
 h2 {
   /* chapters */
   font-size: 2rem;
-  margin-bottom: 6rem;
-  margin-top: 8rem;
+  margin-bottom: 8rem;
+  margin-top: 12rem;
   text-align: left;
   hyphens: none;
   position: relative;
@@ -52,7 +52,7 @@ h2 {
 h2 .ch-roman {
   position: absolute;
   opacity: 0.2;
-  font-size: 5em;
+  font-size: 6em;
   margin-top: -0.5em;
 }
 .toc h2,
@@ -61,15 +61,15 @@ h2 .ch-roman {
 .glossary h2,
 .bibliography h2,
 .index h2 {
-  font-size: 1.3636363636rem; /*1.36- = 15/11 */
+  font-size: 1.5rem; /* = 15pt/24px */
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   text-align: center;
 }
 
 h3 {
   /* thesis numbers */
-  font-size: 1.3636363636rem; /* 15 / 21.8181818176 */
+  font-size: 1.4rem; /* 14pt / 22.4px */
   margin: 1em 0;
   text-align: center;
 }
@@ -85,7 +85,7 @@ q[lang="ru"]::after {
 }
 
 sup {
-  font-size: 0.75em;
+  font-size: 0.7em; /* 7pt/11.2px */
   font-weight: normal;
   line-height: 0; /* fixes blowing-up the line-height */
 }
@@ -117,7 +117,7 @@ figure img {
 
 /* chapter page */
 h2 + blockquote {
-  font-size: 1rem;
+  font-size: 1.25rem; /* 12.5pt/20px */
 }
 h2 + blockquote > p:first-child em {
   /* chapter epigraphs with a quote hanging to the left of text block */
@@ -157,12 +157,12 @@ h2 + blockquote p:first-child + p {
 }
 .titlepg .author,
 .titlepg .title {
-  margin: 4rem 0;
+  margin: 5rem 0;
   display: block;
   text-align: center;
 }
 .title-logo {
-  width: 4rem;
+  width: 5rem;
   margin: 0 auto;
   display: block;
 }
@@ -186,14 +186,11 @@ h2 + blockquote p:first-child + p {
 }
 
 .colophon {
-  font-size: 0.7272727273rem; /* 0.72- = 8pt / 11.6 */
+  font-size: 0.75rem; /* = 7.5pt / 12px */
   line-height: 1.2;
   text-align: left;
 }
 
-.toc h2 {
-  margin-left: 1.5rem;
-}
 .toc ul,
 .toc ol {
   margin: 0.5rem 0 0.5rem 1.5rem;
