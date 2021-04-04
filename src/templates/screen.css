@@ -44,6 +44,10 @@ body > section {
   }
 }
 
+h2 .ch-roman {
+  font-size: 5em;
+}
+
 ::selection,
 .level3:target,
 span:target,
