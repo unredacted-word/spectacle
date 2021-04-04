@@ -1,0 +1,18 @@
+/* add a print message for print-ready PDFs
+ */
+@media print {
+  body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+  }
+  body::before {
+    content: "Print-ready edition forthcoming.";
+    text-align: center;
+  }
+  body > * {
+    display: none;
+  }
+}

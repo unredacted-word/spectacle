@@ -4,7 +4,7 @@
     "build": "npm run build-hardcover && npm run build-pdf && npm run build-html",
     "build-pdf": "pandoc -d config/pdf.yaml -V ispdf --verbose",
     "build-hardcover": "pandoc -d config/hardcover.yaml -V ispdf --verbose",
-    "build-html": "pandoc -d config/html.yaml --verbose",
+    "build-html": "pandoc -d config/html.yaml -V isweb --verbose",
     "format": "prettier --write *.md **/*.md",
     "lint": "prettylint *.md **/*.md",
     "preview": "pen"

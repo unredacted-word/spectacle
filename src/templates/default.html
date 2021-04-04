@@ -27,6 +27,11 @@ $endif$
   <style media="print">
     $print.css()$
   </style>
+$if(isweb)$
+  <style>
+    $web.css()$
+  </style>
+$endif$
 $if(ispdf)$
   <script>
     $build-index.js()$
