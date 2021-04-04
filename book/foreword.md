@@ -49,7 +49,8 @@ the reader, and had written for a small audience of “fifty or sixty people”[
 philosophical tradition.
 
 Debord was concerned that these ideas themselves would be recuperated by
-capitalism, so he wrote in a way to limit them to a small and curious audience.
+capitalism (see [thesis 203](#ref203.1)), so he wrote in a way to limit them to
+a small and curious audience.
 His concerns turned out to be warranted, when a few years later in the early
 1970s, the French Socialist Party under François Mitterrand co-opted the
 Situationist phrase "Change Life" as his campaign slogan, and Situationism
