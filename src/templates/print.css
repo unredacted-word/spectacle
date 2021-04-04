@@ -144,13 +144,13 @@ h2 + blockquote {
 @page preface:verso {
   @top-left {
     content: counter(page, lower-roman);
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 @page preface:recto {
   @top-right {
     content: counter(page, lower-roman);
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 @page preface:blank {
