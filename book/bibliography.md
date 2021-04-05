@@ -53,6 +53,9 @@ Vintage Books. 9780679741800.
 Bossuet, J. (1872). _Oeuvres oratoires: oraisons funèbres, panégyriques,
 sermons_. (n.p.): Garnier.
 
+Bunyard, T. (2018). _Debord, time and spectacle: Hegelian Marxism and
+situationist theory_. Chicago: Haymarket Books. 9781608460793.
+
 Burckhardt, J. (1914). _The Civilization of the renaissance in Italy_. United
 Kingdom: G. Allen.
 

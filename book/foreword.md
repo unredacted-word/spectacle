@@ -116,8 +116,10 @@ Donald Nicholson-Smith, or Fredy Perlman—all of which I referenced extensively
 during the preparation of this book. I’d especially like to point out how
 valuable Ken Knabb’s annotated translation has been as a resource for this
 edition. His work handed me many of these references, and was instrumental in
-pointing me in the right direction for many others. All of these editions can be
-found in the bibliography and are well worth reading.
+pointing me in the right direction for many others. If you are looking for new
+insight and academic rigor, I would refer you to Russell, E., 2021 and Bunyard,
+T., 2018. All of these editions can be found in the bibliography and are well
+worth reading.
 
 I’ve arranged the notes along the margins rather than as endnotes because
 they’re meant to be read alongside the main text. If you are reading this book
