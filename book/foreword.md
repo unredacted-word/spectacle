@@ -115,8 +115,8 @@ suited for that purpose, I would direct you to the translations by Ken Knabb,
 Donald Nicholson-Smith, or Fredy Perlman—all of which I referenced extensively
 during the preparation of this book. I’d especially like to point out how
 valuable Ken Knabb’s annotated translation has been as a resource for this
-edition. His work handed me many of these references, and was instrumental in
-pointing me in the right direction for many others. If you are looking for new
+edition. His work handed me most of these references, and was instrumental in
+pointing me in the right direction for a few others. If you are looking for new
 insight and academic rigor, I would refer you to Russell, E., 2021 and Bunyard,
 T., 2018. All of these editions can be found in the bibliography and are well
 worth reading.
@@ -135,9 +135,10 @@ establishes his concept of _The Spectacle_ and provides a comprehensive critique
 of contemporary society. Thus, my suggested chapter reading order is: **4, 5, 7,
 8**, _then_ **1, 2, 3, 6, 9**.
 
-My hope is to make Debord’s ideas more accessible, and to show how much more
-relevant _The Spectacle_ is today than when it was first written. I am
-optimistic that, together, we _can_ make another world possible.
+My hope is to make Debord’s ideas more accessible to first time readers and
+those unfamiliar with many of his ideas, and to
+show how much more relevant _The Spectacle_ is today than when it was first
+written. I am optimistic that, together, we _can_ make another world possible.
 
 Ron. Adams\
 March 2021
