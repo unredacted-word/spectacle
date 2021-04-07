@@ -73,7 +73,11 @@ This book isn’t as much a straight translation as it is an elaboration, or
 and its various translations. Debord hid some ideas. This is an attempt to
 contextualize and reveal abstract ideas by bringing in references and
 annotations in order to add relevance for our current time. I have added a few
-thoughts and examples to help elucidate difficult concepts.
+thoughts and examples to help elucidate difficult concepts. In the hope of 
+making Debord's work more accessible to those unfamiliar with Marx, Hegel, and
+the breadth of other works and concepts alluded to in his text, I've knowingly
+ossified my own translation. The reader is strongly encouraged to wander from
+these pages back to the original text—and beyond.
 
 Foreign languages are much like distant places, and the act of translation is to
 visit these places. We may recognize similarities, but these places are unique
@@ -135,10 +139,9 @@ establishes his concept of _The Spectacle_ and provides a comprehensive critique
 of contemporary society. Thus, my suggested chapter reading order is: **4, 5, 7,
 8**, _then_ **1, 2, 3, 6, 9**.
 
-My hope is to make Debord’s ideas more accessible to first time readers and
-those unfamiliar with many of his ideas, and to
+My hope is to make Debord’s ideas more accessible to first time readers and to
 show how much more relevant _The Spectacle_ is today than when it was first
-written. I am optimistic that, together, we _can_ make another world possible.
+written. I am optimistic that together we _can_ make another world possible.
 
 Ron. Adams\
 March 2021
