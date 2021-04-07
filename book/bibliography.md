@@ -246,7 +246,7 @@ https://societyandsports.wordpress.com/tag/society-of-the-spectacle/
 Mannheim, K. (1985). _Ideology and utopia: an introduction to the sociology of
 knowledge_. New York: Harcourt Brace Jovanovich. 9780156439558.
 
-Melville, H. (1991). Moby-Dick. New York: Knopf Distributed by Random
+Melville, H. (1991). _Moby-Dick_. New York: Knopf Distributed by Random
 House. 9780679405597.
 
 McLuhan, M. & Lapham, L. (1994). _Understanding media: the extensions of man_.
@@ -366,7 +366,7 @@ Swift, J. (2007). _The battle of the books and other short pieces_. Champaign,
 Ill: Project Gutenberg. Retrieved from
 https://www.gutenberg.org/files/623/623-h/623-h.htm
 
-Taubman, W. (2003). _Khrushchev : the man and his era_. New York, NY:
+Taubman, W. (2003). _Khrushchev: the man and his era_. New York, NY:
 Norton. 9780393324846.
 
 Thucydides. & Smith, C. (1980). _Thucydides: History of the Peloponnesian War_.

@@ -114,7 +114,7 @@ As opposed to cyclical time, irreversible time is the perception of time as a
 series of linear developments of progress in terms of the economy, technology,
 knowledge, and personal chronicles. Within this framing, time does not recur,
 but progresses along a fixed trajectory to the horizon. This is the time of
-permanent agricultural settlements, villages, and towns. This new form of
+permanent agricultural settlements, villages, towns, and cities. This new form of
 irreversible time is irreversible in that it assumes the accumulation of
 knowledge can only develop with a forward trajectory. For more on this subject,
 see Braudel, F., 1982.

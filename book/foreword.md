@@ -77,7 +77,7 @@ thoughts and examples to help elucidate difficult concepts. In the hope of
 making Debord's work more accessible to those unfamiliar with Marx, Hegel, and
 the breadth of other works and concepts alluded to in his text, I've knowingly
 ossified my own translation. The reader is strongly encouraged to wander from
-these pages back to the original text—and beyond.
+these pages back to the timelessness of the original—and beyond.
 
 Foreign languages are much like distant places, and the act of translation is to
 visit these places. We may recognize similarities, but these places are unique
