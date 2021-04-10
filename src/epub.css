@@ -44,10 +44,11 @@ h1.unnumbered {
 h2 {
   /* chapters */
   font-size: 2rem;
-  margin-bottom: 8rem;
-  margin-top: 12rem;
   text-align: left;
   hyphens: none;
+}
+h2 .ch-roman {
+  color: #ccc;
 }
 .toc h2,
 .foreword h2,
@@ -65,6 +66,7 @@ h2,
 h3,
 h4 {
   break-after: avoid;
+  page-break-after: avoid;
 }
 .foreword h2,
 .preface h2,
@@ -72,8 +74,8 @@ h4 {
 .glossary h2,
 .bibliography h2,
 .index h2 {
-  margin-top: 4em;
-  margin-bottom: 6em;
+  margin-top: 5em;
+  margin-bottom: 4em;
 }
 
 h3 {
@@ -81,6 +83,9 @@ h3 {
   font-size: 1.4rem; /* 14pt / 22.4px */
   margin: 1em 0;
   text-align: center;
+}
+.level3 {
+  page-break-inside: avoid;
 }
 
 blockquote {
@@ -120,13 +125,12 @@ figure figcaption strong {
 img {
   max-width: 100%;
 }
-figure img {
-  max-height: 100vh;
-}
 
 /* chapter page */
 h2 + blockquote {
-  font-size: 1.25rem; /* 12.5pt/20px */
+  page-break-inside: avoid;
+  break-inside: avoid;
+  page-break-after: always;
 }
 h2 + blockquote > p:first-child em {
   /* chapter epigraphs with a quote hanging to the left of text block */
@@ -157,21 +161,17 @@ h2 + blockquote p:first-child + p {
   font-size: 2.25rem;
   letter-spacing: -0.05em;
 }
-.halftitle-image {
-  width: 90%;
-}
-
 .titlepg.centered {
   text-align: center;
 }
 .titlepg .author,
 .titlepg .title {
-  margin: 5rem 0;
+  margin: 2rem 0;
   display: block;
   text-align: center;
 }
 .title-logo {
-  width: 5rem;
+  width: 2.5rem;
   margin: 0 auto;
   display: block;
 }
@@ -185,9 +185,9 @@ h2 + blockquote p:first-child + p {
 
 .fn {
   float: right;
+  clear: both;
   max-width: 45%;
-  margin: -0.25em -1.5em 0 1em;
-  margin: 0;
+  margin: 0 -0.5em 0 1.5em;
   /* if note is in a header, we need to reset the typography */
   font-size: 0.625rem;
   font-style: normal;
@@ -210,6 +210,7 @@ h2 + blockquote p:first-child + p {
 }
 
 .bibliography p {
+  font-size: 0.625em;
   page-break-inside: avoid;
   text-align: left;
   /* force-wrap long URLs */
@@ -246,6 +247,13 @@ figure {
 .frontmatter,
 .backmatter,
 .preface,
-.chapter {
+.level2 {
   page-break-after: always;
+}
+.level2 {
+  page-break-before: always;
+}
+.level2 > h2 {
+  page-break-after: avoid;
+  page-break-before: avoid;
 }

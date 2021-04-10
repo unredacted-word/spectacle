@@ -5,6 +5,7 @@
     "build-pdf": "pandoc -d config/pdf.yaml -V ispdf --verbose",
     "build-hardcover": "pandoc -d config/hardcover.yaml -V ispdf --verbose",
     "build-html": "pandoc -d config/html.yaml -V isweb --verbose",
+    "build-epub": "pandoc -d config/epub.yaml --verbose",
     "format": "prettier --write *.md **/*.md",
     "lint": "prettylint *.md **/*.md",
     "preview": "pen"
