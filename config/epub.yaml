@@ -1,0 +1,34 @@
+# docs https://pandoc.org/MANUAL.html#default-files
+input-files:
+- book/half-title.md
+- book/colophon.md
+- book/contents.md
+- book/foreword.md
+- book/title.md
+- book/preface.md
+- book/01.md
+- book/02.md
+- book/03.md
+- book/04.md
+- book/05.md
+- book/06.md
+- book/07.md
+- book/08.md
+- book/09.md
+- book/glossary.md
+- book/bibliography.md
+- book/index.md
+- book/authors.md
+output-file: "docs/debord-guy-the-society-of-the-spectacle.epub"
+metadata-files:
+- "book/metadata.yaml"
+- "book/metadata-epub.yaml"
+from: markdown
+to: epub
+data-dir: "src"
+template: "default.epub"
+filters:
+  - "src/filter-imagepath.js"
+#   - "src/filter-isbn.js"
+#   - "src/filter-date.lua"
+verbosity: WARNING # ERROR, WARNING, or INFO
