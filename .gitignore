@@ -1,3 +1,5 @@
 node_modules/
 .tool-versions
 docs/*.pdf
+docs/*.epub
+docs/*.mobi
