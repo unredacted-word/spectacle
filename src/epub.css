@@ -1,103 +1,120 @@
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("SourceSerifPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-style: italic;
+  src: url("SourceSerifPro-Italic.ttf");
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: bold;
+  src: url("SourceSerifPro-Bold.ttf");
 }
 
 body {
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  text-size-adjust: none;
-
-  font-family: Charter, serif, "Apple Color Emoji", "Noto Color Emoji",
-    "Symbola", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
   font-size: 100%;
   line-height: 1.4;
-  margin: 0 auto;
-  max-width: 35em;
-}
-
-a {
-  color: black;
-}
-a:hover {
-  color: #0000cc;
 }
 
 hr {
   border: none;
   border-top: 2pt solid black;
   border-bottom: 1pt solid black;
-  height: 4pt;
-  margin: 5rem 10rem;
+  height: 5pt;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
+h4 {
+  font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1;
+  clear: both;
+}
+h1.unnumbered {
+  display: none;
+}
+h2 {
+  /* chapters */
+  font-size: 2rem;
+  margin-bottom: 8rem;
+  margin-top: 12rem;
+  text-align: left;
+  hyphens: none;
+}
+.toc h2,
+.foreword h2,
+.preface h2,
+.glossary h2,
+.bibliography h2,
+.index h2 {
+  font-size: 1.5rem; /* = 15pt/24px */
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  break-after: avoid;
+}
+.foreword h2,
+.preface h2,
+.toc h2,
+.glossary h2,
+.bibliography h2,
+.index h2 {
+  margin-top: 4em;
+  margin-bottom: 6em;
 }
 
-q,
-blockquote p {
-  font-style: italic;
+h3 {
+  /* thesis numbers */
+  font-size: 1.4rem; /* 14pt / 22.4px */
+  margin: 1em 0;
+  text-align: center;
 }
 
 blockquote {
   text-align: left;
-  position: relative;
-  padding: 1em 0;
-  border-left: 2rem solid rgba(61, 70, 77, 0.1);
 }
-blockquote::before {
-  content: "\201C";
-  font-family: serif;
-  font-size: 15em;
-  position: absolute;
-  color: rgba(0, 0, 0, 0.125);
-  left: -2px;
-  top: -87px;
-  display: block;
-  z-index: -1;
+q[lang="ru"]::before {
+  content: "\AB";
+}
+q[lang="ru"]::after {
+  content: "\BB";
 }
 
-blockquote p {
-  margin: 1.25rem 2.5rem;
-}
-
-blockquote,
-p,
-q {
-  hyphens: auto;
-  quotes: "“" "”" "‘" "’";
-}
-
-cite {
-  font-style: normal;
+sup {
+  font-size: 0.7rem; /* 7pt/11.2px */
+  font-weight: normal;
+  line-height: 0; /* fixes blowing-up the line-height */
 }
 
 figure {
   text-align: center;
 }
 
-figure,
-blockquote {
-  margin: 0 -2rem 0 -2rem;
-  font-size: 0.75rem;
+blockquote,
+figure {
+  margin: 0;
 }
 
 figure figcaption,
 blockquote figcaption {
-  color: darkgray;
-  margin: 0 3rem;
-  font-size: 0.7em;
   font-style: italic;
+  padding: 0;
+}
+figure figcaption strong {
+  font-style: normal;
 }
 
 img {
@@ -105,4 +122,130 @@ img {
 }
 figure img {
   max-height: 100vh;
+}
+
+/* chapter page */
+h2 + blockquote {
+  font-size: 1.25rem; /* 12.5pt/20px */
+}
+h2 + blockquote > p:first-child em {
+  /* chapter epigraphs with a quote hanging to the left of text block */
+  display: block;
+  text-indent: -0.5em;
+  text-align: left;
+}
+h2 + blockquote p:first-child + p {
+  /* right align quote attribution */
+  text-align: right;
+}
+
+/* utilities */
+
+.title,
+.author {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  text-align: left;
+}
+
+.author {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.title {
+  font-size: 2.25rem;
+  letter-spacing: -0.05em;
+}
+.halftitle-image {
+  width: 90%;
+}
+
+.titlepg.centered {
+  text-align: center;
+}
+.titlepg .author,
+.titlepg .title {
+  margin: 5rem 0;
+  display: block;
+  text-align: center;
+}
+.title-logo {
+  width: 5rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.hanging-indent p {
+  margin: 0;
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
+  text-align: left;
+}
+
+.fn {
+  float: right;
+  max-width: 45%;
+  margin: -0.25em -1.5em 0 1em;
+  margin: 0;
+  /* if note is in a header, we need to reset the typography */
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.colophon {
+  font-size: 0.5rem;
+  font-family: sans-serif;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.glossary h3 {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.bibliography p {
+  page-break-inside: avoid;
+  text-align: left;
+  /* force-wrap long URLs */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.authors,
+.index .entries {
+  column-count: 2;
+  column-gap: 2rem;
+  page-break-inside: avoid;
+}
+.authors {
+  text-align: justify;
+}
+.authors figure img {
+  max-width: 100%;
+}
+
+p {
+  orphans: 2;
+  widows: 3;
+}
+
+blockquote,
+figure {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.colophon,
+.foreword,
+.frontmatter,
+.backmatter,
+.preface,
+.chapter {
+  page-break-after: always;
 }

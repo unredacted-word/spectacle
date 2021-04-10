@@ -1,13 +1,9 @@
 ---
 date: "2021-04-08"
-creator:
-- role: author
-  text: Guy Debord
-- role: translator
-  text: Ron. Adams
 identifier:
   - scheme: ISBN-13
     text: "9781736961834"
+isbn13: "9781736961834"
 format: "ePub"
 cover-image: "images/cover-epub.png"
 edition: "First ePub edition April 2021"
