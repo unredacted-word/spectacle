@@ -28,6 +28,7 @@ epub-fonts:
 - "fonts/SourceSerifPro-Regular.ttf"
 - "fonts/SourceSerifPro-Italic.ttf"
 - "fonts/SourceSerifPro-Bold.ttf"
+epub-chapter-level: 2
 filters:
   - "src/filter-imagepath.js"
   - "src/filter-isbn.js"
