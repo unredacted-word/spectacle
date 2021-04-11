@@ -203,9 +203,10 @@ h2 + blockquote p:first-child + p {
 }
 
 .fn {
+  display: block;
   float: right;
   clear: both;
-  max-width: 45%;
+  width: 16em;
   margin: 0 -0.5em 0 1.5em;
   font-size: 0.625em;
   font-style: normal;
@@ -213,15 +214,6 @@ h2 + blockquote p:first-child + p {
   line-height: 1.4;
   letter-spacing: normal;
   text-align: left;
-}
-@media amzn-mobi, amzn-fk8 {
-  /* Specific Mobi7 styles (old format) */
-  .fn {
-    /* disable float notes on Kindle */
-    margin: 0;
-    float: none;
-    font-family: sans-serif;
-  }
 }
 
 .colophon {
