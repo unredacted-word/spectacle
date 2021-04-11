@@ -26,7 +26,7 @@ on macOS:
 # install Pandoc and libs
 brew install pandoc librsvg
 # install fonts
-brew install --cask font-source-serif-pro
+brew install --cask font-source-serif-pro kindle-previewer
 # install Prince XML
 # brew install --cask --no-quarantine prince
 # install dependencies
@@ -49,5 +49,5 @@ npm run pen <filename>
 # Generating Books
 
 ```
-npm run build  # build all formats to docs/*.{html,pdf}
+npm run build  # build all formats to docs/*.{html,pdf,epub}
 ```

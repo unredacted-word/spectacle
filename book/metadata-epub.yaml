@@ -1,0 +1,12 @@
+---
+date: "2021-04-20"
+identifier:
+  - scheme: ISBN-13
+    text: "9781736961834"
+isbn13: "9781736961834"
+format: "ePub"
+cover-image: "images/cover-epub.png"
+edition: "First ePub edition April 2021"
+printing: "10 9 8 7 6 5 4 3 2 1"
+imagepath: "images"
+---
