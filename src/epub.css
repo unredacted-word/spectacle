@@ -214,6 +214,15 @@ h2 + blockquote p:first-child + p {
   letter-spacing: normal;
   text-align: left;
 }
+@media amzn-mobi, amzn-fk8 {
+  /* Specific Mobi7 styles (old format) */
+  .fn {
+    /* disable float notes on Kindle */
+    margin: 0;
+    float: none;
+    font-family: sans-serif;
+  }
+}
 
 .colophon {
   font-size: 0.5rem;
