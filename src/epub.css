@@ -13,9 +13,13 @@
   src: url("SourceSerifPro-Bold.ttf");
 }
 
+html {
+  font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
+  line-height: 1.4;
+}
+
 body {
   font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
-  font-size: 100%;
   line-height: 1.4;
 }
 
@@ -43,7 +47,7 @@ h1.unnumbered {
 }
 h2 {
   /* chapters */
-  font-size: 2rem;
+  font-size: 2em;
   text-align: left;
   hyphens: none;
 }
@@ -56,7 +60,7 @@ h2 .ch-roman {
 .glossary h2,
 .bibliography h2,
 .index h2 {
-  font-size: 1.5rem; /* = 15pt/24px */
+  font-size: 1.5em; /* = 15pt/24px */
   margin-top: 1em;
   margin-bottom: 2em;
   text-align: center;
@@ -80,7 +84,7 @@ h4 {
 
 h3 {
   /* thesis numbers */
-  font-size: 1.4rem; /* 14pt / 22.4px */
+  font-size: 1.4em; /* 14pt / 22.4px */
   margin: 1em 0;
   text-align: center;
 }
@@ -99,7 +103,7 @@ q[lang="ru"]::after {
 }
 
 sup {
-  font-size: 0.7rem; /* 7pt/11.2px */
+  font-size: 0.7em; /* 7pt/11.2px */
   font-weight: normal;
   line-height: 0; /* fixes blowing-up the line-height */
 }
@@ -146,40 +150,55 @@ h2 + blockquote p:first-child + p {
 /* utilities */
 
 .title,
-.author {
+.author,
+.translator {
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1;
   text-align: left;
 }
+.translator::before {
+  content: "English Edition by ";
+}
 
 .author {
-  font-size: 2rem;
+  font-size: 2em;
   text-transform: uppercase;
 }
+
+.level1 > h1 {
+  font-size: 1em;
+}
 .title {
-  font-size: 2.25rem;
+  font-size: 2.25em;
   letter-spacing: -0.05em;
 }
-.titlepg.centered {
+.titlepg.centered,
+.titlepage {
   text-align: center;
 }
 .titlepg .author,
 .titlepg .title {
-  margin: 2rem 0;
+  margin: 1em 0;
   display: block;
   text-align: center;
 }
 .title-logo {
-  width: 2.5rem;
+  width: 3.5em;
+  height: 3.5em;
   margin: 0 auto;
   display: block;
+}
+.titlepage .publisher,
+.titlepage .date,
+.titlepage .rights {
+  opacity: 0;
 }
 
 .hanging-indent p {
   margin: 0;
-  margin-left: 1.5rem;
-  text-indent: -1.5rem;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
   text-align: left;
 }
 
@@ -188,8 +207,7 @@ h2 + blockquote p:first-child + p {
   clear: both;
   max-width: 45%;
   margin: 0 -0.5em 0 1.5em;
-  /* if note is in a header, we need to reset the typography */
-  font-size: 0.625rem;
+  font-size: 0.625em;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
