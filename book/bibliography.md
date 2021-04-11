@@ -182,6 +182,9 @@ Press. 9780521871846.
 
 Jappe, A. (2010). Baudrillard, détournement par excès. _Lignes_ 31.
 
+Jappe, A., Smith, D. & Clark, T. (2018). _Guy Debord_. Oakland, CA: PM Press.
+9781629634494.
+
 Kerr, C. (2001). _The uses of the university_. Cambridge, Mass: Harvard
 University Press. 9780674005327.
 

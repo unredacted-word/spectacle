@@ -1,7 +1,11 @@
 ---
 lang: en-US
 title: "The Society of the Spectacle"
-author: "Guy Debord, English edition by Ron. Adams"
+creator:
+- role: author
+  text: Guy Debord
+- role: translator
+  text: Ron. Adams
 keywords:
   - Anarchism
   - Communism
