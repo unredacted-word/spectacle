@@ -203,17 +203,12 @@ h2 + blockquote p:first-child + p {
 }
 
 .fn {
-  display: block;
-  float: right;
-  clear: both;
-  width: 16em;
-  margin: 0 -0.5em 0 1.5em;
-  font-size: 0.625em;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  text-align: left;
+  display: none;
+}
+.fn-marker {
+  text-decoration: underline;
+  vertical-align: super;
+  line-height: 0;
 }
 
 .colophon {
