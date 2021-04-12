@@ -27,6 +27,8 @@ file-scope: false
 to: html5
 data-dir: "src"
 template: "default.html"
+include-in-header:
+  - "src/templates/scripts.html"
 filters:
   - "src/filter-isbn.js"
   - "src/filter-anchorlinks.js"
