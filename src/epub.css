@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Source Serif Pro";
-  src: url("SourceSerifPro-Regular.ttf");
+  src: url("../fonts/SourceSerifPro-Regular.ttf");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: italic;
-  src: url("SourceSerifPro-Italic.ttf");
+  src: url("../fonts/SourceSerifPro-Italic.ttf");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-weight: bold;
-  src: url("SourceSerifPro-Bold.ttf");
+  src: url("../fonts/SourceSerifPro-Bold.ttf");
 }
 
 html {

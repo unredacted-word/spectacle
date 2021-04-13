@@ -25,9 +25,9 @@ to: epub
 data-dir: "src"
 template: "default.epub"
 epub-fonts:
-- "fonts/SourceSerifPro-Regular.ttf"
-- "fonts/SourceSerifPro-Italic.ttf"
-- "fonts/SourceSerifPro-Bold.ttf"
+- "docs/fonts/SourceSerifPro-Regular.ttf"
+- "docs/fonts/SourceSerifPro-Italic.ttf"
+- "docs/fonts/SourceSerifPro-Bold.ttf"
 epub-chapter-level: 2
 filters:
   - "src/filter-imagepath.js"
