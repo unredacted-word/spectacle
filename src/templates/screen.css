@@ -51,6 +51,7 @@ h2 .ch-roman {
 ::selection,
 .level3:target,
 span:target,
+aside:target,
 q:target,
 *:target + .fn,
 *:target + .fn-marker + .fn {
