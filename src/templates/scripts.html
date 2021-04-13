@@ -1,4 +1,14 @@
-<script src="/spectacle/sw.js" data-external="1"></script>
 <link rel="manifest" href="../manifest.json" data-external="1">
+<link rel="shortcut icon" href="/spectacle/favicon.ico" data-external="1">
 <link rel="icon" type="image/png" href="/spectacle/icon-192.png" sizes="192x192" data-external="1">
 <link rel="icon" type="image/png" href="/spectacle/icon-512.png" sizes="512x512" data-external="1">
+<script>
+addEventListener('load', function() {
+  window.navigator
+    .serviceWorker
+    .register('/spectacle/sw.js')
+    .catch(err => {
+      console.warn('Error while registering service worker', err);
+    });
+})
+</script>
