@@ -1,5 +1,5 @@
 // Use a cacheName for cache versioning
-var VERSION = "0.1.0",
+var VERSION = "0.1.1",
   CACHENAME = "spectacle-v" + VERSION,
   ASSETS = ["./", "./index.html"];
 
