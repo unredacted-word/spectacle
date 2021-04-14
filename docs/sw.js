@@ -1,13 +1,7 @@
 // Use a cacheName for cache versioning
 var VERSION = "0.2.0",
   CACHENAME = "spectacle-v" + VERSION,
-  ASSETS = [
-    "./",
-    "./index.html",
-    "./fonts/SourceSerifPro-Regular.ttf",
-    "./fonts/SourceSerifPro-Italic.ttf",
-    "./fonts/SourceSerifPro-Bold.ttf",
-  ];
+  ASSETS = ["./", "./index.html"];
 
 // During the installation phase, add static assets to the cache
 self.addEventListener("install", function (event) {

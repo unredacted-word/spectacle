@@ -1,18 +1,3 @@
-@font-face {
-  font-family: "Source Serif Pro";
-  src: url("docs/fonts/SourceSerifPro-Regular.ttf");
-}
-@font-face {
-  font-family: "Source Serif Pro";
-  font-style: italic;
-  src: url("docs/fonts/SourceSerifPro-Italic.ttf");
-}
-@font-face {
-  font-family: "Source Serif Pro";
-  font-weight: bold;
-  src: url("docs/fonts/SourceSerifPro-Bold.ttf");
-}
-
 @page {
   size: 152mm 229mm;
   /* Allow a minimum `0.50in`/`12.7mm` in Safety Margin for all content
