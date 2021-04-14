@@ -12,6 +12,11 @@ function action({ t: type, c: value }, format, meta) {
       let u = url.replace(/var_imagepath/g, path);
       return Image(attr, label, [u, title]);
     }
+    if (url.match(/var_bw_imagepath/g)) {
+      let path = stringify(meta.imagepath_bw);
+      let u = url.replace(/var_bw_imagepath/g, path);
+      return Image(attr, label, [u, title]);
+    }
   }
 }
 

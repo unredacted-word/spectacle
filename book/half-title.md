@@ -1,6 +1,6 @@
 ::::: {.halftitle-title .frontmatter .break-before-right .reset-page-counter}
 
-![](images/infinity-rope.svg){.halftitle-image}
+![](var_imagepath/infinity-rope.svg){.halftitle-image data-external="1"}
 
 [The Society of the Spectacle]{.title}
 

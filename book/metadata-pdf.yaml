@@ -3,5 +3,6 @@ isbn13: "9781736961827"
 format: "PDF"
 edition: "First PDF edition April 2021"
 printing: ""
-imagepath: "images"
+imagepath: "docs/images"
+imagepath_bw: "docs/images"
 ---
