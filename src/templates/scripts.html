@@ -6,7 +6,7 @@
 addEventListener('load', function() {
   window.navigator
     .serviceWorker
-    .register('/spectacle/sw.js')
+    .register('sw.js')
     .catch(err => {
       console.warn('Error while registering service worker', err);
     });

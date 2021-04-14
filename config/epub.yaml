@@ -16,7 +16,7 @@ input-files:
   - book/glossary.md
   - book/bibliography.md
   - book/authors.md
-output-file: "docs/debord-guy-the-society-of-the-spectacle.epub"
+output-file: "debord-guy-the-society-of-the-spectacle.epub"
 metadata-files:
   - "book/metadata.yaml"
   - "book/metadata-epub.yaml"

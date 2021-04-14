@@ -1,7 +1,17 @@
 // Use a cacheName for cache versioning
-var VERSION = "0.2.0",
+var VERSION = "0.3.0",
   CACHENAME = "spectacle-v" + VERSION,
-  ASSETS = ["./", "./index.html"];
+  ASSETS = [
+    "./",
+    "./index.html",
+    "./images/infinity-rope.svg",
+    "./images/logo.svg",
+    "./images/time-and-history.png",
+    "./images/al-ain.jpg",
+    "./images/flame.jpg",
+    "./images/author.jpg",
+    "./images/translator.jpg",
+  ];
 
 // During the installation phase, add static assets to the cache
 self.addEventListener("install", function (event) {

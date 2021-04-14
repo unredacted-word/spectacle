@@ -20,7 +20,7 @@ input-files:
   - book/bibliography.md
   - book/index.md
   - book/authors.md
-output-file: "docs/debord-guy-the-society-of-the-spectacle-hardcover.pdf"
+output-file: "debord-guy-the-society-of-the-spectacle-hardcover.pdf"
 metadata-files:
   - "book/metadata.yaml"
   - "book/metadata-hardcover.yaml"
