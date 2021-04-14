@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Infinity Rope" src="images/infinity-rope.svg" width="480">
+  <img alt="Infinity Rope" src="docs/images/infinity-rope.svg" width="480">
 </p>
 
 # The Society of the Spectacle
