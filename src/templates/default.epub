@@ -5,6 +5,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="$generator$" />
   <title>$pagetitle$</title>
+  <style>
+    $fonts.css()$
+  </style>
 $if(highlighting-css)$
   <style>
 $highlighting-css$
