@@ -2,7 +2,7 @@
 input-files:
 - book/colophon.md
 - book/dust-jacket.md
-output-file: "docs/dust-jacket-hardcover.pdf"
+output-file: "dust-jacket-hardcover.pdf"
 from: markdown
 to: pdf
 dpi: 600

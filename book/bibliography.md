@@ -81,6 +81,9 @@ Debord, G. (Producer), Debord, G. (Director). (1974). _La société du spectac
 Debord, G. (2003). _Complete cinematic works: scripts, stills, documents_.
 Oakland, CA: AK Press. 9781902593838.
 
+Debord, G. (2005). _Correspondance, Volume 5: Janvier 1973-Décembre 1978_,
+Paris: Librairie Arthème Fayard. 9782213627069.
+
 Debord, G. & Knabb, K. (2014). _The society of the spectacle_. Berkeley, CA:
 Bureau of Public Secrets. 9780939682065.
 

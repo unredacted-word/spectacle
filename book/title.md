@@ -14,7 +14,7 @@ English edition by Ron. Adams\
 █ Unredacted Word\
 Cambridge, Massachusetts
 
-![](images/logo.svg){.title-logo}
+![](var_imagepath/logo.svg){.title-logo data-external="1"}
 
 :::::
 
