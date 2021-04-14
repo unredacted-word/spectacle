@@ -9,15 +9,35 @@
   <meta name="publisher" content="$publisher$" />
   <meta name="isbn-13" content="$isbn13$" />
   <meta name="dcterms.date" content="$date$" />
-$if(keywords)$
+  $if(keywords)$
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-$endif$
-$if(description-meta)$
+  $endif$
+  $if(description-meta)$
   <meta name="description" content="$description-meta$" />
-$endif$
-$if(rights)$
-$endif$
+  $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <meta property="og:site_name" content="$publisher$">
+  <meta property="og:title" content="$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$">
+  <meta property="og:url" content="https://unredacted-word.pub/spectacle/">
+  <meta property="og:image" content="icon-192.png">
+  <meta property="og:image:height" content="192">
+  <meta property="og:image:width" content="192">
+  <meta property="og:description" content="$description-meta$">
+  <meta property="og:type" content="book">
+  <meta property="book:author" content="Guy Debord, English edition by Ron. Adams">
+  <meta property="book:isbn" content="$isbn13$">
+  <meta property="book:release_date" content="2021-04-01">
+  $for(keywords)$
+  <meta property="book:tag" content="$keywords$">
+  $endfor$
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@unredactedword">
+  <meta name="twitter:url" content="https://unredacted-word.pub/spectacle/">
+  <meta name="twitter:title" content="$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$">
+  <meta property="twitter:image" content="icon-512.png">
+  <meta name="twitter:image:height" content="512">
+  <meta name="twitter:image:width" content="512">
+  <meta name="twitter:description" content="$description-meta$">
   <style>
     $fonts.css()$
     $styles.css()$
