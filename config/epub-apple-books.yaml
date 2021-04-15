@@ -29,5 +29,4 @@ filters:
   - "src/filter-imagepath.js"
   - "src/filter-isbn.js"
   - "src/filter-date.lua"
-  - "src/filter-notes.js"
 verbosity: WARNING # ERROR, WARNING, or INFO

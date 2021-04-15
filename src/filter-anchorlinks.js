@@ -7,18 +7,12 @@ function action({ t: type, c: value }) {
   if (type === "Span") {
     // c is typed as a three-tuple
     let [attrs, inlines] = value;
-    let [id, classNames, keyValues] = attrs;
+    let [id, classNames] = attrs;
     if (classNames.includes("fn")) {
-      var closeBtn = Link(
-        ["", ["close"], []],
-        [Str("[Close]")],
-        [`#close`, ""]
-      );
-      inlines = inlines.concat([Str(" "), closeBtn]);
-      var fn = Span([id, classNames, keyValues], inlines);
+      var fn = Span([id, classNames, [["epub:type", "footnote"]], inlines);
       var fnLink = Link(
-        [`fn-ref-${id}`, ["fn-marker"], []],
-        [Str("fn")],
+        [`fn-ref-${id}`, ["fn-marker"], [["epub:type", "noteref"]]],
+        [Str("*")],
         [`#${id}`, ""]
       );
       return [fnLink, fn];
