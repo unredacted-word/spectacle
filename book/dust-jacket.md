@@ -1,1 +1,1 @@
-![](images/dust-jacket.png){.cover}
+![](docs/images/dust-jacket.png){.cover}
