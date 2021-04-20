@@ -59,7 +59,7 @@ perceptions</q> (The police in this case, are of a new specialized variety).
 
 Only because this merger had already occurred in the economic and political
 realms of the entire world, could the world finally proclaim itself officially
-unified. It is also because this situation that the universally separated power
+unified. It is also because of this situation that the universally separated power
 has reached such a predicament that this world needed to be reunited as soon as
 possible; to function as one block in the same consensual organization of the
 single global market, _falsified_ and guaranteed by the spectacle. In the end it

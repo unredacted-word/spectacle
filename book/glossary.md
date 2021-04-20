@@ -116,8 +116,7 @@ knowledge, and personal chronicles. Within this framing, time does not recur,
 but progresses along a fixed trajectory to the horizon. This is the time of
 permanent agricultural settlements, villages, towns, and cities. This new form of
 irreversible time is irreversible in that it assumes the accumulation of
-knowledge can only develop with a forward trajectory. For more on this subject,
-see Braudel, F., 1982.
+knowledge can only develop with a forward trajectory.
 
 ### lived time (_temps vécu_)
 
