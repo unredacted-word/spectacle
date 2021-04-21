@@ -1,27 +1,26 @@
-# docs https://pandoc.org/MANUAL.html#default-files
 input-files:
-- book/half-title.md
-- book/colophon.md
-- book/contents.md
-- book/foreword.md
-- book/title.md
-- book/preface.md
-- book/01.md
-- book/02.md
-- book/03.md
-- book/04.md
-- book/05.md
-- book/06.md
-- book/07.md
-- book/08.md
-- book/09.md
-- book/glossary.md
-- book/bibliography.md
-- book/authors.md
+  - book/half-title.md
+  - book/colophon.md
+  - book/contents.md
+  - book/foreword.md
+  - book/title.md
+  - book/preface.md
+  - book/01.md
+  - book/02.md
+  - book/03.md
+  - book/04.md
+  - book/05.md
+  - book/06.md
+  - book/07.md
+  - book/08.md
+  - book/09.md
+  - book/glossary.md
+  - book/bibliography.md
+  - book/authors.md
 output-file: "docs/index.html"
 metadata-files:
-- "book/metadata.yaml"
-- "book/metadata-website.yaml"
+  - "book/meta/metadata.yaml"
+  - "book/meta/metadata-website.yaml"
 from: markdown
 file-scope: false
 to: html5

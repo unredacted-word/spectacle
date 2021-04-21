@@ -1,4 +1,3 @@
-# docs https://pandoc.org/MANUAL.html#default-files
 input-files:
   - book/colophon.md
   - book/foreword.md
@@ -18,8 +17,8 @@ input-files:
   - book/authors.md
 output-file: "debord-guy-the-society-of-the-spectacle.epub"
 metadata-files:
-  - "book/metadata.yaml"
-  - "book/metadata-epub.yaml"
+  - "book/meta/metadata.yaml"
+  - "book/meta/metadata-epub.yaml"
 from: markdown
 to: epub
 data-dir: "src"

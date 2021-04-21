@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm run build-hardcover && npm run build-pdf && npm run build-html && npm run build-epub",
+    "build": "npm run build-ustrade && npm run build-pdf && npm run build-html && npm run build-epub",
     "build-pdf": "pandoc -d config/pdf.yaml -V ispdf --verbose",
-    "build-hardcover": "pandoc -d config/hardcover.yaml -V ispdf --verbose",
+    "build-ustrade": "pandoc -d config/ustrade.yaml -V ispdf --verbose",
     "build-html": "pandoc -d config/html.yaml -V isweb --verbose",
     "build-epub": "pandoc -d config/epub.yaml --verbose",
     "format": "prettier --write *.md **/*.md",
