@@ -1,7 +1,7 @@
 # The Society of the Spectacle
 
 - [Half Title](half-title.md)
-- [Forword](forword.md)
+- [Foreword](foreword.md)
 - [Title](title.md)
 - [Colophon](colophon.md)
 - [Contents](contents.md)
