@@ -1,4 +1,3 @@
-# docs https://pandoc.org/MANUAL.html#default-files
 input-files:
   - book/print-blanks.md
   - book/half-title.md
@@ -20,10 +19,10 @@ input-files:
   - book/bibliography.md
   - book/index.md
   - book/authors.md
-output-file: "debord-guy-the-society-of-the-spectacle-hardcover.pdf"
+output-file: "debord-guy-the-society-of-the-spectacle-us-trade.pdf"
 metadata-files:
-  - "book/metadata.yaml"
-  - "book/metadata-hardcover.yaml"
+  - "book/meta/metadata.yaml"
+  - "book/meta/metadata-ustrade.yaml"
 from: markdown
 to: pdf
 dpi: 300

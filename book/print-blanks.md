@@ -1,8 +1,8 @@
 ::::: {.frontmatter}
-delete recto
+this page intentionally left blank, remove before printing.
 :::::
 
 ::::: {.frontmatter}
-delete verso
+this page intentionally left blank, remove before printing.
 :::::
 

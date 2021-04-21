@@ -1,8 +1,7 @@
-# docs https://pandoc.org/MANUAL.html#default-files
 input-files:
-- book/colophon.md
-- book/dust-jacket.md
-output-file: "dust-jacket-hardcover.pdf"
+  - book/print-blanks.md
+  - book/dust-jacket.md
+output-file: "dust-jacket-us-trade.pdf"
 from: markdown
 to: pdf
 dpi: 600

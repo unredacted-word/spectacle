@@ -1,9 +1,7 @@
 # The Society of the Spectacle
 
-- [metadata](metadata.yaml)
-- [Cover](cover.md)
 - [Half Title](half-title.md)
-- [Forward](forward.md)
+- [Forword](forword.md)
 - [Title](title.md)
 - [Colophon](colophon.md)
 - [Contents](contents.md)
