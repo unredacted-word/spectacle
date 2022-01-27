@@ -95,7 +95,7 @@ Debord, G. (1992). _La société du spectacle_. Paris: Gallimard. 978207039443
 Debord, G. Nicholson-Smith, D. (1994). _The society of the spectacle_. New York:
 Zone Books. 9780942299793.
 
-Debord, G. (2004). _Panegyric_. London New York: Verso. 9781859846650.
+Debord, G. (2004). _Panegyric_. London New York: Verso. 1844673537.
 
 Debord, G., Rançon, Jean-Louis., Debord, A. & Kaufmann, V. (2006). _Oeuvres_.
 Paris: Gallimard. 9782070773749.
