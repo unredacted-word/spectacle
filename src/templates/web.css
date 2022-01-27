@@ -9,7 +9,7 @@
     height: 90vh;
   }
   body::before {
-    content: "Print-ready edition available at https://b-ok.cc/book/12176071/05cd57";
+    content: "Print-ready PDF freely available at https://b-ok.cc/book/12176071/05cd57 😘";
     text-align: center;
   }
   body > * {
