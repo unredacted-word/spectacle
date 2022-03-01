@@ -1,0 +1,9 @@
+input-files:
+  - book/01.md
+from: markdown
+to: gfm
+filters:
+  - "src/strip-ix.js"
+  - "src/strip-fn.js"
+data-dir: "src"
+verbosity: WARNING # ERROR, WARNING, or INFO
