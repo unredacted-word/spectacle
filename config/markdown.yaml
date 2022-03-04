@@ -1,0 +1,18 @@
+input-files:
+  - book/01.md
+  - book/02.md
+  - book/03.md
+  - book/04.md
+  - book/05.md
+  - book/06.md
+  - book/07.md
+  - book/08.md
+  - book/09.md
+from: markdown
+to: gfm
+filters:
+  - "src/indent-fn.js"
+  - "src/strip-ix.js"
+data-dir: "src"
+wrap: "none"
+verbosity: WARNING # ERROR, WARNING, or INFO
