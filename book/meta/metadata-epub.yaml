@@ -1,12 +1,12 @@
 ---
-date: "2021-04-21"
+date: "2022-09-14"
 identifier:
   - scheme: ISBN-13
     text: "9781736961834"
 isbn13: "9781736961834"
 format: "ePub"
 cover-image: "docs/images/cover-epub.png"
-edition: "First ePub edition April 2021"
+edition: "Second ePub edition September 2022"
 printing: "10 9 8 7 6 5 4 3 2 1"
 imagepath: "docs/images"
 imagepath_bw: "docs/images"
