@@ -28,7 +28,7 @@ Library of Congress Cataloging-in-Publication Data
 <!-- prettier-ignore-start -->
 | Debord, Guy, 1931-1994 author.
 |    The Society of the Spectacle / Guy Debord, Ron. Adams.
-|    First. Cambridge : Unredacted Word, 2021.
+|    Second. Cambridge : Unredacted Word, 2021.
 |    pages cm
 |    ISBN var_isbn
 <!-- prettier-ignore-end -->
