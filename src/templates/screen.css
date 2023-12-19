@@ -54,7 +54,7 @@ h2 .ch-roman {
   text-decoration: none;
 }
 .level3 h3 a.selflink {
-  visibility: none;
+  visibility: hidden;
 }
 .level3:hover a.selflink {
   visibility: visible;
