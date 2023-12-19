@@ -9,12 +9,17 @@ function action({ t: type, c: value }) {
     let [attrs, inlines] = value;
     let [id, classNames, keyValues] = attrs;
     if (classNames.includes("fn")) {
+      var selfLink = Link(
+        ["", ["self"], []],
+        [Str("#")],
+        [`#${id}`, ""]
+      );
       var closeBtn = Link(
         ["", ["close"], []],
         [Str("[Close]")],
         [`#close`, ""]
       );
-      inlines = inlines.concat([Str(" "), closeBtn]);
+      inlines = inlines.concat([Str(" "), selfLink, Str(" "), closeBtn]);
       var fn = Span([id, classNames, keyValues], inlines);
       var fnLink = Link(
         [`fn-ref-${id}`, ["fn-marker"], []],
