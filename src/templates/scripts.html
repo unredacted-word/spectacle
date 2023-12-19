@@ -10,7 +10,7 @@
       a.href = `#${el.parentElement.id}`;
       a.classList.add('selflink');
       a.innerText = '#'
-      el.innerText += ' ';
+      el.appendChild(document.createTextNode(' '));
       el.appendChild(a);
     });
   }
