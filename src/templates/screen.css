@@ -48,6 +48,19 @@ h2 .ch-roman {
   font-size: 5em;
 }
 
+/* section self-links hidden, show on hover */
+.selflink {
+  color: #ccc;
+  text-decoration: none;
+}
+.level3 h3 a.selflink {
+  visibility: none;
+}
+.level3:hover a.selflink {
+  visibility: visible;
+}
+
+
 ::selection,
 .level3:target,
 span:target,

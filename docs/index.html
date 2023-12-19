@@ -311,6 +311,17 @@ margin-top: 4rem;
 h2 .ch-roman {
 font-size: 5em;
 }
+
+.selflink {
+color: #ccc;
+text-decoration: none;
+}
+.level3 h3 a.selflink {
+visibility: none;
+}
+.level3:hover a.selflink {
+visibility: visible;
+}
 ::selection,
 .level3:target,
 span:target,
@@ -749,14 +760,27 @@ display: none;
   <link rel="icon" type="image/png" href="/spectacle/images/icon-192.png" sizes="192x192" data-external="1">
   <link rel="icon" type="image/png" href="/spectacle/images/icon-512.png" sizes="512x512" data-external="1">
   <script>
-  addEventListener('load', function() {
-    window.navigator
-      .serviceWorker
-      .register('sw.js')
-      .catch(err => {
-        console.warn('Error while registering service worker', err);
+    const addSectionLinks = function () {
+      // add section links
+      Array.from(document.querySelectorAll('.level3 h3')).forEach((el) => {
+        let a = document.createElement('a');
+        a.href = `#${el.parentElement.id}`;
+        a.classList.add('selflink');
+        a.innerText = '#'
+        el.innerText += ' ';
+        el.appendChild(a);
       });
-  })
+    }
+
+    addEventListener('load', function () {
+      window.navigator
+        .serviceWorker
+        .register('sw.js')
+        .catch(err => {
+          console.warn('Error while registering service worker', err);
+        });
+      addSectionLinks();
+    });
   </script>
 </head>
 <body>
